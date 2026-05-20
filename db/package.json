@@ -1,0 +1,15 @@
+{
+  "name": "genaiui-db",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "tsx seed.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.8.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "tsx": "^4.19.0"
+  }
+}

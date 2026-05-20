@@ -1,0 +1,105 @@
+[
+  {
+    "id": "root",
+    "component": "Column",
+    "children": ["back-row", "detail-img", "detail-header", "detail-desc", "divider1", "amenities-section", "divider2", "transit-section", "divider3", "info-row", "divider4", "reviews-section", "action-row"],
+    "gap": 12
+  },
+  {
+    "id": "back-row",
+    "component": "Row",
+    "children": ["back-btn"]
+  },
+  {
+    "id": "back-btn",
+    "component": "Button",
+    "child": "back-btn-text",
+    "variant": "secondary",
+    "action": { "event": { "name": "back_to_results" } }
+  },
+  { "id": "back-btn-text", "component": "Text", "text": "Back to Results" },
+  {
+    "id": "detail-img",
+    "component": "Image",
+    "url": { "path": "/imageUrl" },
+    "variant": "headerImage"
+  },
+  {
+    "id": "detail-header",
+    "component": "Column",
+    "children": ["detail-title", "detail-neighborhood", "detail-rent"]
+  },
+  { "id": "detail-title", "component": "Text", "variant": "h1", "text": { "path": "/title" } },
+  { "id": "detail-neighborhood", "component": "Text", "variant": "caption", "text": { "path": "/neighborhood" } },
+  { "id": "detail-rent", "component": "Text", "variant": "h2", "text": { "path": "/rent" } },
+  { "id": "detail-desc", "component": "Text", "text": { "path": "/description" } },
+  { "id": "divider1", "component": "Divider" },
+  {
+    "id": "amenities-section",
+    "component": "Column",
+    "children": ["amenities-title", "amenities-list"]
+  },
+  { "id": "amenities-title", "component": "Text", "variant": "h3", "text": "Amenities" },
+  {
+    "id": "amenities-list",
+    "component": "List",
+    "direction": "vertical",
+    "children": { "componentId": "amenity-item", "path": "/amenities" }
+  },
+  { "id": "amenity-item", "component": "Text", "text": { "path": "text" } },
+  { "id": "divider2", "component": "Divider" },
+  {
+    "id": "transit-section",
+    "component": "Column",
+    "children": ["transit-title", "transit-list"]
+  },
+  { "id": "transit-title", "component": "Text", "variant": "h3", "text": "Nearby Transit" },
+  {
+    "id": "transit-list",
+    "component": "List",
+    "direction": "vertical",
+    "children": { "componentId": "transit-item", "path": "/transit" }
+  },
+  { "id": "transit-item", "component": "Text", "text": { "path": "text" } },
+  { "id": "divider3", "component": "Divider" },
+  {
+    "id": "info-row",
+    "component": "Row",
+    "children": ["pet-info", "available-info"]
+  },
+  { "id": "pet-info", "component": "Text", "text": { "path": "/petPolicy" } },
+  { "id": "available-info", "component": "Text", "text": { "path": "/availableFrom" } },
+  { "id": "divider4", "component": "Divider" },
+  {
+    "id": "reviews-section",
+    "component": "Column",
+    "children": ["reviews-title", "reviews-list"]
+  },
+  { "id": "reviews-title", "component": "Text", "variant": "h3", "text": "Reviews" },
+  {
+    "id": "reviews-list",
+    "component": "List",
+    "direction": "vertical",
+    "children": { "componentId": "review-item", "path": "/reviews" }
+  },
+  {
+    "id": "review-item",
+    "component": "Column",
+    "children": ["review-author", "review-text"]
+  },
+  { "id": "review-author", "component": "Text", "variant": "caption", "text": { "path": "author" } },
+  { "id": "review-text", "component": "Text", "text": { "path": "text" } },
+  {
+    "id": "action-row",
+    "component": "Row",
+    "children": ["tour-btn"]
+  },
+  {
+    "id": "tour-btn",
+    "component": "Button",
+    "child": "tour-btn-text",
+    "variant": "primary",
+    "action": { "event": { "name": "schedule_tour", "context": { "apartmentId": { "path": "/id" } } } }
+  },
+  { "id": "tour-btn-text", "component": "Text", "text": "Schedule Tour" }
+]

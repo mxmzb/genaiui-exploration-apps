@@ -1,0 +1,36 @@
+[
+  {
+    "id": "root",
+    "component": "Column",
+    "children": ["form-title", "form-subtitle", "divider", "field-name", "field-email", "field-date", "field-message", "btn-row"],
+    "gap": 12
+  },
+  { "id": "form-title", "component": "Text", "variant": "h1", "text": "Schedule a Tour" },
+  { "id": "form-subtitle", "component": "Text", "text": { "path": "/apartmentName" } },
+  { "id": "divider", "component": "Divider" },
+  { "id": "field-name", "component": "TextField", "variant": "shortText", "label": "Your Name", "dataModelBinding": { "path": "/form/name" } },
+  { "id": "field-email", "component": "TextField", "variant": "shortText", "label": "Email", "dataModelBinding": { "path": "/form/email" } },
+  { "id": "field-date", "component": "DateTimeInput", "variant": "date", "label": "Preferred Date", "dataModelBinding": { "path": "/form/date" } },
+  { "id": "field-message", "component": "TextField", "variant": "longText", "label": "Message (optional)", "dataModelBinding": { "path": "/form/message" } },
+  {
+    "id": "btn-row",
+    "component": "Row",
+    "children": ["cancel-btn", "submit-btn"]
+  },
+  {
+    "id": "cancel-btn",
+    "component": "Button",
+    "child": "cancel-text",
+    "variant": "secondary",
+    "action": { "event": { "name": "back_to_results" } }
+  },
+  { "id": "cancel-text", "component": "Text", "text": "Cancel" },
+  {
+    "id": "submit-btn",
+    "component": "Button",
+    "child": "submit-text",
+    "variant": "primary",
+    "action": { "event": { "name": "submit_tour", "context": { "apartmentId": { "path": "/apartmentId" } } } }
+  },
+  { "id": "submit-text", "component": "Text", "text": "Submit Request" }
+]

@@ -1,0 +1,15 @@
+[project]
+name = "json-render-apartment-agent"
+version = "0.1.0"
+description = "json-render apartment finder agent with JSONL UI generation"
+requires-python = ">=3.12"
+dependencies = [
+  "langchain>=1.2.0",
+  "langgraph>=1.1.0",
+  "langchain-openai>=1.1.0",
+  "copilotkit>=0.1.86",
+  "langgraph-cli[inmem]>=0.4.11",
+  "langgraph-api>=0.7.70",
+  "python-dotenv>=1.0.0",
+  "ag-ui-langgraph>=0.0.29",
+]

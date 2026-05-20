@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Environment / secrets
+.env
+.env.local
+.env.*.local
+
+# Build output
+dist/
+dist-ssr/
+.output/
+.nitro/
+.vinxi/
+.wrangler/
+
+# Framework caches
+.tanstack/
+.next/
+.nuxt/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# LangGraph
+.langgraph_api/
+
+# Editor / OS
+.DS_Store
+.vscode/
+*.local
+__unconfig*
+
+# App-specific
+todos.json
+
+
+.playwright-mcp
+
+*.db
+*.db-shm
+*.db-wal
+apps/openui-copilotkit/agent/src/generated/
+
+
+generated/

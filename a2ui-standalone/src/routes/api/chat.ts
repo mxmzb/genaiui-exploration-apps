@@ -1,0 +1,51 @@
+import { createFileRoute } from "@tanstack/react-router";
+import OpenAI from "openai";
+import { A2UI_SYSTEM_PROMPT } from "../../lib/a2ui-prompt";
+
+// #region genui - Stateless chat mode: each request is a single-turn completion
+export const Route = createFileRoute("/api/chat")({
+  server: {
+    handlers: {
+      POST: async ({ request }) => {
+        const { message } = (await request.json()) as { message: string };
+
+        const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, baseURL: process.env.OPENAI_BASE_URL });
+
+        const stream = await openai.chat.completions.create({
+          model: process.env.MODEL ?? "gpt-4.1",
+          stream: true,
+          temperature: 0.3,
+          messages: [
+            { role: "system", content: A2UI_SYSTEM_PROMPT },
+            { role: "user", content: message },
+          ],
+        });
+
+        const encoder = new TextEncoder();
+        const readable = new ReadableStream({
+          async start(controller) {
+            for await (const chunk of stream) {
+              const content = chunk.choices[0]?.delta?.content;
+              if (content) {
+                controller.enqueue(
+                  encoder.encode(`data: ${JSON.stringify(content)}\n\n`)
+                );
+              }
+            }
+            controller.enqueue(encoder.encode("data: [DONE]\n\n"));
+            controller.close();
+          },
+        });
+
+        return new Response(readable, {
+          headers: {
+            "Content-Type": "text/event-stream",
+            "Cache-Control": "no-cache",
+            Connection: "keep-alive",
+          },
+        });
+      },
+    },
+  },
+});
+// #endregion genui

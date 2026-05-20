@@ -1,0 +1,78 @@
+[
+  {
+    "id": "root",
+    "component": "Column",
+    "children": ["heading", "apt-list"],
+    "gap": 16
+  },
+  {
+    "id": "heading",
+    "component": "Title",
+    "text": { "path": "/heading" },
+    "level": "h1"
+  },
+  {
+    "id": "apt-list",
+    "component": "Row",
+    "children": {
+      "componentId": "apt-card",
+      "path": "/apartments"
+    },
+    "gap": 12
+  },
+  {
+    "id": "apt-card",
+    "component": "ApartmentCard",
+    "title": { "path": "title" },
+    "neighborhood": { "path": "neighborhood" },
+    "rent": { "path": "rent" },
+    "specs": { "path": "specs" },
+    "imageUrl": { "path": "imageUrl" },
+    "description": { "path": "description" },
+    "child": "card-buttons"
+  },
+  {
+    "id": "card-buttons",
+    "component": "Row",
+    "children": ["btn-details", "btn-tour"],
+    "gap": 8
+  },
+  {
+    "id": "btn-details",
+    "component": "Button",
+    "child": "btn-details-text",
+    "variant": "secondary",
+    "action": {
+      "event": {
+        "name": "view_details",
+        "context": {
+          "apartmentId": { "path": "id" }
+        }
+      }
+    }
+  },
+  {
+    "id": "btn-details-text",
+    "component": "TextBlock",
+    "text": "View Details"
+  },
+  {
+    "id": "btn-tour",
+    "component": "Button",
+    "child": "btn-tour-text",
+    "variant": "primary",
+    "action": {
+      "event": {
+        "name": "schedule_tour",
+        "context": {
+          "apartmentId": { "path": "id" }
+        }
+      }
+    }
+  },
+  {
+    "id": "btn-tour-text",
+    "component": "TextBlock",
+    "text": "Schedule Tour"
+  }
+]
