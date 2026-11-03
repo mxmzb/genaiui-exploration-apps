@@ -1,0 +1,521 @@
+{
+  "id": "json-render-2026-11-02T01-50-50-742Z-replay-10-text-native-C01",
+  "variant": {
+    "transport": "text",
+    "generation": "native"
+  },
+  "caseId": "C01",
+  "control": "truncated",
+  "expectedFailure": "contract",
+  "pass": true,
+  "automaticPass": false,
+  "verdicts": {
+    "rawFormat": {
+      "pass": false,
+      "errors": [
+        "line 13: SyntaxError: Unterminated string in JSON at position 24 (line 1 column 25)"
+      ]
+    },
+    "contract": {
+      "pass": false,
+      "errors": [
+        "Element \"n6\" references child \"n11\" which does not exist in the elements map.",
+        "Element \"n6\" references child \"n15\" which does not exist in the elements map.",
+        "Error: missing element n11"
+      ]
+    },
+    "strategy": {
+      "pass": true,
+      "errors": []
+    },
+    "content": {
+      "pass": false,
+      "errors": [
+        "2: incorrect or missing bedrooms",
+        "2: incorrect or missing bathrooms",
+        "2: incorrect or missing area"
+      ]
+    },
+    "actionBindings": {
+      "pass": true,
+      "errors": [],
+      "note": "Native catalog/action validation plus observed action dispatch; no separate redundant tree walk"
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "view_apartment:2: Missing, hidden or disabled control",
+        "schedule_tour:2: Missing, hidden or disabled control"
+      ],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [
+            "Missing, hidden or disabled control"
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [
+            "Missing, hidden or disabled control"
+          ]
+        }
+      ],
+      "requestCount": 0
+    },
+    "runtime": {
+      "pass": false,
+      "errors": [
+        "We couldn’t finish that search.The model returned an incomplete interface. Please try again.Try again ↗"
+      ]
+    }
+  },
+  "recovery": null,
+  "browser": {
+    "metrics": {
+      "timeline": [
+        {
+          "ms": 0.09999990463256836,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 150.59999990463257,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 158.5,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 1,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 182.89999985694885,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 2,
+          "enabledButtons": 0
+        }
+      ],
+      "firstMeaningfulMs": 158.5,
+      "firstCompleteCardMs": null,
+      "allContentMs": null,
+      "usableMs": null,
+      "runEndMs": 436.7999999523163
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "view_apartment:2: Missing, hidden or disabled control",
+        "schedule_tour:2: Missing, hidden or disabled control"
+      ],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [
+            "Missing, hidden or disabled control"
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [
+            "Missing, hidden or disabled control"
+          ]
+        }
+      ],
+      "requestCount": 0
+    },
+    "dom": {
+      "form": {
+        "errors": [],
+        "fields": []
+      },
+      "meaningful": true,
+      "ready": false,
+      "recordIds": [
+        "2"
+      ],
+      "enabledButtons": 0,
+      "errors": [
+        "2: incorrect or missing bedrooms",
+        "2: incorrect or missing bathrooms",
+        "2: incorrect or missing area"
+      ],
+      "records": [
+        {
+          "id": "2",
+          "found": true,
+          "text": "Apartments\nMidtown\nModern 2BR with Skyline Views\nMonthly total\n$3,165/mo\nBase rent\n$3,100/mo",
+          "metrics": [
+            {
+              "label": "Monthly total",
+              "value": "$3,165/mo"
+            },
+            {
+              "label": "Base rent",
+              "value": "$3,100/mo"
+            }
+          ],
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+              "loaded": true
+            }
+          ],
+          "feeRows": []
+        }
+      ],
+      "buttons": []
+    },
+    "alerts": [
+      "We couldn’t finish that search.The model returned an incomplete interface. Please try again.Try again ↗"
+    ],
+    "html": "<fieldset disabled=\"\" class=\"generated-ui\"><div class=\"ui-stack gap-md pad-none\"><h2 class=\"ui-heading\">Apartments</h2><div class=\"ui-grid cols-1 gap-md\"><section data-record-id=\"2\" class=\"ui-card outlined pad-none\"><div class=\"ui-grid cols-2 gap-sm\"><img class=\"ui-image landscape\" alt=\"Illustrative apartment interior\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&amp;h=750&amp;fit=crop\"><div class=\"ui-stack gap-md pad-md\"><span class=\"ui-badge neutral\">Midtown</span><h3 class=\"ui-heading\">Modern 2BR with Skyline Views</h3><div class=\"ui-metric \"><span>Monthly total</span><strong>$3,165/mo</strong></div><div class=\"ui-metric \"><span>Base rent</span><strong>$3,100/mo</strong></div></div></div></section></div></div></fieldset>",
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        900
+      ],
+      "devicePixelRatio": 2,
+      "visibility": "visible",
+      "assets": "local-svg/system-fonts",
+      "failures": []
+    }
+  },
+  "request": {
+    "model": "replay",
+    "max_tokens": 12000,
+    "temperature": 0.3,
+    "messages": [
+      {
+        "role": "system",
+        "content": "Today: 2026-11-02.\nReplace the persistent workspace.\nDATA (the only source of listing facts; preserve the supplied order unless the request specifies another order):\n[{\"id\":\"2\",\"title\":\"Modern 2BR with Skyline Views\",\"neighborhood\":\"Midtown\",\"rent\":3100,\"bedrooms\":2,\"bathrooms\":2,\"sqft\":1100,\"address\":\"89 Park Ave, Unit 12F\",\"description\":\"Recently renovated corner unit with panoramic skyline views from the 12th floor. Quartz countertops, stainless appliances, and a balcony off the primary bedroom. Full-service building with 24/7 concierge.\",\"imageUrl\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"availableFrom\":\"2026-12-01\",\"petPolicy\":\"Dogs and cats (under 50 lbs)\",\"amenities\":[\"Balcony\",\"Central AC\",\"Concierge\",\"Gym\",\"Parking available ($200/mo)\",\"Pool\"],\"nearbyTransit\":[\"Express bus - 2 min walk\",\"Red Line - 5 min walk\"],\"reviews\":[{\"author\":\"Chris L.\",\"rating\":5,\"text\":\"The views alone are worth it. Building management is responsive and the gym is solid.\"},{\"author\":\"Priya S.\",\"rating\":4,\"text\":\"Beautiful apartment. Concierge is very helpful. Wish parking was included.\"}],\"floor\":12,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":true,\"maxWeightLbs\":50},\"fees\":[{\"label\":\"Building services\",\"amount\":65,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":3100,\"frequency\":\"once\",\"required\":true},{\"label\":\"Optional parking\",\"amount\":200,\"frequency\":\"monthly\",\"required\":false},{\"label\":\"Pet rent if bringing a pet\",\"amount\":35,\"frequency\":\"monthly\",\"required\":false}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Express bus\",\"walkMinutes\":2},{\"name\":\"Red Line\",\"walkMinutes\":5}],\"costs\":{\"monthlyTotal\":3165,\"knownMonthlySubtotal\":3165,\"moveInTotal\":6265,\"knownMoveInSubtotal\":6265,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}}]\n\nOUTPUT FORMAT (JSONL, RFC 6902 JSON Patch):\nOutput JSONL (one JSON object per line) using RFC 6902 JSON Patch operations to build a UI tree.\nEach line is a JSON patch operation (add, remove, replace). Start with /root, then stream /elements and /state patches interleaved so the UI fills in progressively as it streams.\n\nExample output (each line is a separate JSON object):\n\n{\"op\":\"add\",\"path\":\"/root\",\"value\":\"main\"}\n{\"op\":\"add\",\"path\":\"/elements/main\",\"value\":{\"type\":\"Stack\",\"props\":{\"gap\":\"sm\",\"padding\":\"none\"},\"children\":[\"child-1\",\"list\"]}}\n{\"op\":\"add\",\"path\":\"/elements/child-1\",\"value\":{\"type\":\"Row\",\"props\":{\"gap\":\"sm\",\"align\":\"start\"},\"children\":[]}}\n{\"op\":\"add\",\"path\":\"/elements/list\",\"value\":{\"type\":\"Stack\",\"props\":{\"gap\":\"sm\",\"padding\":\"none\"},\"repeat\":{\"statePath\":\"/items\",\"key\":\"id\"},\"children\":[\"item\"]}}\n{\"op\":\"add\",\"path\":\"/elements/item\",\"value\":{\"type\":\"Row\",\"props\":{\"gap\":\"sm\",\"align\":\"start\"},\"children\":[]}}\n{\"op\":\"add\",\"path\":\"/state/items\",\"value\":[]}\n{\"op\":\"add\",\"path\":\"/state/items/0\",\"value\":{\"id\":\"1\",\"title\":\"First Item\"}}\n{\"op\":\"add\",\"path\":\"/state/items/1\",\"value\":{\"id\":\"2\",\"title\":\"Second Item\"}}\n\nNote: state patches appear right after the elements that use them, so the UI fills in as it streams. ONLY use component types from the AVAILABLE COMPONENTS list below.\n\nINITIAL STATE:\nSpecs include a /state field to seed the state model. Components with { $bindState } or { $bindItem } read from and write to this state, and $state expressions read from it.\nCRITICAL: You MUST include state patches whenever your UI displays data via $state, $bindState, $bindItem, $item, or $index expressions, or uses repeat to iterate over arrays. Without state, these references resolve to nothing and repeat lists render zero items.\nOutput state patches right after the elements that reference them, so the UI fills in progressively as it streams.\nStream state progressively - output one patch per array item instead of one giant blob:\n  For arrays: {\"op\":\"add\",\"path\":\"/state/posts/0\",\"value\":{\"id\":\"1\",\"title\":\"First Post\",...}} then /state/posts/1, /state/posts/2, etc.\n  For scalars: {\"op\":\"add\",\"path\":\"/state/newTodoText\",\"value\":\"\"}\n  Initialize the array first if needed: {\"op\":\"add\",\"path\":\"/state/posts\",\"value\":[]}\nWhen content comes from the state model, use { \"$state\": \"/some/path\" } dynamic props to display it instead of hardcoding the same value in both state and props. The state model is the single source of truth.\nInclude realistic sample data in state. For blogs: 3-4 posts with titles, excerpts, authors, dates. For product lists: 3-5 items with names, prices, descriptions. Never leave arrays empty.\n\nDYNAMIC LISTS (repeat field):\nAny element can have a top-level \"repeat\" field to render its children once per item in a state array: { \"repeat\": { \"statePath\": \"/arrayPath\", \"key\": \"id\" } }.\nThe element itself renders once (as the container), and its children are expanded once per array item. \"statePath\" is the state array path. \"key\" is an optional field name on each item for stable React keys.\nFor nested lists, an inner repeat can read an array from the enclosing item with { \"statePath\": { \"$item\": \"field\" } }. This form is valid only inside another repeat. Use an empty field to repeat over the enclosing item itself.\nExample: {\"type\":\"Stack\",\"props\":{\"gap\":\"sm\",\"padding\":\"none\"},\"repeat\":{\"statePath\":\"/todos\",\"key\":\"id\"},\"children\":[\"todo-item\"]}\nInside children of a repeated element, use { \"$item\": \"field\" } to read a field from the current item, and { \"$index\": true } to get the current array index. For two-way binding to an item field use { \"$bindItem\": \"completed\" } on the appropriate prop.\nALWAYS use the repeat field for lists backed by state arrays. NEVER hardcode individual elements for each array item.\nIMPORTANT: \"repeat\" is a top-level field on the element (sibling of type/props/children), NOT inside props.\n\nARRAY STATE ACTIONS:\nUse action \"pushState\" to append items to arrays. Params: { statePath: \"/arrayPath\", value: { ...item }, clearStatePath: \"/inputPath\" }.\nValues inside pushState can contain { \"$state\": \"/statePath\" } references to read current state (e.g. the text from an input field).\nUse \"$id\" inside a pushState value to auto-generate a unique ID.\nExample: on: { \"press\": { \"action\": \"pushState\", \"params\": { \"statePath\": \"/todos\", \"value\": { \"id\": \"$id\", \"title\": { \"$state\": \"/newTodoText\" }, \"completed\": false }, \"clearStatePath\": \"/newTodoText\" } } }\nUse action \"removeState\" to remove items from arrays by index. Params: { statePath: \"/arrayPath\", index: N }. Inside a repeated element's children, use { \"$index\": true } for the current item index. Action params support the same expressions as props: { \"$item\": \"field\" } resolves to the absolute state path, { \"$index\": true } resolves to the index number, and { \"$state\": \"/path\" } reads a value from state.\nFor lists where users can add/remove items (todos, carts, etc.), use pushState and removeState instead of hardcoding with setState.\n\nIMPORTANT: State paths use RFC 6901 JSON Pointer syntax (e.g. \"/todos/0/title\"). Do NOT use JavaScript-style dot notation (e.g. \"/todos.length\" is WRONG). To generate unique IDs for new items, use \"$id\" instead of trying to read array length.\n\nAVAILABLE COMPONENTS (18):\n\n- Stack: { gap: \"sm\" | \"md\" | \"lg\", padding: \"none\" | \"sm\" | \"md\" | \"lg\" } - Vertical layout. Nest content and other layouts; padding can create a card body. [accepts children]\n- Row: { gap: \"sm\" | \"md\" | \"lg\", align: \"start\" | \"center\" | \"between\" } - Wrapping horizontal layout for badges, metrics or actions. [accepts children]\n- Grid: { columns: \"1\" | \"2\" | \"3\", gap: \"sm\" | \"md\" | \"lg\" } - Responsive equal-width columns. Collapses on narrow screens; may be nested. [accepts children]\n- Card: { variant: \"plain\" | \"outlined\" | \"accent\", padding: \"none\" | \"sm\" | \"md\" | \"lg\", recordId?: string } - An empty visual container, not a listing template. Compose all content as children. [accepts children]\n- Divider: {  } - A quiet horizontal rule.\n- Heading: { text: string, level: \"h2\" | \"h3\" | \"h4\" } - A section or card heading.\n- Text: { content: string, tone: \"default\" | \"muted\" | \"eyebrow\" } - Plain text, with a bounded emphasis. Never HTML.\n- Image: { src: string, alt: string, aspect: \"landscape\" | \"square\" | \"wide\" } - One supplied illustrative photo. Compose galleries with Grid and multiple Images.\n- Badge: { text: string, tone: \"neutral\" | \"accent\" | \"warning\" } - A short category, constraint or status label.\n- Metric: { label: string, value: number | string | unknown, format: \"text\" | \"usd\" | \"usd/month\" | \"sqft\", emphasis: boolean } - One labeled value. Use numeric values with a format for money/area; null means unknown. Formatting is handled by React, never by templates.\n- List: {  } - A semantic list of ListItem children, e.g. amenities or nearby transit. [accepts children]\n- ListItem: {  } - One list item. Put Text, Metric or other content in its children. [accepts children]\n- Button: { label: string, variant: \"primary\" | \"secondary\" | \"ghost\", type: \"button\" | \"submit\" } - A button. Regular buttons bind on.press; a submit button submits its enclosing Form.\n- Form: { apartmentId: string, label: string } - Empty demo-request form. Generate every field and a submit Button as children. Never nest Forms. Submission collects only this form's values. [accepts children]\n- Input: { name: string, label: string, required: boolean, type: \"text\" | \"email\" | \"tel\" | \"date\" | \"number\", placeholder?: string, defaultValue?: string, min?: string, max?: string } - A labeled native input inside a Form. Dates may specify an ISO min value.\n- Select: { name: string, label: string, required: boolean, options: Array<{ value: string, label: string }>, defaultValue?: string } - A labeled native select inside a Form.\n- Checkbox: { name: string, label: string, required: boolean, defaultChecked: boolean } - A labeled checkbox inside a Form. An unchecked box is omitted from the submitted values.\n- Textarea: { name: string, label: string, required: boolean, placeholder?: string, defaultValue?: string } - A labeled multiline input inside a Form.\n\nAVAILABLE ACTIONS:\n\n- setState: Update a value in the state model at the given statePath. Params: { statePath: string, value: any } [built-in]\n- pushState: Append an item to an array in state. Params: { statePath: string, value: any, clearStatePath?: string }. Value can contain {\"$state\":\"/path\"} refs and \"$id\" for auto IDs. [built-in]\n- removeState: Remove an item from an array in state by index. Params: { statePath: string, index: number } [built-in]\n- validateForm: Validate all registered form fields and write the result to state. Params: { statePath?: string }. Defaults to /formValidation. Result: { valid: boolean, errors: Record<string, string[]> }. [built-in]\n- view_apartment: Inspect one apartment.\n- schedule_tour: Generate a demo request form for one apartment.\n- compare_apartments: Compare two or three apartments.\n- back_to_results: Return to the last search with its filters.\n- submit_tour: Called by the Form implementation with its collected values. Do not bind this to on.press.\n\nEVENTS (the `on` field):\nElements can have an optional `on` field to bind events to actions. The `on` field is a top-level field on the element (sibling of type/props/children), NOT inside props.\nEach key in `on` is an event name (from the component's supported events), and the value is an action binding: `{ \"action\": \"<actionName>\", \"params\": { ... } }`.\n\nExample:\n  {\"type\":\"Stack\",\"props\":{\"gap\":\"sm\",\"padding\":\"none\"},\"on\":{\"press\":{\"action\":\"setState\",\"params\":{\"statePath\":\"/saved\",\"value\":true}}},\"children\":[]}\n\nAction params can use dynamic references to read from state: { \"$state\": \"/statePath\" }.\nIMPORTANT: Do NOT put action/actionParams inside props. Always use the `on` field for event bindings.\n\nVISIBILITY CONDITIONS:\nElements can have an optional `visible` field to conditionally show/hide based on state. IMPORTANT: `visible` is a top-level field on the element object (sibling of type/props/children), NOT inside props.\nCorrect: {\"type\":\"Stack\",\"props\":{\"gap\":\"sm\",\"padding\":\"none\"},\"visible\":{\"$state\":\"/activeTab\",\"eq\":\"home\"},\"children\":[\"...\"]}\n- `{ \"$state\": \"/path\" }` - visible when state at path is truthy\n- `{ \"$state\": \"/path\", \"not\": true }` - visible when state at path is falsy\n- `{ \"$state\": \"/path\", \"eq\": \"value\" }` - visible when state equals value\n- `{ \"$state\": \"/path\", \"neq\": \"value\" }` - visible when state does not equal value\n- `{ \"$state\": \"/path\", \"gt\": N }` / `gte` / `lt` / `lte` - numeric comparisons\n- Use ONE operator per condition (eq, neq, gt, gte, lt, lte). Do not combine multiple operators.\n- Any condition can add `\"not\": true` to invert its result\n- `[condition, condition]` - all conditions must be true (implicit AND)\n- `{ \"$and\": [condition, condition] }` - explicit AND (use when nesting inside $or)\n- `{ \"$or\": [condition, condition] }` - at least one must be true (OR)\n- `true` / `false` - always visible/hidden\n\nUse a component with on.press bound to setState to update state and drive visibility.\nExample: A Stack with on: { \"press\": { \"action\": \"setState\", \"params\": { \"statePath\": \"/activeTab\", \"value\": \"home\" } } } sets state, then a container with visible: { \"$state\": \"/activeTab\", \"eq\": \"home\" } shows only when that tab is active.\n\nFor tab patterns where the first/default tab should be visible when no tab is selected yet, use $or to handle both cases: visible: { \"$or\": [{ \"$state\": \"/activeTab\", \"eq\": \"home\" }, { \"$state\": \"/activeTab\", \"not\": true }] }. This ensures the first tab is visible both when explicitly selected AND when /activeTab is not yet set.\n\nDYNAMIC PROPS:\nAny prop value can be a dynamic expression that resolves based on state. Three forms are supported:\n\n1. Read-only state: `{ \"$state\": \"/statePath\" }` - resolves to the value at that state path (one-way read).\n   Example: `\"color\": { \"$state\": \"/theme/primary\" }` reads the color from state.\n\n2. Two-way binding: `{ \"$bindState\": \"/statePath\" }` - resolves to the value at the state path AND enables write-back. Use on form input props (value, checked, pressed, etc.).\n   Example: `\"value\": { \"$bindState\": \"/form/email\" }` binds the input value to /form/email.\n   Inside repeat scopes: `\"checked\": { \"$bindItem\": \"completed\" }` binds to the current item's completed field.\n\n3. Conditional: `{ \"$cond\": <condition>, \"$then\": <value>, \"$else\": <value> }` - evaluates the condition (same syntax as visibility conditions) and picks the matching value.\n   Example: `\"color\": { \"$cond\": { \"$state\": \"/activeTab\", \"eq\": \"home\" }, \"$then\": \"#007AFF\", \"$else\": \"#8E8E93\" }`\n\nUse $bindState for form inputs (text fields, checkboxes, selects, sliders, etc.) and $state for read-only data display. Inside repeat scopes, use $bindItem for form inputs bound to the current item. Use dynamic props instead of duplicating elements with opposing visible conditions when only prop values differ.\n\n4. Template: `{ \"$template\": \"Hello, ${/name}!\" }` - interpolates references in the string. Absolute paths like `${/path}` resolve against the state model. Bare names like `${field}` resolve against the current repeat item first, then fall back to the state model at `/<field>`.\n   Example: `\"label\": { \"$template\": \"Items: ${/cart/count} | Total: ${/cart/total}\" }` renders \"Items: 3 | Total: 42.00\" when /cart/count is 3 and /cart/total is 42.00. Inside a repeat, `{ \"$template\": \"${name} - ${email}\" }` reads name and email from each item.\n\nSTATE WATCHERS:\nElements can have an optional `watch` field to react to state changes and trigger actions. The `watch` field is a top-level field on the element (sibling of type/props/children), NOT inside props.\nMaps state paths (JSON Pointers) to action bindings. When the value at a watched path changes, the bound actions fire automatically.\n\nExample (cascading select — country changes trigger city loading):\n  {\"type\":\"Select\",\"props\":{\"value\":{\"$bindState\":\"/form/country\"},\"options\":[\"US\",\"Canada\",\"UK\"]},\"watch\":{\"/form/country\":{\"action\":\"loadCities\",\"params\":{\"country\":{\"$state\":\"/form/country\"}}}},\"children\":[]}\n\nUse `watch` for cascading dependencies where changing one field should trigger side effects (loading data, resetting dependent fields, computing derived values).\nIMPORTANT: `watch` is a top-level field on the element (sibling of type/props/children), NOT inside props. Watchers only fire when the value changes, not on initial render.\n\nRULES:\n1. Output ONLY JSONL patches - one JSON object per line, no markdown, no code fences\n2. First set root: {\"op\":\"add\",\"path\":\"/root\",\"value\":\"<root-key>\"}\n3. Then add each element: {\"op\":\"add\",\"path\":\"/elements/<key>\",\"value\":{...}}\n4. Output /state patches right after the elements that use them, one per array item for progressive loading. REQUIRED whenever using $state, $bindState, $bindItem, $item, $index, or repeat.\n5. ONLY use components listed above\n6. Each element value needs: type, props, children (array of child keys)\n7. Use unique keys for the element map entries (e.g., 'header', 'metric-1', 'chart-revenue')\n8. CRITICAL INTEGRITY CHECK: Before outputting ANY element that references children, you MUST have already output (or will output) each child as its own element. If an element has children: ['a', 'b'], then elements 'a' and 'b' MUST exist. A missing child element causes that entire branch of the UI to be invisible.\n9. SELF-CHECK: After generating all elements, mentally walk the tree from root. Every key in every children array must resolve to a defined element. If you find a gap, output the missing element immediately.\n10. REQUIRED FIELDS: Every element MUST include a \"children\" array. Leaf elements (text, badges, inputs, images) use an empty array: \"children\": []. Omitting \"children\" fails validation.\n11. NAMED SLOTS: Use \"children\" for the default slot. For other slots declared by the component, use a top-level \"slots\" object that maps each slot name to child element keys, for example {\"slots\":{\"header\":[\"heading\"],\"footer\":[\"actions\"]}}. Never use \"slots.default\". Every referenced key must exist.\n12. FILTERED LISTS: To render only the items matching a field value (kanban columns, tabbed lists, status sections), put \"repeat\" and a \"visible\" condition with $item on the same container element: {\"repeat\": {\"statePath\": \"/tasks\", \"key\": \"id\"}, \"visible\": {\"$item\": \"status\", \"eq\": \"todo\"}} renders one child per matching item. A visible condition object must use exactly one of $state, $item, or $index — never combine them in one object.\n13. CRITICAL: The \"visible\" field goes on the ELEMENT object, NOT inside \"props\". Correct: {\"type\":\"<ComponentName>\",\"props\":{},\"visible\":{\"$state\":\"/tab\",\"eq\":\"home\"},\"children\":[...]}.\n14. CRITICAL: The \"on\" field goes on the ELEMENT object, NOT inside \"props\". Use on.press, on.change, on.submit etc. NEVER put action/actionParams inside props.\n15. When the user asks for a UI that displays data (e.g. blog posts, products, users), ALWAYS include a state field with realistic sample data. The state field is a top-level field on the spec (sibling of root/elements).\n16. When building repeating content backed by a state array (e.g. posts, products, items), use the \"repeat\" field on a container element. Example: { \"type\": \"<ContainerComponent>\", \"props\": {}, \"repeat\": { \"statePath\": \"/posts\", \"key\": \"id\" }, \"children\": [\"post-card\"] }. For a nested list stored on the enclosing item, use \"repeat\": { \"statePath\": { \"$item\": \"comments\" }, \"key\": \"id\" }. The $item statePath form is valid only inside another repeat. Replace <ContainerComponent> with an appropriate component from the AVAILABLE COMPONENTS list. Inside repeated children, use { \"$item\": \"field\" } to read a field from the current item, and { \"$index\": true } for the current array index. For two-way binding to an item field use { \"$bindItem\": \"completed\" }. Do NOT hardcode individual elements for each array item.\n17. Design with visual hierarchy: use container components to group content, heading components for section titles, proper spacing, and status indicators. ONLY use components from the AVAILABLE COMPONENTS list.\n18. For data-rich UIs, use multi-column layout components if available. For forms and single-column content, use vertical layout components. ONLY use components from the AVAILABLE COMPONENTS list.\n19. Always include realistic, professional-looking sample data. For blogs include 3-4 posts with varied titles, authors, dates, categories. For products include names, prices, images. Never leave data empty.\n20. You compose a polished apartment-finding interface from a small component catalog.\nThese application-specific rules take precedence over generic examples above.\nThe records are synthetic. Photos are illustrative, not evidence of a property's features.\n\nCOMPOSITION\n- Build every view from the listed primitives. There are no ApartmentCard, DetailView or TourForm components.\n- Use a root Stack. Nest Grid, Card, Stack and Row where useful; compose every visible field explicitly.\n- Search results: use a one-column Grid with repeat over the selected records, and compose ONE shared Card subtree. Inside the Card use a two-column Grid with gap=\"sm\": an Image and a Stack with padding=\"md\", gap=\"md\". Its content order is neighborhood Badge, h3 title, monthly-total Metric, a known-subtotal Metric and fee note visible only when the total is null, base-rent Metric, a Row of bedrooms/bathrooms/area Metrics, short description, and a Row of action Buttons. Keep all repeated cards consistent. Use h2 only for the view heading. Comparison and detail requests use their own compositions below.\n- Comparisons: use a three-column Grid of clearly identified Cards. EACH column must contain its supplied Image, title, base rent, mandatory fees, monthly total, beds, baths, area, pet rules, transit, and its own View Details and Schedule Tour Buttons. Keep the SAME sequence of criteria across columns. End the complete view with Back to Results. Unknown fees mean the total is unknown.\n- Details: compose a two-column gallery/summary area, then separate cost, lease, amenities, transit and review sections. Use multiple Images from photos. Include availability, floor/elevator and known restrictions. Reviews are synthetic.\n- Form: create a Form with its apartmentId and accessible label. Compose Heading, Input, Select, Checkbox or Textarea children according to the request. Name, email and preferred date are required by default; phone and message are optional unless the user asks otherwise. Each field needs a unique name. A Button with type=\"submit\" submits this Form; do not bind submit_tour to a button event. Do not nest Forms.\n- Confirmation: compose a Card with Heading, Text and navigation. Explicitly identify the request as a demo; no booking, contact or promised follow-up.\n- No exact matches: explain the unmet filters. Only show supplied alternatives if requested, and label the constraint each relaxes.\n\nFACTS AND ACTIONS\n- Use only supplied data. A missing value is unknown, never false or zero. Do not infer availability from a past date.\n- Display costs.monthlyTotal when known; otherwise show costs.knownMonthlySubtotal as an incomplete subtotal. Separate optional monthly fees and one-time charges. Costs exclude usage-dependent utilities.\n- Do not reinterpret \"Pets negotiable\" as confirmed permission. Show weight limits when relevant.\n- Use Button on.press for view_apartment / schedule_tour with { apartmentId }, compare_apartments with { apartmentIds }, and back_to_results with {}.\n- Every listing Card and every comparison column MUST include View Details and Schedule Tour Buttons bound to that record ID. Details/comparisons/forms MUST include a Back to Results Button. These controls are required even when the user only asks about facts. Define every referenced child, including the buttons, before finishing.\n- Respect all search filters together and preserve them when returning. Show at most 12 listings; default to 3-6 unless the user asks for more. Explain any display limit.\n- Rent is USD/month; show bedrooms, bathrooms and square footage with labels.\n- For a list, initialize /state with an object containing an apartments array of selected supplied records. Include every field read by the UI. Sort that array by the requested NUMERIC field before emitting it; \"sorted by rent\" means base rent ascending unless stated otherwise, not monthly total. Keep the original string IDs.\n- Use native repeat on the results Grid: {\"statePath\":\"/apartments\",\"key\":\"id\"}. Compose one Card subtree; its recordId uses {\"$item\":\"id\"}. This repeats YOUR generated composition, not a prebuilt card.\n- Dynamic props must be expression OBJECTS. Within repeat use {\"$item\":\"title\"}, {\"$item\":\"rent\"} and {\"$item\":\"costs/monthlyTotal\"}. Nested item paths use slashes, never dots; a leading slash reads root state in a template, not the current record.\n- Money and area use Metric with a numeric value or null plus format=\"usd/month\", \"usd\" or \"sqft\". For example: {\"label\":\"Monthly total\",\"value\":{\"$item\":\"costs/monthlyTotal\"},\"format\":\"usd/month\",\"emphasis\":true}. Base rent uses {\"$item\":\"rent\"}. React supplies currency symbols, commas and units. Do not use $template or interpolation strings for visible values. Never write field paths as display text.\n- Repeated Button action params need the record VALUE: use {\"apartmentId\":{\"$template\":\"${id}\"}}. In action params, {\"$item\":\"id\"} means a state PATH, so do not use it as an apartmentId. A literal ID is correct outside repeat.\n- A null monthly total displays Unknown. Use visible={\"$item\":\"costs/monthlyTotal\",\"eq\":null} on a separately labeled known-subtotal Metric and a Text reading \"Mandatory fees are not yet known.\" For that record show the known subtotal using costs/knownMonthlySubtotal and explain that mandatory fees are unknown. Do not invent or substitute a complete total.\n- Form inputs use native local state, not $bindState/$bindItem. Literal props are appropriate for static labels and one-off views. Empty search results have empty data; never invent sample records to satisfy a generic example.\n- Each response is a complete view. Populate the root and parent children early so content can stream.\n"
+      },
+      {
+        "role": "user",
+        "content": "Compose a listing for the supplied apartment with its photo, title, neighborhood, rent, mandatory monthly total (or incomplete subtotal), beds, baths and area. Include View Details and Schedule Tour for its ID. Use separate layout, content and action components."
+      }
+    ],
+    "stream": true,
+    "stream_options": {
+      "include_usage": true
+    }
+  },
+  "actionRequests": [],
+  "events": [
+    {
+      "ms": 8.709375000034925,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "{\"op\":\"add\",\"path\":\"/root\",\"value\":\"n0\"}\n{\"op\":\"add\",\"path\":\"/elements/n0\",\"value\":{\"type\":\"Stac"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 17.460750000027474,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "k\",\"props\":{\"padding\":\"none\"},\"children\":[\"n1\",\"n2\"]}}\n{\"op\":\"add\",\"path\":\"/elements/n1\",\"value\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 25.584542000025976,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": ":{\"type\":\"Heading\",\"props\":{\"text\":\"Apartments\",\"level\":\"h2\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n2"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 33.90741699998034,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\",\"value\":{\"type\":\"Grid\",\"props\":{\"columns\":\"1\"},\"children\":[\"n3\"]}}\n{\"op\":\"add\",\"path\":\"/elemen"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 43.37862500001211,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ts/n3\",\"value\":{\"type\":\"Card\",\"props\":{\"recordId\":\"2\"},\"children\":[\"n4\"]}}\n{\"op\":\"add\",\"path\":\"/"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 51.37916700000642,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "elements/n4\",\"value\":{\"type\":\"Grid\",\"props\":{\"columns\":\"2\",\"gap\":\"sm\"},\"children\":[\"n5\",\"n6\"]}}\n"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 59.88537500001257,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "{\"op\":\"add\",\"path\":\"/elements/n5\",\"value\":{\"type\":\"Image\",\"props\":{\"src\":\"https://images.unsplas"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 69.28583300003083,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "h.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment inte"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 77.58075000002282,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "rior\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n6\",\"value\":{\"type\":\"Stack\",\"props\":{\"padding\":\"md\"},\"chi"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 85.78491699998267,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ldren\":[\"n7\",\"n8\",\"n9\",\"n10\",\"n11\",\"n15\"]}}\n{\"op\":\"add\",\"path\":\"/elements/n7\",\"value\":{\"type\":\"B"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 94.88591700000688,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "adge\",\"props\":{\"text\":\"Midtown\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n8\",\"value\":{\"type\":\"Heading\",\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 104.2865420000162,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "props\":{\"text\":\"Modern 2BR with Skyline Views\",\"level\":\"h3\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n9\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 112.10000000003492,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": ",\"value\":{\"type\":\"Metric\",\"props\":{\"label\":\"Monthly total\",\"value\":3165,\"format\":\"usd/month\"}}}\n"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 121.44504200003576,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "{\"op\":\"add\",\"path\":\"/elements/n10\",\"value\":{\"type\":\"Metric\",\"props\":{\"label\":\"Base rent\",\"value\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 129.7189580000122,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": ":3100,\"format\":\"usd/month\"}}}\n{\"op\":\"add\",\"path\":\"/ele"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 380.64004199998453,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {},
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "cost": 0
+        }
+      }
+    }
+  ],
+  "raw": "{\"op\":\"add\",\"path\":\"/root\",\"value\":\"n0\"}\n{\"op\":\"add\",\"path\":\"/elements/n0\",\"value\":{\"type\":\"Stack\",\"props\":{\"padding\":\"none\"},\"children\":[\"n1\",\"n2\"]}}\n{\"op\":\"add\",\"path\":\"/elements/n1\",\"value\":{\"type\":\"Heading\",\"props\":{\"text\":\"Apartments\",\"level\":\"h2\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n2\",\"value\":{\"type\":\"Grid\",\"props\":{\"columns\":\"1\"},\"children\":[\"n3\"]}}\n{\"op\":\"add\",\"path\":\"/elements/n3\",\"value\":{\"type\":\"Card\",\"props\":{\"recordId\":\"2\"},\"children\":[\"n4\"]}}\n{\"op\":\"add\",\"path\":\"/elements/n4\",\"value\":{\"type\":\"Grid\",\"props\":{\"columns\":\"2\",\"gap\":\"sm\"},\"children\":[\"n5\",\"n6\"]}}\n{\"op\":\"add\",\"path\":\"/elements/n5\",\"value\":{\"type\":\"Image\",\"props\":{\"src\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n6\",\"value\":{\"type\":\"Stack\",\"props\":{\"padding\":\"md\"},\"children\":[\"n7\",\"n8\",\"n9\",\"n10\",\"n11\",\"n15\"]}}\n{\"op\":\"add\",\"path\":\"/elements/n7\",\"value\":{\"type\":\"Badge\",\"props\":{\"text\":\"Midtown\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n8\",\"value\":{\"type\":\"Heading\",\"props\":{\"text\":\"Modern 2BR with Skyline Views\",\"level\":\"h3\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n9\",\"value\":{\"type\":\"Metric\",\"props\":{\"label\":\"Monthly total\",\"value\":3165,\"format\":\"usd/month\"}}}\n{\"op\":\"add\",\"path\":\"/elements/n10\",\"value\":{\"type\":\"Metric\",\"props\":{\"label\":\"Base rent\",\"value\":3100,\"format\":\"usd/month\"}}}\n{\"op\":\"add\",\"path\":\"/ele",
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost": 0
+  },
+  "costUsd": 0,
+  "providerFinishedMs": 380.94612500001676,
+  "firstTokenMs": 8.711875000037253,
+  "servingProvider": "replay",
+  "returnedModel": "replay",
+  "promptHash": "d9a8408a40c6759f2340dc064c12c235baed9bc6b747b26db897f735389c6cf4"
+}

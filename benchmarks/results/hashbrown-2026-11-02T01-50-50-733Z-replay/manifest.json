@@ -1,0 +1,160 @@
+{
+  "runId": "hashbrown-2026-11-02T01-50-50-733Z-replay",
+  "framework": "hashbrown",
+  "mode": "replay",
+  "model": {
+    "id": "replay",
+    "providerTag": "azure/eu",
+    "providerName": "Azure",
+    "reasoning": "low",
+    "maxOutputTokens": 16000
+  },
+  "createdAt": "2026-11-02T01:50:52.362Z",
+  "sourceFiles": {
+    "hashbrown-copilotkit/src/components/ApartmentFinder.tsx": "14ab4c57d5421723742dffa32843701ee98cff4427428f56e125590361d1eaf9",
+    "hashbrown-copilotkit/src/components/FinderUI.tsx": "7d21dfe8ac63df973dd3c01cb1b6a542798224186822443adbc36275ac4d746f",
+    "hashbrown-copilotkit/src/components/Workspace.tsx": "5324c865d9e02254119658629536eb07b3f5db3f36bf225ce532b773ce36669f",
+    "hashbrown-copilotkit/src/lib/apartment-data.ts": "d4a05452011074ebdc4313ae1a192a734e1e3ffadcdf17825856cae6d57a4c9c",
+    "hashbrown-copilotkit/src/lib/catalog.ts": "ca56f79abb1f4baeda01e9d5420696a36d58c266c6562f25f01ad1609d0646a4",
+    "hashbrown-copilotkit/src/lib/components.tsx": "c42761c8b37987f273a88a5132061b2dead17cc6b1dee60f4df27d197811efe4",
+    "hashbrown-copilotkit/src/lib/format-metric.ts": "eaa7282448de68d1b68e9bce1b2e484b4444863b47e51436a7248184e79a3a63",
+    "hashbrown-copilotkit/src/lib/generation-state.ts": "50258e7bcab39bb969bb644e09a11818c1ff14b357c78e03640c753f5673cbe3",
+    "hashbrown-copilotkit/src/lib/prompts.ts": "b68d713587e1c3acdc8f42c9c1370bdfe50bf58cff71ae9393e2b9231f615024",
+    "hashbrown-copilotkit/src/lib/runtime.ts": "d4f31527273b2e69148373700d1cdfbb63696a35a7c5dc7eac8fd335cdb5a86e",
+    "hashbrown-copilotkit/src/lib/ui-instructions.ts": "3760407dc5e7a35ffcadd773d7704abd87c23a6256ebb47ffd78eccaaf4eda0f",
+    "hashbrown-copilotkit/src/routeTree.gen.ts": "14cec8ecce331d228fee8cd1d0c8e0bb286f34c6c6756c93b9e43723e946e888",
+    "hashbrown-copilotkit/src/router.tsx": "0ab41093c1dcfd0ca4bbe6b5b0884e63df1ff2270027b8b313a22d9bcb92f047",
+    "hashbrown-copilotkit/src/routes/__root.tsx": "ab5fc3b936d04a9ac6ccae665b236294684ac72ba0fba874e5ab2b9e3ba726f6",
+    "hashbrown-copilotkit/src/routes/api/apartments.ts": "b2ec63a46f20d2c5973c2e80374b973e58b20761bda4ebe7469b64b094c3298b",
+    "hashbrown-copilotkit/src/routes/api/copilotkit/$.ts": "80f8d4af1e81f6c8aeee1480a89a9a44b05adafd65b993969e32b71d23ce45e1",
+    "hashbrown-copilotkit/src/routes/canvas.tsx": "258e6f1add5a817fc767a117f21a7d051121d16e15aac551183f6d27c8995be0",
+    "hashbrown-copilotkit/src/routes/index.tsx": "ad8c945cdef6cc8e9a4c1356da376b0c6c744207b7f000b133a2402213bfe383",
+    "hashbrown-copilotkit/src/styles.css": "6adf5a17ee0c6848a4e175626a917313f1e37c8b4c969d19674b8d5916c26875",
+    "benchmarks/hashbrown/PILOT.md": "ed76cc1bec99fb66fc0e117a8b6121abcb68fefd7ec598b5d0523d077c41f6ff",
+    "benchmarks/hashbrown/README.md": "0fda27ee7e2f9ad36ebd6d82e3b7bd12eec4cdcc5e9b1387d6cd282adf7aeec7",
+    "benchmarks/hashbrown/fixtures.ts": "8b6ec0c8d4f1ff00eaceceb4f8c237e3ad2ce8d657f2e325106263506d77d021",
+    "benchmarks/hashbrown/index.html": "5ae4a526066d6c1a59d36aa349e26e7459d92a0840dddaa97762bc0cb9ddebd0",
+    "benchmarks/hashbrown/main.tsx": "6da6bd652af53f0b833d392095ec716a1b3adb7deb0f4d008d37fe6e1b3f1a4b",
+    "benchmarks/hashbrown/run.ts": "9e8550451c5868715cd041ab87f1b218fee91e78b325678c308c021dfc5580f1",
+    "benchmarks/hashbrown/validate.ts": "6d183a0f96bd8d9769b1a2b9ad4586aee28f9a0414b5edecf777bee277599157",
+    "benchmarks/hashbrown/validation.test.ts": "f85dd7c9a765c517c32164b11b955e7f410d64b932d413dd5a744b8b76a24b94",
+    "benchmarks/hashbrown/vite.config.ts": "41d87e6279f4c0d702ee859b6c65dfd98a35c3b85d79e08697255ea56effc5dc",
+    "benchmarks/common/Observer.tsx": "302e713aca4c4ef5f75f21bc3843b005c7f959b2c7194516484a92731cb149b6",
+    "benchmarks/common/Stage.tsx": "72e7ff4c81714440bb4e1566a0d9ad50e0079c19532b633067c3ece80d6e178c",
+    "benchmarks/common/action-request.ts": "0f3e7760aa89696754863ba4a6850cb1b92c1ee8279bf9b9053c836a10cc0d12",
+    "benchmarks/common/actions.ts": "f6c97d2e317fbddeb6b6df1db21a680559447c14394ccb25551e2616bc9517d6",
+    "benchmarks/common/public/benchmark-sw.js": "0edc4d4ebc052b151e20bb7c44816272cdcfac24169ff7c28fd2894d174d0cf5",
+    "benchmarks/common/public/image.svg": "eb460b19b0b33788d2f24555821901b1e201979320f12a0bff21c76e72237fb2",
+    "benchmarks/common/replay-tree.ts": "cf1fc6c400e7cbf87dad6c7ec031d8aef265c4b8b95ad740c7debbd46789bbdd",
+    "benchmarks/common/run.ts": "64fd5edc22731aefdf53b2b5fba9e6d2531ceec227caf5f30ec79f698d8618ca",
+    "benchmarks/common/six-cases.test.ts": "2255211744cf52ab73a148f6e38776c6d4345e165abfdd65f7be3d00048ae701",
+    "../hashbrown-copilotkit/pnpm-lock.yaml": "48b06554d905768250eec3df6d381c7ade8239f37c33ff56d7d15b47f7655b63",
+    "a2ui/transport.ts": "d5591feb79df8f9010658bbdcf66606eb2de1dfeb2dd77d6de2bdb18e47f1b74",
+    "pnpm-lock.yaml": "6f1f6d1550cb1320febaf02c7b55a981f321887d638b354274f3ce7357ed3744",
+    "json-render/observe.ts": "37d925241e29f7267f36785fb5c89b1e0816298f8753afb48354153fbd3d6297",
+    "json-render/budget.ts": "d94499c86cb0d783091720236e14a5ab2ddbf82492504c3bb496810c65e25f41",
+    "v4/dataset.json": "c8dd811efa99fd5573da2a55253f4023a71c4ad3a991369b442cbde63ee72961",
+    "v4/cases.json": "993e3b593bc154797fec4cbfd940e4192ab4c712c311e869c5b3d4b5427c5d41"
+  },
+  "sourceHash": "94d9a648a65227684c42b48f7a8ac0d9ba17e060b59d2c5714f994574476429f",
+  "gitCommit": "4bcdbf9591f44d6d734ddc2c90fd1205156b7f5c",
+  "fixtureRevision": 4,
+  "fixtureDirectory": "v4",
+  "viewport": [
+    1280,
+    900
+  ],
+  "clock": "2026-11-02T12:00:00Z",
+  "cache": "No response cache; provider input cache reported in usage",
+  "delivery": "96 UTF-16 characters per 8 ms plus 250 ms end hold; not model speed",
+  "images": "Photo URLs are preserved in the DOM; a benchmark-only service worker supplies one local SVG for every Unsplash request. System fonts. Photo realism and network latency are excluded.",
+  "timing": "Real browser animation frames; viewport/environment recorded per trial; observer hooks the same runAgent path as the composer",
+  "actionCoverage": "Each trial clicks all required record/navigation controls, checks captured server actions, and exercises invalid/valid form submissions. A no-generation sink isolates dispatch from subsequent view generation.",
+  "schedule": [
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C02",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C03",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C04",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "wrong-price"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "wrong-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "missing-field"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "invalid-component"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "truncated"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "dead-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C04",
+      "control": "wrong-fee"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "hallucinated-record"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "unexpected-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "missing-required"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "wrong-form-target"
+    }
+  ]
+}

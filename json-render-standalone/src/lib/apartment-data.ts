@@ -5,7 +5,14 @@
 // Server-only: better-sqlite3 is a native module. This file is consumed by
 // server route handlers and SSR-rendered system prompts; never import it from
 // browser-only client code.
-export type { Apartment } from "../../../../db/query";
-import { getAllApartments } from "../../../../db/query";
+export type { Apartment } from "../../../db/query";
+import { getAllApartments } from "../../../db/query";
+import { resolve } from "node:path";
 
-export const apartments = getAllApartments();
+// Use the app working directory, which stays stable when Nitro bundles the server.
+export const apartments = getAllApartments(
+  resolve(
+    process.cwd(),
+    process.env.APARTMENTS_DB_PATH ?? "../db/apartments.db",
+  ),
+);

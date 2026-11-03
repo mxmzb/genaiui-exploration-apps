@@ -1,2 +1,13 @@
 allowBuilds:
+  better-sqlite3: true
   esbuild: true
+minimumReleaseAgeExclude:
+  - '@ai-sdk/gateway@4.0.130'
+  - '@ai-sdk/openai@4.0.106'
+  - '@ai-sdk/provider-utils@5.0.71'
+  - ai@7.0.159
+  - nitro@3.0.261029-rc
+  - '@json-render/core@0.21.4'
+  - '@json-render/react@0.21.4'
+patchedDependencies:
+  '@json-render/react@0.21.4': patches/@json-render__react@0.21.4.patch

@@ -1,0 +1,26 @@
+{
+  "name": "generative-ui-benchmarks",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.9.1",
+  "scripts": {
+    "build:browser": "node ../json-render-standalone/node_modules/vite/bin/vite.js build --config json-render/vite.config.ts",
+    "pilot": "node --env-file-if-exists=../json-render-standalone/.env --import tsx json-render/run.ts",
+    "test": "node --import tsx --test json-render/*.test.ts a2ui/*.test.ts openui/*.test.ts hashbrown/*.test.ts common/*.test.ts",
+    "typecheck": "../json-render-standalone/node_modules/.bin/tsc -p tsconfig.json",
+    "regrade": "node --import tsx json-render/regrade.ts",
+    "a2ui": "node --env-file-if-exists=../json-render-standalone/.env --import tsx a2ui/run.ts",
+    "openui": "node --env-file-if-exists=../json-render-standalone/.env --import tsx openui/run.ts",
+    "hashbrown": "node --env-file-if-exists=../json-render-standalone/.env --import tsx hashbrown/run.ts",
+    "shared": "node --env-file-if-exists=../json-render-standalone/.env --import tsx common/run.ts"
+  },
+  "dependencies": {
+    "playwright": "1.64.1",
+    "promptfoo": "0.125.1",
+    "tsx": "4.23.15",
+    "ajv": "8.20.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

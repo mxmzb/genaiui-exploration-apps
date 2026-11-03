@@ -1,0 +1,159 @@
+{
+  "runId": "openui-2026-11-02T01-50-50-761Z-replay",
+  "framework": "openui",
+  "mode": "replay",
+  "model": {
+    "id": "replay",
+    "providerTag": "azure/eu",
+    "providerName": "Azure",
+    "reasoning": "low",
+    "maxOutputTokens": 16000
+  },
+  "createdAt": "2026-11-02T01:50:52.402Z",
+  "sourceFiles": {
+    "openui-copilotkit/src/components/ApartmentFinder.tsx": "55ebdae81d149ffe1d36062f1404cd59ddb17aaede6960861bcd2d8c14c93f28",
+    "openui-copilotkit/src/components/FinderUI.tsx": "7d21dfe8ac63df973dd3c01cb1b6a542798224186822443adbc36275ac4d746f",
+    "openui-copilotkit/src/components/Workspace.tsx": "45fa54c7fcf8e801704667fe06afc206fc0672d3b5ffe2fa2425bd605d1b6f91",
+    "openui-copilotkit/src/lib/apartment-data.ts": "d4a05452011074ebdc4313ae1a192a734e1e3ffadcdf17825856cae6d57a4c9c",
+    "openui-copilotkit/src/lib/catalog.tsx": "70acb2074061d5c9757756930b0993eff3c61e632a02fff4fcfea26328efea72",
+    "openui-copilotkit/src/lib/format-metric.ts": "eaa7282448de68d1b68e9bce1b2e484b4444863b47e51436a7248184e79a3a63",
+    "openui-copilotkit/src/lib/generation-state.ts": "50258e7bcab39bb969bb644e09a11818c1ff14b357c78e03640c753f5673cbe3",
+    "openui-copilotkit/src/lib/prompts.ts": "56d599865fb3fea0bc4a259ea390f071130ff2cf40d9b000a678386f2e2980da",
+    "openui-copilotkit/src/lib/runtime.ts": "feea7b180bfe2fafa4ae7af159735157070ffb1c4299646d9a7cad17f29a3ee2",
+    "openui-copilotkit/src/lib/ui-instructions.ts": "81f5ca5db619f8be03e704de3cf73cd14762aeccf4a2ef1c2d7f46b697ae0152",
+    "openui-copilotkit/src/routeTree.gen.ts": "2f14ea6ce5977f0c9b084be99415989014102d233de3a2150f54cd5e6c7ff9ba",
+    "openui-copilotkit/src/router.tsx": "0ab41093c1dcfd0ca4bbe6b5b0884e63df1ff2270027b8b313a22d9bcb92f047",
+    "openui-copilotkit/src/routes/__root.tsx": "0ee34d8c8ae9a3adde5e4a32ef87719bdabf28d0a62d4314227d6a0bb02c3f3c",
+    "openui-copilotkit/src/routes/api/copilotkit/$.ts": "80f8d4af1e81f6c8aeee1480a89a9a44b05adafd65b993969e32b71d23ce45e1",
+    "openui-copilotkit/src/routes/canvas.tsx": "258e6f1add5a817fc767a117f21a7d051121d16e15aac551183f6d27c8995be0",
+    "openui-copilotkit/src/routes/index.tsx": "ad8c945cdef6cc8e9a4c1356da376b0c6c744207b7f000b133a2402213bfe383",
+    "openui-copilotkit/src/styles.css": "6adf5a17ee0c6848a4e175626a917313f1e37c8b4c969d19674b8d5916c26875",
+    "benchmarks/openui/HELPERS.md": "e00a6ad7063f6682141b4fa9efe375412c6d32e2c3e0162d4d12a7d885e49818",
+    "benchmarks/openui/PILOT-2026-11-02.md": "42cd0336312f707c1df6dc05552674c1d02bfdf54025dea85ef966e7df688a09",
+    "benchmarks/openui/README.md": "57238d5700ccbcc472b1364d186c942b23f9a14847ac4031668f06109f8ad8f1",
+    "benchmarks/openui/checks.test.ts": "fde1936e3686c3f1b0dca1930b1dc15f0a0684a1fafc752f043df927a4a40c02",
+    "benchmarks/openui/fixtures.ts": "b9435a620e099d2a93b9a0d56214dd2c8c2be25ee22f1ee626030e8660f1888c",
+    "benchmarks/openui/index.html": "210c480ff35f4680e0733bf45323819811ebe15f743447f726e3263b8f3f0e34",
+    "benchmarks/openui/main.tsx": "35bc05326e2252b187e3cb434553c98424aba417130ef75a95a2d6f8b807eed8",
+    "benchmarks/openui/run.ts": "a49b46c071b942126926e10e477472638000435810bfbccfcc382feff79f1b27",
+    "benchmarks/openui/validate.ts": "737fc5fe813039d2d5860ad43fa73c446c3b62908265de881c3e3d84d5e5ceb7",
+    "benchmarks/openui/vite.config.ts": "64311cebe32142610be2923f7259a964f9830acdbe3b1eee72a90ba4f461afe1",
+    "benchmarks/common/Observer.tsx": "302e713aca4c4ef5f75f21bc3843b005c7f959b2c7194516484a92731cb149b6",
+    "benchmarks/common/Stage.tsx": "72e7ff4c81714440bb4e1566a0d9ad50e0079c19532b633067c3ece80d6e178c",
+    "benchmarks/common/action-request.ts": "0f3e7760aa89696754863ba4a6850cb1b92c1ee8279bf9b9053c836a10cc0d12",
+    "benchmarks/common/actions.ts": "f6c97d2e317fbddeb6b6df1db21a680559447c14394ccb25551e2616bc9517d6",
+    "benchmarks/common/public/benchmark-sw.js": "0edc4d4ebc052b151e20bb7c44816272cdcfac24169ff7c28fd2894d174d0cf5",
+    "benchmarks/common/public/image.svg": "eb460b19b0b33788d2f24555821901b1e201979320f12a0bff21c76e72237fb2",
+    "benchmarks/common/replay-tree.ts": "cf1fc6c400e7cbf87dad6c7ec031d8aef265c4b8b95ad740c7debbd46789bbdd",
+    "benchmarks/common/run.ts": "64fd5edc22731aefdf53b2b5fba9e6d2531ceec227caf5f30ec79f698d8618ca",
+    "benchmarks/common/six-cases.test.ts": "2255211744cf52ab73a148f6e38776c6d4345e165abfdd65f7be3d00048ae701",
+    "../openui-copilotkit/pnpm-lock.yaml": "adfd4c431744049278c68f264c9fd412610227105088d2846f42afea3aaa09b3",
+    "a2ui/transport.ts": "d5591feb79df8f9010658bbdcf66606eb2de1dfeb2dd77d6de2bdb18e47f1b74",
+    "pnpm-lock.yaml": "6f1f6d1550cb1320febaf02c7b55a981f321887d638b354274f3ce7357ed3744",
+    "json-render/observe.ts": "37d925241e29f7267f36785fb5c89b1e0816298f8753afb48354153fbd3d6297",
+    "json-render/budget.ts": "d94499c86cb0d783091720236e14a5ab2ddbf82492504c3bb496810c65e25f41",
+    "v4/dataset.json": "c8dd811efa99fd5573da2a55253f4023a71c4ad3a991369b442cbde63ee72961",
+    "v4/cases.json": "993e3b593bc154797fec4cbfd940e4192ab4c712c311e869c5b3d4b5427c5d41"
+  },
+  "sourceHash": "de8b0438e093fbb69afdf1dfc5e67f5efef9e607ee91863af4aba69959d2ddea",
+  "gitCommit": "4bcdbf9591f44d6d734ddc2c90fd1205156b7f5c",
+  "fixtureRevision": 4,
+  "fixtureDirectory": "v4",
+  "viewport": [
+    1280,
+    900
+  ],
+  "clock": "2026-11-02T12:00:00Z",
+  "cache": "No response cache; provider input cache reported in usage",
+  "delivery": "96 UTF-16 characters per 8 ms plus 250 ms end hold; not model speed",
+  "images": "Photo URLs are preserved in the DOM; a benchmark-only service worker supplies one local SVG for every Unsplash request. System fonts. Photo realism and network latency are excluded.",
+  "timing": "Real browser animation frames; viewport/environment recorded per trial; observer hooks the same runAgent path as the composer",
+  "actionCoverage": "Each trial clicks all required record/navigation controls, checks captured server actions, and exercises invalid/valid form submissions. A no-generation sink isolates dispatch from subsequent view generation.",
+  "schedule": [
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C02",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C03",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C04",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "wrong-price"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "wrong-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "missing-field"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "invalid-component"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "truncated"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "dead-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C04",
+      "control": "wrong-fee"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "hallucinated-record"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "unexpected-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "missing-required"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "wrong-form-target"
+    }
+  ]
+}

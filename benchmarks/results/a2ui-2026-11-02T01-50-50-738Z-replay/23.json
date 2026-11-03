@@ -1,0 +1,810 @@
+{
+  "id": "a2ui-2026-11-02T01-50-50-738Z-replay-23-markdown-batch-C01",
+  "variant": {
+    "transport": "markdown",
+    "generation": "batch"
+  },
+  "caseId": "C01",
+  "control": "dead-action",
+  "expectedFailure": "interaction",
+  "pass": true,
+  "automaticPass": false,
+  "verdicts": {
+    "rawFormat": {
+      "pass": true,
+      "errors": []
+    },
+    "contract": {
+      "pass": true,
+      "errors": []
+    },
+    "strategy": {
+      "pass": true,
+      "errors": []
+    },
+    "content": {
+      "pass": true,
+      "errors": []
+    },
+    "actionBindings": {
+      "pass": false,
+      "errors": [
+        "Missing/duplicate action view_apartment:2"
+      ],
+      "actual": [
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "scopeId": "2"
+        }
+      ]
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "view_apartment:2: Expected one request, received 0",
+        "view_apartment:2: Wrong action or record reached the server"
+      ],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [
+            "Expected one request, received 0",
+            "Wrong action or record reached the server"
+          ],
+          "received": []
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "64bb2b15-4ff4-4ff5-9ee1-55dfdc378bf4",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 2"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "n16",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "2"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "2"
+              },
+              "runId": "00d3f576-625f-49a9-931d-be46a4d4293e",
+              "threadId": "59250301-8f0e-4d7f-bea5-f92397130980"
+            }
+          ]
+        }
+      ],
+      "requestCount": 1
+    },
+    "runtime": {
+      "pass": true,
+      "errors": []
+    }
+  },
+  "recovery": {
+    "invalidLines": [],
+    "recovered": [],
+    "partialObject": null
+  },
+  "browser": {
+    "metrics": {
+      "timeline": [
+        {
+          "ms": 0.5,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 3
+        },
+        {
+          "ms": 2.700000047683716,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 102.70000004768372,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 111.40000009536743,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 1,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 119.30000019073486,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 2,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 136.30000019073486,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 3,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 144.5,
+          "ids": [
+            "2"
+          ],
+          "complete": 1,
+          "pending": 0,
+          "renderedFields": 5,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 436.5,
+          "ids": [
+            "2"
+          ],
+          "complete": 1,
+          "pending": 0,
+          "renderedFields": 5,
+          "enabledButtons": 2
+        }
+      ],
+      "firstMeaningfulMs": 111.40000009536743,
+      "firstCompleteCardMs": 144.5,
+      "allContentMs": 144.5,
+      "usableMs": null,
+      "runEndMs": 434
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "view_apartment:2: Expected one request, received 0",
+        "view_apartment:2: Wrong action or record reached the server"
+      ],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [
+            "Expected one request, received 0",
+            "Wrong action or record reached the server"
+          ],
+          "received": []
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "64bb2b15-4ff4-4ff5-9ee1-55dfdc378bf4",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 2"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "n16",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "2"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "2"
+              },
+              "runId": "00d3f576-625f-49a9-931d-be46a4d4293e",
+              "threadId": "59250301-8f0e-4d7f-bea5-f92397130980"
+            }
+          ]
+        }
+      ],
+      "requestCount": 1
+    },
+    "dom": {
+      "form": {
+        "errors": [],
+        "fields": []
+      },
+      "meaningful": true,
+      "ready": true,
+      "recordIds": [
+        "2"
+      ],
+      "enabledButtons": 2,
+      "errors": [],
+      "records": [
+        {
+          "id": "2",
+          "found": true,
+          "text": "Apartments\nMidtown\nModern 2BR with Skyline Views\nMonthly total\n$3,165/mo\nBase rent\n$3,100/mo\nBedrooms\n2\nBathrooms\n2\nArea\n1,100 sqft\nView Details\n↗\nSchedule Tour\n↗",
+          "metrics": [
+            {
+              "label": "Monthly total",
+              "value": "$3,165/mo"
+            },
+            {
+              "label": "Base rent",
+              "value": "$3,100/mo"
+            },
+            {
+              "label": "Bedrooms",
+              "value": "2"
+            },
+            {
+              "label": "Bathrooms",
+              "value": "2"
+            },
+            {
+              "label": "Area",
+              "value": "1,100 sqft"
+            }
+          ],
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+              "loaded": true
+            }
+          ],
+          "feeRows": []
+        }
+      ],
+      "buttons": [
+        {
+          "label": "View Details\n↗",
+          "enabled": true,
+          "scopeId": "2"
+        },
+        {
+          "label": "Schedule Tour\n↗",
+          "enabled": true,
+          "scopeId": "2"
+        }
+      ]
+    },
+    "alerts": [],
+    "html": "<fieldset class=\"surface-controls generated-ui\" aria-label=\"Apartment results\" aria-busy=\"false\"><div data-generative-ui-surface=\"apartments\"><div class=\"a2ui-surface\" data-generative-ui-root=\"results\" style=\"display: contents;\"><div class=\"ui-stack gap-md pad-none\"><h2 class=\"ui-heading\">Apartments</h2><div class=\"ui-grid cols-1 gap-md\"><section data-record-id=\"2\" class=\"ui-card outlined pad-none\"><div class=\"ui-grid cols-2 gap-sm\"><img class=\"ui-image landscape\" alt=\"Illustrative apartment interior\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&amp;h=750&amp;fit=crop\"><div class=\"ui-stack gap-md pad-md\"><span class=\"ui-badge neutral\">Midtown</span><h3 class=\"ui-heading\">Modern 2BR with Skyline Views</h3><div class=\"ui-metric \"><span>Monthly total</span><strong>$3,165/mo</strong></div><div class=\"ui-metric \"><span>Base rent</span><strong>$3,100/mo</strong></div><div class=\"ui-row gap-md align-start\"><div class=\"ui-metric \"><span>Bedrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Bathrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Area</span><strong>1,100 sqft</strong></div></div><div class=\"ui-row gap-md align-start\"><button type=\"submit\" class=\"ui-button secondary\">View Details<span aria-hidden=\"true\">↗</span></button><button type=\"button\" class=\"ui-button secondary\">Schedule Tour<span aria-hidden=\"true\">↗</span></button></div></div></div></section></div></div></div></div></fieldset>",
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        900
+      ],
+      "devicePixelRatio": 2,
+      "visibility": "visible",
+      "assets": "local-svg/system-fonts",
+      "failures": []
+    }
+  },
+  "request": {
+    "model": "replay",
+    "max_tokens": 16000,
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today: 2026-11-02.\nYou compose a polished apartment-finding interface from a small component catalog.\nThese application-specific rules take precedence over generic examples above.\nThe records are synthetic. Photos are illustrative, not evidence of a property's features.\n\nCOMPOSITION\n- Build every view from the listed primitives. There are no ApartmentCard, DetailView or TourForm components.\n- Use a root Stack with padding=\"none\" to align results with the search bar. Nest Grid, Card, Stack and Row where useful; compose every visible field explicitly.\n- Search results: use a one-column Grid with a children template over the selected records, and compose ONE shared Card subtree. Inside the Card use a two-column Grid with gap=\"sm\": an Image and a Stack with padding=\"md\", gap=\"md\". Its content order is neighborhood Badge, h3 title, monthly-total Metric, a known-subtotal Metric and fee note visible only when the total is null, base-rent Metric, a Row of bedrooms/bathrooms/area Metrics, short description, and a Row of action Buttons. Keep all repeated cards consistent. Use h2 only for the view heading. Comparison and detail requests use their own compositions below.\n- Comparisons: use a three-column Grid of clearly identified Cards. EACH column must contain its supplied Image, title, neighborhood, base rent, mandatory fees, monthly total, beds, baths, area, pet rules, transit, and its own View Details and Schedule Tour Buttons. Keep the SAME sequence of criteria across columns. End the complete view with Back to Results. Unknown fees mean the total is unknown.\n- Details: compose a two-column gallery/summary area, then separate cost, lease, amenities, transit and review sections. Use multiple Images from photos. Include availability, floor/elevator and known restrictions. Reviews are synthetic.\n- Form: create a Form with its apartmentId and accessible label. Compose Heading, Input, Select, Checkbox or Textarea children according to the request. Name, email and preferred date are required by default; phone and message are optional unless the user asks otherwise. Each field needs a unique name. A Button with type=\"submit\" submits this Form; do not bind submit_tour to a button event. Do not nest Forms.\n- Confirmation: compose a Card with Heading, Text and navigation. Explicitly identify the request as a demo; no booking, contact or promised follow-up.\n- No exact matches: explain the unmet filters. Only show supplied alternatives if requested, and label the constraint each relaxes.\n\nFACTS AND ACTIONS\n- Use only supplied data. A missing value is unknown, never false or zero. Do not infer availability from a past date.\n- Display costs.monthlyTotal when known; otherwise show costs.knownMonthlySubtotal as an incomplete subtotal. Separate optional monthly fees and one-time charges. Costs exclude usage-dependent utilities.\n- Do not reinterpret \"Pets negotiable\" as confirmed permission. Show weight limits when relevant.\n- Use Button onClick events for view_apartment / schedule_tour with { apartmentId }, compare_apartments with { apartmentIds }, and back_to_results with {}.\n- Every listing Card and every comparison column MUST include View Details and Schedule Tour Buttons bound to that record ID. Details/comparisons/forms MUST include a Back to Results Button. These controls are required even when the user only asks about facts. Define every referenced child, including the buttons, before finishing.\n- Respect all search filters together and preserve them when returning. Show at most 12 listings; default to 3-6 unless the user asks for more. Explain any display limit.\n- Rent is USD/month; show bedrooms, bathrooms and square footage with labels.\n- Money and area use Metric with a numeric value or null plus format=\"usd/month\", \"usd\" or \"sqft\". React supplies currency symbols, commas and units. Never emit interpolation strings as display values.\n- Use plain literal sentences for dates, availability, lease terms, floor/elevator summaries and other one-off descriptions. A direct @path may read a supplied string. Do not use formatString, formatDate, nested function expressions or interpolation to build display text. The only function composition needed in this app is not(required(value)) for conditional visibility below.\n- A null monthly total displays Unknown. Also show the known subtotal with a clearly visible note that mandatory fees are not yet known.\n- Form inputs use native local state; the Form's onSubmit collects only its own values. Do not generate onClick for a submit Button.\n\nA2UI 1.0\n- Render into target=\"apartments\", never chat. Follow the selected transport and update strategy below. Finish the entire requested view in one model response.\n- Use a new unique surfaceId for a different view. The page target replaces its previous surface. Use updateComponents/updateDataModel for changes within the current view.\n- Use the native children template {\"componentId\":\"listing\",\"path\":\"/apartments\"} for repeating results. Generate one Card subtree. Bind its values with {\"@path\":\"title\"}, {\"@path\":\"rent\"}, {\"@path\":\"costs/monthlyTotal\"}, and recordId with {\"@path\":\"id\"}. Relative paths read the current item; leading slashes read root data. No legacy {\"path\":...}, $item or $template.\n- Put the selected supplied records in dataModel.apartments, sorted by the requested numeric field. Include ONLY fields actually read by this view, not unused photos, reviews or lease details. Keep string IDs. The root and all parent slots must reference their children early. The selected strategy determines how to group components and data updates.\n- Bindings are JSON OBJECTS, never strings. Correct complete component: {\"id\":\"rent\",\"component\":\"Metric\",\"label\":\"Base rent\",\"value\":{\"@path\":\"rent\"},\"format\":\"usd/month\"}. Correct heading: {\"id\":\"title\",\"component\":\"Heading\",\"text\":{\"@path\":\"title\"},\"level\":\"h3\"}. The string \"{@path:title}\" is literal text and WILL NOT resolve. Do not stringify bindings, omit the quotes on their keys, or invent shorthand.\n- Put the known-subtotal Metric and unknown-fee note in a Stack with visible={\"@call\":\"not\",\"args\":{\"value\":{\"@call\":\"required\",\"args\":{\"value\":{\"@path\":\"costs/monthlyTotal\"}}}}}. These basic functions test presence: zero is known, null is unknown. Do not compare a number to null with calc. This section must be hidden for listings with a known monthly total. Do not put a warning on every listing.\n- Button onClick uses {\"event\":{\"name\":\"view_apartment\",\"userMessage\":\"Show details for this apartment\",\"context\":{\"apartmentId\":{\"@path\":\"id\"}}}} in a template. Use the analogous schedule_tour, compare_apartments or back_to_results event. Outside a template use literal IDs. No default/prewired apartment buttons exist.\n- Form onSubmit uses {\"event\":{\"name\":\"submit_tour\",\"userMessage\":\"Confirm my demo tour request\"}}. The renderer adds apartmentId and details from the form; read these from the user action. Never put invented contact details in the event.\n- Preserve the original search filters in conversation context; Back to Results returns to that search, not an unfiltered catalog.\n- Every referenced component must be defined. Do not leave placeholder bindings or blank layout slots when finished.\n\nTRANSPORT AND UPDATE STRATEGY (follow these instead of any generic streaming examples):\nWrite the COMPLETE view as newline-separated A2UI v1.0 JSON operations inside ONE markdown fence starting with ```a2ui target=apartments and ending with ```. Do not call render_ui. No prose outside the fence.\nUse exactly two operations for a new view: (1) createSurface with the selected dataModel and only the root component, referencing its children; (2) ONE updateComponents containing every remaining component. Do not split the data or components into further updates.\nFor every strategy, every referenced child and required fact must be present by the end. The strategy changes delivery, not the required result.\nDATA (the only source of listing facts; preserve any order explicitly requested by the task):\n[{\"id\":\"2\",\"title\":\"Modern 2BR with Skyline Views\",\"neighborhood\":\"Midtown\",\"rent\":3100,\"bedrooms\":2,\"bathrooms\":2,\"sqft\":1100,\"address\":\"89 Park Ave, Unit 12F\",\"description\":\"Recently renovated corner unit with panoramic skyline views from the 12th floor. Quartz countertops, stainless appliances, and a balcony off the primary bedroom. Full-service building with 24/7 concierge.\",\"imageUrl\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"availableFrom\":\"2026-12-01\",\"petPolicy\":\"Dogs and cats (under 50 lbs)\",\"amenities\":[\"Balcony\",\"Central AC\",\"Concierge\",\"Gym\",\"Parking available ($200/mo)\",\"Pool\"],\"nearbyTransit\":[\"Express bus - 2 min walk\",\"Red Line - 5 min walk\"],\"reviews\":[{\"author\":\"Chris L.\",\"rating\":5,\"text\":\"The views alone are worth it. Building management is responsive and the gym is solid.\"},{\"author\":\"Priya S.\",\"rating\":4,\"text\":\"Beautiful apartment. Concierge is very helpful. Wish parking was included.\"}],\"floor\":12,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":true,\"maxWeightLbs\":50},\"fees\":[{\"label\":\"Building services\",\"amount\":65,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":3100,\"frequency\":\"once\",\"required\":true},{\"label\":\"Optional parking\",\"amount\":200,\"frequency\":\"monthly\",\"required\":false},{\"label\":\"Pet rent if bringing a pet\",\"amount\":35,\"frequency\":\"monthly\",\"required\":false}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Express bus\",\"walkMinutes\":2},{\"name\":\"Red Line\",\"walkMinutes\":5}],\"costs\":{\"monthlyTotal\":3165,\"knownMonthlySubtotal\":3165,\"moveInTotal\":6265,\"knownMoveInSubtotal\":6265,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}}]\n## Context from the application\nGenerative UI markdown guide: how to write UI surfaces inside ```a2ui code fences in a normal markdown reply.:\nYou can show interactive UI in your reply. Write A2UI operations inside a fenced code block tagged a2ui.\n\nShow UI when it conveys the answer better than prose: to illustrate a concept (a diagram, a chart of how something changes), to compare options side by side, to let the user explore or adjust values, or to collect input. A small, focused surface next to your explanation often lands better than a long description. Reply in prose alone for a quick fact, a short answer, or conversation, and never add UI only as decoration.\n\nRULES\n- Write explanations as normal markdown prose outside the fences.\n- Open a fence with ```a2ui to show the surface in the chat, at the place of the fence.\n- Open a fence with ```a2ui target=<id> to show the surface in a named target. Use only target ids from the schema. When a target has \"components\", its surfaces can use only those components.\n- Inside a fence, write one JSON object per line and nothing else. No comments, no trailing commas, no pretty-printing.\n- Keep each operation whole on its line.\n- Give every operation \"version\":\"v1.0\".\n- Start a surface with one createSurface. Put all the initial data in \"dataModel\" and the \"root\" component in \"components\". Then write the children in updateComponents lines, so that they show while you write:\n  ```a2ui\n  {\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"plan-picker\",\"dataModel\":{ ...initial data... },\"components\":[{\"id\":\"root\",\"component\":\"<Name>\",\"children\":[\"seats\",\"pick\"]}]}}\n  {\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"plan-picker\",\"components\":[ ...the children... ]}}\n  ```\n- Keep \"dataModel\" flat: top-level keys such as \"seats\" or \"form\", never one wrapper object around everything. Check that every { and [ you open in a line is closed.\n- Every surface renders from the component with id \"root\". Make every other component reachable from \"root\" through slots.\n- Use unique ids. Do not make cycles. A component cannot be its own child.\n- Write a component as one flat object: {\"id\":\"title\",\"component\":\"<Name>\",\"text\":\"Hello\"}.\n- Put the component name in \"component\" (never \"type\"). Put props next to it, never inside a \"props\" object.\n- A component may take \"accessibility\":{\"label\":\"<1 to 3 words>\",\"description\":\"<what it does>\"} for screen readers: on the component it describes, when nothing visible names it. Not on every component, and \"live\":\"polite\" only on text that changes by itself.\n- Use only the components, props, events, and slots in the schema. A component with \"includesCommonProps\" also takes every prop in \"commonProps\".\n- Give a prop a literal value, or bind it to the data model with {\"@path\":\"/x\"}. Never write {\"path\":\"/x\"} as a binding.\n- A prop can also be a function value that updates with the data: {\"@call\":\"formatCurrency\",\"args\":{\"value\":{\"@path\":\"/total\"},\"currency\":\"EUR\"}}. Use only the functions under \"functions\" in the schema. Write a literal when the value never changes.\n- formatString interpolates ${...}: {\"@call\":\"formatString\",\"args\":{\"value\":\"${/qty} × ${formatCurrency(value: /price, currency: 'EUR')}\"}}. Inside ${...}, a path has no quotes, a string has single quotes, and a function takes named args.\n- ${...} is evaluated only in the value of formatString and in the item of series; in other strings it stays literal text. Inside formatString, ${...} does not support operators. For arithmetic use calc, with the values as named args: {\"@call\":\"calc\",\"args\":{\"expression\":\"seats * 29 * (annual ? 0.8 : 1)\",\"seats\":{\"@path\":\"/seats\"},\"annual\":{\"@path\":\"/annual\"}}}. Inside formatString: ${formatCurrency(value: calc(expression: 'seats * 29', seats: /seats), currency: 'USD')}. The UI then follows the user's input with no round trip.\n- For a computed list (chart data, template items) use series. Its description under \"functions\" in the schema gives the rules and an example. Bind the \"data\" of a Chart or the \"items\" of a List to it; a template path stays a literal path.\n- Bind a writable prop to let the user edit it: \"value\":{\"@path\":\"/form/email\"}. The user's input goes to that path.\n- To change data, write updateDataModel with a \"path\" and a \"value\": {\"version\":\"v1.0\",\"updateDataModel\":{\"surfaceId\":\"plan-picker\",\"path\":\"/seats\",\"value\":12}}. Always give \"value\".\n- Set \"value\":null to delete the key at \"path\".\n- Give an event prop an object: {\"event\":{\"name\":\"<name>\",\"userMessage\":\"<text>\",\"context\":{...}}} or {\"functionCall\":{\"@call\":\"<function>\",\"args\":{...}}}. Never a flat {\"event\":\"<name>\"}.\n- Use {\"functionCall\": ...} to open a URL when the user clicks: {\"functionCall\":{\"@call\":\"openUrl\",\"args\":{\"url\":\"https://example.com\"}}}. You are not told about the call.\n- Use {\"event\": ...} to send the interaction back to you as a user message. Put the text of that message in \"userMessage\": {\"event\":{\"name\":\"choose\",\"userMessage\":\"Show me the Team plan\"}}. \"userMessage\" is plain text: ${...} is not interpolated in it; put values in \"context\".\n- To send input values with an event, bind them in the context: \"context\":{\"email\":{\"@path\":\"/form/email\"}}.\n- A button or other event prop without an event or functionCall does nothing.\n- A prop typed componentId takes the id of another component, and a childList takes ids [\"a\",\"b\"]: \"child\":\"card\", \"children\":[\"a\",\"b\"], \"tabs\":[{\"title\":\"Specs\",\"child\":\"specs\"}].\n- To repeat a component for each item of a list, give a childList a template: \"children\":{\"componentId\":\"row\",\"path\":\"/items\"}.\n- Inside a template, paths are relative to the item (\"name\", not \"/name\").\n- Inside a template, {\"@call\":\"@index\"} gives the position of the item, from 0. To count from 1, write {\"@call\":\"@index\",\"args\":{\"offset\":1}}.\n- Updating a component replaces all of its props. Send every prop again.\n- To change a surface in this reply, write another fence with the same surfaceId. Do not send createSurface again. The surface changes where it already is. A surface in a target can also be changed from a later reply; a chat surface cannot, because the chat is a transcript: a later reply with the same surfaceId makes a new surface.\n- Use a new surfaceId for a different view. Never use a surfaceId again, also after the surface is deleted.\n- The schema lists the surfaces that already exist under \"surfaces\". \"dataModel\" holds the values that the user entered: read them, and do not write those paths. \"rejected\" lists operations that the client dropped: send corrected operations in a new fence for that surfaceId. \"status\":\"deleted\" means the surface is gone: never use its id again. \"status\":\"failed\" means its createSurface was rejected: send a corrected createSurface with that id.\n- Never make a surface that is only prose. Write headings, paragraphs, lists of text, intros, and summaries as markdown outside the fences, also between two fences.\n- Put in a fence only what markdown cannot show: charts, tables, maps, images, badges, inputs, buttons, cards with controls.\n- Use Card only for an interactive panel (controls, a form, a configurator). Put everything else in a plain layout component.\n- Never wrap the whole reply in a fence.\n\nGenerative UI component schema: the components, props, events, slots, functions, and targets that ```a2ui code fences can use, and the surfaces that already exist.:\n{\"catalogId\":\"apartment-finder@1\",\"targets\":[{\"id\":\"chat\",\"kind\":\"chat\"},{\"id\":\"apartments\",\"kind\":\"inline\",\"description\":\"The main apartment workspace. Render all search results, comparisons, details, demo tour forms and confirmations here. Replace this workspace for each request; do not create chat surfaces.\"}],\"functions\":{\"required\":{\"description\":\"Valid when the value is not empty\",\"parameters\":\"{ value: unknown }\"},\"regex\":{\"description\":\"Valid when the value matches the pattern\",\"parameters\":\"{ value: string; pattern: string }\"},\"length\":{\"description\":\"Valid when the length of the value is within min and max\",\"parameters\":\"{ value: string; min?: number; max?: number }\"},\"numeric\":{\"description\":\"Valid when the value is a number within min and max\",\"parameters\":\"{ value: number; min?: number; max?: number }\"},\"email\":{\"description\":\"Valid when the value is an email address\",\"parameters\":\"{ value: string }\"},\"formatString\":{\"description\":\"Interpolates ${/path}, ${relative/path} and ${fn(arg: value)} in the value; \\\\${ is a literal\",\"parameters\":\"{ value: string }\"},\"formatNumber\":{\"description\":\"The number in the locale of the user\",\"parameters\":\"{ value: number; decimals?: number; grouping?: boolean }\"},\"formatCurrency\":{\"description\":\"The amount as money, with an ISO 4217 currency code\",\"parameters\":\"{ value: number; currency: string; decimals?: number; grouping?: boolean }\"},\"formatDate\":{\"description\":\"A date or ISO string in a TR35 pattern, for example \\\"MMM d, yyyy\\\" or \\\"HH:mm\\\"\",\"parameters\":\"{ value: string | number; format: string }\"},\"pluralize\":{\"description\":\"The string of the plural category of the value\",\"parameters\":\"{ value: number; zero?: string; one?: string; two?: string; few?: string; many?: string; other: string }\"},\"openUrl\":{\"description\":\"Opens an http(s) URL in a new tab. Only from an event\",\"parameters\":\"{ url: string }\"},\"and\":{\"description\":\"True when every value is true\",\"parameters\":\"{ values: boolean[] }\"},\"or\":{\"description\":\"True when any value is true\",\"parameters\":\"{ values: boolean[] }\"},\"not\":{\"description\":\"The negated value\",\"parameters\":\"{ value: boolean }\"},\"calc\":{\"description\":\"The value of an arithmetic expression over the other args, by name: + - * / % ( ), comparisons, && || !, cond ? a : b, min max round floor ceil abs, 'text' + name\",\"parameters\":\"{ expression: string; [name: string]: number | string | boolean }\"},\"series\":{\"description\":\"A list of count copies of item, for chart data and template lists. Put arithmetic in ${expression} strings in item, using the loop variable (default i, counting from start, default 1) and other named args. A whole-expression string retains the result type, so \\\"${i * monthlyCost}\\\" yields a number. Arguments, including nested calc or formatString calls in item, resolve before the series loop; those calls cannot use the loop variable. Example: {\\\"@call\\\":\\\"series\\\",\\\"args\\\":{\\\"count\\\":6,\\\"item\\\":{\\\"month\\\":\\\"${i}\\\",\\\"cost\\\":\\\"${i * monthlyCost}\\\"},\\\"monthlyCost\\\":{\\\"@path\\\":\\\"/monthlyCost\\\"}}}. Omit variable to use i.\",\"parameters\":\"{ count: number; item: unknown; variable?: string; start?: number; [name: string]: unknown }\"}},\"components\":{\"Stack\":{\"description\":\"Vertical layout. Nest content and other layouts; padding can create a card body.\",\"props\":{\"gap?\":\"\\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"padding?\":\"\\\"none\\\" | \\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"visible?\":\"boolean // Conditional content. Bind a boolean or a basic function result.\"},\"slots\":{\"children\":\"multiple\"}},\"Row\":{\"description\":\"Wrapping horizontal layout for badges, metrics or actions.\",\"props\":{\"gap?\":\"\\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"align?\":\"\\\"start\\\" | \\\"center\\\" | \\\"between\\\"\"},\"slots\":{\"children\":\"multiple\"}},\"Grid\":{\"description\":\"Responsive equal-width columns. Collapses on narrow screens; may be nested.\",\"props\":{\"columns?\":\"\\\"1\\\" | \\\"2\\\" | \\\"3\\\"\",\"gap?\":\"\\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\"},\"slots\":{\"children\":\"multiple\"}},\"Card\":{\"description\":\"An empty visual container, not a listing template. Compose all content as children.\",\"props\":{\"variant?\":\"\\\"plain\\\" | \\\"outlined\\\" | \\\"accent\\\"\",\"padding?\":\"\\\"none\\\" | \\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"recordId?\":\"string // ID of the record this container represents, if any\"},\"slots\":{\"children\":\"multiple\"}},\"Divider\":{\"description\":\"A quiet horizontal rule.\",\"props\":{}},\"Heading\":{\"description\":\"A section or card heading.\",\"props\":{\"text?\":\"string // May be pending during streaming; required in the finished view\",\"level?\":\"\\\"h2\\\" | \\\"h3\\\" | \\\"h4\\\"\"}},\"Text\":{\"description\":\"Plain text, with a bounded emphasis. Never HTML.\",\"props\":{\"content?\":\"string // May be pending during streaming; required in the finished view\",\"tone?\":\"\\\"default\\\" | \\\"muted\\\" | \\\"eyebrow\\\"\"}},\"Image\":{\"description\":\"One supplied illustrative photo. Compose galleries with Grid and multiple Images.\",\"props\":{\"src?\":\"string // May be pending during streaming; use a supplied photo URL\",\"alt\":\"string\",\"aspect?\":\"\\\"landscape\\\" | \\\"square\\\" | \\\"wide\\\"\"}},\"Badge\":{\"description\":\"A short category, constraint or status label.\",\"props\":{\"text?\":\"string\",\"tone?\":\"\\\"neutral\\\" | \\\"accent\\\" | \\\"warning\\\"\"}},\"Metric\":{\"description\":\"One labeled value. Use numeric values with a format for money/area; null means unknown. Formatting is handled by React, never by templates.\",\"props\":{\"label\":\"string\",\"value?\":\"number | string | null // Undefined is still arriving; null is a genuinely unknown fact. Supply by the end.\",\"format?\":\"\\\"text\\\" | \\\"usd\\\" | \\\"usd/month\\\" | \\\"sqft\\\"\",\"emphasis?\":\"boolean\"}},\"List\":{\"description\":\"A semantic list of ListItem children, e.g. amenities or nearby transit.\",\"props\":{},\"slots\":{\"children\":\"multiple\"}},\"ListItem\":{\"description\":\"One list item. Put Text, Metric or other content in its children.\",\"props\":{},\"slots\":{\"children\":\"multiple\"}},\"Button\":{\"description\":\"A button. Regular buttons bind onClick; a submit button submits its enclosing Form.\",\"props\":{\"label\":\"string\",\"variant?\":\"\\\"primary\\\" | \\\"secondary\\\" | \\\"ghost\\\"\",\"type?\":\"\\\"button\\\" | \\\"submit\\\"\"},\"events\":{\"onClick\":\"Navigate to details, a tour form, a comparison or the previous search.\"}},\"Form\":{\"description\":\"Empty demo-request form. Generate every field and a submit Button as children. Never nest Forms. Submission collects only this form's values.\",\"props\":{\"apartmentId\":\"string\",\"label\":\"string // Accessible form name\"},\"events\":{\"onSubmit\":\"Collect this demo request. No booking or message is sent.\"},\"slots\":{\"children\":\"multiple\"}},\"Input\":{\"description\":\"A labeled native input inside a Form. Dates may specify an ISO min value.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"type?\":\"\\\"text\\\" | \\\"email\\\" | \\\"tel\\\" | \\\"date\\\" | \\\"number\\\"\",\"placeholder?\":\"string\",\"defaultValue?\":\"string\",\"min?\":\"string\",\"max?\":\"string\"}},\"Select\":{\"description\":\"A labeled native select inside a Form.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"options\":\"{ value: string; label: string }[]\",\"defaultValue?\":\"string\"}},\"Checkbox\":{\"description\":\"A labeled checkbox inside a Form. An unchecked box is omitted from the submitted values.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"defaultChecked?\":\"boolean\"}},\"Textarea\":{\"description\":\"A labeled multiline input inside a Form.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"placeholder?\":\"string\",\"defaultValue?\":\"string\"}}},\"surfaces\":{}}\n"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Compose a listing for the supplied apartment with its photo, title, neighborhood, rent, mandatory monthly total (or incomplete subtotal), beds, baths and area. Include View Details and Schedule Tour for its ID. Use separate layout, content and action components."
+      }
+    ],
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "zdr": true,
+      "allow_fallbacks": false,
+      "only": [
+        "azure/eu"
+      ]
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateSnapshot",
+          "description": "Replace the entire application state with a new snapshot",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "snapshot": {
+                "description": "The complete new state object"
+              }
+            },
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateDelta",
+          "description": "Apply incremental updates to application state using JSON Patch operations",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "add",
+                        "replace",
+                        "remove"
+                      ],
+                      "description": "The operation to perform"
+                    },
+                    "path": {
+                      "type": "string",
+                      "description": "JSON Pointer path (e.g., '/foo/bar')"
+                    },
+                    "value": {
+                      "description": "The value to set. Required for 'add' and 'replace' operations, ignored for 'remove'."
+                    }
+                  },
+                  "required": [
+                    "op",
+                    "path"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Array of JSON Patch operations"
+              }
+            },
+            "required": [
+              "delta"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "stream": true
+  },
+  "actionRequests": [
+    {
+      "message": {
+        "id": "64bb2b15-4ff4-4ff5-9ee1-55dfdc378bf4",
+        "role": "user",
+        "content": "Schedule Tour\n\napartmentId: 2"
+      },
+      "envelope": {
+        "name": "schedule_tour",
+        "surfaceId": "results",
+        "sourceComponentId": "n16",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "2"
+        }
+      },
+      "action": {
+        "name": "schedule_tour",
+        "apartmentId": "2"
+      },
+      "runId": "00d3f576-625f-49a9-931d-be46a4d4293e",
+      "threadId": "59250301-8f0e-4d7f-bea5-f92397130980"
+    }
+  ],
+  "events": [
+    {
+      "ms": 8.777791999978945,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "```a2ui target=apartments\n{\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"results\",\"catalogId\":\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 18.260874999978114,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "apartment-finder@1\",\"components\":[{\"id\":\"root\",\"component\":\"Stack\",\"padding\":\"none\",\"children\":["
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 26.570667000021785,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\"n0\",\"n1\"]}],\"dataModel\":{}}}\n{\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"results\",\"compo"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 36.015625,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "nents\":[{\"id\":\"n0\",\"component\":\"Heading\",\"text\":\"Apartments\",\"level\":\"h2\"},{\"id\":\"n1\",\"component"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 44.59462500002701,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\":\"Grid\",\"columns\":\"1\",\"children\":[\"n2\"]},{\"id\":\"n2\",\"component\":\"Card\",\"recordId\":\"2\",\"children"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 53.03212500002701,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\":[\"n3\"]},{\"id\":\"n3\",\"component\":\"Grid\",\"columns\":\"2\",\"gap\":\"sm\",\"children\":[\"n4\",\"n5\"]},{\"id\":\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 61.478166999993846,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "n4\",\"component\":\"Image\",\"src\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=10"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 70.8857919999864,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "00&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\"},{\"id\":\"n5\",\"component\":\"Stack\",\"padd"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 79.50699999998324,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ing\":\"md\",\"children\":[\"n6\",\"n7\",\"n8\",\"n9\",\"n10\",\"n14\"]},{\"id\":\"n6\",\"component\":\"Badge\",\"text\":\"M"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 88.40154200000688,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "idtown\"},{\"id\":\"n7\",\"component\":\"Heading\",\"text\":\"Modern 2BR with Skyline Views\",\"level\":\"h3\"},{"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 96.69020900002215,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\"id\":\"n8\",\"component\":\"Metric\",\"label\":\"Monthly total\",\"value\":3165,\"format\":\"usd/month\"},{\"id\":"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 106.34708400000818,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\"n9\",\"component\":\"Metric\",\"label\":\"Base rent\",\"value\":3100,\"format\":\"usd/month\"},{\"id\":\"n10\",\"co"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 114.95524999999907,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "mponent\":\"Row\",\"children\":[\"n11\",\"n12\",\"n13\"]},{\"id\":\"n11\",\"component\":\"Metric\",\"label\":\"Bedroom"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 123.64808399998583,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "s\",\"value\":2,\"format\":\"text\"},{\"id\":\"n12\",\"component\":\"Metric\",\"label\":\"Bathrooms\",\"value\":2,\"fo"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 132.57650000002468,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "rmat\":\"text\"},{\"id\":\"n13\",\"component\":\"Metric\",\"label\":\"Area\",\"value\":1100,\"format\":\"sqft\"},{\"id"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 141.45804200001294,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\":\"n14\",\"component\":\"Row\",\"children\":[\"n15\",\"n16\"]},{\"id\":\"n15\",\"component\":\"Button\",\"label\":\"Vi"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 150.93216700002085,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ew Details\",\"variant\":\"secondary\",\"type\":\"submit\",\"onClick\":{\"event\":{\"name\":\"view_apartment\",\"c"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 158.71433400001843,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ontext\":{\"apartmentId\":\"2\"}}}},{\"id\":\"n16\",\"component\":\"Button\",\"label\":\"Schedule Tour\",\"variant"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 168.40974999999162,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\":\"secondary\",\"type\":\"button\",\"onClick\":{\"event\":{\"name\":\"schedule_tour\",\"context\":{\"apartmentId"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 176.43383400002494,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\":\"2\"}}}}]}}\n```"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 426.70041699998546,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {},
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "cost": 0
+        }
+      }
+    }
+  ],
+  "raw": "```a2ui target=apartments\n{\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"results\",\"catalogId\":\"apartment-finder@1\",\"components\":[{\"id\":\"root\",\"component\":\"Stack\",\"padding\":\"none\",\"children\":[\"n0\",\"n1\"]}],\"dataModel\":{}}}\n{\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"results\",\"components\":[{\"id\":\"n0\",\"component\":\"Heading\",\"text\":\"Apartments\",\"level\":\"h2\"},{\"id\":\"n1\",\"component\":\"Grid\",\"columns\":\"1\",\"children\":[\"n2\"]},{\"id\":\"n2\",\"component\":\"Card\",\"recordId\":\"2\",\"children\":[\"n3\"]},{\"id\":\"n3\",\"component\":\"Grid\",\"columns\":\"2\",\"gap\":\"sm\",\"children\":[\"n4\",\"n5\"]},{\"id\":\"n4\",\"component\":\"Image\",\"src\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\"},{\"id\":\"n5\",\"component\":\"Stack\",\"padding\":\"md\",\"children\":[\"n6\",\"n7\",\"n8\",\"n9\",\"n10\",\"n14\"]},{\"id\":\"n6\",\"component\":\"Badge\",\"text\":\"Midtown\"},{\"id\":\"n7\",\"component\":\"Heading\",\"text\":\"Modern 2BR with Skyline Views\",\"level\":\"h3\"},{\"id\":\"n8\",\"component\":\"Metric\",\"label\":\"Monthly total\",\"value\":3165,\"format\":\"usd/month\"},{\"id\":\"n9\",\"component\":\"Metric\",\"label\":\"Base rent\",\"value\":3100,\"format\":\"usd/month\"},{\"id\":\"n10\",\"component\":\"Row\",\"children\":[\"n11\",\"n12\",\"n13\"]},{\"id\":\"n11\",\"component\":\"Metric\",\"label\":\"Bedrooms\",\"value\":2,\"format\":\"text\"},{\"id\":\"n12\",\"component\":\"Metric\",\"label\":\"Bathrooms\",\"value\":2,\"format\":\"text\"},{\"id\":\"n13\",\"component\":\"Metric\",\"label\":\"Area\",\"value\":1100,\"format\":\"sqft\"},{\"id\":\"n14\",\"component\":\"Row\",\"children\":[\"n15\",\"n16\"]},{\"id\":\"n15\",\"component\":\"Button\",\"label\":\"View Details\",\"variant\":\"secondary\",\"type\":\"submit\",\"onClick\":{\"event\":{\"name\":\"view_apartment\",\"context\":{\"apartmentId\":\"2\"}}}},{\"id\":\"n16\",\"component\":\"Button\",\"label\":\"Schedule Tour\",\"variant\":\"secondary\",\"type\":\"button\",\"onClick\":{\"event\":{\"name\":\"schedule_tour\",\"context\":{\"apartmentId\":\"2\"}}}}]}}\n```",
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost": 0
+  },
+  "costUsd": 0,
+  "providerFinishedMs": 426.8645419999957,
+  "firstTokenMs": 8.779209000000264,
+  "servingProvider": "replay",
+  "returnedModel": "replay",
+  "promptHash": "3fc6efd46a1af90f762da20a2360fde0986f183df941625dd6c0b77d7933508c"
+}

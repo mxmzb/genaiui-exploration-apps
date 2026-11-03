@@ -1,0 +1,367 @@
+{
+  "version": 4,
+  "status": "six_case_explicit_contract",
+  "dataset": "dataset.json",
+  "dataset_sha256": "c8dd811efa99fd5573da2a55253f4023a71c4ad3a991369b442cbde63ee72961",
+  "clock": "2026-11-02T12:00:00Z",
+  "max_rendered_records": 12,
+  "component_policy": {
+    "granular_catalog_required": true,
+    "allow_equivalent_layouts": true,
+    "excluded_components": [
+      "ApartmentCard",
+      "ApartmentList",
+      "DetailView",
+      "TourForm",
+      "Confirmation"
+    ]
+  },
+  "generation": [
+    {
+      "id": "C01",
+      "prompt": "Compose a listing for the supplied apartment with its photo, title, neighborhood, rent, mandatory monthly total (or incomplete subtotal), beds, baths and area. Include View Details and Schedule Tour for its ID. Use separate layout, content and action components.",
+      "input_ids": [
+        "2"
+      ],
+      "expected": {
+        "view": "list",
+        "listing_ids": [
+          "2"
+        ],
+        "ordered": true,
+        "fields": [
+          "id",
+          "title",
+          "neighborhood",
+          "imageUrl",
+          "rent",
+          "bedrooms",
+          "bathrooms",
+          "sqft",
+          "costs"
+        ],
+        "actions": [
+          "view_apartment",
+          "schedule_tour"
+        ],
+        "no_extra_listings": true
+      }
+    },
+    {
+      "id": "C02",
+      "prompt": "Compare the three supplied apartments in the supplied order, using the same criteria for each: photo, title and neighborhood, base rent, mandatory monthly fees and total, beds, baths, area, pets and transit. Include View Details and Schedule Tour for each apartment and Back to Results. Do not count optional fees as mandatory.",
+      "input_ids": [
+        "2",
+        "7",
+        "13"
+      ],
+      "expected": {
+        "view": "comparison",
+        "listing_ids": [
+          "2",
+          "7",
+          "13"
+        ],
+        "ordered": true,
+        "fields": [
+          "id",
+          "title",
+          "neighborhood",
+          "imageUrl",
+          "rent",
+          "bedrooms",
+          "bathrooms",
+          "sqft",
+          "costs",
+          "fees",
+          "petRules",
+          "petPolicy",
+          "transit"
+        ],
+        "actions": [
+          "view_apartment",
+          "schedule_tour",
+          "back_to_results"
+        ],
+        "no_extra_listings": true
+      }
+    },
+    {
+      "id": "C03",
+      "prompt": "Compose results for all twelve supplied apartments in their supplied order. Include each photo, title and neighborhood, rent, mandatory monthly total (or incomplete subtotal), beds, baths, area and per-record View Details / Schedule Tour actions. Do not silently omit records.",
+      "input_ids": [
+        "3",
+        "15",
+        "32",
+        "12",
+        "8",
+        "27",
+        "10",
+        "22",
+        "1",
+        "30",
+        "20",
+        "6"
+      ],
+      "expected": {
+        "view": "list",
+        "listing_ids": [
+          "3",
+          "15",
+          "32",
+          "12",
+          "8",
+          "27",
+          "10",
+          "22",
+          "1",
+          "30",
+          "20",
+          "6"
+        ],
+        "ordered": true,
+        "fields": [
+          "id",
+          "title",
+          "neighborhood",
+          "imageUrl",
+          "rent",
+          "bedrooms",
+          "bathrooms",
+          "sqft",
+          "costs"
+        ],
+        "actions": [
+          "view_apartment",
+          "schedule_tour"
+        ],
+        "no_extra_listings": true
+      },
+      "selection": {
+        "sort": "rent_asc",
+        "limit": 12
+      }
+    },
+    {
+      "id": "C04",
+      "prompt": "Compose a rich detail view for the supplied apartment: three illustrative photos, title and neighborhood, summary, bedrooms, bathrooms, area, base rent, each required and optional fee, known monthly/move-in totals, availability, lease terms, floor/elevator, amenities, transit and reviews. Mark unknown values honestly. Include Schedule Tour and Back to Results.",
+      "input_ids": [
+        "2"
+      ],
+      "expected": {
+        "view": "detail",
+        "listing_ids": [
+          "2"
+        ],
+        "ordered": false,
+        "fields": [
+          "id",
+          "title",
+          "neighborhood",
+          "imageUrl",
+          "rent",
+          "bedrooms",
+          "bathrooms",
+          "sqft",
+          "costs",
+          "photos",
+          "fees",
+          "availableFrom",
+          "leaseMonths",
+          "floor",
+          "elevator",
+          "amenities",
+          "transit",
+          "reviews"
+        ],
+        "actions": [
+          "schedule_tour",
+          "back_to_results"
+        ],
+        "no_extra_listings": true
+      }
+    },
+    {
+      "id": "C05",
+      "prompt": "The search for apartments with base rent strictly below $1,000 returned no records. Explain the unmet budget constraint and suggest relaxing it. Do not invent listings, availability or a tour action. Compose an appropriate empty view.",
+      "input_ids": [],
+      "expected": {
+        "view": "empty",
+        "listing_ids": [],
+        "ordered": false,
+        "fields": [],
+        "actions": [],
+        "no_extra_listings": true
+      },
+      "selection": {
+        "rent_lt": 1000,
+        "sort": "rent_asc"
+      }
+    },
+    {
+      "id": "C06",
+      "prompt": "Compose a demo tour form for the supplied apartment. Required: name, email, preferred date, phone and tour format (in person or video). Optional: message and a checkbox for discussing a pet. Include a native Submit Demo Request button and Back to Results. Generate the individual fields; do not use a prebuilt form. Identify the apartment by its supplied title. Use these field names: name, email, date, phone, tourType, message, bringPet; tourType option values must be in-person and video. Preferred dates must be on or after 2026-11-02.",
+      "input_ids": [
+        "7"
+      ],
+      "expected": {
+        "view": "form",
+        "listing_ids": [
+          "7"
+        ],
+        "ordered": false,
+        "fields": [
+          "id",
+          "title"
+        ],
+        "actions": [
+          "submit_tour",
+          "back_to_results"
+        ],
+        "no_extra_listings": true,
+        "form": {
+          "required": [
+            "name",
+            "email",
+            "date",
+            "phone",
+            "tourType"
+          ],
+          "optional": [
+            "message",
+            "bringPet"
+          ],
+          "email_type": "email",
+          "date_type": "date",
+          "select_options": {
+            "tourType": [
+              "in-person",
+              "video"
+            ]
+          },
+          "checkboxes": [
+            "bringPet"
+          ],
+          "scope": "current_form"
+        }
+      }
+    }
+  ],
+  "journeys": [
+    {
+      "id": "CJ01",
+      "name": "Search, refine, inspect, return",
+      "steps": [
+        {
+          "kind": "send",
+          "text": "Show all apartments with exactly two bedrooms and base rent strictly below $4,000, sorted by base rent.",
+          "selection": {
+            "bedrooms_eq": 2,
+            "rent_lt": 4000,
+            "sort": "rent_asc"
+          },
+          "expected_ids": [
+            "18",
+            "21",
+            "7",
+            "13",
+            "26",
+            "23",
+            "2",
+            "29",
+            "33",
+            "11",
+            "36",
+            "31"
+          ]
+        },
+        {
+          "kind": "send",
+          "text": "Keep the two-bedroom requirement, but reduce the base-rent budget to strictly below $3,000.",
+          "selection": {
+            "bedrooms_eq": 2,
+            "rent_lt": 3000,
+            "sort": "rent_asc"
+          },
+          "expected_ids": [
+            "18",
+            "21",
+            "7",
+            "13"
+          ]
+        },
+        {
+          "kind": "click_action",
+          "action": "view_apartment",
+          "apartment_id": "7",
+          "expected_ids": [
+            "7"
+          ],
+          "expected_view": "detail"
+        },
+        {
+          "kind": "click_action",
+          "action": "back_to_results",
+          "selection": {
+            "bedrooms_eq": 2,
+            "rent_lt": 3000,
+            "sort": "rent_asc"
+          },
+          "expected_ids": [
+            "18",
+            "21",
+            "7",
+            "13"
+          ],
+          "expected_view": "list"
+        }
+      ]
+    },
+    {
+      "id": "CJ02",
+      "name": "Generated form validation and scoped submission",
+      "steps": [
+        {
+          "kind": "send",
+          "text": "Show apartment 7.",
+          "expected_ids": [
+            "7"
+          ],
+          "expected_view": "list"
+        },
+        {
+          "kind": "send",
+          "text": "Open a demo tour request for apartment 7. Require name, email, date, phone and a tour format choice of in-person or video.",
+          "expected_ids": [
+            "7"
+          ],
+          "expected_view": "form"
+        },
+        {
+          "kind": "submit_invalid",
+          "action": "submit_tour",
+          "fields": {},
+          "expected_new_model_calls": 0,
+          "expected_view": "form"
+        },
+        {
+          "kind": "submit_valid",
+          "action": "submit_tour",
+          "fields": {
+            "name": "Benchmark Reader",
+            "email": "reader@example.com",
+            "date": "2026-11-14",
+            "phone": "555-0107",
+            "tourType": "video"
+          },
+          "expected_apartment_id": "7",
+          "expected_view": "confirmation",
+          "rubric": [
+            "Explicitly demo, with no real booking/contact/follow-up claim.",
+            "Preserves supplied apartment and submitted fields."
+          ]
+        }
+      ]
+    }
+  ]
+}

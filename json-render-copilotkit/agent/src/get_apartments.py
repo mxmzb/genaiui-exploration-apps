@@ -1,138 +1,28 @@
-# #region genui - Apartment data tool: queries the shared SQLite database at db/apartments.db
+# #region genui - Query the same enriched records as the standalone application.
 from __future__ import annotations
-
+import json
 import sqlite3
 from pathlib import Path
-
 from langchain.tools import tool
 
 _DB_PATH = Path(__file__).resolve().parents[3] / "db" / "apartments.db"
 
 
-def _format_rent(rent: int) -> str:
-    return f"${rent:,}/mo"
-
-
-def _format_available(available_from: str) -> str:
-    try:
-        year, month, _ = available_from.split("-")
-        month_names = [
-            "January", "February", "March", "April", "May", "June",
-            "July", "August", "September", "October", "November", "December",
-        ]
-        return f"{month_names[int(month) - 1]} {year}"
-    except (ValueError, IndexError):
-        return available_from
-
-
-def _load_apartments(
-    neighborhood: str | None = None,
-    min_bedrooms: int | None = None,
-    max_bedrooms: int | None = None,
-    max_rent: int | None = None,
-    pet_friendly: bool | None = None,
-) -> list[dict]:
-    conn = sqlite3.connect(f"file:{_DB_PATH}?mode=ro", uri=True)
-    conn.row_factory = sqlite3.Row
-    try:
-        clauses: list[str] = []
-        params: list[object] = []
-
-        if neighborhood:
-            clauses.append("LOWER(neighborhood) LIKE ?")
-            params.append(f"%{neighborhood.lower()}%")
-        if min_bedrooms is not None:
-            clauses.append("bedrooms >= ?")
-            params.append(min_bedrooms)
-        if max_bedrooms is not None:
-            clauses.append("bedrooms <= ?")
-            params.append(max_bedrooms)
-        if max_rent is not None:
-            clauses.append("rent <= ?")
-            params.append(max_rent)
-        if pet_friendly:
-            clauses.append("LOWER(pet_policy) != 'no pets'")
-
-        where = f"WHERE {' AND '.join(clauses)}" if clauses else ""
-        rows = conn.execute(
-            f"""
-            SELECT id, title, neighborhood, rent, bedrooms, bathrooms, sqft,
-                   description, image_url, available_from, pet_policy
-            FROM apartments
-            {where}
-            ORDER BY id
-            """,
-            params,
-        ).fetchall()
-
-        if not rows:
-            return []
-
-        ids = [row["id"] for row in rows]
-        placeholders = ",".join("?" for _ in ids)
-
-        amenity_rows = conn.execute(
-            f"SELECT apartment_id, amenity FROM apartment_amenities WHERE apartment_id IN ({placeholders})",
-            ids,
-        ).fetchall()
-        transit_rows = conn.execute(
-            f"SELECT apartment_id, transit FROM apartment_transit WHERE apartment_id IN ({placeholders})",
-            ids,
-        ).fetchall()
-
-        amenities_by_apt: dict[str, list[str]] = {}
-        for row in amenity_rows:
-            amenities_by_apt.setdefault(row["apartment_id"], []).append(row["amenity"])
-
-        transit_by_apt: dict[str, list[str]] = {}
-        for row in transit_rows:
-            transit_by_apt.setdefault(row["apartment_id"], []).append(row["transit"])
-
-        review_rows = conn.execute(
-            f"SELECT apartment_id, author, rating, text FROM reviews WHERE apartment_id IN ({placeholders})",
-            ids,
-        ).fetchall()
-
-        reviews_by_apt: dict[str, list[dict]] = {}
-        for row in review_rows:
-            reviews_by_apt.setdefault(row["apartment_id"], []).append({
-                "author": row["author"],
-                "rating": row["rating"],
-                "text": row["text"],
-            })
-
-        return [
-            {
-                "id": row["id"],
-                "title": row["title"],
-                "neighborhood": row["neighborhood"],
-                "rent": row["rent"],
-                "rentFormatted": _format_rent(row["rent"]),
-                "bedrooms": row["bedrooms"],
-                "bedroomsLabel": "Studio" if row["bedrooms"] == 0 else f"{row['bedrooms']} bed",
-                "bathrooms": row["bathrooms"],
-                "sqft": row["sqft"],
-                "description": row["description"],
-                "imageUrl": row["image_url"],
-                "petPolicy": row["pet_policy"],
-                "availableFrom": _format_available(row["available_from"]),
-                "amenities": amenities_by_apt.get(row["id"], []),
-                "nearbyTransit": [
-                    _parse_transit(t) for t in transit_by_apt.get(row["id"], [])
-                ],
-                "reviews": reviews_by_apt.get(row["id"], []),
-            }
-            for row in rows
-        ]
-    finally:
-        conn.close()
-
-
-def _parse_transit(t: str) -> dict:
-    match = t.split(" - ", 1)
-    if len(match) == 2:
-        return {"type": "transit", "name": match[0].strip(), "distance": match[1].strip()}
-    return {"type": "transit", "name": t, "distance": ""}
+def _load_apartments(neighborhood=None, min_bedrooms=None, max_bedrooms=None,
+                     max_rent=None, pet_friendly=None, apartment_ids=None):
+    with sqlite3.connect(f"file:{_DB_PATH}?mode=ro", uri=True) as conn:
+        records = [json.loads(row[0]) for row in conn.execute(
+            "SELECT payload FROM apartments ORDER BY CAST(id AS INTEGER)"
+        )]
+    return [
+        row for row in records
+        if (not apartment_ids or row["id"] in apartment_ids)
+        and (not neighborhood or neighborhood.lower() in row["neighborhood"].lower())
+        and (min_bedrooms is None or row["bedrooms"] >= min_bedrooms)
+        and (max_bedrooms is None or row["bedrooms"] <= max_bedrooms)
+        and (max_rent is None or row["rent"] <= max_rent)
+        and (not pet_friendly or row["petRules"]["cats"] is True or row["petRules"]["dogs"] is True)
+    ]
 
 
 @tool()
@@ -142,21 +32,15 @@ def get_apartments(
     max_bedrooms: int | None = None,
     max_rent: int | None = None,
     pet_friendly: bool | None = None,
+    apartment_ids: list[str] | None = None,
 ) -> list[dict]:
-    """Search available apartments with optional filters.
+    """Fetch synthetic listing facts, galleries, fees and computed fixed costs.
 
-    Args:
-        neighborhood: Filter by neighborhood name (case-insensitive partial match).
-        min_bedrooms: Minimum number of bedrooms (0 = studio).
-        max_bedrooms: Maximum number of bedrooms.
-        max_rent: Maximum monthly rent in dollars.
-        pet_friendly: If true, exclude "No pets" listings.
+    apartment_ids: Exact IDs for details/comparisons.
+    min_bedrooms/max_bedrooms: Inclusive limits; use equal values for an exact count.
+    max_rent: Inclusive base-rent ceiling, excluding fees.
+    pet_friendly: Require confirmed permission for at least one pet type.
     """
-    return _load_apartments(
-        neighborhood=neighborhood,
-        min_bedrooms=min_bedrooms,
-        max_bedrooms=max_bedrooms,
-        max_rent=max_rent,
-        pet_friendly=pet_friendly,
-    )
+    return _load_apartments(neighborhood, min_bedrooms, max_bedrooms, max_rent,
+                            pet_friendly, apartment_ids)
 # #endregion genui

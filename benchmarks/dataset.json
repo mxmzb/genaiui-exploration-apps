@@ -1,0 +1,342 @@
+{
+  "version": 1,
+  "source": "../db/apartments.db",
+  "source_sha256": "c2de3bf2290432effdaedbbbf4843de62fde11d824ad2b981ddf84c4ea878c81",
+  "currency": "USD",
+  "records": [
+    {
+      "id": "1",
+      "title": "Sun-Drenched Loft in Arts District",
+      "neighborhood": "Arts District",
+      "rent": 2200,
+      "bedrooms": 1,
+      "bathrooms": 1.0,
+      "sqft": 850,
+      "address": "142 Brush St, Unit 4B",
+      "description": "Open-concept loft with 14-foot ceilings, exposed brick, and floor-to-ceiling windows facing south. Original hardwood floors throughout. Building has a shared rooftop deck with city views.",
+      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=300&fit=crop",
+      "availableFrom": "2026-06-01",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Bike storage",
+        "Dishwasher",
+        "In-unit laundry",
+        "Package lockers",
+        "Rooftop deck"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 3 min walk",
+        "Bus 16 - 1 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Maya T.",
+          "rating": 5,
+          "text": "Lived here 2 years. The natural light is unreal and the neighborhood keeps getting better."
+        },
+        {
+          "author": "Jordan K.",
+          "rating": 4,
+          "text": "Great space and location. Street noise can be loud on weekends but that's the trade-off."
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Modern 2BR with Skyline Views",
+      "neighborhood": "Midtown",
+      "rent": 3100,
+      "bedrooms": 2,
+      "bathrooms": 2.0,
+      "sqft": 1100,
+      "address": "89 Park Ave, Unit 12F",
+      "description": "Recently renovated corner unit with panoramic skyline views from the 12th floor. Quartz countertops, stainless appliances, and a balcony off the primary bedroom. Full-service building with 24/7 concierge.",
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=300&fit=crop",
+      "availableFrom": "2026-05-15",
+      "petPolicy": "Dogs and cats (under 50 lbs)",
+      "amenities": [
+        "Balcony",
+        "Central AC",
+        "Concierge",
+        "Gym",
+        "Parking available ($200/mo)",
+        "Pool"
+      ],
+      "nearbyTransit": [
+        "Express bus - 2 min walk",
+        "Red Line - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Chris L.",
+          "rating": 5,
+          "text": "The views alone are worth it. Building management is responsive and the gym is solid."
+        },
+        {
+          "author": "Priya S.",
+          "rating": 4,
+          "text": "Beautiful apartment. Concierge is very helpful. Wish parking was included."
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Cozy Studio Near the Park",
+      "neighborhood": "Riverside",
+      "rent": 1450,
+      "bedrooms": 0,
+      "bathrooms": 1.0,
+      "sqft": 480,
+      "address": "215 River Rd, Unit 2A",
+      "description": "Efficient studio two blocks from Riverside Park. Murphy bed, built-in shelving, and a surprisingly functional galley kitchen. Quiet tree-lined street. Laundry in basement.",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=300&fit=crop",
+      "availableFrom": "2026-05-01",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Built-in storage",
+        "Heat included",
+        "Laundry in building",
+        "Murphy bed"
+      ],
+      "nearbyTransit": [
+        "Bus 42 - 4 min walk",
+        "Green Line - 7 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Alex R.",
+          "rating": 4,
+          "text": "Perfect for one person. The Murphy bed is a game-changer for the small space. Park access is amazing."
+        },
+        {
+          "author": "Sam W.",
+          "rating": 3,
+          "text": "Good value for the area. Kitchen is tight but workable. Wish it allowed pets."
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Spacious 3BR Brownstone Floor-Through",
+      "neighborhood": "Historic Heights",
+      "rent": 3800,
+      "bedrooms": 3,
+      "bathrooms": 1.5,
+      "sqft": 1600,
+      "address": "67 Prospect St, 2nd Floor",
+      "description": "Full floor of a classic brownstone. Original details — crown molding, pocket doors, decorative fireplace — plus a renovated kitchen and updated bath. Private back porch overlooking the garden. Storage in cellar.",
+      "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=400&h=300&fit=crop",
+      "availableFrom": "2026-07-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Cellar storage",
+        "Decorative fireplace",
+        "Dishwasher",
+        "Garden access",
+        "Private porch"
+      ],
+      "nearbyTransit": [
+        "Bus 9 - 1 min walk",
+        "Orange Line - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Nina D.",
+          "rating": 5,
+          "text": "This place has so much character. The porch is perfect for morning coffee. Landlord is great."
+        },
+        {
+          "author": "Marcus J.",
+          "rating": 5,
+          "text": "Raising a family here. The space is generous and the neighborhood is walkable to everything."
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Luxury Penthouse with Terrace",
+      "neighborhood": "Financial District",
+      "rent": 5500,
+      "bedrooms": 2,
+      "bathrooms": 2.0,
+      "sqft": 1350,
+      "address": "301 Commerce Blvd, PH-2",
+      "description": "Top-floor penthouse with a 400 sqft private terrace. Floor-to-ceiling glass, chef's kitchen with gas range, custom closets. Building features a residents' lounge, co-working space, and cold storage for deliveries.",
+      "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=300&fit=crop",
+      "availableFrom": "2026-06-15",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Co-working space",
+        "Cold storage",
+        "EV charging",
+        "Private terrace",
+        "Residents' lounge",
+        "Valet parking"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 2 min walk",
+        "Ferry terminal - 8 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Elena V.",
+          "rating": 5,
+          "text": "The terrace is an absolute dream for entertaining. Best apartment I've ever lived in."
+        },
+        {
+          "author": "David M.",
+          "rating": 4,
+          "text": "Incredible space and amenities. Rent is steep but you get what you pay for."
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Bright 1BR with Garden Access",
+      "neighborhood": "Historic Heights",
+      "rent": 2400,
+      "bedrooms": 1,
+      "bathrooms": 1.0,
+      "sqft": 720,
+      "address": "34 Elm St, Unit 1R",
+      "description": "Ground-floor one-bedroom in a restored Victorian with direct access to a shared garden. Original tin ceilings, updated kitchen with butcher-block counters. Quiet block, steps from the farmers' market.",
+      "imageUrl": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=400&h=300&fit=crop",
+      "availableFrom": "2026-06-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Garden access",
+        "In-unit laundry",
+        "Original tin ceilings"
+      ],
+      "nearbyTransit": [
+        "Bus 9 - 3 min walk",
+        "Orange Line - 6 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Lena F.",
+          "rating": 5,
+          "text": "The garden is magical in summer. Quiet neighbors and a gorgeous block."
+        },
+        {
+          "author": "Raj P.",
+          "rating": 4,
+          "text": "Charming place with real character. Basement laundry would be a dealbreaker for some but I have in-unit."
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Renovated 2BR Corner Unit",
+      "neighborhood": "Arts District",
+      "rent": 2850,
+      "bedrooms": 2,
+      "bathrooms": 1.0,
+      "sqft": 950,
+      "address": "208 Gallery Row, Unit 6A",
+      "description": "Corner two-bedroom with windows on three sides and views of the mural district. Gut-renovated in 2025 with new plumbing, wiring, and mini-split AC. Open kitchen with island seating. Pet-friendly building with a courtyard.",
+      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=400&h=300&fit=crop",
+      "availableFrom": "2026-05-20",
+      "petPolicy": "Dogs and cats (under 40 lbs)",
+      "amenities": [
+        "Bike room",
+        "Courtyard",
+        "Kitchen island",
+        "Mini-split AC",
+        "Package room"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 4 min walk",
+        "Bus 16 - 2 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Tasha M.",
+          "rating": 5,
+          "text": "Love the natural light from the corner windows. Renovation is quality — not the cheap-flip kind."
+        },
+        {
+          "author": "Ian C.",
+          "rating": 4,
+          "text": "Great layout for roommates. Each bedroom is a real room. Courtyard is a nice bonus."
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Waterfront Studio with Balcony",
+      "neighborhood": "Riverside",
+      "rent": 1850,
+      "bedrooms": 0,
+      "bathrooms": 1.0,
+      "sqft": 520,
+      "address": "180 Wharf Lane, Unit 5C",
+      "description": "Compact studio with a private balcony overlooking the river. Open layout with a sleeping alcove, full kitchen, and in-unit washer/dryer combo. Building has a kayak launch and waterfront walking path.",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=400&h=300&fit=crop",
+      "availableFrom": "2026-05-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Balcony",
+        "Kayak launch",
+        "River views",
+        "Washer/dryer combo",
+        "Waterfront path"
+      ],
+      "nearbyTransit": [
+        "Ferry - 3 min walk",
+        "Green Line - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Dana K.",
+          "rating": 5,
+          "text": "Waking up to the river every morning never gets old. The balcony is tiny but perfect for coffee."
+        },
+        {
+          "author": "Miles R.",
+          "rating": 4,
+          "text": "Great value for waterfront living. Washer/dryer in unit is a huge plus at this price."
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Industrial 3BR with Rooftop",
+      "neighborhood": "Arts District",
+      "rent": 4200,
+      "bedrooms": 3,
+      "bathrooms": 2.0,
+      "sqft": 1400,
+      "address": "55 Foundry Pl, Unit 3",
+      "description": "Converted warehouse loft spanning the full third floor. Polished concrete floors, steel-beam ceilings, and an oversized freight elevator. Private rooftop access with built-in grill and skyline views. Two full baths, one with a soaking tub.",
+      "imageUrl": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=400&h=300&fit=crop",
+      "availableFrom": "2026-07-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Bike storage",
+        "Central AC",
+        "Freight elevator",
+        "In-unit laundry",
+        "Private rooftop",
+        "Soaking tub"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 5 min walk",
+        "Bus 16 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Kai W.",
+          "rating": 5,
+          "text": "The rooftop is incredible for parties. Industrial vibe is authentic, not the fake exposed-brick kind."
+        },
+        {
+          "author": "Jess L.",
+          "rating": 4,
+          "text": "Tons of space for the price. Freight elevator is fun but slow. Neighborhood has great food options."
+        }
+      ]
+    }
+  ]
+}

@@ -9,29 +9,29 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SurfaceRouteImport } from './routes/surface'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ApiSurfaceRouteImport } from './routes/api/surface'
+import { Route as SurfaceRouteImport } from './routes/surface'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as ApiSurfaceRouteImport } from './routes/api/surface'
 
-const SurfaceRoute = SurfaceRouteImport.update({
-  id: '/surface',
-  path: '/surface',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiSurfaceRoute = ApiSurfaceRouteImport.update({
-  id: '/api/surface',
-  path: '/api/surface',
+const SurfaceRoute = SurfaceRouteImport.update({
+  id: '/surface',
+  path: '/surface',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiChatRoute = ApiChatRouteImport.update({
   id: '/api/chat',
   path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiSurfaceRoute = ApiSurfaceRouteImport.update({
+  id: '/api/surface',
+  path: '/api/surface',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -71,13 +71,6 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/surface': {
-      id: '/surface'
-      path: '/surface'
-      fullPath: '/surface'
-      preLoaderRoute: typeof SurfaceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -85,11 +78,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/surface': {
-      id: '/api/surface'
-      path: '/api/surface'
-      fullPath: '/api/surface'
-      preLoaderRoute: typeof ApiSurfaceRouteImport
+    '/surface': {
+      id: '/surface'
+      path: '/surface'
+      fullPath: '/surface'
+      preLoaderRoute: typeof SurfaceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/chat': {
@@ -97,6 +90,13 @@ declare module '@tanstack/react-router' {
       path: '/api/chat'
       fullPath: '/api/chat'
       preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/surface': {
+      id: '/api/surface'
+      path: '/api/surface'
+      fullPath: '/api/surface'
+      preLoaderRoute: typeof ApiSurfaceRouteImport
       parentRoute: typeof rootRouteImport
     }
   }

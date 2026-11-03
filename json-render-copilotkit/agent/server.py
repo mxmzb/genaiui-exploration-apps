@@ -25,4 +25,4 @@ agent = LangGraphAGUIAgent(graph=compiled_graph, name="apartment_agent")
 add_langgraph_fastapi_endpoint(app, agent)
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8123)
+    uvicorn.run(app, host="127.0.0.1", port=8123)

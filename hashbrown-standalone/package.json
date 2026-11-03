@@ -6,36 +6,33 @@
     "#/*": "./src/*"
   },
   "scripts": {
-    "dev": "vite dev --port 3003",
+    "dev": "vite dev --port 3006",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@hashbrownai/core": "latest",
-    "@hashbrownai/react": "latest",
-    "@hashbrownai/openai": "latest",
-    "@tailwindcss/vite": "^4.1.18",
-    "@tanstack/react-router": "latest",
-    "@tanstack/react-start": "latest",
-    "@tanstack/router-plugin": "^1.132.0",
-    "nitro": "npm:nitro-nightly@latest",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "tailwindcss": "^4.1.18"
+    "@hashbrownai/core": "0.8.3",
+    "@hashbrownai/react": "0.8.3",
+    "@hashbrownai/openai": "0.8.3",
+    "@tailwindcss/vite": "4.3.3",
+    "@tanstack/react-router": "1.170.46",
+    "@tanstack/react-start": "1.169.4",
+    "@tanstack/router-plugin": "1.168.48",
+    "nitro": "3.0.261029-rc",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwindcss": "4.3.3",
+    "better-sqlite3": "13.0.3"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.16",
-    "@types/node": "^22.10.2",
-    "@types/react": "^19.2.0",
-    "@types/react-dom": "^19.2.0",
-    "@vitejs/plugin-react": "^6.0.1",
-    "typescript": "^5.7.2",
-    "vite": "^8.0.0"
+    "@tailwindcss/typography": "0.5.20",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.5"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild",
-      "lightningcss"
-    ]
-  }
+  "packageManager": "pnpm@12.9.1"
 }

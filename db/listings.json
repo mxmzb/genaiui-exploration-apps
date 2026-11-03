@@ -1,0 +1,3260 @@
+{
+  "version": 2,
+  "notice": "Synthetic listings, prices, reviews and availability. Photos are illustrative. No real properties are offered.",
+  "records": [
+    {
+      "id": "1",
+      "title": "Sun-Drenched Loft in Arts District",
+      "neighborhood": "Arts District",
+      "rent": 2200,
+      "bedrooms": 1,
+      "bathrooms": 1.0,
+      "sqft": 850,
+      "address": "142 Brush St, Unit 4B",
+      "description": "Open-concept loft with 14-foot ceilings, exposed brick, and floor-to-ceiling windows facing south. Original hardwood floors throughout. Building has a shared rooftop deck with city views.",
+      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Bike storage",
+        "Dishwasher",
+        "In-unit laundry",
+        "Package lockers",
+        "Rooftop deck"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 3 min walk",
+        "Bus 16 - 1 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Maya T.",
+          "rating": 5,
+          "text": "Lived here 2 years. The natural light is unreal and the neighborhood keeps getting better."
+        },
+        {
+          "author": "Jordan K.",
+          "rating": 4,
+          "text": "Great space and location. Street noise can be loud on weekends but that's the trade-off."
+        }
+      ],
+      "floor": 4,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2200,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 3
+        },
+        {
+          "name": "Bus 16",
+          "walkMinutes": 1
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Modern 2BR with Skyline Views",
+      "neighborhood": "Midtown",
+      "rent": 3100,
+      "bedrooms": 2,
+      "bathrooms": 2.0,
+      "sqft": 1100,
+      "address": "89 Park Ave, Unit 12F",
+      "description": "Recently renovated corner unit with panoramic skyline views from the 12th floor. Quartz countertops, stainless appliances, and a balcony off the primary bedroom. Full-service building with 24/7 concierge.",
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-12-01",
+      "petPolicy": "Dogs and cats (under 50 lbs)",
+      "amenities": [
+        "Balcony",
+        "Central AC",
+        "Concierge",
+        "Gym",
+        "Parking available ($200/mo)",
+        "Pool"
+      ],
+      "nearbyTransit": [
+        "Express bus - 2 min walk",
+        "Red Line - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Chris L.",
+          "rating": 5,
+          "text": "The views alone are worth it. Building management is responsive and the gym is solid."
+        },
+        {
+          "author": "Priya S.",
+          "rating": 4,
+          "text": "Beautiful apartment. Concierge is very helpful. Wish parking was included."
+        }
+      ],
+      "floor": 12,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": 50
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 65,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3100,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 200,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Express bus",
+          "walkMinutes": 2
+        },
+        {
+          "name": "Red Line",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Cozy Studio Near the Park",
+      "neighborhood": "Riverside",
+      "rent": 1450,
+      "bedrooms": 0,
+      "bathrooms": 1.0,
+      "sqft": 480,
+      "address": "215 River Rd, Unit 2A",
+      "description": "Efficient studio two blocks from Riverside Park. Murphy bed, built-in shelving, and a surprisingly functional galley kitchen. Quiet tree-lined street. Laundry in basement.",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Built-in storage",
+        "Heat included",
+        "Laundry in building",
+        "Murphy bed"
+      ],
+      "nearbyTransit": [
+        "Bus 42 - 4 min walk",
+        "Green Line - 7 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Alex R.",
+          "rating": 4,
+          "text": "Perfect for one person. The Murphy bed is a game-changer for the small space. Park access is amazing."
+        },
+        {
+          "author": "Sam W.",
+          "rating": 3,
+          "text": "Good value for the area. Kitchen is tight but workable. Wish it allowed pets."
+        }
+      ],
+      "floor": 2,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 80,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 1450,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Bus 42",
+          "walkMinutes": 4
+        },
+        {
+          "name": "Green Line",
+          "walkMinutes": 7
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Spacious 3BR Brownstone Floor-Through",
+      "neighborhood": "Historic Heights",
+      "rent": 3800,
+      "bedrooms": 3,
+      "bathrooms": 1.5,
+      "sqft": 1600,
+      "address": "67 Prospect St, 2nd Floor",
+      "description": "Full floor of a classic brownstone. Original details \u2014 crown molding, pocket doors, decorative fireplace \u2014 plus a renovated kitchen and updated bath. Private back porch overlooking the garden. Storage in cellar.",
+      "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Cellar storage",
+        "Decorative fireplace",
+        "Dishwasher",
+        "Garden access",
+        "Private porch"
+      ],
+      "nearbyTransit": [
+        "Bus 9 - 1 min walk",
+        "Orange Line - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Nina D.",
+          "rating": 5,
+          "text": "This place has so much character. The porch is perfect for morning coffee. Landlord is great."
+        },
+        {
+          "author": "Marcus J.",
+          "rating": 5,
+          "text": "Raising a family here. The space is generous and the neighborhood is walkable to everything."
+        }
+      ],
+      "floor": 2,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 110,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3800,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 158,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Bus 9",
+          "walkMinutes": 1
+        },
+        {
+          "name": "Orange Line",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "title": "Luxury Penthouse with Terrace",
+      "neighborhood": "Financial District",
+      "rent": 5500,
+      "bedrooms": 2,
+      "bathrooms": 2.0,
+      "sqft": 1350,
+      "address": "301 Commerce Blvd, PH-2",
+      "description": "Top-floor penthouse with a 400 sqft private terrace. Floor-to-ceiling glass, chef's kitchen with gas range, custom closets. Building features a residents' lounge, co-working space, and cold storage for deliveries.",
+      "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Co-working space",
+        "Cold storage",
+        "EV charging",
+        "Private terrace",
+        "Residents' lounge",
+        "Valet parking"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 2 min walk",
+        "Ferry terminal - 8 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Elena V.",
+          "rating": 5,
+          "text": "The terrace is an absolute dream for entertaining. Best apartment I've ever lived in."
+        },
+        {
+          "author": "David M.",
+          "rating": 4,
+          "text": "Incredible space and amenities. Rent is steep but you get what you pay for."
+        }
+      ],
+      "floor": 20,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 0,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 5500,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 2
+        },
+        {
+          "name": "Ferry terminal",
+          "walkMinutes": 8
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "title": "Bright 1BR with Garden Access",
+      "neighborhood": "Historic Heights",
+      "rent": 2400,
+      "bedrooms": 1,
+      "bathrooms": 1.0,
+      "sqft": 720,
+      "address": "34 Elm St, Unit 1R",
+      "description": "Ground-floor one-bedroom in a restored Victorian with direct access to a shared garden. Original tin ceilings, updated kitchen with butcher-block counters. Quiet block, steps from the farmers' market.",
+      "imageUrl": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-12-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Garden access",
+        "In-unit laundry",
+        "Original tin ceilings"
+      ],
+      "nearbyTransit": [
+        "Bus 9 - 3 min walk",
+        "Orange Line - 6 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Lena F.",
+          "rating": 5,
+          "text": "The garden is magical in summer. Quiet neighbors and a gorgeous block."
+        },
+        {
+          "author": "Raj P.",
+          "rating": 4,
+          "text": "Charming place with real character. Basement laundry would be a dealbreaker for some but I have in-unit."
+        }
+      ],
+      "floor": 0,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2400,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 162,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Bus 9",
+          "walkMinutes": 3
+        },
+        {
+          "name": "Orange Line",
+          "walkMinutes": 6
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "title": "Renovated 2BR Corner Unit",
+      "neighborhood": "Arts District",
+      "rent": 2850,
+      "bedrooms": 2,
+      "bathrooms": 1.0,
+      "sqft": 950,
+      "address": "208 Gallery Row, Unit 6A",
+      "description": "Corner two-bedroom with windows on three sides and views of the mural district. Gut-renovated in 2025 with new plumbing, wiring, and mini-split AC. Open kitchen with island seating. Pet-friendly building with a courtyard.",
+      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Dogs and cats (under 40 lbs)",
+      "amenities": [
+        "Bike room",
+        "Courtyard",
+        "Kitchen island",
+        "Mini-split AC",
+        "Package room"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 4 min walk",
+        "Bus 16 - 2 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Tasha M.",
+          "rating": 5,
+          "text": "Love the natural light from the corner windows. Renovation is quality \u2014 not the cheap-flip kind."
+        },
+        {
+          "author": "Ian C.",
+          "rating": 4,
+          "text": "Great layout for roommates. Each bedroom is a real room. Courtyard is a nice bonus."
+        }
+      ],
+      "floor": 6,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": 40
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 350,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2850,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 4
+        },
+        {
+          "name": "Bus 16",
+          "walkMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "8",
+      "title": "Waterfront Studio with Balcony",
+      "neighborhood": "Riverside",
+      "rent": 1850,
+      "bedrooms": 0,
+      "bathrooms": 1.0,
+      "sqft": 520,
+      "address": "180 Wharf Lane, Unit 5C",
+      "description": "Compact studio with a private balcony overlooking the river. Open layout with a sleeping alcove, full kitchen, and in-unit washer/dryer combo. Building has a kayak launch and waterfront walking path.",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Balcony",
+        "Kayak launch",
+        "River views",
+        "Washer/dryer combo",
+        "Waterfront path"
+      ],
+      "nearbyTransit": [
+        "Ferry - 3 min walk",
+        "Green Line - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Dana K.",
+          "rating": 5,
+          "text": "Waking up to the river every morning never gets old. The balcony is tiny but perfect for coffee."
+        },
+        {
+          "author": "Miles R.",
+          "rating": 4,
+          "text": "Great value for waterfront living. Washer/dryer in unit is a huge plus at this price."
+        }
+      ],
+      "floor": 5,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 80,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 1850,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 166,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Ferry",
+          "walkMinutes": 3
+        },
+        {
+          "name": "Green Line",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "9",
+      "title": "Industrial 3BR with Rooftop",
+      "neighborhood": "Arts District",
+      "rent": 4200,
+      "bedrooms": 3,
+      "bathrooms": 2.0,
+      "sqft": 1400,
+      "address": "55 Foundry Pl, Unit 3",
+      "description": "Converted warehouse loft spanning the full third floor. Polished concrete floors, steel-beam ceilings, and an oversized freight elevator. Private rooftop access with built-in grill and skyline views. Two full baths, one with a soaking tub.",
+      "imageUrl": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Bike storage",
+        "Central AC",
+        "Freight elevator",
+        "In-unit laundry",
+        "Private rooftop",
+        "Soaking tub"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 5 min walk",
+        "Bus 16 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Kai W.",
+          "rating": 5,
+          "text": "The rooftop is incredible for parties. Industrial vibe is authentic, not the fake exposed-brick kind."
+        },
+        {
+          "author": "Jess L.",
+          "rating": 4,
+          "text": "Tons of space for the price. Freight elevator is fun but slow. Neighborhood has great food options."
+        }
+      ],
+      "floor": 3,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 110,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 4200,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 5
+        },
+        {
+          "name": "Bus 16",
+          "walkMinutes": 3
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Courtyard One-Bedroom with Reading Nook",
+      "neighborhood": "Arts District",
+      "rent": 2050,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 690,
+      "address": "130 Gallery Row, Unit 3A",
+      "description": "A separate kitchen opens onto a quiet courtyard. The bedroom includes a built-in reading nook; the third-floor walk-up has no elevator.",
+      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-12-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 5 min walk",
+        "Bus 20 - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 10",
+          "rating": 4,
+          "text": "Convenient for transit. The shared spaces are kept tidy."
+        }
+      ],
+      "floor": 3,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 0,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2050,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 170,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 5
+        },
+        {
+          "name": "Bus 20",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "title": "Split-Level Duplex by the Market",
+      "neighborhood": "Historic Heights",
+      "rent": 3350,
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "sqft": 1180,
+      "address": "133 Elm Street, Unit 1A",
+      "description": "Two levels separate the bedrooms from the living room. A small rear patio faces the neighborhood market; interior stairs connect both floors.",
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Orange Line - 8 min walk",
+        "Bus 21 - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 11",
+          "rating": 5,
+          "text": "Comfortable rooms; street noise is noticeable with the windows open."
+        }
+      ],
+      "floor": 1,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3350,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Orange Line",
+          "walkMinutes": 8
+        },
+        {
+          "name": "Bus 21",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Quiet Studio above the Bookshop",
+      "neighborhood": "Midtown",
+      "rent": 1725,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "sqft": 410,
+      "address": "136 Park Avenue, Unit 2A",
+      "description": "A compact second-floor studio above a bookshop, with a separate kitchenette and windows facing the rear lane. Storage is limited.",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+      "availableFrom": null,
+      "petPolicy": "No pets",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Red Line - 5 min walk",
+        "Bus 22 - 2 min walk"
+      ],
+      "reviews": [],
+      "floor": 2,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": null,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 1725,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 174,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Red Line",
+          "walkMinutes": 5
+        },
+        {
+          "name": "Bus 22",
+          "walkMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Riverbend Two-Bedroom with Work Alcove",
+      "neighborhood": "Riverside",
+      "rent": 2980,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 980,
+      "address": "139 River Road, Unit 4A",
+      "description": "A recessed work alcove sits beside the living-room window. Both bedrooms have closets, and the building elevator reaches the shared laundry.",
+      "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Green Line - 8 min walk",
+        "Bus 23 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 13",
+          "rating": 4,
+          "text": "Convenient for transit. The shared spaces are kept tidy."
+        }
+      ],
+      "floor": 4,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 80,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2980,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Green Line",
+          "walkMinutes": 8
+        },
+        {
+          "name": "Bus 23",
+          "walkMinutes": 3
+        }
+      ]
+    },
+    {
+      "id": "14",
+      "title": "High-Floor One-Bedroom with Corner Windows",
+      "neighborhood": "Financial District",
+      "rent": 2750,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 760,
+      "address": "142 Commerce Boulevard, Unit 16A",
+      "description": "Corner windows overlook the commercial district. A sliding partition separates the kitchen from the living room; concierge service operates during daytime hours.",
+      "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-12-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 5 min walk",
+        "Bus 24 - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 14",
+          "rating": 5,
+          "text": "Comfortable rooms; street noise is noticeable with the windows open."
+        }
+      ],
+      "floor": 16,
+      "elevator": true,
+      "leaseMonths": [
+        6,
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 110,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2750,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 178,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 5
+        },
+        {
+          "name": "Bus 24",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "title": "Garden-Level Studio on Elm Street",
+      "neighborhood": "Historic Heights",
+      "rent": 1520,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "sqft": 460,
+      "address": "145 Elm Street, Unit 0A",
+      "description": "A garden-level studio with its own entrance and tiled floors. Windows face the sidewalk, and the shower room is compact.",
+      "imageUrl": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Orange Line - 6 min walk",
+        "Bus 25 - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 15",
+          "rating": 3,
+          "text": "The layout works well, though storage is limited."
+        }
+      ],
+      "floor": 0,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 0,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 1520,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Orange Line",
+          "walkMinutes": 6
+        },
+        {
+          "name": "Bus 25",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "16",
+      "title": "Three-Bedroom with Separate Dining Room",
+      "neighborhood": "Riverside",
+      "rent": 3620,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1450,
+      "address": "148 River Road, Unit 3A",
+      "description": "Three bedrooms surround a separate dining room. The kitchen has a pantry and dishwasher; a shared courtyard has shaded seating.",
+      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Green Line - 8 min walk",
+        "Bus 26 - 2 min walk"
+      ],
+      "reviews": [],
+      "floor": 3,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3620,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 182,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Green Line",
+          "walkMinutes": 8
+        },
+        {
+          "name": "Bus 26",
+          "walkMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "17",
+      "title": "Brick Loft with Mezzanine Storage",
+      "neighborhood": "Arts District",
+      "rent": 2575,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 920,
+      "address": "151 Gallery Row, Unit 2A",
+      "description": "A converted workshop with exposed brick and a storage mezzanine. The mezzanine is not a bedroom. Tall north-facing windows provide indirect light.",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 6 min walk",
+        "Bus 27 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 17",
+          "rating": 5,
+          "text": "Comfortable rooms; street noise is noticeable with the windows open."
+        }
+      ],
+      "floor": 2,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 55,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2575,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 6
+        },
+        {
+          "name": "Bus 27",
+          "walkMinutes": 3
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Compact Two-Bedroom near Central Station",
+      "neighborhood": "Midtown",
+      "rent": 2690,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 810,
+      "address": "154 Park Avenue, Unit 5A",
+      "description": "Two modest bedrooms share a central living space. An elevator serves all floors, and station entrances are a short walk from the building.",
+      "imageUrl": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-12-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Red Line - 5 min walk",
+        "Bus 28 - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 18",
+          "rating": 3,
+          "text": "The layout works well, though storage is limited."
+        }
+      ],
+      "floor": 5,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 80,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2690,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 186,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Red Line",
+          "walkMinutes": 5
+        },
+        {
+          "name": "Bus 28",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Terrace Apartment with Three Bedrooms",
+      "neighborhood": "Financial District",
+      "rent": 4780,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1520,
+      "address": "157 Commerce Boulevard, Unit 10A",
+      "description": "A broad terrace extends from the living room. Three bedrooms, two bathrooms and a utility closet provide room for different household layouts.",
+      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 4 min walk",
+        "Bus 29 - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 19",
+          "rating": 4,
+          "text": "Convenient for transit. The shared spaces are kept tidy."
+        }
+      ],
+      "floor": 10,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 110,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 4780,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 4
+        },
+        {
+          "name": "Bus 29",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "20",
+      "title": "Riverside One-Bedroom with Large Kitchen",
+      "neighborhood": "Riverside",
+      "rent": 2310,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 795,
+      "address": "160 River Road, Unit 2A",
+      "description": "An eat-in kitchen has room for a small table. The bedroom faces the courtyard, while the living room looks toward a busy neighborhood street.",
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Green Line - 9 min walk",
+        "Bus 30 - 2 min walk"
+      ],
+      "reviews": [],
+      "floor": 2,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 0,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2310,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 190,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Green Line",
+          "walkMinutes": 9
+        },
+        {
+          "name": "Bus 30",
+          "walkMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "title": "Top-Floor Two-Bedroom Walk-Up",
+      "neighborhood": "Historic Heights",
+      "rent": 2840,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 1020,
+      "address": "163 Elm Street, Unit 4A",
+      "description": "A top-floor apartment with sloped ceilings and generous storage under the eaves. Four flights of stairs provide access; there is no elevator.",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Orange Line - 6 min walk",
+        "Bus 31 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 21",
+          "rating": 3,
+          "text": "The layout works well, though storage is limited."
+        }
+      ],
+      "floor": 4,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2840,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Orange Line",
+          "walkMinutes": 6
+        },
+        {
+          "name": "Bus 31",
+          "walkMinutes": 3
+        }
+      ]
+    },
+    {
+      "id": "22",
+      "title": "Studio with Shared Roof Garden",
+      "neighborhood": "Financial District",
+      "rent": 2180,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "sqft": 495,
+      "address": "166 Commerce Boulevard, Unit 8A",
+      "description": "A studio with a full-size kitchen and built-in wardrobe. Residents share a roof garden; access may close during poor weather.",
+      "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+      "availableFrom": null,
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 4 min walk",
+        "Bus 32 - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 22",
+          "rating": 4,
+          "text": "Convenient for transit. The shared spaces are kept tidy."
+        }
+      ],
+      "floor": 8,
+      "elevator": true,
+      "leaseMonths": [],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": null,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2180,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 194,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 4
+        },
+        {
+          "name": "Bus 32",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "title": "Workshop-Style Two-Bedroom",
+      "neighborhood": "Arts District",
+      "rent": 3080,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1140,
+      "address": "169 Gallery Row, Unit 3A",
+      "description": "Steel-framed windows and polished floors give this former workshop a simple finish. Bedrooms sit at opposite ends of the living space.",
+      "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 6 min walk",
+        "Bus 33 - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 23",
+          "rating": 5,
+          "text": "Comfortable rooms; street noise is noticeable with the windows open."
+        }
+      ],
+      "floor": 3,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 80,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3080,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 6
+        },
+        {
+          "name": "Bus 33",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "24",
+      "title": "One-Bedroom with Sheltered Balcony",
+      "neighborhood": "Midtown",
+      "rent": 2460,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 730,
+      "address": "172 Park Avenue, Unit 7A",
+      "description": "A covered balcony faces the rear courtyard. The bedroom has a reach-in closet, and a utility cupboard holds an in-unit washer.",
+      "imageUrl": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Red Line - 5 min walk",
+        "Bus 34 - 2 min walk"
+      ],
+      "reviews": [],
+      "floor": 7,
+      "elevator": true,
+      "leaseMonths": [
+        6,
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 110,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2460,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 198,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Red Line",
+          "walkMinutes": 5
+        },
+        {
+          "name": "Bus 34",
+          "walkMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "25",
+      "title": "Family-Sized Flat beside the Greenway",
+      "neighborhood": "Riverside",
+      "rent": 3490,
+      "bedrooms": 3,
+      "bathrooms": 1.5,
+      "sqft": 1310,
+      "address": "175 River Road, Unit 1A",
+      "description": "A wide living room faces the greenway. There are three separate bedrooms and a small utility room; entrance access includes six exterior steps.",
+      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Green Line - 8 min walk",
+        "Bus 35 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 25",
+          "rating": 4,
+          "text": "Convenient for transit. The shared spaces are kept tidy."
+        }
+      ],
+      "floor": 1,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 0,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3490,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Green Line",
+          "walkMinutes": 8
+        },
+        {
+          "name": "Bus 35",
+          "walkMinutes": 3
+        }
+      ]
+    },
+    {
+      "id": "26",
+      "title": "Renovated Ground-Floor Two-Bedroom",
+      "neighborhood": "Historic Heights",
+      "rent": 3020,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 1010,
+      "address": "178 Elm Street, Unit 0A",
+      "description": "A ground-floor flat with a private entrance, two bedrooms and a renovated kitchen. The shower has a low threshold; doorway widths have not been surveyed.",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-12-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Orange Line - 8 min walk",
+        "Bus 36 - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 26",
+          "rating": 5,
+          "text": "Comfortable rooms; street noise is noticeable with the windows open."
+        }
+      ],
+      "floor": 0,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3020,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 202,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Orange Line",
+          "walkMinutes": 8
+        },
+        {
+          "name": "Bus 36",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "title": "Corner Studio in the Gallery Quarter",
+      "neighborhood": "Arts District",
+      "rent": 1890,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "sqft": 540,
+      "address": "181 Gallery Row, Unit 4A",
+      "description": "Corner windows look over the gallery quarter. A built-in desk sits beside the sleeping alcove; a lift connects to the shared bike store.",
+      "imageUrl": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 4 min walk",
+        "Bus 37 - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 27",
+          "rating": 3,
+          "text": "The layout works well, though storage is limited."
+        }
+      ],
+      "floor": 4,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 55,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 1890,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 4
+        },
+        {
+          "name": "Bus 37",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "title": "Three-Bedroom with Library Wall",
+      "neighborhood": "Midtown",
+      "rent": 4150,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1380,
+      "address": "184 Park Avenue, Unit 9A",
+      "description": "A long wall of shelving anchors the living room. Three bedrooms and two full bathrooms surround a central hall; the building has daytime reception.",
+      "imageUrl": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Red Line - 6 min walk",
+        "Bus 38 - 2 min walk"
+      ],
+      "reviews": [],
+      "floor": 9,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 80,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 4150,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 206,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Red Line",
+          "walkMinutes": 6
+        },
+        {
+          "name": "Bus 38",
+          "walkMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "title": "Courtyard Duplex with Private Entrance",
+      "neighborhood": "Riverside",
+      "rent": 3210,
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "sqft": 1090,
+      "address": "187 River Road, Unit 0A",
+      "description": "A private courtyard entrance leads to a split-level home. Bedrooms are upstairs; the living room and kitchen open onto a small paved outdoor area.",
+      "imageUrl": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Green Line - 9 min walk",
+        "Bus 39 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 29",
+          "rating": 5,
+          "text": "Comfortable rooms; street noise is noticeable with the windows open."
+        }
+      ],
+      "floor": 0,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 110,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3210,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Green Line",
+          "walkMinutes": 9
+        },
+        {
+          "name": "Bus 39",
+          "walkMinutes": 3
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "title": "One-Bedroom above Foundry Square",
+      "neighborhood": "Arts District",
+      "rent": 2240,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 740,
+      "address": "190 Gallery Row, Unit 5A",
+      "description": "A simple one-bedroom with a separate kitchen and views over Foundry Square. Weekend activity on the square can be audible from the front windows.",
+      "imageUrl": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+      "availableFrom": null,
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 4 min walk",
+        "Bus 40 - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 30",
+          "rating": 3,
+          "text": "The layout works well, though storage is limited."
+        }
+      ],
+      "floor": 5,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 0,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2240,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 210,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 4
+        },
+        {
+          "name": "Bus 40",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "title": "Two-Bedroom with Harbor Outlook",
+      "neighborhood": "Financial District",
+      "rent": 3890,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1220,
+      "address": "193 Commerce Boulevard, Unit 14A",
+      "description": "Two bedrooms flank a living room with a distant harbor outlook. A utility room provides laundry and storage; parking is available separately.",
+      "imageUrl": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 4 min walk",
+        "Bus 41 - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 31",
+          "rating": 4,
+          "text": "Convenient for transit. The shared spaces are kept tidy."
+        }
+      ],
+      "floor": 14,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3890,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 4
+        },
+        {
+          "name": "Bus 41",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "title": "Small Studio with Separate Kitchen",
+      "neighborhood": "Historic Heights",
+      "rent": 1610,
+      "bedrooms": 0,
+      "bathrooms": 1,
+      "sqft": 445,
+      "address": "196 Elm Street, Unit 1A",
+      "description": "A first-floor studio has a separate kitchen and a shallow coat closet. Laundry is shared in the basement; the entrance has one flight of stairs.",
+      "imageUrl": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Orange Line - 8 min walk",
+        "Bus 42 - 2 min walk"
+      ],
+      "reviews": [],
+      "floor": 1,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 55,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 1610,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 214,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Orange Line",
+          "walkMinutes": 8
+        },
+        {
+          "name": "Bus 42",
+          "walkMinutes": 2
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "title": "Two-Bedroom with Bay-Window Dining Area",
+      "neighborhood": "Midtown",
+      "rent": 3260,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 1060,
+      "address": "199 Park Avenue, Unit 3A",
+      "description": "A bay window creates space for a dining table. The two bedrooms face a rear courtyard; the building has a lift and shared laundry.",
+      "imageUrl": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-15",
+      "petPolicy": "Cats only",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Red Line - 5 min walk",
+        "Bus 43 - 3 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 33",
+          "rating": 3,
+          "text": "The layout works well, though storage is limited."
+        }
+      ],
+      "floor": 3,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 80,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3260,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Red Line",
+          "walkMinutes": 5
+        },
+        {
+          "name": "Bus 43",
+          "walkMinutes": 3
+        }
+      ]
+    },
+    {
+      "id": "34",
+      "title": "Four-Bedroom Brownstone Maisonette",
+      "neighborhood": "Historic Heights",
+      "rent": 4950,
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "sqft": 1880,
+      "address": "202 Elm Street, Unit 1A",
+      "description": "A two-level maisonette with four bedrooms, a dining room and a small rear deck. Internal stairs connect the floors, with storage below the staircase.",
+      "imageUrl": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-12-01",
+      "petPolicy": "Dogs and cats welcome",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Orange Line - 7 min walk",
+        "Bus 44 - 4 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 34",
+          "rating": 4,
+          "text": "Convenient for transit. The shared spaces are kept tidy."
+        }
+      ],
+      "floor": 1,
+      "elevator": false,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": true,
+        "dogs": true,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 110,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 4950,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 218,
+          "frequency": "monthly",
+          "required": false
+        },
+        {
+          "label": "Pet rent if bringing a pet",
+          "amount": 35,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Orange Line",
+          "walkMinutes": 7
+        },
+        {
+          "name": "Bus 44",
+          "walkMinutes": 4
+        }
+      ]
+    },
+    {
+      "id": "35",
+      "title": "River-View One-Bedroom with Study",
+      "neighborhood": "Riverside",
+      "rent": 2670,
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "sqft": 870,
+      "address": "205 River Road, Unit 6A",
+      "description": "A separate study adjoins the living room and is not advertised as a bedroom. River-facing windows, a compact balcony and an in-unit washer complete the layout.",
+      "imageUrl": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+      "availableFrom": "2027-01-01",
+      "petPolicy": "Pets negotiable",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Bike storage"
+      ],
+      "nearbyTransit": [
+        "Green Line - 9 min walk",
+        "Bus 45 - 5 min walk"
+      ],
+      "reviews": [
+        {
+          "author": "Resident 35",
+          "rating": 5,
+          "text": "Comfortable rooms; street noise is noticeable with the windows open."
+        }
+      ],
+      "floor": 6,
+      "elevator": true,
+      "leaseMonths": [
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water"
+      ],
+      "petRules": {
+        "cats": null,
+        "dogs": null,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 0,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 2670,
+          "frequency": "once",
+          "required": true
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Green Line",
+          "walkMinutes": 9
+        },
+        {
+          "name": "Bus 45",
+          "walkMinutes": 5
+        }
+      ]
+    },
+    {
+      "id": "36",
+      "title": "Two-Bedroom with Flexible Lease Terms",
+      "neighborhood": "Financial District",
+      "rent": 3720,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1130,
+      "address": "208 Commerce Boulevard, Unit 11A",
+      "description": "Two equally sized bedrooms share an open living area. The building offers furnished common workspaces; the apartment itself is unfurnished.",
+      "imageUrl": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+      "availableFrom": "2026-11-10",
+      "petPolicy": "No pets",
+      "amenities": [
+        "Dishwasher",
+        "Laundry in building",
+        "Elevator",
+        "Package lockers"
+      ],
+      "nearbyTransit": [
+        "Blue Line - 3 min walk",
+        "Bus 46 - 2 min walk"
+      ],
+      "reviews": [],
+      "floor": 11,
+      "elevator": true,
+      "leaseMonths": [
+        6,
+        12
+      ],
+      "utilitiesIncluded": [
+        "Water",
+        "Heat"
+      ],
+      "petRules": {
+        "cats": false,
+        "dogs": false,
+        "maxWeightLbs": null
+      },
+      "fees": [
+        {
+          "label": "Building services",
+          "amount": 25,
+          "frequency": "monthly",
+          "required": true
+        },
+        {
+          "label": "Refundable security deposit",
+          "amount": 3720,
+          "frequency": "once",
+          "required": true
+        },
+        {
+          "label": "Optional parking",
+          "amount": 222,
+          "frequency": "monthly",
+          "required": false
+        }
+      ],
+      "photos": [
+        {
+          "url": "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop",
+          "alt": "Illustrative apartment interior",
+          "caption": "Illustrative photo; not a verified image of this synthetic listing."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1000&h=750&fit=crop",
+          "alt": "Illustrative interior view",
+          "caption": "Illustrative photo."
+        }
+      ],
+      "transit": [
+        {
+          "name": "Blue Line",
+          "walkMinutes": 3
+        },
+        {
+          "name": "Bus 46",
+          "walkMinutes": 2
+        }
+      ]
+    }
+  ]
+}

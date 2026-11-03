@@ -1,190 +1,183 @@
-// #region genui - json-render catalog: declares the components and actions the LLM can produce, plus the system prompt preambles.
+// #region genui - A small vocabulary: the model composes the layout, content, fields and actions.
 import { defineCatalog } from "@json-render/core";
 import { schema } from "@json-render/react/schema";
 import { z } from "zod";
-import { apartments } from "./apartment-data";
 
-/**
- * The catalog is the single source of truth for what the model is allowed to
- * emit. Each component declares a Zod props schema, an optional `slots` array
- * (use `["default"]` for children), and a description used in the auto-generated
- * system prompt. Actions are typed payloads the model can attach to events
- * (e.g. button presses) and are dispatched by the host application at runtime.
- */
+const gap = z.enum(["sm", "md", "lg"]).default("md");
+const padding = z.enum(["none", "sm", "md", "lg"]).default("none");
+const field = {
+  name: z.string().describe("Unique field name within its Form"),
+  label: z.string(),
+  required: z.boolean().default(false),
+};
+
 export const catalog = defineCatalog(schema, {
   components: {
+    Stack: {
+      description:
+        "Vertical layout. Nest content and other layouts; padding can create a card body.",
+      props: z.object({ gap, padding }),
+      slots: ["default"],
+    },
+    Row: {
+      description: "Wrapping horizontal layout for badges, metrics or actions.",
+      props: z.object({
+        gap,
+        align: z.enum(["start", "center", "between"]).default("start"),
+      }),
+      slots: ["default"],
+    },
+    Grid: {
+      description:
+        "Responsive equal-width columns. Collapses on narrow screens; may be nested.",
+      props: z.object({ columns: z.enum(["1", "2", "3"]).default("2"), gap }),
+      slots: ["default"],
+    },
+    Card: {
+      description:
+        "An empty visual container, not a listing template. Compose all content as children.",
+      props: z.object({
+        variant: z.enum(["plain", "outlined", "accent"]).default("outlined"),
+        padding,
+        recordId: z
+          .string()
+          .optional()
+          .describe("ID of the record this container represents, if any"),
+      }),
+      slots: ["default"],
+    },
+    Divider: { description: "A quiet horizontal rule.", props: z.object({}) },
+    Heading: {
+      description: "A section or card heading.",
+      props: z.object({
+        text: z.string(),
+        level: z.enum(["h2", "h3", "h4"]).default("h3"),
+      }),
+    },
     Text: {
-      description: "A block of text content",
+      description: "Plain text, with a bounded emphasis. Never HTML.",
       props: z.object({
-        content: z.string().describe("The text to display"),
+        content: z.string(),
+        tone: z.enum(["default", "muted", "eyebrow"]).default("default"),
       }),
-    },
-    Button: {
-      description: "A clickable button that emits a 'press' event",
-      props: z.object({
-        label: z.string().describe("Button text"),
-        variant: z
-          .enum(["primary", "secondary", "ghost"])
-          .default("primary")
-          .describe("Visual style"),
-      }),
-    },
-    ApartmentCard: {
-      description: "Summary card for one apartment listing with image",
-      props: z.object({
-        id: z.string().describe("Apartment ID"),
-        title: z.string().describe("Apartment title"),
-        neighborhood: z.string().describe("Neighborhood name"),
-        rent: z.string().describe("Monthly rent, e.g. '$3,100/mo'"),
-        bedrooms: z.string().describe("Bedroom count with label, e.g. '2 bed' or 'Studio'"),
-        sqft: z.string().describe("Square footage, e.g. '1,100 sqft'"),
-        imageUrl: z.string().describe("Apartment photo URL from the data"),
-      }),
-      slots: ["default"],
-    },
-    ApartmentList: {
-      description: "Container for a grid of ApartmentCard elements",
-      props: z.object({
-        title: z.string().optional().describe("Section heading"),
-      }),
-      slots: ["default"],
-    },
-    DetailView: {
-      description: "Container card for a detail page. Place Image, InfoBar, Text, TagGroup, and Button children inside it — each streams independently.",
-      props: z.object({
-        title: z.string().describe("Apartment title"),
-        subtitle: z.string().optional().describe("e.g. neighborhood name"),
-      }),
-      slots: ["default"],
     },
     Image: {
-      description: "A full-width image",
-      props: z.object({
-        src: z.string().describe("Image URL"),
-        alt: z.string().describe("Alt text"),
-      }),
-    },
-    InfoBar: {
-      description: "Horizontal row of key stats shown as chips",
-      props: z.object({
-        items: z.array(z.string()).describe("Stat values, e.g. ['$3,100/mo', '2 bed', '2 bath', '1,100 sqft', '★ 4.5 (2 reviews)']"),
-      }),
-    },
-    TagGroup: {
-      description: "Labeled group of tags/chips",
-      props: z.object({
-        label: z.string().describe("Section heading, e.g. 'Amenities' or 'Nearby Transit'"),
-        tags: z.array(z.string()).describe("Tag values"),
-      }),
-    },
-    TourForm: {
       description:
-        "Tour scheduling form with name, email, phone, date, message fields. Place submit and cancel Buttons as children.",
+        "One supplied illustrative photo. Compose galleries with Grid and multiple Images.",
+      props: z.object({
+        src: z.string(),
+        alt: z.string(),
+        aspect: z.enum(["landscape", "square", "wide"]).default("landscape"),
+      }),
+    },
+    Badge: {
+      description: "A short category, constraint or status label.",
+      props: z.object({
+        text: z.string(),
+        tone: z.enum(["neutral", "accent", "warning"]).default("neutral"),
+      }),
+    },
+    Metric: {
+      description:
+        "One labeled value. Use numeric values with a format for money/area; null means unknown. Formatting is handled by React, never by templates.",
+      props: z.object({
+        label: z.string(),
+        value: z.union([z.number(), z.string(), z.null()]),
+        format: z.enum(["text", "usd", "usd/month", "sqft"]).default("text"),
+        emphasis: z.boolean().default(false),
+      }),
+    },
+    List: {
+      description:
+        "A semantic list of ListItem children, e.g. amenities or nearby transit.",
+      props: z.object({}),
+      slots: ["default"],
+    },
+    ListItem: {
+      description:
+        "One list item. Put Text, Metric or other content in its children.",
+      props: z.object({}),
+      slots: ["default"],
+    },
+    Button: {
+      description:
+        "A button. Regular buttons bind on.press; a submit button submits its enclosing Form.",
+      props: z.object({
+        label: z.string(),
+        variant: z.enum(["primary", "secondary", "ghost"]).default("primary"),
+        type: z.enum(["button", "submit"]).default("button"),
+      }),
+    },
+    Form: {
+      description:
+        "Empty demo-request form. Generate every field and a submit Button as children. Never nest Forms. Submission collects only this form's values.",
       props: z.object({
         apartmentId: z.string(),
-        apartmentTitle: z.string(),
+        label: z.string().describe("Accessible form name"),
       }),
       slots: ["default"],
     },
-    Confirmation: {
-      description: "Success confirmation alert",
+    Input: {
+      description:
+        "A labeled native input inside a Form. Dates may specify an ISO min value.",
       props: z.object({
-        title: z.string(),
-        message: z.string(),
+        ...field,
+        type: z
+          .enum(["text", "email", "tel", "date", "number"])
+          .default("text"),
+        placeholder: z.string().optional(),
+        defaultValue: z.string().optional(),
+        min: z.string().optional(),
+        max: z.string().optional(),
       }),
-      slots: ["default"],
+    },
+    Select: {
+      description: "A labeled native select inside a Form.",
+      props: z.object({
+        ...field,
+        options: z.array(z.object({ value: z.string(), label: z.string() })),
+        defaultValue: z.string().optional(),
+      }),
+    },
+    Checkbox: {
+      description:
+        "A labeled checkbox inside a Form. An unchecked box is omitted from the submitted values.",
+      props: z.object({ ...field, defaultChecked: z.boolean().default(false) }),
+    },
+    Textarea: {
+      description: "A labeled multiline input inside a Form.",
+      props: z.object({
+        ...field,
+        placeholder: z.string().optional(),
+        defaultValue: z.string().optional(),
+      }),
     },
   },
   actions: {
     view_apartment: {
-      description: "View full details for an apartment",
+      description: "Inspect one apartment.",
       params: z.object({ apartmentId: z.string() }),
     },
     schedule_tour: {
-      description: "Open tour scheduling form for an apartment",
+      description: "Generate a demo request form for one apartment.",
       params: z.object({ apartmentId: z.string() }),
     },
+    compare_apartments: {
+      description: "Compare two or three apartments.",
+      params: z.object({ apartmentIds: z.array(z.string()).min(2).max(3) }),
+    },
     back_to_results: {
-      description: "Navigate back to the apartment listing",
+      description: "Return to the last search with its filters.",
       params: z.object({}),
     },
     submit_tour: {
-      description: "Submit the tour request form",
-      params: z.object({ apartmentId: z.string() }),
+      description:
+        "Called by the Form implementation with its collected values. Do not bind this to on.press.",
+      params: z.object({
+        apartmentId: z.string(),
+        details: z.record(z.string(), z.string()),
+      }),
     },
   },
 });
-// #endregion genui
-
-const APARTMENT_DATA = JSON.stringify(apartments, null, 2);
-
-// #region genui - System prompt preambles. These describe the apartment-finder behavior; json-render appends the auto-generated component/action reference and JSONL output rules via catalog.prompt().
-export const CHAT_PREAMBLE = `You are an apartment finder assistant. You help users discover apartments, view details, and schedule tours.
-
-## Available Apartment Data
-
-${APARTMENT_DATA}
-
-## Behavior
-
-- **Search/browse**: Show matching apartments using ApartmentList containing ApartmentCard elements. Each card shows imageUrl, title, neighborhood, rent (formatted as "$X,XXX/mo"), bedrooms (e.g. "2 bed" or "Studio"), sqft (e.g. "1,100 sqft"), and two Button children: "View Details" (on press -> view_apartment with apartmentId) and "Schedule Tour" (on press -> schedule_tour with apartmentId).
-- **Detail view**: Compose a DetailView with children streamed progressively: Image (apartment photo), InfoBar (rent, beds, baths, sqft, rating), Text (description), TagGroup (label "Amenities", tags from data), TagGroup (label "Nearby Transit", tags from data), then two Buttons: "Schedule Tour" (-> schedule_tour) and "Back to Results" (-> back_to_results).
-- **Schedule tour**: Show a TourForm. The form has fields for name, email, phone, preferred date, and message, using $bindState at paths like /tour/name, /tour/email, etc. Include a submit Button (on press -> submit_tour with apartmentId) and a cancel Button (on press -> back_to_results).
-- **Confirmation**: Show a Confirmation with title and message. Include a "Back to Search" Button (on press -> back_to_results).
-
-## Rules
-
-- Always format rent as "$X,XXX/mo" and sqft as "X,XXX sqft".
-- Each ApartmentCard MUST have both "View Details" and "Schedule Tour" buttons.
-- Use Text components for any explanatory content outside of the structured components.`;
-
-export const SURFACE_PREAMBLE = `You are an apartment finder assistant powering a single-surface app UI. You update ONE persistent view — the user sees only your latest response, not a chat history.
-
-## Available Apartment Data
-
-${APARTMENT_DATA}
-
-## IMPORTANT: Surface Lifecycle
-
-- Your response REPLACES the previous view entirely. Always render a complete, self-contained UI.
-- The user's prior messages are in the conversation history so you know context, but the UI only shows your latest response.
-- Never reference "previous messages" or "as shown above" — the user sees only the current view.
-
-## Views
-
-### List View (initial + search results)
-Show matching apartments using ApartmentList containing ApartmentCard elements. Each card shows imageUrl, title, neighborhood, rent ("$X,XXX/mo"), bedrooms (e.g. "2 bed" or "Studio"), sqft (e.g. "1,100 sqft"), and two Button children: "View Details" (on press -> view_apartment) and "Schedule Tour" (on press -> schedule_tour).
-
-### Detail View (triggered by view_apartment action)
-Compose a DetailView with children streamed progressively: Image (apartment photo), InfoBar (rent, beds, baths, sqft, rating), Text (description), TagGroup (label "Amenities", tags from data), TagGroup (label "Nearby Transit", tags from data), then two Buttons: "Schedule Tour" (-> schedule_tour) and "Back to Results" (-> back_to_results).
-
-### Tour Form (triggered by schedule_tour action)
-Show a TourForm with fields for name, email, phone, preferred date, and message using $bindState. Include submit Button (-> submit_tour) and cancel Button (-> back_to_results).
-
-### Confirmation (triggered by submit_tour action)
-Show a Confirmation with title and message. Include "Back to Search" Button (-> back_to_results).
-
-## Rules
-
-- Always format rent as "$X,XXX/mo" and sqft as "X,XXX sqft".
-- Each ApartmentCard MUST have both "View Details" and "Schedule Tour" buttons.
-- Always render a COMPLETE view — never partial updates.
-- Use Text components for any explanatory content.`;
-
-/**
- * Build the chat-mode system prompt. `mode: "standalone"` tells json-render the
- * model should output only JSONL patches (no surrounding prose). The `system`
- * option is appended/prepended to the catalog's auto-generated component and
- * action documentation.
- */
-const LITERAL_VALUES_RULE =
-  "Use literal string values for ALL component props. Do NOT use $state, $template, $bindState, or $cond expressions. Inline all data directly into prop values (e.g. \"title\": \"Sun-Drenched Loft\" not \"title\": {\"$state\": \"/apartments/0/title\"}). Do NOT emit a /state tree.";
-
-export function getChatSystemPrompt(): string {
-  return catalog.prompt({ mode: "standalone", system: CHAT_PREAMBLE, customRules: [LITERAL_VALUES_RULE] });
-}
-
-export function getSurfaceSystemPrompt(): string {
-  return catalog.prompt({ mode: "standalone", system: SURFACE_PREAMBLE, customRules: [LITERAL_VALUES_RULE] });
-}
 // #endregion genui

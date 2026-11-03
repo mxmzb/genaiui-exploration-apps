@@ -1,0 +1,1841 @@
+{
+  "id": "hashbrown-2026-11-02T01-50-50-733Z-replay-6-text-native-C01",
+  "variant": {
+    "transport": "text",
+    "generation": "native"
+  },
+  "caseId": "C01",
+  "control": "wrong-price",
+  "expectedFailure": "content",
+  "pass": true,
+  "automaticPass": false,
+  "verdicts": {
+    "rawFormat": {
+      "pass": true,
+      "errors": []
+    },
+    "contract": {
+      "pass": true,
+      "errors": []
+    },
+    "strategy": {
+      "pass": true,
+      "errors": []
+    },
+    "content": {
+      "pass": false,
+      "errors": [
+        "2: incorrect or missing rent"
+      ]
+    },
+    "actionBindings": {
+      "pass": true,
+      "errors": [],
+      "actual": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "scope": "2"
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "scope": "2"
+        }
+      ]
+    },
+    "interaction": {
+      "pass": true,
+      "errors": [],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "5cecf84f-ca01-4434-848e-00efb158b7e7",
+                "role": "user",
+                "content": "Show apartment details\n{\"name\":\"view_apartment\",\"apartmentId\":\"2\"}"
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "2"
+              },
+              "runId": "656ee611-6060-42b3-8cc2-70e61b2ba2d3",
+              "threadId": "29483b91-fa13-45fc-b8bc-1327ca28872e"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 1,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "375c17f1-b002-465c-b003-6b5925554606",
+                "role": "user",
+                "content": "Open a demo tour request\n{\"name\":\"schedule_tour\",\"apartmentId\":\"2\"}"
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "2"
+              },
+              "runId": "fb4c3589-f122-4054-a546-723bfc65a4cb",
+              "threadId": "29483b91-fa13-45fc-b8bc-1327ca28872e"
+            }
+          ]
+        }
+      ],
+      "requestCount": 2
+    },
+    "runtime": {
+      "pass": true,
+      "errors": []
+    }
+  },
+  "recovery": {
+    "applied": false
+  },
+  "browser": {
+    "metrics": {
+      "timeline": [
+        {
+          "ms": 0,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 45.799999952316284,
+          "ids": [],
+          "complete": 0,
+          "pending": 1,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 62.40000009536743,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 78.5,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 1,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 86.70000004768372,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 1,
+          "renderedFields": 1,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 95.79999995231628,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 2,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 104.09999990463257,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 3,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 112.59999990463257,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 1,
+          "renderedFields": 4,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 121.90000009536743,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 1,
+          "renderedFields": 5,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 162.59999990463257,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 5,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 413.7999999523163,
+          "ids": [
+            "2"
+          ],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 5,
+          "enabledButtons": 2
+        }
+      ],
+      "firstMeaningfulMs": 86.70000004768372,
+      "firstCompleteCardMs": null,
+      "allContentMs": null,
+      "usableMs": null,
+      "runEndMs": 409.5
+    },
+    "interaction": {
+      "pass": true,
+      "errors": [],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "5cecf84f-ca01-4434-848e-00efb158b7e7",
+                "role": "user",
+                "content": "Show apartment details\n{\"name\":\"view_apartment\",\"apartmentId\":\"2\"}"
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "2"
+              },
+              "runId": "656ee611-6060-42b3-8cc2-70e61b2ba2d3",
+              "threadId": "29483b91-fa13-45fc-b8bc-1327ca28872e"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 1,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "375c17f1-b002-465c-b003-6b5925554606",
+                "role": "user",
+                "content": "Open a demo tour request\n{\"name\":\"schedule_tour\",\"apartmentId\":\"2\"}"
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "2"
+              },
+              "runId": "fb4c3589-f122-4054-a546-723bfc65a4cb",
+              "threadId": "29483b91-fa13-45fc-b8bc-1327ca28872e"
+            }
+          ]
+        }
+      ],
+      "requestCount": 2
+    },
+    "dom": {
+      "form": {
+        "errors": [],
+        "fields": []
+      },
+      "meaningful": true,
+      "ready": false,
+      "recordIds": [
+        "2"
+      ],
+      "enabledButtons": 2,
+      "errors": [
+        "2: incorrect or missing rent"
+      ],
+      "records": [
+        {
+          "id": "2",
+          "found": true,
+          "text": "Apartments\nMidtown\nModern 2BR with Skyline Views\nMonthly total\n$3,165/mo\nBase rent\n$1/mo\nBedrooms\n2\nBathrooms\n2\nArea\n1,100 sqft\nView Details\n↗\nSchedule Tour\n↗",
+          "metrics": [
+            {
+              "label": "Monthly total",
+              "value": "$3,165/mo"
+            },
+            {
+              "label": "Base rent",
+              "value": "$1/mo"
+            },
+            {
+              "label": "Bedrooms",
+              "value": "2"
+            },
+            {
+              "label": "Bathrooms",
+              "value": "2"
+            },
+            {
+              "label": "Area",
+              "value": "1,100 sqft"
+            }
+          ],
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+              "loaded": true
+            }
+          ],
+          "feeRows": []
+        }
+      ],
+      "buttons": [
+        {
+          "label": "View Details\n↗",
+          "enabled": true,
+          "scopeId": "2"
+        },
+        {
+          "label": "Schedule Tour\n↗",
+          "enabled": true,
+          "scopeId": "2"
+        }
+      ]
+    },
+    "alerts": [],
+    "html": "<fieldset class=\"surface-controls generated-ui\" aria-label=\"Apartment results\" aria-busy=\"false\"><div class=\"ui-stack gap-md pad-none\"><h2 class=\"ui-heading\">Apartments</h2><div class=\"ui-grid cols-1 gap-md\"><section data-record-id=\"2\" class=\"ui-card outlined pad-none\"><div class=\"ui-grid cols-2 gap-sm\"><img class=\"ui-image landscape\" alt=\"Illustrative apartment interior\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&amp;h=750&amp;fit=crop\"><div class=\"ui-stack gap-md pad-md\"><span class=\"ui-badge neutral\">Midtown</span><h3 class=\"ui-heading\">Modern 2BR with Skyline Views</h3><div class=\"ui-metric \"><span>Monthly total</span><strong>$3,165/mo</strong></div><div class=\"ui-metric \"><span>Base rent</span><strong>$1/mo</strong></div><div class=\"ui-row gap-md align-start\"><div class=\"ui-metric \"><span>Bedrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Bathrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Area</span><strong>1,100 sqft</strong></div></div><div class=\"ui-row gap-md align-start\"><button type=\"button\" class=\"ui-button secondary\">View Details<span aria-hidden=\"true\">↗</span></button><button type=\"button\" class=\"ui-button secondary\">Schedule Tour<span aria-hidden=\"true\">↗</span></button></div></div></div></section></div></div></fieldset>",
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        900
+      ],
+      "devicePixelRatio": 2,
+      "visibility": "visible",
+      "assets": "local-svg/system-fonts",
+      "failures": []
+    }
+  },
+  "request": {
+    "model": "replay",
+    "max_tokens": 16000,
+    "response_format": {
+      "type": "json_schema",
+      "json_schema": {
+        "name": "apartment_ui",
+        "strict": true,
+        "schema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {
+            "ui": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/anyOf"
+              },
+              "description": "List of elements"
+            }
+          },
+          "required": [
+            "ui"
+          ],
+          "additionalProperties": false,
+          "description": "Return a JSON object with a single key \"ui\" that matches the schema below. Use only these components.",
+          "$defs": {
+            "anyOf": {
+              "anyOf": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Stack": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "gap": {
+                              "$ref": "#/$defs/spaceBetweenChildren"
+                            },
+                            "padding": {
+                              "$ref": "#/$defs/innerSpacing"
+                            },
+                            "visible": {
+                              "type": "boolean",
+                              "description": "Show this content"
+                            }
+                          },
+                          "required": [
+                            "gap",
+                            "padding",
+                            "visible"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        },
+                        "children": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/anyOf"
+                          },
+                          "description": "Child Elements"
+                        }
+                      },
+                      "required": [
+                        "props",
+                        "children"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Stack node"
+                    }
+                  },
+                  "required": [
+                    "Stack"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Vertical layout. Nest layouts and content."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Row": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "gap": {
+                              "$ref": "#/$defs/spaceBetweenChildren"
+                            },
+                            "align": {
+                              "type": "string",
+                              "enum": [
+                                "start",
+                                "center",
+                                "between"
+                              ],
+                              "description": "Alignment"
+                            }
+                          },
+                          "required": [
+                            "gap",
+                            "align"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        },
+                        "children": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/anyOf"
+                          },
+                          "description": "Child Elements"
+                        }
+                      },
+                      "required": [
+                        "props",
+                        "children"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Row node"
+                    }
+                  },
+                  "required": [
+                    "Row"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Wrapping horizontal layout for metrics, badges and actions."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Grid": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "columns": {
+                              "type": "string",
+                              "enum": [
+                                "1",
+                                "2",
+                                "3"
+                              ],
+                              "description": "Desktop columns"
+                            },
+                            "gap": {
+                              "$ref": "#/$defs/spaceBetweenChildren"
+                            }
+                          },
+                          "required": [
+                            "columns",
+                            "gap"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        },
+                        "children": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/anyOf"
+                          },
+                          "description": "Child Elements"
+                        }
+                      },
+                      "required": [
+                        "props",
+                        "children"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Grid node"
+                    }
+                  },
+                  "required": [
+                    "Grid"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Responsive equal-width columns; collapses on narrow screens."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Card": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "recordId": {
+                              "type": "string",
+                              "description": "Record ID, or empty string for a generic container"
+                            },
+                            "variant": {
+                              "type": "string",
+                              "enum": [
+                                "plain",
+                                "outlined",
+                                "accent"
+                              ],
+                              "description": "Treatment"
+                            },
+                            "padding": {
+                              "$ref": "#/$defs/innerSpacing"
+                            }
+                          },
+                          "required": [
+                            "recordId",
+                            "variant",
+                            "padding"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        },
+                        "children": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/anyOf"
+                          },
+                          "description": "Child Elements"
+                        }
+                      },
+                      "required": [
+                        "props",
+                        "children"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Card node"
+                    }
+                  },
+                  "required": [
+                    "Card"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Empty visual container. Compose all listing content as children."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Divider": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {},
+                          "required": [],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Divider node"
+                    }
+                  },
+                  "required": [
+                    "Divider"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Horizontal rule."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Heading": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "level": {
+                              "type": "string",
+                              "enum": [
+                                "h2",
+                                "h3",
+                                "h4"
+                              ],
+                              "description": "Heading level"
+                            },
+                            "text": {
+                              "type": "string",
+                              "description": "Heading text"
+                            }
+                          },
+                          "required": [
+                            "level",
+                            "text"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Heading node"
+                    }
+                  },
+                  "required": [
+                    "Heading"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Section or card heading."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Text": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "tone": {
+                              "type": "string",
+                              "enum": [
+                                "default",
+                                "muted",
+                                "eyebrow"
+                              ],
+                              "description": "Emphasis"
+                            },
+                            "content": {
+                              "type": "string",
+                              "description": "Text content"
+                            }
+                          },
+                          "required": [
+                            "tone",
+                            "content"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Text node"
+                    }
+                  },
+                  "required": [
+                    "Text"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Plain text; never HTML."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Image": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "src": {
+                              "type": "string",
+                              "description": "Supplied complete photo URL"
+                            },
+                            "alt": {
+                              "type": "string",
+                              "description": "Photo description"
+                            },
+                            "aspect": {
+                              "type": "string",
+                              "enum": [
+                                "landscape",
+                                "square",
+                                "wide"
+                              ],
+                              "description": "Aspect ratio"
+                            }
+                          },
+                          "required": [
+                            "src",
+                            "alt",
+                            "aspect"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Image node"
+                    }
+                  },
+                  "required": [
+                    "Image"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Supplied illustrative photo. Compose galleries using Grid."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Badge": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "tone": {
+                              "type": "string",
+                              "enum": [
+                                "neutral",
+                                "accent",
+                                "warning"
+                              ],
+                              "description": "Treatment"
+                            },
+                            "text": {
+                              "type": "string",
+                              "description": "Label"
+                            }
+                          },
+                          "required": [
+                            "tone",
+                            "text"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Badge node"
+                    }
+                  },
+                  "required": [
+                    "Badge"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Short category or status."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Metric": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "label": {
+                              "type": "string",
+                              "description": "Metric label"
+                            },
+                            "format": {
+                              "type": "string",
+                              "enum": [
+                                "text",
+                                "usd",
+                                "usd/month",
+                                "sqft"
+                              ],
+                              "description": "Format"
+                            },
+                            "emphasis": {
+                              "type": "boolean",
+                              "description": "Highlight value"
+                            },
+                            "value": {
+                              "anyOf": [
+                                {
+                                  "type": "number",
+                                  "description": "Numeric value"
+                                },
+                                {
+                                  "type": "string",
+                                  "description": "Text value"
+                                },
+                                {
+                                  "type": "null",
+                                  "description": ""
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "label",
+                            "format",
+                            "emphasis",
+                            "value"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Metric node"
+                    }
+                  },
+                  "required": [
+                    "Metric"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Labeled value. Numeric money/area is formatted by React; null means unknown."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "List": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {},
+                          "required": [],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        },
+                        "children": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/anyOf"
+                          },
+                          "description": "Child Elements"
+                        }
+                      },
+                      "required": [
+                        "props",
+                        "children"
+                      ],
+                      "additionalProperties": false,
+                      "description": "List node"
+                    }
+                  },
+                  "required": [
+                    "List"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Semantic list of ListItem children."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "ListItem": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {},
+                          "required": [],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        },
+                        "children": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/anyOf"
+                          },
+                          "description": "Child Elements"
+                        }
+                      },
+                      "required": [
+                        "props",
+                        "children"
+                      ],
+                      "additionalProperties": false,
+                      "description": "ListItem node"
+                    }
+                  },
+                  "required": [
+                    "ListItem"
+                  ],
+                  "additionalProperties": false,
+                  "description": "One list item, with Text or other nested content."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Button": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "label": {
+                              "type": "string",
+                              "description": "Visible label"
+                            },
+                            "variant": {
+                              "type": "string",
+                              "enum": [
+                                "primary",
+                                "secondary",
+                                "ghost"
+                              ],
+                              "description": "Treatment"
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "button",
+                                "submit"
+                              ],
+                              "description": "Button type"
+                            },
+                            "action": {
+                              "anyOf": [
+                                {
+                                  "anyOf": [
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "name": {
+                                          "type": "string",
+                                          "const": "view_apartment",
+                                          "description": "view_apartment"
+                                        },
+                                        "apartmentId": {
+                                          "type": "string",
+                                          "description": "Record ID"
+                                        }
+                                      },
+                                      "required": [
+                                        "name",
+                                        "apartmentId"
+                                      ],
+                                      "additionalProperties": false,
+                                      "description": "Open details"
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "name": {
+                                          "type": "string",
+                                          "const": "schedule_tour",
+                                          "description": "schedule_tour"
+                                        },
+                                        "apartmentId": {
+                                          "type": "string",
+                                          "description": "Record ID"
+                                        }
+                                      },
+                                      "required": [
+                                        "name",
+                                        "apartmentId"
+                                      ],
+                                      "additionalProperties": false,
+                                      "description": "Open demo tour form"
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "name": {
+                                          "type": "string",
+                                          "const": "back_to_results",
+                                          "description": "back_to_results"
+                                        }
+                                      },
+                                      "required": [
+                                        "name"
+                                      ],
+                                      "additionalProperties": false,
+                                      "description": "Return to previous search"
+                                    },
+                                    {
+                                      "type": "object",
+                                      "properties": {
+                                        "name": {
+                                          "type": "string",
+                                          "const": "compare_apartments",
+                                          "description": "compare_apartments"
+                                        },
+                                        "apartmentIds": {
+                                          "type": "array",
+                                          "items": {
+                                            "type": "string",
+                                            "description": "ID"
+                                          },
+                                          "description": "Record IDs"
+                                        }
+                                      },
+                                      "required": [
+                                        "name",
+                                        "apartmentIds"
+                                      ],
+                                      "additionalProperties": false,
+                                      "description": "Compare selected records"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "null",
+                                  "description": ""
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "label",
+                            "variant",
+                            "type",
+                            "action"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Button node"
+                    }
+                  },
+                  "required": [
+                    "Button"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Navigation button, or submit button inside a Form. Submit uses action=null."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Form": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "apartmentId": {
+                              "type": "string",
+                              "description": "Record ID"
+                            },
+                            "label": {
+                              "type": "string",
+                              "description": "Accessible form name"
+                            }
+                          },
+                          "required": [
+                            "apartmentId",
+                            "label"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        },
+                        "children": {
+                          "type": "array",
+                          "items": {
+                            "$ref": "#/$defs/anyOf"
+                          },
+                          "description": "Child Elements"
+                        }
+                      },
+                      "required": [
+                        "props",
+                        "children"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Form node"
+                    }
+                  },
+                  "required": [
+                    "Form"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Empty demo-request form. Generate fields and a submit Button as children. Never nest forms."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Input": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "$ref": "#/$defs/uniqueFieldName"
+                            },
+                            "required": {
+                              "$ref": "#/$defs/requiredInput"
+                            },
+                            "type": {
+                              "type": "string",
+                              "enum": [
+                                "text",
+                                "email",
+                                "tel",
+                                "date",
+                                "number"
+                              ],
+                              "description": "Input type"
+                            },
+                            "placeholder": {
+                              "type": "string",
+                              "description": "Placeholder or empty"
+                            },
+                            "defaultValue": {
+                              "type": "string",
+                              "description": "Initial value; empty for contact details"
+                            },
+                            "min": {
+                              "type": "string",
+                              "description": "Minimum or empty; ISO date for date inputs"
+                            },
+                            "max": {
+                              "type": "string",
+                              "description": "Maximum or empty"
+                            },
+                            "label": {
+                              "$ref": "#/$defs/visibleLabel"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "required",
+                            "type",
+                            "placeholder",
+                            "defaultValue",
+                            "min",
+                            "max",
+                            "label"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Input node"
+                    }
+                  },
+                  "required": [
+                    "Input"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Labeled native input inside Form. Empty string for unused optional attributes."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Select": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "$ref": "#/$defs/uniqueFieldName"
+                            },
+                            "required": {
+                              "$ref": "#/$defs/requiredInput"
+                            },
+                            "options": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "value": {
+                                    "type": "string",
+                                    "description": "Value"
+                                  },
+                                  "label": {
+                                    "type": "string",
+                                    "description": "Label"
+                                  }
+                                },
+                                "required": [
+                                  "value",
+                                  "label"
+                                ],
+                                "additionalProperties": false,
+                                "description": "Choice"
+                              },
+                              "description": "Choices"
+                            },
+                            "defaultValue": {
+                              "type": "string",
+                              "description": "Initial value or empty"
+                            },
+                            "label": {
+                              "$ref": "#/$defs/visibleLabel"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "required",
+                            "options",
+                            "defaultValue",
+                            "label"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Select node"
+                    }
+                  },
+                  "required": [
+                    "Select"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Labeled native select inside Form."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Checkbox": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "$ref": "#/$defs/uniqueFieldName"
+                            },
+                            "required": {
+                              "$ref": "#/$defs/requiredInput"
+                            },
+                            "defaultChecked": {
+                              "type": "boolean",
+                              "description": "Initially checked"
+                            },
+                            "label": {
+                              "$ref": "#/$defs/visibleLabel"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "required",
+                            "defaultChecked",
+                            "label"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Checkbox node"
+                    }
+                  },
+                  "required": [
+                    "Checkbox"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Native checkbox inside Form. Unchecked values are omitted on submission."
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "Textarea": {
+                      "type": "object",
+                      "properties": {
+                        "props": {
+                          "type": "object",
+                          "properties": {
+                            "name": {
+                              "$ref": "#/$defs/uniqueFieldName"
+                            },
+                            "required": {
+                              "$ref": "#/$defs/requiredInput"
+                            },
+                            "placeholder": {
+                              "type": "string",
+                              "description": "Placeholder or empty"
+                            },
+                            "defaultValue": {
+                              "type": "string",
+                              "description": "Initial value or empty"
+                            },
+                            "label": {
+                              "$ref": "#/$defs/visibleLabel"
+                            }
+                          },
+                          "required": [
+                            "name",
+                            "required",
+                            "placeholder",
+                            "defaultValue",
+                            "label"
+                          ],
+                          "additionalProperties": false,
+                          "description": "Component Props"
+                        }
+                      },
+                      "required": [
+                        "props"
+                      ],
+                      "additionalProperties": false,
+                      "description": "Textarea node"
+                    }
+                  },
+                  "required": [
+                    "Textarea"
+                  ],
+                  "additionalProperties": false,
+                  "description": "Labeled multiline input inside Form."
+                }
+              ]
+            },
+            "spaceBetweenChildren": {
+              "type": "string",
+              "enum": [
+                "sm",
+                "md",
+                "lg"
+              ],
+              "description": "Space between children"
+            },
+            "innerSpacing": {
+              "type": "string",
+              "enum": [
+                "none",
+                "sm",
+                "md",
+                "lg"
+              ],
+              "description": "Inner spacing"
+            },
+            "uniqueFieldName": {
+              "type": "string",
+              "description": "Unique field name"
+            },
+            "visibleLabel": {
+              "type": "string",
+              "description": "Visible label"
+            },
+            "requiredInput": {
+              "type": "boolean",
+              "description": "Required input"
+            }
+          }
+        }
+      }
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today: 2026-11-02.\nYou compose a polished apartment-finding interface from a small component catalog.\nThese application-specific rules take precedence over generic examples above.\nThe records are synthetic. Photos are illustrative, not evidence of a property's features.\n\nCOMPOSITION\n- Build every view from the listed primitives. There are no ApartmentCard, DetailView or TourForm components.\n- Use a root Stack with padding=\"none\" to align results with the search bar. Nest Grid, Card, Stack and Row where useful; compose every visible field explicitly.\n- Search results: use a one-column Grid and compose each listing from the same arrangement of primitives. Inside the Card use a two-column Grid with gap=\"sm\": an Image and a Stack with padding=\"md\", gap=\"md\". Its content order is neighborhood Badge, h3 title, monthly-total Metric, a known-subtotal Metric and fee note visible only when the total is null, base-rent Metric, a Row of bedrooms/bathrooms/area Metrics, short description, and a Row of action Buttons. Keep all repeated cards consistent. Use h2 only for the view heading. Comparison and detail requests use their own compositions below.\n- Comparisons: use a three-column Grid of clearly identified Cards. EACH column must contain its supplied Image, title, neighborhood, base rent, mandatory fees, monthly total, beds, baths, area, pet rules, transit, and its own View Details and Schedule Tour Buttons. Keep the SAME sequence of criteria across columns. End the complete view with Back to Results. Unknown fees mean the total is unknown.\n- Details: compose a two-column gallery/summary area, then separate cost, lease, amenities, transit and review sections. Use multiple Images from photos. Include availability, floor/elevator and known restrictions. Reviews are synthetic.\n- Form: create a Form with its apartmentId and accessible label. Compose Heading, Input, Select, Checkbox or Textarea children according to the request. Name, email and preferred date are required by default; phone and message are optional unless the user asks otherwise. Each field needs a unique name. A Button with type=\"submit\" submits this Form; do not bind submit_tour to a button event. Do not nest Forms.\n- Confirmation: compose a Card with Heading, Text and navigation. Explicitly identify the request as a demo; no booking, contact or promised follow-up.\n- No exact matches: explain the unmet filters. Only show supplied alternatives if requested, and label the constraint each relaxes.\n\nFACTS AND ACTIONS\n- Use only supplied data. A missing value is unknown, never false or zero. Do not infer availability from a past date.\n- Display costs.monthlyTotal when known; otherwise show costs.knownMonthlySubtotal as an incomplete subtotal. Separate optional monthly fees and one-time charges. Costs exclude usage-dependent utilities.\n- Do not reinterpret \"Pets negotiable\" as confirmed permission. Show weight limits when relevant.\n- Use Button actions for view_apartment / schedule_tour with { apartmentId }, compare_apartments with { apartmentIds }, and back_to_results with {}.\n- Every listing Card and every comparison column MUST include View Details and Schedule Tour Buttons bound to that record ID. Details/comparisons/forms MUST include a Back to Results Button. These controls are required even when the user only asks about facts. Define every referenced child, including the buttons, before finishing.\n- Respect all search filters together and preserve them when returning. Show at most 12 listings; default to 3-6 unless the user asks for more. Explain any display limit.\n- Rent is USD/month; show bedrooms, bathrooms and square footage with labels.\n- Money and area use Metric with a numeric value or null plus format=\"usd/month\", \"usd\" or \"sqft\". React supplies currency symbols, commas and units. Never emit interpolation strings as display values.\n- Use plain literal sentences for dates, availability, lease terms, floor/elevator summaries and other one-off descriptions.  Do not invent string interpolation syntax.\n- A null monthly total displays Unknown. Also show the known subtotal with a clearly visible note that mandatory fees are not yet known.\n- Form inputs use native local state; the Form's onSubmit collects only its own values. Do not generate onClick for a submit Button.\n\nHASHBROWN JSON\n- Return only the structured JSON object {\"ui\":[...]}; no Markdown fences.\n- Every node uses its catalog name as its key: {\"Stack\":{\"props\":{\"gap\":\"md\",\"padding\":\"none\",\"visible\":true},\"children\":[{\"Heading\":{\"props\":{\"level\":\"h2\",\"text\":\"Apartments\"}}}]}}.\n- Write parent props before children, then each child's complete subtree in display order. Hashbrown streams nested children and marked text props as they arrive.\n- Use literal values from the supplied data. No references, interpolation strings or invented template syntax.\n- Button.action is {\"name\":\"view_apartment\",\"apartmentId\":\"7\"}, {\"name\":\"schedule_tour\",\"apartmentId\":\"7\"}, {\"name\":\"back_to_results\"} or {\"name\":\"compare_apartments\",\"apartmentIds\":[\"2\",\"7\"]}. A submit Button has action=null; its Form collects actual inputs.\n- Include every required prop; unused input attributes are empty strings. Cards use string record IDs; generic containers use recordId=\"\".\n- Complete every requested record and its actions before closing the response.\n\nDATA (the only source of facts):\n[{\"id\":\"2\",\"title\":\"Modern 2BR with Skyline Views\",\"neighborhood\":\"Midtown\",\"rent\":3100,\"bedrooms\":2,\"bathrooms\":2,\"sqft\":1100,\"address\":\"89 Park Ave, Unit 12F\",\"description\":\"Recently renovated corner unit with panoramic skyline views from the 12th floor. Quartz countertops, stainless appliances, and a balcony off the primary bedroom. Full-service building with 24/7 concierge.\",\"imageUrl\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"availableFrom\":\"2026-12-01\",\"petPolicy\":\"Dogs and cats (under 50 lbs)\",\"amenities\":[\"Balcony\",\"Central AC\",\"Concierge\",\"Gym\",\"Parking available ($200/mo)\",\"Pool\"],\"nearbyTransit\":[\"Express bus - 2 min walk\",\"Red Line - 5 min walk\"],\"reviews\":[{\"author\":\"Chris L.\",\"rating\":5,\"text\":\"The views alone are worth it. Building management is responsive and the gym is solid.\"},{\"author\":\"Priya S.\",\"rating\":4,\"text\":\"Beautiful apartment. Concierge is very helpful. Wish parking was included.\"}],\"floor\":12,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":true,\"maxWeightLbs\":50},\"fees\":[{\"label\":\"Building services\",\"amount\":65,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":3100,\"frequency\":\"once\",\"required\":true},{\"label\":\"Optional parking\",\"amount\":200,\"frequency\":\"monthly\",\"required\":false},{\"label\":\"Pet rent if bringing a pet\",\"amount\":35,\"frequency\":\"monthly\",\"required\":false}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Express bus\",\"walkMinutes\":2},{\"name\":\"Red Line\",\"walkMinutes\":5}],\"costs\":{\"monthlyTotal\":3165,\"knownMonthlySubtotal\":3165,\"moveInTotal\":6265,\"knownMoveInSubtotal\":6265,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}}]"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Compose a listing for the supplied apartment with its photo, title, neighborhood, rent, mandatory monthly total (or incomplete subtotal), beds, baths and area. Include View Details and Schedule Tour for its ID. Use separate layout, content and action components."
+      }
+    ],
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "zdr": true,
+      "allow_fallbacks": false,
+      "only": [
+        "azure/eu"
+      ]
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateSnapshot",
+          "description": "Replace the entire application state with a new snapshot",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "snapshot": {
+                "description": "The complete new state object"
+              }
+            },
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateDelta",
+          "description": "Apply incremental updates to application state using JSON Patch operations",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "add",
+                        "replace",
+                        "remove"
+                      ],
+                      "description": "The operation to perform"
+                    },
+                    "path": {
+                      "type": "string",
+                      "description": "JSON Pointer path (e.g., '/foo/bar')"
+                    },
+                    "value": {
+                      "description": "The value to set. Required for 'add' and 'replace' operations, ignored for 'remove'."
+                    }
+                  },
+                  "required": [
+                    "op",
+                    "path"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Array of JSON Patch operations"
+              }
+            },
+            "required": [
+              "delta"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "stream": true
+  },
+  "actionRequests": [
+    {
+      "message": {
+        "id": "5cecf84f-ca01-4434-848e-00efb158b7e7",
+        "role": "user",
+        "content": "Show apartment details\n{\"name\":\"view_apartment\",\"apartmentId\":\"2\"}"
+      },
+      "action": {
+        "name": "view_apartment",
+        "apartmentId": "2"
+      },
+      "runId": "656ee611-6060-42b3-8cc2-70e61b2ba2d3",
+      "threadId": "29483b91-fa13-45fc-b8bc-1327ca28872e"
+    },
+    {
+      "message": {
+        "id": "375c17f1-b002-465c-b003-6b5925554606",
+        "role": "user",
+        "content": "Open a demo tour request\n{\"name\":\"schedule_tour\",\"apartmentId\":\"2\"}"
+      },
+      "action": {
+        "name": "schedule_tour",
+        "apartmentId": "2"
+      },
+      "runId": "fb4c3589-f122-4054-a546-723bfc65a4cb",
+      "threadId": "29483b91-fa13-45fc-b8bc-1327ca28872e"
+    }
+  ],
+  "events": [
+    {
+      "ms": 7.531749999994645,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "{\"ui\":[{\"Stack\":{\"props\":{\"gap\":\"md\",\"padding\":\"none\",\"visible\":true},\"children\":[{\"Heading\":{\"p"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 16.506667000008747,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "rops\":{\"level\":\"h2\",\"text\":\"Apartments\"}}},{\"Grid\":{\"props\":{\"columns\":\"1\",\"gap\":\"md\"},\"children"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 26.320999999996275,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\":[{\"Card\":{\"props\":{\"recordId\":\"2\",\"variant\":\"outlined\",\"padding\":\"none\"},\"children\":[{\"Grid\":{"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 35.148749999993015,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\"props\":{\"columns\":\"2\",\"gap\":\"sm\"},\"children\":[{\"Image\":{\"props\":{\"aspect\":\"landscape\",\"src\":\"ht"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 43.329916999995476,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "tps://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustr"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 52.04024999999092,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ative apartment interior\"}}},{\"Stack\":{\"props\":{\"gap\":\"md\",\"padding\":\"md\",\"visible\":true},\"child"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 60.826625000016065,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ren\":[{\"Badge\":{\"props\":{\"tone\":\"neutral\",\"text\":\"Midtown\"}}},{\"Heading\":{\"props\":{\"level\":\"h3\","
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 70.2472500000149,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\"text\":\"Modern 2BR with Skyline Views\"}}},{\"Metric\":{\"props\":{\"format\":\"usd/month\",\"emphasis\":fa"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 78.05183300000499,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "lse,\"label\":\"Monthly total\",\"value\":3165}}},{\"Metric\":{\"props\":{\"format\":\"usd/month\",\"emphasis\":"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 86.35358299998916,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "false,\"label\":\"Base rent\",\"value\":1}}},{\"Row\":{\"props\":{\"gap\":\"md\",\"align\":\"start\"},\"children\":["
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 95.81395800001337,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "{\"Metric\":{\"props\":{\"format\":\"text\",\"emphasis\":false,\"label\":\"Bedrooms\",\"value\":2}}},{\"Metric\":{"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 105.36954200000037,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\"props\":{\"format\":\"text\",\"emphasis\":false,\"label\":\"Bathrooms\",\"value\":2}}},{\"Metric\":{\"props\":{\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 115.23699999999371,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "format\":\"sqft\",\"emphasis\":false,\"label\":\"Area\",\"value\":1100}}}]}},{\"Row\":{\"props\":{\"gap\":\"md\",\"a"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 123.35945799999172,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "lign\":\"start\"},\"children\":[{\"Button\":{\"props\":{\"type\":\"button\",\"variant\":\"secondary\",\"action\":{\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 134.85545800000546,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "name\":\"view_apartment\",\"apartmentId\":\"2\"},\"label\":\"View Details\"}}},{\"Button\":{\"props\":{\"type\":\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 143.36458299998776,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "button\",\"variant\":\"secondary\",\"action\":{\"name\":\"schedule_tour\",\"apartmentId\":\"2\"},\"label\":\"Sched"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 152.44412500000908,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ule Tour\"}}}]}}]}}]}}]}}]}}]}}]}"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 403.946082999988,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {},
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "cost": 0
+        }
+      }
+    }
+  ],
+  "raw": "{\"ui\":[{\"Stack\":{\"props\":{\"gap\":\"md\",\"padding\":\"none\",\"visible\":true},\"children\":[{\"Heading\":{\"props\":{\"level\":\"h2\",\"text\":\"Apartments\"}}},{\"Grid\":{\"props\":{\"columns\":\"1\",\"gap\":\"md\"},\"children\":[{\"Card\":{\"props\":{\"recordId\":\"2\",\"variant\":\"outlined\",\"padding\":\"none\"},\"children\":[{\"Grid\":{\"props\":{\"columns\":\"2\",\"gap\":\"sm\"},\"children\":[{\"Image\":{\"props\":{\"aspect\":\"landscape\",\"src\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\"}}},{\"Stack\":{\"props\":{\"gap\":\"md\",\"padding\":\"md\",\"visible\":true},\"children\":[{\"Badge\":{\"props\":{\"tone\":\"neutral\",\"text\":\"Midtown\"}}},{\"Heading\":{\"props\":{\"level\":\"h3\",\"text\":\"Modern 2BR with Skyline Views\"}}},{\"Metric\":{\"props\":{\"format\":\"usd/month\",\"emphasis\":false,\"label\":\"Monthly total\",\"value\":3165}}},{\"Metric\":{\"props\":{\"format\":\"usd/month\",\"emphasis\":false,\"label\":\"Base rent\",\"value\":1}}},{\"Row\":{\"props\":{\"gap\":\"md\",\"align\":\"start\"},\"children\":[{\"Metric\":{\"props\":{\"format\":\"text\",\"emphasis\":false,\"label\":\"Bedrooms\",\"value\":2}}},{\"Metric\":{\"props\":{\"format\":\"text\",\"emphasis\":false,\"label\":\"Bathrooms\",\"value\":2}}},{\"Metric\":{\"props\":{\"format\":\"sqft\",\"emphasis\":false,\"label\":\"Area\",\"value\":1100}}}]}},{\"Row\":{\"props\":{\"gap\":\"md\",\"align\":\"start\"},\"children\":[{\"Button\":{\"props\":{\"type\":\"button\",\"variant\":\"secondary\",\"action\":{\"name\":\"view_apartment\",\"apartmentId\":\"2\"},\"label\":\"View Details\"}}},{\"Button\":{\"props\":{\"type\":\"button\",\"variant\":\"secondary\",\"action\":{\"name\":\"schedule_tour\",\"apartmentId\":\"2\"},\"label\":\"Schedule Tour\"}}}]}}]}}]}}]}}]}}]}}]}",
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost": 0
+  },
+  "costUsd": 0,
+  "providerFinishedMs": 404.1058750000084,
+  "firstTokenMs": 7.533625000010943,
+  "servingProvider": "replay",
+  "returnedModel": "replay",
+  "promptHash": "c433c2df9cde5b15249123e8c4138a6b70c6d26e345df7e476a0dca2f49884e4"
+}

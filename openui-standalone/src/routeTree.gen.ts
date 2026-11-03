@@ -9,35 +9,29 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as SurfaceRouteImport } from './routes/surface'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ApiToolsRouteImport } from './routes/api/tools'
-import { Route as ApiSurfaceRouteImport } from './routes/api/surface'
+import { Route as SurfaceRouteImport } from './routes/surface'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as ApiSurfaceRouteImport } from './routes/api/surface'
 
-const SurfaceRoute = SurfaceRouteImport.update({
-  id: '/surface',
-  path: '/surface',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiToolsRoute = ApiToolsRouteImport.update({
-  id: '/api/tools',
-  path: '/api/tools',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ApiSurfaceRoute = ApiSurfaceRouteImport.update({
-  id: '/api/surface',
-  path: '/api/surface',
+const SurfaceRoute = SurfaceRouteImport.update({
+  id: '/surface',
+  path: '/surface',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiChatRoute = ApiChatRouteImport.update({
   id: '/api/chat',
   path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiSurfaceRoute = ApiSurfaceRouteImport.update({
+  id: '/api/surface',
+  path: '/api/surface',
   getParentRoute: () => rootRouteImport,
 } as any)
 
@@ -46,14 +40,12 @@ export interface FileRoutesByFullPath {
   '/surface': typeof SurfaceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/surface': typeof ApiSurfaceRoute
-  '/api/tools': typeof ApiToolsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/surface': typeof SurfaceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/surface': typeof ApiSurfaceRoute
-  '/api/tools': typeof ApiToolsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -61,20 +53,13 @@ export interface FileRoutesById {
   '/surface': typeof SurfaceRoute
   '/api/chat': typeof ApiChatRoute
   '/api/surface': typeof ApiSurfaceRoute
-  '/api/tools': typeof ApiToolsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/surface' | '/api/chat' | '/api/surface' | '/api/tools'
+  fullPaths: '/' | '/surface' | '/api/chat' | '/api/surface'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/surface' | '/api/chat' | '/api/surface' | '/api/tools'
-  id:
-    | '__root__'
-    | '/'
-    | '/surface'
-    | '/api/chat'
-    | '/api/surface'
-    | '/api/tools'
+  to: '/' | '/surface' | '/api/chat' | '/api/surface'
+  id: '__root__' | '/' | '/surface' | '/api/chat' | '/api/surface'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -82,18 +67,10 @@ export interface RootRouteChildren {
   SurfaceRoute: typeof SurfaceRoute
   ApiChatRoute: typeof ApiChatRoute
   ApiSurfaceRoute: typeof ApiSurfaceRoute
-  ApiToolsRoute: typeof ApiToolsRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/surface': {
-      id: '/surface'
-      path: '/surface'
-      fullPath: '/surface'
-      preLoaderRoute: typeof SurfaceRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -101,18 +78,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/tools': {
-      id: '/api/tools'
-      path: '/api/tools'
-      fullPath: '/api/tools'
-      preLoaderRoute: typeof ApiToolsRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/api/surface': {
-      id: '/api/surface'
-      path: '/api/surface'
-      fullPath: '/api/surface'
-      preLoaderRoute: typeof ApiSurfaceRouteImport
+    '/surface': {
+      id: '/surface'
+      path: '/surface'
+      fullPath: '/surface'
+      preLoaderRoute: typeof SurfaceRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/chat': {
@@ -120,6 +90,13 @@ declare module '@tanstack/react-router' {
       path: '/api/chat'
       fullPath: '/api/chat'
       preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/surface': {
+      id: '/api/surface'
+      path: '/api/surface'
+      fullPath: '/api/surface'
+      preLoaderRoute: typeof ApiSurfaceRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -130,7 +107,6 @@ const rootRouteChildren: RootRouteChildren = {
   SurfaceRoute: SurfaceRoute,
   ApiChatRoute: ApiChatRoute,
   ApiSurfaceRoute: ApiSurfaceRoute,
-  ApiToolsRoute: ApiToolsRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

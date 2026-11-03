@@ -1,0 +1,2265 @@
+{
+  "id": "a2ui-2026-11-02T01-50-50-738Z-replay-3-tool-batch-C02",
+  "variant": {
+    "transport": "tool",
+    "generation": "batch"
+  },
+  "caseId": "C02",
+  "control": "valid",
+  "expectedFailure": null,
+  "pass": true,
+  "automaticPass": true,
+  "verdicts": {
+    "rawFormat": {
+      "pass": true,
+      "errors": []
+    },
+    "contract": {
+      "pass": true,
+      "errors": []
+    },
+    "strategy": {
+      "pass": true,
+      "errors": []
+    },
+    "content": {
+      "pass": true,
+      "errors": []
+    },
+    "actionBindings": {
+      "pass": true,
+      "errors": [],
+      "actual": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "scopeId": "2"
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "scopeId": "2"
+        },
+        {
+          "name": "view_apartment",
+          "apartmentId": "7",
+          "scopeId": "7"
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "7",
+          "scopeId": "7"
+        },
+        {
+          "name": "view_apartment",
+          "apartmentId": "13",
+          "scopeId": "13"
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "13",
+          "scopeId": "13"
+        },
+        {
+          "name": "back_to_results"
+        }
+      ]
+    },
+    "interaction": {
+      "pass": true,
+      "errors": [],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "339ab955-210d-41d5-a6cd-aba1fd34b373",
+                "role": "user",
+                "content": "View Details\n\napartmentId: 2"
+              },
+              "envelope": {
+                "name": "view_apartment",
+                "surfaceId": "results",
+                "sourceComponentId": "details",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "2"
+                }
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "2"
+              },
+              "runId": "99f4bf33-c9ce-4c35-92e9-f275ec47b74b",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "view_apartment",
+          "apartmentId": "7",
+          "before": 1,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "443f09d6-2b3d-4baf-80be-9a10ceeb729e",
+                "role": "user",
+                "content": "View Details\n\napartmentId: 7"
+              },
+              "envelope": {
+                "name": "view_apartment",
+                "surfaceId": "results",
+                "sourceComponentId": "details",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "7"
+                }
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "7"
+              },
+              "runId": "e566faad-3a39-45f4-8809-dcca8a204d69",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "view_apartment",
+          "apartmentId": "13",
+          "before": 2,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "021fd067-0072-46a9-8611-8dee41c2f748",
+                "role": "user",
+                "content": "View Details\n\napartmentId: 13"
+              },
+              "envelope": {
+                "name": "view_apartment",
+                "surfaceId": "results",
+                "sourceComponentId": "details",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "13"
+                }
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "13"
+              },
+              "runId": "9aaaff91-f604-408a-b26a-0582b0a74a54",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 3,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "00729164-e597-4522-863a-957a49e735ba",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 2"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "tour",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "2"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "2"
+              },
+              "runId": "6024c580-83d6-4c13-88ae-6ea4805883d5",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "7",
+          "before": 4,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "3a9b3f40-f2de-4659-b0d9-dc6b004aacc8",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 7"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "tour",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "7"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "7"
+              },
+              "runId": "8c81c1a1-8dd5-4104-8417-a5f7238d3106",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "13",
+          "before": 5,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "34f791bc-502d-4852-bf82-88afe6d18d77",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 13"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "tour",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "13"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "13"
+              },
+              "runId": "77dcfd8e-28b1-43cf-8686-2ed0c6ce4a0b",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "back_to_results",
+          "before": 6,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "60982687-00ec-4057-b4a2-43e501381a76",
+                "role": "user",
+                "content": "Back to Results"
+              },
+              "envelope": {
+                "name": "back_to_results",
+                "surfaceId": "results",
+                "sourceComponentId": "back",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {}
+              },
+              "action": {
+                "name": "back_to_results"
+              },
+              "runId": "ce81747b-3d86-4e78-978a-e25b711bde3b",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        }
+      ],
+      "requestCount": 7
+    },
+    "runtime": {
+      "pass": true,
+      "errors": []
+    }
+  },
+  "recovery": null,
+  "browser": {
+    "metrics": {
+      "timeline": [
+        {
+          "ms": 0.10000014305114746,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 3
+        },
+        {
+          "ms": 6.400000095367432,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 449.7000000476837,
+          "ids": [
+            "2",
+            "7",
+            "13"
+          ],
+          "complete": 3,
+          "pending": 0,
+          "renderedFields": 15,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 698.7999999523163,
+          "ids": [
+            "2",
+            "7",
+            "13"
+          ],
+          "complete": 3,
+          "pending": 0,
+          "renderedFields": 15,
+          "enabledButtons": 7
+        }
+      ],
+      "firstMeaningfulMs": 449.7000000476837,
+      "firstCompleteCardMs": 449.7000000476837,
+      "allContentMs": 449.7000000476837,
+      "usableMs": 698.7999999523163,
+      "runEndMs": 697.2999999523163
+    },
+    "interaction": {
+      "pass": true,
+      "errors": [],
+      "checks": [
+        {
+          "name": "view_apartment",
+          "apartmentId": "2",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "339ab955-210d-41d5-a6cd-aba1fd34b373",
+                "role": "user",
+                "content": "View Details\n\napartmentId: 2"
+              },
+              "envelope": {
+                "name": "view_apartment",
+                "surfaceId": "results",
+                "sourceComponentId": "details",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "2"
+                }
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "2"
+              },
+              "runId": "99f4bf33-c9ce-4c35-92e9-f275ec47b74b",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "view_apartment",
+          "apartmentId": "7",
+          "before": 1,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "443f09d6-2b3d-4baf-80be-9a10ceeb729e",
+                "role": "user",
+                "content": "View Details\n\napartmentId: 7"
+              },
+              "envelope": {
+                "name": "view_apartment",
+                "surfaceId": "results",
+                "sourceComponentId": "details",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "7"
+                }
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "7"
+              },
+              "runId": "e566faad-3a39-45f4-8809-dcca8a204d69",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "view_apartment",
+          "apartmentId": "13",
+          "before": 2,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "021fd067-0072-46a9-8611-8dee41c2f748",
+                "role": "user",
+                "content": "View Details\n\napartmentId: 13"
+              },
+              "envelope": {
+                "name": "view_apartment",
+                "surfaceId": "results",
+                "sourceComponentId": "details",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "13"
+                }
+              },
+              "action": {
+                "name": "view_apartment",
+                "apartmentId": "13"
+              },
+              "runId": "9aaaff91-f604-408a-b26a-0582b0a74a54",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "2",
+          "before": 3,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "00729164-e597-4522-863a-957a49e735ba",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 2"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "tour",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "2"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "2"
+              },
+              "runId": "6024c580-83d6-4c13-88ae-6ea4805883d5",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "7",
+          "before": 4,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "3a9b3f40-f2de-4659-b0d9-dc6b004aacc8",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 7"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "tour",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "7"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "7"
+              },
+              "runId": "8c81c1a1-8dd5-4104-8417-a5f7238d3106",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "schedule_tour",
+          "apartmentId": "13",
+          "before": 5,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "34f791bc-502d-4852-bf82-88afe6d18d77",
+                "role": "user",
+                "content": "Schedule Tour\n\napartmentId: 13"
+              },
+              "envelope": {
+                "name": "schedule_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "tour",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "13"
+                }
+              },
+              "action": {
+                "name": "schedule_tour",
+                "apartmentId": "13"
+              },
+              "runId": "77dcfd8e-28b1-43cf-8686-2ed0c6ce4a0b",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        },
+        {
+          "name": "back_to_results",
+          "before": 6,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "60982687-00ec-4057-b4a2-43e501381a76",
+                "role": "user",
+                "content": "Back to Results"
+              },
+              "envelope": {
+                "name": "back_to_results",
+                "surfaceId": "results",
+                "sourceComponentId": "back",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {}
+              },
+              "action": {
+                "name": "back_to_results"
+              },
+              "runId": "ce81747b-3d86-4e78-978a-e25b711bde3b",
+              "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+            }
+          ]
+        }
+      ],
+      "requestCount": 7
+    },
+    "dom": {
+      "form": {
+        "errors": [],
+        "fields": []
+      },
+      "meaningful": true,
+      "ready": true,
+      "recordIds": [
+        "2",
+        "7",
+        "13"
+      ],
+      "enabledButtons": 7,
+      "errors": [],
+      "records": [
+        {
+          "id": "2",
+          "found": true,
+          "text": "Midtown\nModern 2BR with Skyline Views\nMonthly total\n$3,165/mo\nBase rent\n$3,100/mo\nBedrooms\n2\nBathrooms\n2\nArea\n1,100 sqft\n\nBuilding services: $65\n\nDogs and cats (under 50 lbs)\n\n50 lb weight limit\n\nExpress bus: 2 minutes; Red Line: 5 minutes\n\nView Details\n↗\nSchedule Tour\n↗",
+          "metrics": [
+            {
+              "label": "Monthly total",
+              "value": "$3,165/mo"
+            },
+            {
+              "label": "Base rent",
+              "value": "$3,100/mo"
+            },
+            {
+              "label": "Bedrooms",
+              "value": "2"
+            },
+            {
+              "label": "Bathrooms",
+              "value": "2"
+            },
+            {
+              "label": "Area",
+              "value": "1,100 sqft"
+            }
+          ],
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop",
+              "loaded": true
+            }
+          ],
+          "feeRows": []
+        },
+        {
+          "id": "7",
+          "found": true,
+          "text": "Arts District\nRenovated 2BR Corner Unit\nMonthly total\n$3,200/mo\nBase rent\n$2,850/mo\nBedrooms\n2\nBathrooms\n1\nArea\n950 sqft\n\nBuilding services: $350\n\nDogs and cats (under 40 lbs)\n\n40 lb weight limit\n\nBlue Line: 4 minutes; Bus 16: 2 minutes\n\nView Details\n↗\nSchedule Tour\n↗",
+          "metrics": [
+            {
+              "label": "Monthly total",
+              "value": "$3,200/mo"
+            },
+            {
+              "label": "Base rent",
+              "value": "$2,850/mo"
+            },
+            {
+              "label": "Bedrooms",
+              "value": "2"
+            },
+            {
+              "label": "Bathrooms",
+              "value": "1"
+            },
+            {
+              "label": "Area",
+              "value": "950 sqft"
+            }
+          ],
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop",
+              "loaded": true
+            }
+          ],
+          "feeRows": []
+        },
+        {
+          "id": "13",
+          "found": true,
+          "text": "Riverside\nRiverbend Two-Bedroom with Work Alcove\nMonthly total\n$3,060/mo\nBase rent\n$2,980/mo\nBedrooms\n2\nBathrooms\n1\nArea\n980 sqft\n\nBuilding services: $80\n\nCats only\n\nNo supplied weight limit\n\nGreen Line: 8 minutes; Bus 23: 3 minutes\n\nView Details\n↗\nSchedule Tour\n↗",
+          "metrics": [
+            {
+              "label": "Monthly total",
+              "value": "$3,060/mo"
+            },
+            {
+              "label": "Base rent",
+              "value": "$2,980/mo"
+            },
+            {
+              "label": "Bedrooms",
+              "value": "2"
+            },
+            {
+              "label": "Bathrooms",
+              "value": "1"
+            },
+            {
+              "label": "Area",
+              "value": "980 sqft"
+            }
+          ],
+          "images": [
+            {
+              "src": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop",
+              "loaded": true
+            }
+          ],
+          "feeRows": []
+        }
+      ],
+      "buttons": [
+        {
+          "label": "View Details\n↗",
+          "enabled": true,
+          "scopeId": "2"
+        },
+        {
+          "label": "Schedule Tour\n↗",
+          "enabled": true,
+          "scopeId": "2"
+        },
+        {
+          "label": "View Details\n↗",
+          "enabled": true,
+          "scopeId": "7"
+        },
+        {
+          "label": "Schedule Tour\n↗",
+          "enabled": true,
+          "scopeId": "7"
+        },
+        {
+          "label": "View Details\n↗",
+          "enabled": true,
+          "scopeId": "13"
+        },
+        {
+          "label": "Schedule Tour\n↗",
+          "enabled": true,
+          "scopeId": "13"
+        },
+        {
+          "label": "Back to Results\n↗",
+          "enabled": true,
+          "scopeId": null
+        }
+      ]
+    },
+    "alerts": [],
+    "html": "<fieldset class=\"surface-controls generated-ui\" aria-label=\"Apartment results\" aria-busy=\"false\"><div data-generative-ui-surface=\"apartments\"><div class=\"a2ui-surface\" data-generative-ui-root=\"results\" style=\"display: contents;\"><div class=\"ui-stack gap-md pad-none\"><h2 class=\"ui-heading\">Compare apartments</h2><div class=\"ui-grid cols-3 gap-md\"><section data-record-id=\"2\" class=\"ui-card outlined pad-none\"><div class=\"ui-grid cols-2 gap-sm\"><img class=\"ui-image landscape\" alt=\"Illustrative apartment photo\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&amp;h=750&amp;fit=crop\"><div class=\"ui-stack gap-md pad-md\"><span class=\"ui-badge neutral\">Midtown</span><h3 class=\"ui-heading\">Modern 2BR with Skyline Views</h3><div class=\"ui-metric \"><span>Monthly total</span><strong>$3,165/mo</strong></div><div class=\"ui-metric \"><span>Base rent</span><strong>$3,100/mo</strong></div><div class=\"ui-row gap-md align-start\"><div class=\"ui-metric \"><span>Bedrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Bathrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Area</span><strong>1,100 sqft</strong></div></div><p class=\"ui-copy default\">Building services: $65</p><p class=\"ui-copy default\">Dogs and cats (under 50 lbs)</p><p class=\"ui-copy default\">50 lb weight limit</p><p class=\"ui-copy default\">Express bus: 2 minutes; Red Line: 5 minutes</p><div class=\"ui-row gap-md align-start\"><button type=\"button\" class=\"ui-button primary\">View Details<span aria-hidden=\"true\">↗</span></button><button type=\"button\" class=\"ui-button primary\">Schedule Tour<span aria-hidden=\"true\">↗</span></button></div></div></div></section><section data-record-id=\"7\" class=\"ui-card outlined pad-none\"><div class=\"ui-grid cols-2 gap-sm\"><img class=\"ui-image landscape\" alt=\"Illustrative apartment photo\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&amp;h=750&amp;fit=crop\"><div class=\"ui-stack gap-md pad-md\"><span class=\"ui-badge neutral\">Arts District</span><h3 class=\"ui-heading\">Renovated 2BR Corner Unit</h3><div class=\"ui-metric \"><span>Monthly total</span><strong>$3,200/mo</strong></div><div class=\"ui-metric \"><span>Base rent</span><strong>$2,850/mo</strong></div><div class=\"ui-row gap-md align-start\"><div class=\"ui-metric \"><span>Bedrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Bathrooms</span><strong>1</strong></div><div class=\"ui-metric \"><span>Area</span><strong>950 sqft</strong></div></div><p class=\"ui-copy default\">Building services: $350</p><p class=\"ui-copy default\">Dogs and cats (under 40 lbs)</p><p class=\"ui-copy default\">40 lb weight limit</p><p class=\"ui-copy default\">Blue Line: 4 minutes; Bus 16: 2 minutes</p><div class=\"ui-row gap-md align-start\"><button type=\"button\" class=\"ui-button primary\">View Details<span aria-hidden=\"true\">↗</span></button><button type=\"button\" class=\"ui-button primary\">Schedule Tour<span aria-hidden=\"true\">↗</span></button></div></div></div></section><section data-record-id=\"13\" class=\"ui-card outlined pad-none\"><div class=\"ui-grid cols-2 gap-sm\"><img class=\"ui-image landscape\" alt=\"Illustrative apartment photo\" loading=\"lazy\" src=\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&amp;h=750&amp;fit=crop\"><div class=\"ui-stack gap-md pad-md\"><span class=\"ui-badge neutral\">Riverside</span><h3 class=\"ui-heading\">Riverbend Two-Bedroom with Work Alcove</h3><div class=\"ui-metric \"><span>Monthly total</span><strong>$3,060/mo</strong></div><div class=\"ui-metric \"><span>Base rent</span><strong>$2,980/mo</strong></div><div class=\"ui-row gap-md align-start\"><div class=\"ui-metric \"><span>Bedrooms</span><strong>2</strong></div><div class=\"ui-metric \"><span>Bathrooms</span><strong>1</strong></div><div class=\"ui-metric \"><span>Area</span><strong>980 sqft</strong></div></div><p class=\"ui-copy default\">Building services: $80</p><p class=\"ui-copy default\">Cats only</p><p class=\"ui-copy default\">No supplied weight limit</p><p class=\"ui-copy default\">Green Line: 8 minutes; Bus 23: 3 minutes</p><div class=\"ui-row gap-md align-start\"><button type=\"button\" class=\"ui-button primary\">View Details<span aria-hidden=\"true\">↗</span></button><button type=\"button\" class=\"ui-button primary\">Schedule Tour<span aria-hidden=\"true\">↗</span></button></div></div></div></section></div><button type=\"button\" class=\"ui-button primary\">Back to Results<span aria-hidden=\"true\">↗</span></button></div></div></div></fieldset>",
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        900
+      ],
+      "devicePixelRatio": 2,
+      "visibility": "visible",
+      "assets": "local-svg/system-fonts",
+      "failures": []
+    }
+  },
+  "request": {
+    "model": "replay",
+    "max_tokens": 16000,
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today: 2026-11-02.\nYou compose a polished apartment-finding interface from a small component catalog.\nThese application-specific rules take precedence over generic examples above.\nThe records are synthetic. Photos are illustrative, not evidence of a property's features.\n\nCOMPOSITION\n- Build every view from the listed primitives. There are no ApartmentCard, DetailView or TourForm components.\n- Use a root Stack with padding=\"none\" to align results with the search bar. Nest Grid, Card, Stack and Row where useful; compose every visible field explicitly.\n- Search results: use a one-column Grid with a children template over the selected records, and compose ONE shared Card subtree. Inside the Card use a two-column Grid with gap=\"sm\": an Image and a Stack with padding=\"md\", gap=\"md\". Its content order is neighborhood Badge, h3 title, monthly-total Metric, a known-subtotal Metric and fee note visible only when the total is null, base-rent Metric, a Row of bedrooms/bathrooms/area Metrics, short description, and a Row of action Buttons. Keep all repeated cards consistent. Use h2 only for the view heading. Comparison and detail requests use their own compositions below.\n- Comparisons: use a three-column Grid of clearly identified Cards. EACH column must contain its supplied Image, title, neighborhood, base rent, mandatory fees, monthly total, beds, baths, area, pet rules, transit, and its own View Details and Schedule Tour Buttons. Keep the SAME sequence of criteria across columns. End the complete view with Back to Results. Unknown fees mean the total is unknown.\n- Details: compose a two-column gallery/summary area, then separate cost, lease, amenities, transit and review sections. Use multiple Images from photos. Include availability, floor/elevator and known restrictions. Reviews are synthetic.\n- Form: create a Form with its apartmentId and accessible label. Compose Heading, Input, Select, Checkbox or Textarea children according to the request. Name, email and preferred date are required by default; phone and message are optional unless the user asks otherwise. Each field needs a unique name. A Button with type=\"submit\" submits this Form; do not bind submit_tour to a button event. Do not nest Forms.\n- Confirmation: compose a Card with Heading, Text and navigation. Explicitly identify the request as a demo; no booking, contact or promised follow-up.\n- No exact matches: explain the unmet filters. Only show supplied alternatives if requested, and label the constraint each relaxes.\n\nFACTS AND ACTIONS\n- Use only supplied data. A missing value is unknown, never false or zero. Do not infer availability from a past date.\n- Display costs.monthlyTotal when known; otherwise show costs.knownMonthlySubtotal as an incomplete subtotal. Separate optional monthly fees and one-time charges. Costs exclude usage-dependent utilities.\n- Do not reinterpret \"Pets negotiable\" as confirmed permission. Show weight limits when relevant.\n- Use Button onClick events for view_apartment / schedule_tour with { apartmentId }, compare_apartments with { apartmentIds }, and back_to_results with {}.\n- Every listing Card and every comparison column MUST include View Details and Schedule Tour Buttons bound to that record ID. Details/comparisons/forms MUST include a Back to Results Button. These controls are required even when the user only asks about facts. Define every referenced child, including the buttons, before finishing.\n- Respect all search filters together and preserve them when returning. Show at most 12 listings; default to 3-6 unless the user asks for more. Explain any display limit.\n- Rent is USD/month; show bedrooms, bathrooms and square footage with labels.\n- Money and area use Metric with a numeric value or null plus format=\"usd/month\", \"usd\" or \"sqft\". React supplies currency symbols, commas and units. Never emit interpolation strings as display values.\n- Use plain literal sentences for dates, availability, lease terms, floor/elevator summaries and other one-off descriptions. A direct @path may read a supplied string. Do not use formatString, formatDate, nested function expressions or interpolation to build display text. The only function composition needed in this app is not(required(value)) for conditional visibility below.\n- A null monthly total displays Unknown. Also show the known subtotal with a clearly visible note that mandatory fees are not yet known.\n- Form inputs use native local state; the Form's onSubmit collects only its own values. Do not generate onClick for a submit Button.\n\nA2UI 1.0\n- Render into target=\"apartments\", never chat. Follow the selected transport and update strategy below. Finish the entire requested view in one model response.\n- Use a new unique surfaceId for a different view. The page target replaces its previous surface. Use updateComponents/updateDataModel for changes within the current view.\n- Use the native children template {\"componentId\":\"listing\",\"path\":\"/apartments\"} for repeating results. Generate one Card subtree. Bind its values with {\"@path\":\"title\"}, {\"@path\":\"rent\"}, {\"@path\":\"costs/monthlyTotal\"}, and recordId with {\"@path\":\"id\"}. Relative paths read the current item; leading slashes read root data. No legacy {\"path\":...}, $item or $template.\n- Put the selected supplied records in dataModel.apartments, sorted by the requested numeric field. Include ONLY fields actually read by this view, not unused photos, reviews or lease details. Keep string IDs. The root and all parent slots must reference their children early. The selected strategy determines how to group components and data updates.\n- Bindings are JSON OBJECTS, never strings. Correct complete component: {\"id\":\"rent\",\"component\":\"Metric\",\"label\":\"Base rent\",\"value\":{\"@path\":\"rent\"},\"format\":\"usd/month\"}. Correct heading: {\"id\":\"title\",\"component\":\"Heading\",\"text\":{\"@path\":\"title\"},\"level\":\"h3\"}. The string \"{@path:title}\" is literal text and WILL NOT resolve. Do not stringify bindings, omit the quotes on their keys, or invent shorthand.\n- Put the known-subtotal Metric and unknown-fee note in a Stack with visible={\"@call\":\"not\",\"args\":{\"value\":{\"@call\":\"required\",\"args\":{\"value\":{\"@path\":\"costs/monthlyTotal\"}}}}}. These basic functions test presence: zero is known, null is unknown. Do not compare a number to null with calc. This section must be hidden for listings with a known monthly total. Do not put a warning on every listing.\n- Button onClick uses {\"event\":{\"name\":\"view_apartment\",\"userMessage\":\"Show details for this apartment\",\"context\":{\"apartmentId\":{\"@path\":\"id\"}}}} in a template. Use the analogous schedule_tour, compare_apartments or back_to_results event. Outside a template use literal IDs. No default/prewired apartment buttons exist.\n- Form onSubmit uses {\"event\":{\"name\":\"submit_tour\",\"userMessage\":\"Confirm my demo tour request\"}}. The renderer adds apartmentId and details from the form; read these from the user action. Never put invented contact details in the event.\n- Preserve the original search filters in conversation context; Back to Results returns to that search, not an unfiltered catalog.\n- Every referenced component must be defined. Do not leave placeholder bindings or blank layout slots when finished.\n\nTRANSPORT AND UPDATE STRATEGY (follow these instead of any generic streaming examples):\nCall render_ui ONCE, with target=\"apartments\" first and then an operations array containing the COMPLETE view. Separate operations in this ONE call stream independently. Do not wait for another turn. Do not write A2UI as prose.\nUse exactly two operations for a new view: (1) createSurface with the selected dataModel and only the root component, referencing its children; (2) ONE updateComponents containing every remaining component. Do not split the data or components into further updates.\nFor every strategy, every referenced child and required fact must be present by the end. The strategy changes delivery, not the required result.\nDATA (the only source of listing facts; preserve any order explicitly requested by the task):\n[{\"id\":\"2\",\"title\":\"Modern 2BR with Skyline Views\",\"neighborhood\":\"Midtown\",\"rent\":3100,\"bedrooms\":2,\"bathrooms\":2,\"sqft\":1100,\"address\":\"89 Park Ave, Unit 12F\",\"description\":\"Recently renovated corner unit with panoramic skyline views from the 12th floor. Quartz countertops, stainless appliances, and a balcony off the primary bedroom. Full-service building with 24/7 concierge.\",\"imageUrl\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"availableFrom\":\"2026-12-01\",\"petPolicy\":\"Dogs and cats (under 50 lbs)\",\"amenities\":[\"Balcony\",\"Central AC\",\"Concierge\",\"Gym\",\"Parking available ($200/mo)\",\"Pool\"],\"nearbyTransit\":[\"Express bus - 2 min walk\",\"Red Line - 5 min walk\"],\"reviews\":[{\"author\":\"Chris L.\",\"rating\":5,\"text\":\"The views alone are worth it. Building management is responsive and the gym is solid.\"},{\"author\":\"Priya S.\",\"rating\":4,\"text\":\"Beautiful apartment. Concierge is very helpful. Wish parking was included.\"}],\"floor\":12,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":true,\"maxWeightLbs\":50},\"fees\":[{\"label\":\"Building services\",\"amount\":65,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":3100,\"frequency\":\"once\",\"required\":true},{\"label\":\"Optional parking\",\"amount\":200,\"frequency\":\"monthly\",\"required\":false},{\"label\":\"Pet rent if bringing a pet\",\"amount\":35,\"frequency\":\"monthly\",\"required\":false}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Express bus\",\"walkMinutes\":2},{\"name\":\"Red Line\",\"walkMinutes\":5}],\"costs\":{\"monthlyTotal\":3165,\"knownMonthlySubtotal\":3165,\"moveInTotal\":6265,\"knownMoveInSubtotal\":6265,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}},{\"id\":\"7\",\"title\":\"Renovated 2BR Corner Unit\",\"neighborhood\":\"Arts District\",\"rent\":2850,\"bedrooms\":2,\"bathrooms\":1,\"sqft\":950,\"address\":\"208 Gallery Row, Unit 6A\",\"description\":\"Corner two-bedroom with windows on three sides and views of the mural district. Gut-renovated in 2025 with new plumbing, wiring, and mini-split AC. Open kitchen with island seating. Pet-friendly building with a courtyard.\",\"imageUrl\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"availableFrom\":\"2027-01-01\",\"petPolicy\":\"Dogs and cats (under 40 lbs)\",\"amenities\":[\"Bike room\",\"Courtyard\",\"Kitchen island\",\"Mini-split AC\",\"Package room\"],\"nearbyTransit\":[\"Blue Line - 4 min walk\",\"Bus 16 - 2 min walk\"],\"reviews\":[{\"author\":\"Tasha M.\",\"rating\":5,\"text\":\"Love the natural light from the corner windows. Renovation is quality — not the cheap-flip kind.\"},{\"author\":\"Ian C.\",\"rating\":4,\"text\":\"Great layout for roommates. Each bedroom is a real room. Courtyard is a nice bonus.\"}],\"floor\":6,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":true,\"maxWeightLbs\":40},\"fees\":[{\"label\":\"Building services\",\"amount\":350,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":2850,\"frequency\":\"once\",\"required\":true},{\"label\":\"Pet rent if bringing a pet\",\"amount\":35,\"frequency\":\"monthly\",\"required\":false}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Blue Line\",\"walkMinutes\":4},{\"name\":\"Bus 16\",\"walkMinutes\":2}],\"costs\":{\"monthlyTotal\":3200,\"knownMonthlySubtotal\":3200,\"moveInTotal\":6050,\"knownMoveInSubtotal\":6050,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}},{\"id\":\"13\",\"title\":\"Riverbend Two-Bedroom with Work Alcove\",\"neighborhood\":\"Riverside\",\"rent\":2980,\"bedrooms\":2,\"bathrooms\":1,\"sqft\":980,\"address\":\"139 River Road, Unit 4A\",\"description\":\"A recessed work alcove sits beside the living-room window. Both bedrooms have closets, and the building elevator reaches the shared laundry.\",\"imageUrl\":\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"availableFrom\":\"2026-11-15\",\"petPolicy\":\"Cats only\",\"amenities\":[\"Dishwasher\",\"Laundry in building\",\"Elevator\",\"Bike storage\"],\"nearbyTransit\":[\"Green Line - 8 min walk\",\"Bus 23 - 3 min walk\"],\"reviews\":[{\"author\":\"Resident 13\",\"rating\":4,\"text\":\"Convenient for transit. The shared spaces are kept tidy.\"}],\"floor\":4,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":false,\"maxWeightLbs\":null},\"fees\":[{\"label\":\"Building services\",\"amount\":80,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":2980,\"frequency\":\"once\",\"required\":true}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Green Line\",\"walkMinutes\":8},{\"name\":\"Bus 23\",\"walkMinutes\":3}],\"costs\":{\"monthlyTotal\":3060,\"knownMonthlySubtotal\":3060,\"moveInTotal\":6040,\"knownMoveInSubtotal\":6040,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}}]\n## Context from the application\nGenerative UI guide: available components, functions, targets, and how to call render_ui.:\n## Generative UI\nCall `render_ui` to show UI. Arguments: `target` first, then `operations` (A2UI v1.0 operations, applied in order).\n\nShow UI when it conveys the answer better than prose: to illustrate a concept (a diagram, a chart of how something changes), to compare options side by side, to let the user explore or adjust values, or to collect input. A small, focused surface next to your explanation often lands better than a long description. Reply in prose alone for a quick fact, a short answer, or conversation, and never add UI only as decoration.\n\nEvery operation has \"version\":\"v1.0\" and exactly one of:\n- {\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"<new id>\",\"dataModel\":{...},\"components\":[{\"id\":\"root\",\"component\":\"<Name>\",\"children\":[\"<child id>\"]}]}}: the first operation of a new surface. \"dataModel\" and \"components\" are optional.\n- {\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"<id>\",\"components\":[<component>, ...]}}: add or replace components by id.\n- {\"version\":\"v1.0\",\"updateDataModel\":{\"surfaceId\":\"<id>\",\"path\":\"/some/path\",\"value\":<json>}}: set the value at \"path\". Always give \"value\". \"value\":null deletes the key at \"path\".\n- {\"version\":\"v1.0\",\"deleteSurface\":{\"surfaceId\":\"<id>\"}}: remove the surface.\n\nRules:\n1. Components are flat objects: {\"id\":\"...\",\"component\":\"<Name>\", ...props}. Every surface renders from the component with id \"root\". Reference children by id in slot props.\n2. A component may take \"accessibility\":{\"label\":\"<1 to 3 words>\",\"description\":\"<what it does>\"} for screen readers: on the component it describes, when nothing visible names it. Not on every component, and \"live\":\"polite\" only on text that changes by itself.\n3. Stream progressively: put the initial data in \"dataModel\" and the root in \"components\" of the createSurface operation, then send one updateComponents operation per child, so the UI appears while you are still writing. The root must already list the ids of its children in its slot props (for example \"children\":[\"card-1\",\"card-2\"]), even though the children come later. A component that no slot references is never shown.\n4. Updating a component replaces all of its props, so resend every prop.\n5. Prop values are literals or data bindings {\"@path\":\"/data/path\"}. Never write {\"path\":\"/data/path\"} as a binding.\n6. Event props take an action: {\"event\":{\"name\":\"<name>\",\"userMessage\":\"<text>\",\"context\":{...}}} sends the interaction back to you as a user message, with \"userMessage\" as its first line. \"userMessage\" is plain text: ${...} is not interpolated in it; put values in \"context\".\n7. To show a different view, create a new surface with a new surfaceId (for example, a checkout form after a cart summary). Update an existing surface only when the user asks to change that same view: then do not send createSurface, use its surfaceId, and pass its existing target. Never reuse an earlier chat surface for a different view, because that replaces the earlier UI and anything the user typed into it.\n8. Never use a surfaceId again, also after deleteSurface.\n9. A prop can also be a function value that updates with the data: {\"@call\":\"formatCurrency\",\"args\":{\"value\":{\"@path\":\"/total\"},\"currency\":\"EUR\"}}. Only call functions listed below. formatString interpolates ${/path} and ${fn(arg: value)} in its value.\n10. ${...} is evaluated only in the value of formatString and in the item of series; in other strings it stays literal text. Inside formatString, ${...} does not support operators. For arithmetic use calc, with the values as named args: {\"@call\":\"calc\",\"args\":{\"expression\":\"seats * 29 * (annual ? 0.8 : 1)\",\"seats\":{\"@path\":\"/seats\"},\"annual\":{\"@path\":\"/annual\"}}}.\n11. For a computed list (chart data, template items) use series. Its description under Functions gives the rules and an example.\n12. To repeat a component for each item of a list, give a multiple slot a template: \"children\":{\"componentId\":\"row\",\"path\":\"/items\"}. Inside the template, paths are relative to the item (\"name\", not \"/name\"). {\"@call\":\"@index\"} gives the position of the item, from 0; {\"@call\":\"@index\",\"args\":{\"offset\":1}} counts from 1.\n\n### Targets\n- \"chat\" (inside the chat transcript)\n- \"apartments\" (a named area of the app): The main apartment workspace. Render all search results, comparisons, details, demo tour forms and confirmations here. Replace this workspace for each request; do not create chat surfaces.\n\n### Components\n- **Stack**: Vertical layout. Nest content and other layouts; padding can create a card body.\n  props: {\"type\":\"object\",\"properties\":{\"gap\":{\"default\":\"md\",\"type\":\"string\",\"enum\":[\"sm\",\"md\",\"lg\"]},\"padding\":{\"default\":\"none\",\"type\":\"string\",\"enum\":[\"none\",\"sm\",\"md\",\"lg\"]},\"visible\":{\"default\":true,\"description\":\"Conditional content. Bind a boolean or a basic function result.\",\"type\":\"boolean\"}},\"additionalProperties\":false}\n  slot props (component ids): {\"children\":\"multiple\"}\n- **Row**: Wrapping horizontal layout for badges, metrics or actions.\n  props: {\"type\":\"object\",\"properties\":{\"gap\":{\"default\":\"md\",\"type\":\"string\",\"enum\":[\"sm\",\"md\",\"lg\"]},\"align\":{\"default\":\"start\",\"type\":\"string\",\"enum\":[\"start\",\"center\",\"between\"]}},\"additionalProperties\":false}\n  slot props (component ids): {\"children\":\"multiple\"}\n- **Grid**: Responsive equal-width columns. Collapses on narrow screens; may be nested.\n  props: {\"type\":\"object\",\"properties\":{\"columns\":{\"default\":\"2\",\"type\":\"string\",\"enum\":[\"1\",\"2\",\"3\"]},\"gap\":{\"default\":\"md\",\"type\":\"string\",\"enum\":[\"sm\",\"md\",\"lg\"]}},\"additionalProperties\":false}\n  slot props (component ids): {\"children\":\"multiple\"}\n- **Card**: An empty visual container, not a listing template. Compose all content as children.\n  props: {\"type\":\"object\",\"properties\":{\"variant\":{\"default\":\"outlined\",\"type\":\"string\",\"enum\":[\"plain\",\"outlined\",\"accent\"]},\"padding\":{\"default\":\"none\",\"type\":\"string\",\"enum\":[\"none\",\"sm\",\"md\",\"lg\"]},\"recordId\":{\"description\":\"ID of the record this container represents, if any\",\"type\":\"string\"}},\"additionalProperties\":false}\n  slot props (component ids): {\"children\":\"multiple\"}\n- **Divider**: A quiet horizontal rule.\n  props: {\"type\":\"object\",\"properties\":{},\"additionalProperties\":false}\n- **Heading**: A section or card heading.\n  props: {\"type\":\"object\",\"properties\":{\"text\":{\"description\":\"May be pending during streaming; required in the finished view\",\"type\":\"string\"},\"level\":{\"default\":\"h3\",\"type\":\"string\",\"enum\":[\"h2\",\"h3\",\"h4\"]}},\"additionalProperties\":false}\n- **Text**: Plain text, with a bounded emphasis. Never HTML.\n  props: {\"type\":\"object\",\"properties\":{\"content\":{\"description\":\"May be pending during streaming; required in the finished view\",\"type\":\"string\"},\"tone\":{\"default\":\"default\",\"type\":\"string\",\"enum\":[\"default\",\"muted\",\"eyebrow\"]}},\"additionalProperties\":false}\n- **Image**: One supplied illustrative photo. Compose galleries with Grid and multiple Images.\n  props: {\"type\":\"object\",\"properties\":{\"src\":{\"description\":\"May be pending during streaming; use a supplied photo URL\",\"type\":\"string\"},\"alt\":{\"type\":\"string\"},\"aspect\":{\"default\":\"landscape\",\"type\":\"string\",\"enum\":[\"landscape\",\"square\",\"wide\"]}},\"required\":[\"alt\"],\"additionalProperties\":false}\n- **Badge**: A short category, constraint or status label.\n  props: {\"type\":\"object\",\"properties\":{\"text\":{\"type\":\"string\"},\"tone\":{\"default\":\"neutral\",\"type\":\"string\",\"enum\":[\"neutral\",\"accent\",\"warning\"]}},\"additionalProperties\":false}\n- **Metric**: One labeled value. Use numeric values with a format for money/area; null means unknown. Formatting is handled by React, never by templates.\n  props: {\"type\":\"object\",\"properties\":{\"label\":{\"type\":\"string\"},\"value\":{\"description\":\"Undefined is still arriving; null is a genuinely unknown fact. Supply by the end.\",\"type\":[\"number\",\"string\",\"null\"]},\"format\":{\"default\":\"text\",\"type\":\"string\",\"enum\":[\"text\",\"usd\",\"usd/month\",\"sqft\"]},\"emphasis\":{\"default\":false,\"type\":\"boolean\"}},\"required\":[\"label\"],\"additionalProperties\":false}\n- **List**: A semantic list of ListItem children, e.g. amenities or nearby transit.\n  props: {\"type\":\"object\",\"properties\":{},\"additionalProperties\":false}\n  slot props (component ids): {\"children\":\"multiple\"}\n- **ListItem**: One list item. Put Text, Metric or other content in its children.\n  props: {\"type\":\"object\",\"properties\":{},\"additionalProperties\":false}\n  slot props (component ids): {\"children\":\"multiple\"}\n- **Button**: A button. Regular buttons bind onClick; a submit button submits its enclosing Form.\n  props: {\"type\":\"object\",\"properties\":{\"label\":{\"type\":\"string\"},\"variant\":{\"default\":\"primary\",\"type\":\"string\",\"enum\":[\"primary\",\"secondary\",\"ghost\"]},\"type\":{\"default\":\"button\",\"type\":\"string\",\"enum\":[\"button\",\"submit\"]}},\"required\":[\"label\"],\"additionalProperties\":false}\n  event props: {\"onClick\":{\"description\":\"Navigate to details, a tour form, a comparison or the previous search.\",\"parameters\":{\"type\":\"object\",\"properties\":{}}}}\n- **Form**: Empty demo-request form. Generate every field and a submit Button as children. Never nest Forms. Submission collects only this form's values.\n  props: {\"type\":\"object\",\"properties\":{\"apartmentId\":{\"type\":\"string\"},\"label\":{\"type\":\"string\",\"description\":\"Accessible form name\"}},\"required\":[\"apartmentId\",\"label\"],\"additionalProperties\":false}\n  event props: {\"onSubmit\":{\"description\":\"Collect this demo request. No booking or message is sent.\",\"parameters\":{\"type\":\"object\",\"properties\":{\"apartmentId\":{\"type\":\"string\"},\"details\":{\"type\":\"object\",\"propertyNames\":{\"type\":\"string\"},\"additionalProperties\":{\"type\":\"string\"}}},\"required\":[\"apartmentId\",\"details\"]}}}\n  slot props (component ids): {\"children\":\"multiple\"}\n- **Input**: A labeled native input inside a Form. Dates may specify an ISO min value.\n  props: {\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\",\"description\":\"Unique field name within its Form\"},\"label\":{\"type\":\"string\"},\"required\":{\"default\":false,\"type\":\"boolean\"},\"type\":{\"default\":\"text\",\"type\":\"string\",\"enum\":[\"text\",\"email\",\"tel\",\"date\",\"number\"]},\"placeholder\":{\"type\":\"string\"},\"defaultValue\":{\"type\":\"string\"},\"min\":{\"type\":\"string\"},\"max\":{\"type\":\"string\"}},\"required\":[\"name\",\"label\"],\"additionalProperties\":false}\n- **Select**: A labeled native select inside a Form.\n  props: {\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\",\"description\":\"Unique field name within its Form\"},\"label\":{\"type\":\"string\"},\"required\":{\"default\":false,\"type\":\"boolean\"},\"options\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"value\":{\"type\":\"string\"},\"label\":{\"type\":\"string\"}},\"required\":[\"value\",\"label\"]}},\"defaultValue\":{\"type\":\"string\"}},\"required\":[\"name\",\"label\",\"options\"],\"additionalProperties\":false}\n- **Checkbox**: A labeled checkbox inside a Form. An unchecked box is omitted from the submitted values.\n  props: {\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\",\"description\":\"Unique field name within its Form\"},\"label\":{\"type\":\"string\"},\"required\":{\"default\":false,\"type\":\"boolean\"},\"defaultChecked\":{\"default\":false,\"type\":\"boolean\"}},\"required\":[\"name\",\"label\"],\"additionalProperties\":false}\n- **Textarea**: A labeled multiline input inside a Form.\n  props: {\"type\":\"object\",\"properties\":{\"name\":{\"type\":\"string\",\"description\":\"Unique field name within its Form\"},\"label\":{\"type\":\"string\"},\"required\":{\"default\":false,\"type\":\"boolean\"},\"placeholder\":{\"type\":\"string\"},\"defaultValue\":{\"type\":\"string\"}},\"required\":[\"name\",\"label\"],\"additionalProperties\":false}\n\n### Functions\n- **required**: Valid when the value is not empty\n  args: { value: unknown }\n- **regex**: Valid when the value matches the pattern\n  args: { value: string; pattern: string }\n- **length**: Valid when the length of the value is within min and max\n  args: { value: string; min?: number; max?: number }\n- **numeric**: Valid when the value is a number within min and max\n  args: { value: number; min?: number; max?: number }\n- **email**: Valid when the value is an email address\n  args: { value: string }\n- **formatString**: Interpolates ${/path}, ${relative/path} and ${fn(arg: value)} in the value; \\${ is a literal\n  args: { value: string }\n- **formatNumber**: The number in the locale of the user\n  args: { value: number; decimals?: number; grouping?: boolean }\n- **formatCurrency**: The amount as money, with an ISO 4217 currency code\n  args: { value: number; currency: string; decimals?: number; grouping?: boolean }\n- **formatDate**: A date or ISO string in a TR35 pattern, for example \"MMM d, yyyy\" or \"HH:mm\"\n  args: { value: string | number; format: string }\n- **pluralize**: The string of the plural category of the value\n  args: { value: number; zero?: string; one?: string; two?: string; few?: string; many?: string; other: string }\n- **openUrl**: Opens an http(s) URL in a new tab. Only from an event\n  args: { url: string }\n- **and**: True when every value is true\n  args: { values: boolean[] }\n- **or**: True when any value is true\n  args: { values: boolean[] }\n- **not**: The negated value\n  args: { value: boolean }\n- **calc**: The value of an arithmetic expression over the other args, by name: + - * / % ( ), comparisons, && || !, cond ? a : b, min max round floor ceil abs, 'text' + name\n  args: { expression: string; [name: string]: number | string | boolean }\n- **series**: A list of count copies of item, for chart data and template lists. Put arithmetic in ${expression} strings in item, using the loop variable (default i, counting from start, default 1) and other named args. A whole-expression string retains the result type, so \"${i * monthlyCost}\" yields a number. Arguments, including nested calc or formatString calls in item, resolve before the series loop; those calls cannot use the loop variable. Example: {\"@call\":\"series\",\"args\":{\"count\":6,\"item\":{\"month\":\"${i}\",\"cost\":\"${i * monthlyCost}\"},\"monthlyCost\":{\"@path\":\"/monthlyCost\"}}}. Omit variable to use i.\n  args: { count: number; item: unknown; variable?: string; start?: number; [name: string]: unknown }\n\n### Existing surfaces\n- none\n"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Compare the three supplied apartments in the supplied order, using the same criteria for each: photo, title and neighborhood, base rent, mandatory monthly fees and total, beds, baths, area, pets and transit. Include View Details and Schedule Tour for each apartment and Back to Results. Do not count optional fees as mandatory."
+      }
+    ],
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "zdr": true,
+      "allow_fallbacks": false,
+      "only": [
+        "azure/eu"
+      ]
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "render_ui",
+          "description": "Render or update generative UI surfaces, or call app functions, with A2UI v1.0 operations. Follow the generative UI guide in context.",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "target": {
+                "type": "string",
+                "enum": [
+                  "chat",
+                  "apartments"
+                ],
+                "description": "Where the surface is shown: \"chat\" or a named inline target."
+              },
+              "operations": {
+                "type": "array",
+                "description": "A2UI v1.0 operations, applied in order.",
+                "items": {
+                  "type": "object"
+                }
+              }
+            },
+            "required": [
+              "target",
+              "operations"
+            ]
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateSnapshot",
+          "description": "Replace the entire application state with a new snapshot",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "snapshot": {
+                "description": "The complete new state object"
+              }
+            },
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateDelta",
+          "description": "Apply incremental updates to application state using JSON Patch operations",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "add",
+                        "replace",
+                        "remove"
+                      ],
+                      "description": "The operation to perform"
+                    },
+                    "path": {
+                      "type": "string",
+                      "description": "JSON Pointer path (e.g., '/foo/bar')"
+                    },
+                    "value": {
+                      "description": "The value to set. Required for 'add' and 'replace' operations, ignored for 'remove'."
+                    }
+                  },
+                  "required": [
+                    "op",
+                    "path"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Array of JSON Patch operations"
+              }
+            },
+            "required": [
+              "delta"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "stream": true
+  },
+  "actionRequests": [
+    {
+      "message": {
+        "id": "339ab955-210d-41d5-a6cd-aba1fd34b373",
+        "role": "user",
+        "content": "View Details\n\napartmentId: 2"
+      },
+      "envelope": {
+        "name": "view_apartment",
+        "surfaceId": "results",
+        "sourceComponentId": "details",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "2"
+        }
+      },
+      "action": {
+        "name": "view_apartment",
+        "apartmentId": "2"
+      },
+      "runId": "99f4bf33-c9ce-4c35-92e9-f275ec47b74b",
+      "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+    },
+    {
+      "message": {
+        "id": "443f09d6-2b3d-4baf-80be-9a10ceeb729e",
+        "role": "user",
+        "content": "View Details\n\napartmentId: 7"
+      },
+      "envelope": {
+        "name": "view_apartment",
+        "surfaceId": "results",
+        "sourceComponentId": "details",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "7"
+        }
+      },
+      "action": {
+        "name": "view_apartment",
+        "apartmentId": "7"
+      },
+      "runId": "e566faad-3a39-45f4-8809-dcca8a204d69",
+      "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+    },
+    {
+      "message": {
+        "id": "021fd067-0072-46a9-8611-8dee41c2f748",
+        "role": "user",
+        "content": "View Details\n\napartmentId: 13"
+      },
+      "envelope": {
+        "name": "view_apartment",
+        "surfaceId": "results",
+        "sourceComponentId": "details",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "13"
+        }
+      },
+      "action": {
+        "name": "view_apartment",
+        "apartmentId": "13"
+      },
+      "runId": "9aaaff91-f604-408a-b26a-0582b0a74a54",
+      "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+    },
+    {
+      "message": {
+        "id": "00729164-e597-4522-863a-957a49e735ba",
+        "role": "user",
+        "content": "Schedule Tour\n\napartmentId: 2"
+      },
+      "envelope": {
+        "name": "schedule_tour",
+        "surfaceId": "results",
+        "sourceComponentId": "tour",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "2"
+        }
+      },
+      "action": {
+        "name": "schedule_tour",
+        "apartmentId": "2"
+      },
+      "runId": "6024c580-83d6-4c13-88ae-6ea4805883d5",
+      "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+    },
+    {
+      "message": {
+        "id": "3a9b3f40-f2de-4659-b0d9-dc6b004aacc8",
+        "role": "user",
+        "content": "Schedule Tour\n\napartmentId: 7"
+      },
+      "envelope": {
+        "name": "schedule_tour",
+        "surfaceId": "results",
+        "sourceComponentId": "tour",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "7"
+        }
+      },
+      "action": {
+        "name": "schedule_tour",
+        "apartmentId": "7"
+      },
+      "runId": "8c81c1a1-8dd5-4104-8417-a5f7238d3106",
+      "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+    },
+    {
+      "message": {
+        "id": "34f791bc-502d-4852-bf82-88afe6d18d77",
+        "role": "user",
+        "content": "Schedule Tour\n\napartmentId: 13"
+      },
+      "envelope": {
+        "name": "schedule_tour",
+        "surfaceId": "results",
+        "sourceComponentId": "tour",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "13"
+        }
+      },
+      "action": {
+        "name": "schedule_tour",
+        "apartmentId": "13"
+      },
+      "runId": "77dcfd8e-28b1-43cf-8686-2ed0c6ce4a0b",
+      "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+    },
+    {
+      "message": {
+        "id": "60982687-00ec-4057-b4a2-43e501381a76",
+        "role": "user",
+        "content": "Back to Results"
+      },
+      "envelope": {
+        "name": "back_to_results",
+        "surfaceId": "results",
+        "sourceComponentId": "back",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {}
+      },
+      "action": {
+        "name": "back_to_results"
+      },
+      "runId": "ce81747b-3d86-4e78-978a-e25b711bde3b",
+      "threadId": "b029999e-393e-4778-8006-4f86161037f4"
+    }
+  ],
+  "events": [
+    {
+      "ms": 0.1805000000167638,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "role": "assistant",
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "id": "replay-ui",
+                  "type": "function",
+                  "function": {
+                    "name": "render_ui",
+                    "arguments": ""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 8.254249999998137,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "{\"target\":\"apartments\",\"operations\":[{\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"results\",\"c"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 16.112292000005255,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "atalogId\":\"apartment-finder@1\",\"components\":[{\"id\":\"root\",\"component\":\"Stack\",\"padding\":\"none\",\""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 24.200875000009546,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "children\":[\"heading\",\"grid\",\"back\"]}],\"dataModel\":{\"apartments\":[{\"id\":\"2\",\"costs\":{\"monthlyTota"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 32.287375000014435,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "l\":3165,\"knownMonthlySubtotal\":3165,\"moveInTotal\":6265,\"knownMoveInSubtotal\":6265,\"excludes\":\"Op"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 41.94525000001886,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "tional fees and usage-dependent utilities. Move-in includes the first month and required one-tim"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 50.46504200002528,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "e charges, including refundable deposits.\"},\"title\":\"Modern 2BR with Skyline Views\",\"neighborhoo"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 60.05720900002052,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "d\":\"Midtown\",\"imageUrl\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=7"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 68.48091700000805,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "50&fit=crop\",\"rent\":3100,\"bedrooms\":2,\"bathrooms\":2,\"sqft\":1100,\"mandatoryFees\":\"Building servic"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 77.86520900001051,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "es: $65\",\"petPolicy\":\"Dogs and cats (under 50 lbs)\",\"petLimit\":\"50 lb weight limit\",\"transit\":\"E"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 86.178917000012,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "xpress bus: 2 minutes; Red Line: 5 minutes\"},{\"id\":\"7\",\"costs\":{\"monthlyTotal\":3200,\"knownMonthl"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 94.61308400001144,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "ySubtotal\":3200,\"moveInTotal\":6050,\"knownMoveInSubtotal\":6050,\"excludes\":\"Optional fees and usag"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 103.25708400001167,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "e-dependent utilities. Move-in includes the first month and required one-time charges, including"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 111.70133400001214,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": " refundable deposits.\"},\"title\":\"Renovated 2BR Corner Unit\",\"neighborhood\":\"Arts District\",\"imag"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 120.06766700002481,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "eUrl\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"rent\":2"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 127.73550000000978,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "850,\"bedrooms\":2,\"bathrooms\":1,\"sqft\":950,\"mandatoryFees\":\"Building services: $350\",\"petPolicy\":"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 136.14704200002598,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\"Dogs and cats (under 40 lbs)\",\"petLimit\":\"40 lb weight limit\",\"transit\":\"Blue Line: 4 minutes; "
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 144.54108400002588,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "Bus 16: 2 minutes\"},{\"id\":\"13\",\"costs\":{\"monthlyTotal\":3060,\"knownMonthlySubtotal\":3060,\"moveInT"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 154.07837500001187,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "otal\":6040,\"knownMoveInSubtotal\":6040,\"excludes\":\"Optional fees and usage-dependent utilities. M"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 162.1986250000191,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "ove-in includes the first month and required one-time charges, including refundable deposits.\"},"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 170.63225000002421,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\"title\":\"Riverbend Two-Bedroom with Work Alcove\",\"neighborhood\":\"Riverside\",\"imageUrl\":\"https://"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 180.15612500000861,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"rent\":2980,\"bedroom"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 188.55725000001257,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "s\":2,\"bathrooms\":1,\"sqft\":980,\"mandatoryFees\":\"Building services: $80\",\"petPolicy\":\"Cats only\",\""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 198.01091700000688,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "petLimit\":\"No supplied weight limit\",\"transit\":\"Green Line: 8 minutes; Bus 23: 3 minutes\"}]}}},{"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 206.61141700000735,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"results\",\"components\":[{\"id\":\"heading\",\"compon"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 215.81212500002584,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "ent\":\"Heading\",\"text\":\"Compare apartments\",\"level\":\"h2\"},{\"id\":\"grid\",\"component\":\"Grid\",\"column"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 224.21375000002445,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "s\":\"3\",\"children\":{\"componentId\":\"listing\",\"path\":\"/apartments\"}},{\"id\":\"listing\",\"component\":\"C"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 232.54895900000702,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "ard\",\"recordId\":{\"@path\":\"id\"},\"children\":[\"layout\"]},{\"id\":\"layout\",\"component\":\"Grid\",\"columns"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 242.10725000000093,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\":\"2\",\"gap\":\"sm\",\"children\":[\"photo\",\"body\"]},{\"id\":\"photo\",\"component\":\"Image\",\"src\":{\"@path\":\""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 250.53333400000702,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "imageUrl\"},\"alt\":\"Illustrative apartment photo\"},{\"id\":\"body\",\"component\":\"Stack\",\"padding\":\"md\""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 260.0290420000092,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": ",\"children\":[\"area-badge\",\"title\",\"total\",\"unknown\",\"rent\",\"stats\",\"fees\",\"pet-policy\",\"pet-limi"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 268.62583400000585,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "t\",\"transit\",\"actions\"]},{\"id\":\"area-badge\",\"component\":\"Badge\",\"text\":{\"@path\":\"neighborhood\"}}"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 277.42908400000306,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": ",{\"id\":\"title\",\"component\":\"Heading\",\"text\":{\"@path\":\"title\"},\"level\":\"h3\"},{\"id\":\"total\",\"compo"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 288.0517090000212,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "nent\":\"Metric\",\"label\":\"Monthly total\",\"value\":{\"@path\":\"costs/monthlyTotal\"},\"format\":\"usd/mont"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 296.9463340000075,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "h\"},{\"id\":\"unknown\",\"component\":\"Stack\",\"visible\":{\"@call\":\"not\",\"args\":{\"value\":{\"@call\":\"requi"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 305.47408400001586,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "red\",\"args\":{\"value\":{\"@path\":\"costs/monthlyTotal\"}}}}},\"children\":[\"subtotal\",\"fee-note\"]},{\"id"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 314.33645900001284,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\":\"subtotal\",\"component\":\"Metric\",\"label\":\"Known monthly subtotal\",\"value\":{\"@path\":\"costs/known"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 323.7261250000156,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "MonthlySubtotal\"},\"format\":\"usd/month\"},{\"id\":\"fee-note\",\"component\":\"Text\",\"content\":\"Mandatory"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 332.3988750000135,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": " fees are unknown; this subtotal is incomplete.\"},{\"id\":\"rent\",\"component\":\"Metric\",\"label\":\"Bas"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 340.8074170000036,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "e rent\",\"value\":{\"@path\":\"rent\"},\"format\":\"usd/month\"},{\"id\":\"stats\",\"component\":\"Row\",\"children"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 349.550750000024,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\":[\"beds\",\"baths\",\"area\"]},{\"id\":\"beds\",\"component\":\"Metric\",\"label\":\"Bedrooms\",\"value\":{\"@path\""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 358.30587500002,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": ":\"bedrooms\"}},{\"id\":\"baths\",\"component\":\"Metric\",\"label\":\"Bathrooms\",\"value\":{\"@path\":\"bathrooms"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 367.48883400001796,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\"}},{\"id\":\"area\",\"component\":\"Metric\",\"label\":\"Area\",\"value\":{\"@path\":\"sqft\"},\"format\":\"sqft\"},{"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 376.3423340000154,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\"id\":\"actions\",\"component\":\"Row\",\"children\":[\"details\",\"tour\"]},{\"id\":\"details\",\"component\":\"But"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 385.3888750000042,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "ton\",\"label\":\"View Details\",\"onClick\":{\"event\":{\"name\":\"view_apartment\",\"context\":{\"apartmentId\""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 394.43370900000446,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": ":{\"@path\":\"id\"}}}}},{\"id\":\"tour\",\"component\":\"Button\",\"label\":\"Schedule Tour\",\"onClick\":{\"event\""
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 403.1515420000069,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": ":{\"name\":\"schedule_tour\",\"context\":{\"apartmentId\":{\"@path\":\"id\"}}}}},{\"id\":\"fees\",\"component\":\"T"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 412.0498340000049,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "ext\",\"content\":{\"@path\":\"mandatoryFees\"}},{\"id\":\"pet-policy\",\"component\":\"Text\",\"content\":{\"@pat"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 420.3404589999991,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "h\":\"petPolicy\"}},{\"id\":\"pet-limit\",\"component\":\"Text\",\"content\":{\"@path\":\"petLimit\"}},{\"id\":\"tra"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 429.1527500000084,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "nsit\",\"component\":\"Text\",\"content\":{\"@path\":\"transit\"}},{\"id\":\"back\",\"component\":\"Button\",\"label"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 438.0461250000226,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "tool_calls": [
+                {
+                  "index": 0,
+                  "function": {
+                    "arguments": "\":\"Back to Results\",\"onClick\":{\"event\":{\"name\":\"back_to_results\",\"context\":{}}}}]}}]}"
+                  }
+                }
+              ]
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 689.1935420000227,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {},
+            "finish_reason": "tool_calls"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "cost": 0
+        }
+      }
+    }
+  ],
+  "raw": "{\"target\":\"apartments\",\"operations\":[{\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"results\",\"catalogId\":\"apartment-finder@1\",\"components\":[{\"id\":\"root\",\"component\":\"Stack\",\"padding\":\"none\",\"children\":[\"heading\",\"grid\",\"back\"]}],\"dataModel\":{\"apartments\":[{\"id\":\"2\",\"costs\":{\"monthlyTotal\":3165,\"knownMonthlySubtotal\":3165,\"moveInTotal\":6265,\"knownMoveInSubtotal\":6265,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"},\"title\":\"Modern 2BR with Skyline Views\",\"neighborhood\":\"Midtown\",\"imageUrl\":\"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1000&h=750&fit=crop\",\"rent\":3100,\"bedrooms\":2,\"bathrooms\":2,\"sqft\":1100,\"mandatoryFees\":\"Building services: $65\",\"petPolicy\":\"Dogs and cats (under 50 lbs)\",\"petLimit\":\"50 lb weight limit\",\"transit\":\"Express bus: 2 minutes; Red Line: 5 minutes\"},{\"id\":\"7\",\"costs\":{\"monthlyTotal\":3200,\"knownMonthlySubtotal\":3200,\"moveInTotal\":6050,\"knownMoveInSubtotal\":6050,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"},\"title\":\"Renovated 2BR Corner Unit\",\"neighborhood\":\"Arts District\",\"imageUrl\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"rent\":2850,\"bedrooms\":2,\"bathrooms\":1,\"sqft\":950,\"mandatoryFees\":\"Building services: $350\",\"petPolicy\":\"Dogs and cats (under 40 lbs)\",\"petLimit\":\"40 lb weight limit\",\"transit\":\"Blue Line: 4 minutes; Bus 16: 2 minutes\"},{\"id\":\"13\",\"costs\":{\"monthlyTotal\":3060,\"knownMonthlySubtotal\":3060,\"moveInTotal\":6040,\"knownMoveInSubtotal\":6040,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"},\"title\":\"Riverbend Two-Bedroom with Work Alcove\",\"neighborhood\":\"Riverside\",\"imageUrl\":\"https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1000&h=750&fit=crop\",\"rent\":2980,\"bedrooms\":2,\"bathrooms\":1,\"sqft\":980,\"mandatoryFees\":\"Building services: $80\",\"petPolicy\":\"Cats only\",\"petLimit\":\"No supplied weight limit\",\"transit\":\"Green Line: 8 minutes; Bus 23: 3 minutes\"}]}}},{\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"results\",\"components\":[{\"id\":\"heading\",\"component\":\"Heading\",\"text\":\"Compare apartments\",\"level\":\"h2\"},{\"id\":\"grid\",\"component\":\"Grid\",\"columns\":\"3\",\"children\":{\"componentId\":\"listing\",\"path\":\"/apartments\"}},{\"id\":\"listing\",\"component\":\"Card\",\"recordId\":{\"@path\":\"id\"},\"children\":[\"layout\"]},{\"id\":\"layout\",\"component\":\"Grid\",\"columns\":\"2\",\"gap\":\"sm\",\"children\":[\"photo\",\"body\"]},{\"id\":\"photo\",\"component\":\"Image\",\"src\":{\"@path\":\"imageUrl\"},\"alt\":\"Illustrative apartment photo\"},{\"id\":\"body\",\"component\":\"Stack\",\"padding\":\"md\",\"children\":[\"area-badge\",\"title\",\"total\",\"unknown\",\"rent\",\"stats\",\"fees\",\"pet-policy\",\"pet-limit\",\"transit\",\"actions\"]},{\"id\":\"area-badge\",\"component\":\"Badge\",\"text\":{\"@path\":\"neighborhood\"}},{\"id\":\"title\",\"component\":\"Heading\",\"text\":{\"@path\":\"title\"},\"level\":\"h3\"},{\"id\":\"total\",\"component\":\"Metric\",\"label\":\"Monthly total\",\"value\":{\"@path\":\"costs/monthlyTotal\"},\"format\":\"usd/month\"},{\"id\":\"unknown\",\"component\":\"Stack\",\"visible\":{\"@call\":\"not\",\"args\":{\"value\":{\"@call\":\"required\",\"args\":{\"value\":{\"@path\":\"costs/monthlyTotal\"}}}}},\"children\":[\"subtotal\",\"fee-note\"]},{\"id\":\"subtotal\",\"component\":\"Metric\",\"label\":\"Known monthly subtotal\",\"value\":{\"@path\":\"costs/knownMonthlySubtotal\"},\"format\":\"usd/month\"},{\"id\":\"fee-note\",\"component\":\"Text\",\"content\":\"Mandatory fees are unknown; this subtotal is incomplete.\"},{\"id\":\"rent\",\"component\":\"Metric\",\"label\":\"Base rent\",\"value\":{\"@path\":\"rent\"},\"format\":\"usd/month\"},{\"id\":\"stats\",\"component\":\"Row\",\"children\":[\"beds\",\"baths\",\"area\"]},{\"id\":\"beds\",\"component\":\"Metric\",\"label\":\"Bedrooms\",\"value\":{\"@path\":\"bedrooms\"}},{\"id\":\"baths\",\"component\":\"Metric\",\"label\":\"Bathrooms\",\"value\":{\"@path\":\"bathrooms\"}},{\"id\":\"area\",\"component\":\"Metric\",\"label\":\"Area\",\"value\":{\"@path\":\"sqft\"},\"format\":\"sqft\"},{\"id\":\"actions\",\"component\":\"Row\",\"children\":[\"details\",\"tour\"]},{\"id\":\"details\",\"component\":\"Button\",\"label\":\"View Details\",\"onClick\":{\"event\":{\"name\":\"view_apartment\",\"context\":{\"apartmentId\":{\"@path\":\"id\"}}}}},{\"id\":\"tour\",\"component\":\"Button\",\"label\":\"Schedule Tour\",\"onClick\":{\"event\":{\"name\":\"schedule_tour\",\"context\":{\"apartmentId\":{\"@path\":\"id\"}}}}},{\"id\":\"fees\",\"component\":\"Text\",\"content\":{\"@path\":\"mandatoryFees\"}},{\"id\":\"pet-policy\",\"component\":\"Text\",\"content\":{\"@path\":\"petPolicy\"}},{\"id\":\"pet-limit\",\"component\":\"Text\",\"content\":{\"@path\":\"petLimit\"}},{\"id\":\"transit\",\"component\":\"Text\",\"content\":{\"@path\":\"transit\"}},{\"id\":\"back\",\"component\":\"Button\",\"label\":\"Back to Results\",\"onClick\":{\"event\":{\"name\":\"back_to_results\",\"context\":{}}}}]}}]}",
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost": 0
+  },
+  "costUsd": 0,
+  "providerFinishedMs": 689.436875000014,
+  "firstTokenMs": 8.257417000015266,
+  "servingProvider": "replay",
+  "returnedModel": "replay",
+  "promptHash": "ffd9bc0e0f2d981d9d2fb21d6e71e0e763a3fc1788cfb0108b681067dbf82192"
+}

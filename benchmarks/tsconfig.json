@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2023",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": [
+      "ES2023",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noUncheckedSideEffectImports": false,
+    "typeRoots": [
+      "../json-render-standalone/node_modules/@types"
+    ],
+    "paths": {
+      "react": [
+        "../json-render-standalone/node_modules/@types/react"
+      ],
+      "react/jsx-runtime": [
+        "../json-render-standalone/node_modules/@types/react/jsx-runtime.d.ts"
+      ]
+    }
+  },
+  "include": [
+    "json-render/*.ts",
+    "json-render/*.tsx",
+    "a2ui/*.ts",
+    "a2ui/*.tsx",
+    "common/*.ts",
+    "common/*.tsx",
+    "openui/*.ts",
+    "openui/*.tsx",
+    "hashbrown/*.ts",
+    "hashbrown/*.tsx",
+    "json-render/shared/*.tsx"
+  ]
+}
