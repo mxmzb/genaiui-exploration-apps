@@ -9,24 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as CanvasRouteImport } from './routes/canvas'
 import { Route as IndexRouteImport } from './routes/index'
-import { Route as ApiToolsRouteImport } from './routes/api/tools'
+import { Route as CanvasRouteImport } from './routes/canvas'
 import { Route as ApiCopilotkitSplatRouteImport } from './routes/api/copilotkit/$'
 
-const CanvasRoute = CanvasRouteImport.update({
-  id: '/canvas',
-  path: '/canvas',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ApiToolsRoute = ApiToolsRouteImport.update({
-  id: '/api/tools',
-  path: '/api/tools',
+const CanvasRoute = CanvasRouteImport.update({
+  id: '/canvas',
+  path: '/canvas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiCopilotkitSplatRoute = ApiCopilotkitSplatRouteImport.update({
@@ -38,46 +32,35 @@ const ApiCopilotkitSplatRoute = ApiCopilotkitSplatRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/canvas': typeof CanvasRoute
-  '/api/tools': typeof ApiToolsRoute
   '/api/copilotkit/$': typeof ApiCopilotkitSplatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/canvas': typeof CanvasRoute
-  '/api/tools': typeof ApiToolsRoute
   '/api/copilotkit/$': typeof ApiCopilotkitSplatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/canvas': typeof CanvasRoute
-  '/api/tools': typeof ApiToolsRoute
   '/api/copilotkit/$': typeof ApiCopilotkitSplatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/canvas' | '/api/tools' | '/api/copilotkit/$'
+  fullPaths: '/' | '/canvas' | '/api/copilotkit/$'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/canvas' | '/api/tools' | '/api/copilotkit/$'
-  id: '__root__' | '/' | '/canvas' | '/api/tools' | '/api/copilotkit/$'
+  to: '/' | '/canvas' | '/api/copilotkit/$'
+  id: '__root__' | '/' | '/canvas' | '/api/copilotkit/$'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CanvasRoute: typeof CanvasRoute
-  ApiToolsRoute: typeof ApiToolsRoute
   ApiCopilotkitSplatRoute: typeof ApiCopilotkitSplatRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/canvas': {
-      id: '/canvas'
-      path: '/canvas'
-      fullPath: '/canvas'
-      preLoaderRoute: typeof CanvasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
@@ -85,11 +68,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/api/tools': {
-      id: '/api/tools'
-      path: '/api/tools'
-      fullPath: '/api/tools'
-      preLoaderRoute: typeof ApiToolsRouteImport
+    '/canvas': {
+      id: '/canvas'
+      path: '/canvas'
+      fullPath: '/canvas'
+      preLoaderRoute: typeof CanvasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/copilotkit/$': {
@@ -105,7 +88,6 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CanvasRoute: CanvasRoute,
-  ApiToolsRoute: ApiToolsRoute,
   ApiCopilotkitSplatRoute: ApiCopilotkitSplatRoute,
 }
 export const routeTree = rootRouteImport

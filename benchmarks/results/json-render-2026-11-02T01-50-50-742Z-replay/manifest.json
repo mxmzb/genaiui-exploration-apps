@@ -1,0 +1,172 @@
+{
+  "runId": "json-render-2026-11-02T01-50-50-742Z-replay",
+  "framework": "json-render",
+  "mode": "replay",
+  "model": {
+    "id": "replay",
+    "providerTag": "azure/eu",
+    "providerName": "Azure",
+    "reasoning": "low",
+    "maxOutputTokens": 16000
+  },
+  "createdAt": "2026-11-02T01:50:51.703Z",
+  "sourceFiles": {
+    "json-render-standalone/src/components/ApartmentFinder.tsx": "7fab9e044d19054d67fce5679c392e1c10da76388e8a3b81c7da94b66b282c0a",
+    "json-render-standalone/src/components/ChatInterface.tsx": "900f2780b22ff281cef7427094deece631fc93df3a81979b467c2df807faa4d8",
+    "json-render-standalone/src/components/FinderUI.tsx": "7d21dfe8ac63df973dd3c01cb1b6a542798224186822443adbc36275ac4d746f",
+    "json-render-standalone/src/components/SpecView.tsx": "bcf57aca55912fe99a994f7209b78653d1abc8c5753799db2f48fe0a6fd8be65",
+    "json-render-standalone/src/components/SurfaceApp.tsx": "997808233257b2452f617b0888dff966531825706403dd28a169a186891b684b",
+    "json-render-standalone/src/lib/apartment-data.ts": "d4a05452011074ebdc4313ae1a192a734e1e3ffadcdf17825856cae6d57a4c9c",
+    "json-render-standalone/src/lib/catalog.ts": "2238ee9c0c729136ba5b79ba9212afa62b613174592478a04b142f530eef3cec",
+    "json-render-standalone/src/lib/format-metric.ts": "eaa7282448de68d1b68e9bce1b2e484b4444863b47e51436a7248184e79a3a63",
+    "json-render-standalone/src/lib/generate-ui.ts": "feb40ba811f64388b71c772445ba8cf791082178661d43ea2f27d358153e180a",
+    "json-render-standalone/src/lib/prompts.ts": "4448ab7a086ccba4a4abc994f64a705d29d468d2e70ec85faf386b87a09c9592",
+    "json-render-standalone/src/lib/registry.tsx": "8852dfcdb5704ed81ad8f2fe39d1ae438618d986c9deb89a98b41052384ba520",
+    "json-render-standalone/src/lib/ui-instructions.ts": "15c0842f4abc20d847d0b92a715e07fdedb14023638dc4a066c496cf855ac134",
+    "json-render-standalone/src/routeTree.gen.ts": "fbca37b1d5551a4211db2fbecd8f70a03dfeb31dc45d2cd563b3182d4e776e20",
+    "json-render-standalone/src/router.tsx": "0ab41093c1dcfd0ca4bbe6b5b0884e63df1ff2270027b8b313a22d9bcb92f047",
+    "json-render-standalone/src/routes/__root.tsx": "e30e1afda969cf8fe49010f1005b40bac74f232cb1057e4a7c208d5db945df8c",
+    "json-render-standalone/src/routes/api/chat.ts": "f0a19509d13dbe6eba4991dc8cae7d4fa18ecbc555c8698bdbfc2c4354fcc7b3",
+    "json-render-standalone/src/routes/api/surface.ts": "7a9ffc2aa3e1a24855f098648237e063c473998ab87092971f6cdd6a3686de84",
+    "json-render-standalone/src/routes/index.tsx": "0c5cdf221967a5eab4da8a97190d870d8e66354194d8ef7832a06c7e7523aade",
+    "json-render-standalone/src/routes/surface.tsx": "fad4ef545d04a35a7e488b81ac249087b3e4ab010400006b9426681902f78caf",
+    "json-render-standalone/src/styles.css": "26b152e02b19b7928f68e57476d6292b4184f0ac39a59a2ad3f17a9e2a003c19",
+    "benchmarks/json-render/browser.ts": "f17299b6d8e53090de009b7875fa8cc3f5e8c473d5b02c15de8d5bcb517a5cc7",
+    "benchmarks/json-render/budget.ts": "d94499c86cb0d783091720236e14a5ab2ddbf82492504c3bb496810c65e25f41",
+    "benchmarks/json-render/checks.test.ts": "23424a4ddb18c265b10822fbefd0c514a3af2dfb925773735ee5118f223ba853",
+    "benchmarks/json-render/fixtures.ts": "32ce0b4e9c111712450f85ef0cf3da2899351c15e29458babb25df2379a59800",
+    "benchmarks/json-render/image.svg": "eb460b19b0b33788d2f24555821901b1e201979320f12a0bff21c76e72237fb2",
+    "benchmarks/json-render/index.html": "e30141747fb2180cb67024e41f30dab53ee394f78d91616effa77a900cdca939",
+    "benchmarks/json-render/main.tsx": "9b3fc92ed33dfdf7398804c35407c413074419371c4c36b7a7374d7fad81e4f9",
+    "benchmarks/json-render/observe.ts": "37d925241e29f7267f36785fb5c89b1e0816298f8753afb48354153fbd3d6297",
+    "benchmarks/json-render/regrade.ts": "1316e54a656edb37481adf9bac12ffe8794ffc367485e7d1db6570bd06eff1f9",
+    "benchmarks/json-render/run.ts": "598ce35476a85f22617b8cb804a4e8b67b025248d02e1f46404399e2b5e96aba",
+    "benchmarks/json-render/shared/index.html": "cef7e2d35e71f8b8c4fc5633fa06cd08cb96ceb464051292de68d3dfebb221d2",
+    "benchmarks/json-render/shared/main.tsx": "8ca241532cec08c4b56eb9c27fee1eea414b6f83c88959fdd11f03fc0793b07b",
+    "benchmarks/json-render/shared/vite.config.ts": "fba29577672c753b3cd8d5f68bd0d1db6f0239655f15a8e9753b0678b775c19f",
+    "benchmarks/json-render/shared-fixtures.ts": "396c446425959a6a07d55b887558148e81a67161d2bf0d202d208414a42d54e5",
+    "benchmarks/json-render/shared-run.ts": "46b3a802bee7d6fba5e6eb3990b8428712a127e22527264f3eced3dacda5f705",
+    "benchmarks/json-render/transport.ts": "1584ca0b69b6249e1d41c4fbe7c4560f7e6f67986c50efc095c7d3e988db62ba",
+    "benchmarks/json-render/validate.ts": "d5385e74fc30d15f0b33c7cbf1442026d19e1dfb9aed8639f70b9b10d9c849d7",
+    "benchmarks/json-render/vite.config.ts": "30e60ae683a41b64de9d37222032cf6850f66b892a176b954cd0622b20b86780",
+    "benchmarks/common/Observer.tsx": "302e713aca4c4ef5f75f21bc3843b005c7f959b2c7194516484a92731cb149b6",
+    "benchmarks/common/Stage.tsx": "72e7ff4c81714440bb4e1566a0d9ad50e0079c19532b633067c3ece80d6e178c",
+    "benchmarks/common/action-request.ts": "0f3e7760aa89696754863ba4a6850cb1b92c1ee8279bf9b9053c836a10cc0d12",
+    "benchmarks/common/actions.ts": "f6c97d2e317fbddeb6b6df1db21a680559447c14394ccb25551e2616bc9517d6",
+    "benchmarks/common/public/benchmark-sw.js": "0edc4d4ebc052b151e20bb7c44816272cdcfac24169ff7c28fd2894d174d0cf5",
+    "benchmarks/common/public/image.svg": "eb460b19b0b33788d2f24555821901b1e201979320f12a0bff21c76e72237fb2",
+    "benchmarks/common/replay-tree.ts": "cf1fc6c400e7cbf87dad6c7ec031d8aef265c4b8b95ad740c7debbd46789bbdd",
+    "benchmarks/common/run.ts": "64fd5edc22731aefdf53b2b5fba9e6d2531ceec227caf5f30ec79f698d8618ca",
+    "benchmarks/common/six-cases.test.ts": "2255211744cf52ab73a148f6e38776c6d4345e165abfdd65f7be3d00048ae701",
+    "json-render-standalone/patches/@json-render__react@0.21.3.patch": "a201e956f4a44528549e6fb5148b0f8d5a446a57d2ff7e14fb874b6164c61fe8",
+    "json-render-standalone/patches/@json-render__react@0.21.4.patch": "a201e956f4a44528549e6fb5148b0f8d5a446a57d2ff7e14fb874b6164c61fe8",
+    "../json-render-standalone/pnpm-lock.yaml": "c5cfcd1629af7af555c8bf3c2d9b9cb48229429c60dbf6df9d5967b34c13bb02",
+    "a2ui/transport.ts": "d5591feb79df8f9010658bbdcf66606eb2de1dfeb2dd77d6de2bdb18e47f1b74",
+    "pnpm-lock.yaml": "6f1f6d1550cb1320febaf02c7b55a981f321887d638b354274f3ce7357ed3744",
+    "json-render/observe.ts": "37d925241e29f7267f36785fb5c89b1e0816298f8753afb48354153fbd3d6297",
+    "json-render/budget.ts": "d94499c86cb0d783091720236e14a5ab2ddbf82492504c3bb496810c65e25f41",
+    "v4/dataset.json": "c8dd811efa99fd5573da2a55253f4023a71c4ad3a991369b442cbde63ee72961",
+    "v4/cases.json": "993e3b593bc154797fec4cbfd940e4192ab4c712c311e869c5b3d4b5427c5d41"
+  },
+  "sourceHash": "7be65e6ac2aad22e3bc6abb510a1b92527316c9b2be0a97ec3b28a4fdc3f5d89",
+  "gitCommit": "4bcdbf9591f44d6d734ddc2c90fd1205156b7f5c",
+  "fixtureRevision": 4,
+  "fixtureDirectory": "v4",
+  "viewport": [
+    1280,
+    900
+  ],
+  "clock": "2026-11-02T12:00:00Z",
+  "cache": "No response cache; provider input cache reported in usage",
+  "delivery": "96 UTF-16 characters per 8 ms plus 250 ms end hold; not model speed",
+  "images": "Photo URLs are preserved in the DOM; a benchmark-only service worker supplies one local SVG for every Unsplash request. System fonts. Photo realism and network latency are excluded.",
+  "timing": "Real browser animation frames; viewport/environment recorded per trial; observer hooks the same runAgent path as the composer",
+  "actionCoverage": "Each trial clicks all required record/navigation controls, checks captured server actions, and exercises invalid/valid form submissions. A no-generation sink isolates dispatch from subsequent view generation.",
+  "schedule": [
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C02",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C03",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C04",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "valid"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "wrong-price"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "wrong-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "missing-field"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "invalid-component"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "truncated"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C01",
+      "control": "dead-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C04",
+      "control": "wrong-fee"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "hallucinated-record"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C05",
+      "control": "unexpected-action"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "missing-required"
+    },
+    {
+      "variant": "text-native",
+      "caseId": "C06",
+      "control": "wrong-form-target"
+    }
+  ]
+}

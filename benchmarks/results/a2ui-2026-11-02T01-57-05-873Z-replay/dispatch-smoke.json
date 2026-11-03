@@ -1,0 +1,530 @@
+[
+  {
+    "message": {
+      "id": "3b804f40-ace7-4894-a68c-e29ecc5924e0",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 3"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "3"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "3"
+    },
+    "runId": "bbccde00-2365-4748-b4ed-b1f5c7bacf83",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "c18458f8-0d89-4c4c-a328-3add4bf97fe3",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 15"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "15"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "15"
+    },
+    "runId": "787061e8-2407-4c13-8981-b85b1d3cd1c5",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "d33d6f21-d273-435b-a623-ccb17b74c2da",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 32"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "32"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "32"
+    },
+    "runId": "559f9f6b-1896-4f33-9733-70b52f13b775",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "259ac51d-f5eb-4dc2-a925-4d8bb12f4d10",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 12"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "12"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "12"
+    },
+    "runId": "aaf497bf-9907-4508-b2d1-032bfb79a49c",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "a5d5574b-7980-4924-b44c-ae8416fb5b35",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 8"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "8"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "8"
+    },
+    "runId": "6933714a-379e-4b8b-b4ec-845cc32e88c6",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "cf5a3238-b868-4123-90ef-e5fc35ab7141",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 27"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "27"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "27"
+    },
+    "runId": "ee30167b-cf3f-4290-8b10-35ed3d4a7d78",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "f4e524d9-fc07-4838-be9d-e3b8a5b7d405",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 10"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "10"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "10"
+    },
+    "runId": "da15fb34-c089-4b47-8f30-7382051c2a5e",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "0dcb861b-90fd-4ab5-9d5c-15a75b31c251",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 22"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "22"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "22"
+    },
+    "runId": "425b7fe6-4e2f-41a0-acdc-7da31f760c6b",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "b1c912bf-c5d8-4fcd-8338-b1d166cab38d",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 1"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "1"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "1"
+    },
+    "runId": "b604fa35-ca94-4c55-81f4-adecf484c8d5",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "4f49f0bf-8434-49a1-be81-43857a45079f",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 30"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "30"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "30"
+    },
+    "runId": "4a17b1c6-09dc-4572-aa2d-3ce0407ef762",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "8768bdde-f5ce-460a-8eab-2799f7fc0075",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 20"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "20"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "20"
+    },
+    "runId": "e99bdfa4-d3cf-458f-8111-440e0ed4a6b4",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "bd017123-8aa7-4ec6-b548-5cca5dcdd364",
+      "role": "user",
+      "content": "View Details\n\napartmentId: 6"
+    },
+    "envelope": {
+      "name": "view_apartment",
+      "surfaceId": "results",
+      "sourceComponentId": "details",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "6"
+      }
+    },
+    "action": {
+      "name": "view_apartment",
+      "apartmentId": "6"
+    },
+    "runId": "9c637d4e-826d-4f25-bda7-bfbd899e876e",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "2537f6b3-a1ca-4863-b23b-dfbda544d12d",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 3"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "3"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "3"
+    },
+    "runId": "b2d1b9c6-6280-4690-a5df-25c587e54e29",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "2c4aa689-fc44-41cd-b1b5-3b96aa53777b",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 15"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "15"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "15"
+    },
+    "runId": "2955c348-4a43-45c3-8c54-de9f186f7ba5",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "9a121945-089c-4f0a-91e9-3ff8c31676b7",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 32"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "32"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "32"
+    },
+    "runId": "6cc2ae8c-80bb-49eb-82ca-1903cfbf4fb4",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "7975b806-7ec0-42e4-bfca-c68f46d4053f",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 12"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "12"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "12"
+    },
+    "runId": "de9baac0-ff6f-41f1-85f5-f9169d4793bf",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "80999f11-db4e-498b-877c-78abf1e7fb30",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 8"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "8"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "8"
+    },
+    "runId": "69446724-d8c0-4b2d-9c9b-01383527b53e",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "89b5166f-2b23-474f-81db-b1b62f5590dc",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 27"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "27"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "27"
+    },
+    "runId": "deccaf70-1e4b-4853-9b06-53d76bef0f32",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "3141cab0-ee25-43be-b410-21547b17e136",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 10"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "10"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "10"
+    },
+    "runId": "317e5843-c51a-46f9-9a1f-0468c4b3d1a2",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "df504a13-701a-4465-9dec-e049298a37f5",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 22"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "22"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "22"
+    },
+    "runId": "4f74b49f-fe03-4289-a46e-80a4b0a1d3c7",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "8ec83c17-5f77-4ca0-be7d-00bd7066f21f",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 1"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "1"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "1"
+    },
+    "runId": "92498653-a736-43a4-90f9-a07f4c39406d",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "0cbd2c12-3383-4170-9f91-52d1edab3db1",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 30"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "30"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "30"
+    },
+    "runId": "0aa2e625-1818-42a1-a5cf-7f5ec68b6149",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "8b8f2295-d03e-4990-b5ce-2a638f584985",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 20"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "20"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "20"
+    },
+    "runId": "459eea4a-e571-4b70-9264-110231f3ea47",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  },
+  {
+    "message": {
+      "id": "7e6c415b-6597-4285-846a-887f87c611fa",
+      "role": "user",
+      "content": "Schedule Tour\n\napartmentId: 6"
+    },
+    "envelope": {
+      "name": "schedule_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "tour",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "6"
+      }
+    },
+    "action": {
+      "name": "schedule_tour",
+      "apartmentId": "6"
+    },
+    "runId": "e0930016-ae18-46ed-b45b-b2dda08fcc5c",
+    "threadId": "8828f3e0-71a4-4a9c-ad9a-5807323a1233"
+  }
+]

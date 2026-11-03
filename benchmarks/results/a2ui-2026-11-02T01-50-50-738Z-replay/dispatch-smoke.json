@@ -1,0 +1,99 @@
+[
+  {
+    "message": {
+      "id": "db5c2c23-e815-4007-a775-524689c10bc9",
+      "role": "user",
+      "content": "Back to Results"
+    },
+    "envelope": {
+      "name": "back_to_results",
+      "surfaceId": "results",
+      "sourceComponentId": "n11",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {}
+    },
+    "action": {
+      "name": "back_to_results"
+    },
+    "runId": "355efbaf-4794-4adc-b38f-0954872c69b0",
+    "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+  },
+  {
+    "message": {
+      "id": "2a057a50-aa12-4012-89c8-9cc598d6723c",
+      "role": "user",
+      "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}"
+    },
+    "envelope": {
+      "name": "submit_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "n2",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "999",
+        "details": {
+          "name": "Benchmark Reader",
+          "email": "reader@example.com",
+          "date": "2026-11-14",
+          "phone": "555-0107",
+          "tourType": "video",
+          "message": "A demonstration request."
+        }
+      }
+    },
+    "action": {
+      "name": "submit_tour",
+      "apartmentId": "999",
+      "details": {
+        "name": "Benchmark Reader",
+        "email": "reader@example.com",
+        "date": "2026-11-14",
+        "phone": "555-0107",
+        "tourType": "video",
+        "message": "A demonstration request."
+      }
+    },
+    "runId": "09a3b55a-e424-4f79-b780-c399a2b4249c",
+    "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+  },
+  {
+    "message": {
+      "id": "a8870698-4152-49b4-879f-635fc6282e92",
+      "role": "user",
+      "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}"
+    },
+    "envelope": {
+      "name": "submit_tour",
+      "surfaceId": "results",
+      "sourceComponentId": "n2",
+      "timestamp": "2026-11-02T12:00:00.000Z",
+      "context": {
+        "apartmentId": "999",
+        "details": {
+          "name": "Benchmark Reader",
+          "email": "reader@example.com",
+          "date": "2026-11-14",
+          "phone": "555-0107",
+          "tourType": "video",
+          "message": "A demonstration request.",
+          "bringPet": "on"
+        }
+      }
+    },
+    "action": {
+      "name": "submit_tour",
+      "apartmentId": "999",
+      "details": {
+        "name": "Benchmark Reader",
+        "email": "reader@example.com",
+        "date": "2026-11-14",
+        "phone": "555-0107",
+        "tourType": "video",
+        "message": "A demonstration request.",
+        "bringPet": "on"
+      }
+    },
+    "runId": "dfa1d8a1-eece-4cee-a165-7adef62e9ca2",
+    "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+  }
+]

@@ -1,67 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
-import OpenAI from "openai";
-import { SYSTEM_PROMPT } from "../../lib/system-prompt";
-
-type ChatMsg = { role: "system" | "user" | "assistant"; content: string };
-const conversations = new Map<string, ChatMsg[]>();
-
-export const Route = createFileRoute("/api/chat")({
-  server: {
-    handlers: {
-      POST: async ({ request }) => {
-        const { message, sessionId } = (await request.json()) as {
-          message: string;
-          sessionId: string;
-        };
-
-        if (!conversations.has(sessionId)) {
-          conversations.set(sessionId, [
-            { role: "system", content: SYSTEM_PROMPT },
-          ]);
-        }
-        const history = conversations.get(sessionId)!;
-        history.push({ role: "user", content: message });
-
-        const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY, baseURL: process.env.OPENAI_BASE_URL });
-
-        const stream = await openai.chat.completions.create({
-          model: "gpt-5.4",
-          stream: true,
-          temperature: 0.3,
-          messages: history,
-        });
-
-        let fullAssistantResponse = "";
-
-        const encoder = new TextEncoder();
-        const readable = new ReadableStream({
-          async start(controller) {
-            for await (const chunk of stream) {
-              const content = chunk.choices[0]?.delta?.content;
-              if (content) {
-                fullAssistantResponse += content;
-                controller.enqueue(
-                  encoder.encode(`data: ${JSON.stringify(content)}\n\n`)
-                );
-              }
-            }
-            history.push({
-              role: "assistant",
-              content: fullAssistantResponse,
-            });
-            controller.enqueue(encoder.encode("data: [DONE]\n\n"));
-            controller.close();
-          },
-        });
-
-        return new Response(readable, {
-          headers: {
-            "Content-Type": "text/event-stream",
-            "Cache-Control": "no-cache",
-            Connection: "keep-alive",
-          },
-        });
-      },
-    },
-  },
-});
+import { getSystemPrompt } from "../../../../openui-copilotkit/src/lib/prompts";
+export const Route = createFileRoute("/api/chat")({ server: { handlers: { POST: async ({ request }) => {
+  const body = await request.json();
+  const openRouter = process.env.MODEL_PROVIDER === "openrouter";
+  const response = await fetch(openRouter ? "https://openrouter.ai/api/v1/chat/completions" : "https://api.openai.com/v1/chat/completions", {
+    method: "POST", signal: request.signal,
+    headers: { "content-type": "application/json", authorization: `Bearer ${openRouter ? process.env.OPENROUTER_API_KEY : process.env.OPENAI_API_KEY}` },
+    body: JSON.stringify({ model: process.env.MODEL ?? (openRouter ? "openai/gpt-5.4" : "gpt-5.4"), messages: [{ role: "system", content: getSystemPrompt() }, ...body.messages], stream: true, stream_options: { include_usage: true }, max_completion_tokens: 16000, ...(openRouter ? { provider: { zdr: true, allow_fallbacks: false, only: [process.env.OPENROUTER_PROVIDER ?? "azure/eu"] }, reasoning: { effort: "low" } } : { reasoning_effort: "low" }) }),
+  });
+  if (!response.ok) return new Response("The model request failed. Please try again.", { status: response.status });
+  return new Response(response.body, { headers: { "content-type": "text/event-stream", "cache-control": "no-cache" } });
+} } } });

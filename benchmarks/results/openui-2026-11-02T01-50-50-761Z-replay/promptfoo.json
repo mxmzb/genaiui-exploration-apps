@@ -1,0 +1,2301 @@
+{
+  "version": 3,
+  "timestamp": "2026-11-02T01:51:02.290Z",
+  "prompts": [
+    {
+      "id": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "raw": "{{caseId}}",
+      "label": "{{caseId}}",
+      "provider": "text-native",
+      "metrics": {
+        "score": 17,
+        "testPassCount": 17,
+        "testFailCount": 0,
+        "testErrorCount": 0,
+        "testCacheHitCount": 0,
+        "assertPassCount": 17,
+        "assertFailCount": 0,
+        "totalLatencyMs": 26512,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 17,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        },
+        "namedScores": {},
+        "namedScoresCount": {},
+        "namedScoreWeights": {},
+        "cost": 0
+      }
+    }
+  ],
+  "results": [
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "1180516a-9fae-4e41-8b49-bcf545cb2f8f",
+      "latencyMs": 938,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C01",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":true,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"7a152a71-9ec0-4cdd-9520-1a86787d6cc2\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"view_apartment\"},\"runId\":\"0de946c4-3205-4ff7-a86b-0a8389e6b136\",\"threadId\":\"60dc9414-c340-48e1-b8c9-570e7567b59a\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"14775d2b-f16b-43c5-ba45-3e80598365b3\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"61bad174-1ff2-4a1a-975e-ad51b791dda9\",\"threadId\":\"60dc9414-c340-48e1-b8c9-570e7567b59a\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.39999985694885254,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":62.89999985694885,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":79,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":87.39999985694885,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":96.19999980926514,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":104.09999990463257,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":362.5,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":2}],\"firstMeaningfulMs\":96.19999980926514,\"firstCompleteCardMs\":104.09999990463257,\"allContentMs\":104.09999990463257,\"usableMs\":362.5,\"runEndMs\":361.5},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 0,
+          "caseId": "C01",
+          "control": "valid"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 0,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 0,
+        "caseId": "C01",
+        "control": "valid"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "a89f3851-5429-468c-a3bf-3f894c9408a2",
+      "latencyMs": 2104,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C02",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":true,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"view_apartment\",\"apartmentId\":\"7\",\"scope\":\"7\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"7\",\"scope\":\"7\"},{\"name\":\"view_apartment\",\"apartmentId\":\"13\",\"scope\":\"13\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"13\",\"scope\":\"13\"},{\"name\":\"back_to_results\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"8eee6e6f-d6fc-48f7-a927-4d7a122f5268\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"view_apartment\"},\"runId\":\"fb5654bb-b8e9-4831-b43f-b7e2f11359fc\",\"threadId\":\"1d6840fd-c445-49ee-9b31-03f57743e80d\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"7\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"90cbc7f2-2b84-418b-823b-4b093be10cff\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"7\\\"}\"},\"action\":{\"apartmentId\":\"7\",\"name\":\"view_apartment\"},\"runId\":\"c4a94ed2-7689-4584-9091-d47543dee7c4\",\"threadId\":\"1d6840fd-c445-49ee-9b31-03f57743e80d\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"13\",\"before\":2,\"errors\":[],\"received\":[{\"message\":{\"id\":\"032d6ff6-7f55-40eb-acd3-9fd2df7fde16\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"13\\\"}\"},\"action\":{\"apartmentId\":\"13\",\"name\":\"view_apartment\"},\"runId\":\"99149538-6d98-413f-8de2-0e3d751c0fee\",\"threadId\":\"1d6840fd-c445-49ee-9b31-03f57743e80d\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":3,\"errors\":[],\"received\":[{\"message\":{\"id\":\"32994ca0-6e22-499c-89b0-7a214ab18b9e\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"3518acd7-ac38-4071-a8fc-aa91b16c94d0\",\"threadId\":\"1d6840fd-c445-49ee-9b31-03f57743e80d\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"7\",\"before\":4,\"errors\":[],\"received\":[{\"message\":{\"id\":\"77138443-1211-4556-8d29-fb629bc8a3c2\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"7\\\"}\"},\"action\":{\"apartmentId\":\"7\",\"name\":\"schedule_tour\"},\"runId\":\"a0d7943b-1a06-4c97-8c52-be62e0a5c152\",\"threadId\":\"1d6840fd-c445-49ee-9b31-03f57743e80d\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"13\",\"before\":5,\"errors\":[],\"received\":[{\"message\":{\"id\":\"72f27c31-e141-4985-bc71-508d8b01645e\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"13\\\"}\"},\"action\":{\"apartmentId\":\"13\",\"name\":\"schedule_tour\"},\"runId\":\"ad7ba4da-e198-4b67-9dac-a6b7c8352404\",\"threadId\":\"1d6840fd-c445-49ee-9b31-03f57743e80d\"}]},{\"name\":\"back_to_results\",\"before\":6,\"errors\":[],\"received\":[{\"message\":{\"id\":\"a697b9b0-b821-404f-b79e-e4333021a234\",\"role\":\"user\",\"content\":\"Return to my previous results, preserving my search filters\\n{\\\"action\\\":\\\"back_to_results\\\"}\"},\"action\":{\"name\":\"back_to_results\"},\"runId\":\"956403f7-f178-4f6d-af0f-af3f36116afd\",\"threadId\":\"1d6840fd-c445-49ee-9b31-03f57743e80d\"}]}],\"requestCount\":7},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.09999990463256836,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":92.5,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":1,\"enabledButtons\":0},{\"ms\":101,\"ids\":[],\"complete\":0,\"pending\":1,\"renderedFields\":3,\"enabledButtons\":0},{\"ms\":109.29999995231628,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":118.20000004768372,\"ids\":[\"13\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":126.20000004768372,\"ids\":[\"13\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":201.09999990463257,\"ids\":[\"13\"],\"complete\":1,\"pending\":0,\"renderedFields\":6,\"enabledButtons\":0},{\"ms\":209.40000009536743,\"ids\":[\"13\"],\"complete\":1,\"pending\":0,\"renderedFields\":8,\"enabledButtons\":0},{\"ms\":217.90000009536743,\"ids\":[\"13\"],\"complete\":1,\"pending\":0,\"renderedFields\":10,\"enabledButtons\":0},{\"ms\":225.59999990463257,\"ids\":[\"7\",\"13\"],\"complete\":1,\"pending\":0,\"renderedFields\":10,\"enabledButtons\":0},{\"ms\":234.5,\"ids\":[\"7\",\"13\"],\"complete\":2,\"pending\":0,\"renderedFields\":10,\"enabledButtons\":0},{\"ms\":301.09999990463257,\"ids\":[\"7\",\"13\"],\"complete\":2,\"pending\":0,\"renderedFields\":11,\"enabledButtons\":0},{\"ms\":309,\"ids\":[\"7\",\"13\"],\"complete\":2,\"pending\":0,\"renderedFields\":13,\"enabledButtons\":0},{\"ms\":325.7000000476837,\"ids\":[\"7\",\"13\"],\"complete\":2,\"pending\":0,\"renderedFields\":15,\"enabledButtons\":0},{\"ms\":334.5,\"ids\":[\"2\",\"7\",\"13\"],\"complete\":2,\"pending\":0,\"renderedFields\":15,\"enabledButtons\":0},{\"ms\":342.7999999523163,\"ids\":[\"2\",\"7\",\"13\"],\"complete\":3,\"pending\":0,\"renderedFields\":15,\"enabledButtons\":0},{\"ms\":609.5999999046326,\"ids\":[\"2\",\"7\",\"13\"],\"complete\":3,\"pending\":0,\"renderedFields\":15,\"enabledButtons\":7}],\"firstMeaningfulMs\":118.20000004768372,\"firstCompleteCardMs\":126.20000004768372,\"allContentMs\":342.7999999523163,\"usableMs\":609.5999999046326,\"runEndMs\":601.9000000953674},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 1,
+          "caseId": "C02",
+          "control": "valid"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 1,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 1,
+        "caseId": "C02",
+        "control": "valid"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "ad1a61fe-f375-4b66-a01f-bb8931e50a03",
+      "latencyMs": 6022,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C03",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":true,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"3\",\"scope\":\"3\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"3\",\"scope\":\"3\"},{\"name\":\"view_apartment\",\"apartmentId\":\"15\",\"scope\":\"15\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"15\",\"scope\":\"15\"},{\"name\":\"view_apartment\",\"apartmentId\":\"32\",\"scope\":\"32\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"32\",\"scope\":\"32\"},{\"name\":\"view_apartment\",\"apartmentId\":\"12\",\"scope\":\"12\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"12\",\"scope\":\"12\"},{\"name\":\"view_apartment\",\"apartmentId\":\"8\",\"scope\":\"8\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"8\",\"scope\":\"8\"},{\"name\":\"view_apartment\",\"apartmentId\":\"27\",\"scope\":\"27\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"27\",\"scope\":\"27\"},{\"name\":\"view_apartment\",\"apartmentId\":\"10\",\"scope\":\"10\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"10\",\"scope\":\"10\"},{\"name\":\"view_apartment\",\"apartmentId\":\"22\",\"scope\":\"22\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"22\",\"scope\":\"22\"},{\"name\":\"view_apartment\",\"apartmentId\":\"1\",\"scope\":\"1\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"1\",\"scope\":\"1\"},{\"name\":\"view_apartment\",\"apartmentId\":\"30\",\"scope\":\"30\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"30\",\"scope\":\"30\"},{\"name\":\"view_apartment\",\"apartmentId\":\"20\",\"scope\":\"20\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"20\",\"scope\":\"20\"},{\"name\":\"view_apartment\",\"apartmentId\":\"6\",\"scope\":\"6\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"6\",\"scope\":\"6\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"3\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"503c01a4-3833-469c-b496-e35083d63958\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"3\\\"}\"},\"action\":{\"apartmentId\":\"3\",\"name\":\"view_apartment\"},\"runId\":\"038854d9-4abd-42ee-a9e9-e3cb9ab0e3c2\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"15\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"01941abb-2299-4da3-8d27-7c0c40fb6a44\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"15\\\"}\"},\"action\":{\"apartmentId\":\"15\",\"name\":\"view_apartment\"},\"runId\":\"4a7d7dd9-2c7d-4e5b-b3b4-b6ff6c82931c\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"32\",\"before\":2,\"errors\":[],\"received\":[{\"message\":{\"id\":\"31011681-fb27-4ec5-ba77-56decdcb5e31\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"32\\\"}\"},\"action\":{\"apartmentId\":\"32\",\"name\":\"view_apartment\"},\"runId\":\"f154fe2d-13ae-4001-ab96-6312813cc4e9\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"12\",\"before\":3,\"errors\":[],\"received\":[{\"message\":{\"id\":\"73e83954-401e-4a8b-b939-0df5e3dcf9f5\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"12\\\"}\"},\"action\":{\"apartmentId\":\"12\",\"name\":\"view_apartment\"},\"runId\":\"6f57202c-c7db-46da-825c-b1a584b4c3a2\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"8\",\"before\":4,\"errors\":[],\"received\":[{\"message\":{\"id\":\"06cab3b0-ba8e-4b8f-b0d4-acb562d8ab37\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"8\\\"}\"},\"action\":{\"apartmentId\":\"8\",\"name\":\"view_apartment\"},\"runId\":\"8ecb475b-bf10-4bc2-96db-93ba50c3d378\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"27\",\"before\":5,\"errors\":[],\"received\":[{\"message\":{\"id\":\"4c420331-38b3-41a1-a9ec-78d584f203aa\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"27\\\"}\"},\"action\":{\"apartmentId\":\"27\",\"name\":\"view_apartment\"},\"runId\":\"5178edf7-9141-4e69-8928-175659309fbd\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"10\",\"before\":6,\"errors\":[],\"received\":[{\"message\":{\"id\":\"734d2555-590a-4a7f-bb6f-a701831f144f\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"10\\\"}\"},\"action\":{\"apartmentId\":\"10\",\"name\":\"view_apartment\"},\"runId\":\"e2e04ea8-6c17-4b0d-ac96-d9eae2e3865b\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"22\",\"before\":7,\"errors\":[],\"received\":[{\"message\":{\"id\":\"cb02ada7-4210-447f-82a3-8902973dfe24\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"22\\\"}\"},\"action\":{\"apartmentId\":\"22\",\"name\":\"view_apartment\"},\"runId\":\"a18f57c4-fdec-438a-99cc-c48a4edaa26b\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"1\",\"before\":8,\"errors\":[],\"received\":[{\"message\":{\"id\":\"78bfc341-a6ce-4429-ae73-7bcf7527821d\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"1\\\"}\"},\"action\":{\"apartmentId\":\"1\",\"name\":\"view_apartment\"},\"runId\":\"94697c0b-0e0d-4812-8442-aa763237afa4\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"30\",\"before\":9,\"errors\":[],\"received\":[{\"message\":{\"id\":\"1e1dccac-0165-470f-897e-483154d6c5b4\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"30\\\"}\"},\"action\":{\"apartmentId\":\"30\",\"name\":\"view_apartment\"},\"runId\":\"67be79c0-12a7-471f-8fb7-391824ff325a\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"20\",\"before\":10,\"errors\":[],\"received\":[{\"message\":{\"id\":\"f4391144-25ad-4b2a-8c77-7bd1b555137f\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"20\\\"}\"},\"action\":{\"apartmentId\":\"20\",\"name\":\"view_apartment\"},\"runId\":\"6ca53bc0-d276-4e4f-a217-d819988c9a4a\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"view_apartment\",\"apartmentId\":\"6\",\"before\":11,\"errors\":[],\"received\":[{\"message\":{\"id\":\"429cf6ee-8b26-4224-abda-95db17f9c6e3\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"6\\\"}\"},\"action\":{\"apartmentId\":\"6\",\"name\":\"view_apartment\"},\"runId\":\"a7cc2f75-6c40-4a4a-80f8-1a9c7ffb2dee\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"3\",\"before\":12,\"errors\":[],\"received\":[{\"message\":{\"id\":\"3af5a91f-a360-4c1a-bd0a-0f0524f448bd\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"3\\\"}\"},\"action\":{\"apartmentId\":\"3\",\"name\":\"schedule_tour\"},\"runId\":\"10c6e5ab-979a-4e7a-b014-9755065efb5b\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"15\",\"before\":13,\"errors\":[],\"received\":[{\"message\":{\"id\":\"ba097792-018b-48c1-a450-4926d6549f82\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"15\\\"}\"},\"action\":{\"apartmentId\":\"15\",\"name\":\"schedule_tour\"},\"runId\":\"d489071d-25c2-42b7-b8db-787c633abd69\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"32\",\"before\":14,\"errors\":[],\"received\":[{\"message\":{\"id\":\"e94909c3-1466-474c-aa71-aa09bb6b89a3\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"32\\\"}\"},\"action\":{\"apartmentId\":\"32\",\"name\":\"schedule_tour\"},\"runId\":\"37f38ff4-aeeb-4888-944d-c361f5e185bf\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"12\",\"before\":15,\"errors\":[],\"received\":[{\"message\":{\"id\":\"d2565d68-7ef4-4f62-abbb-a2fcf574609c\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"12\\\"}\"},\"action\":{\"apartmentId\":\"12\",\"name\":\"schedule_tour\"},\"runId\":\"33cac892-8ea8-4c7e-ac2a-5ba231d5843d\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"8\",\"before\":16,\"errors\":[],\"received\":[{\"message\":{\"id\":\"25674a5f-9e86-42ac-90fb-e8f8bf3622bb\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"8\\\"}\"},\"action\":{\"apartmentId\":\"8\",\"name\":\"schedule_tour\"},\"runId\":\"b5bb9583-3dd7-48de-80ef-1055de2a435a\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"27\",\"before\":17,\"errors\":[],\"received\":[{\"message\":{\"id\":\"453a1ed6-1523-498c-8dbb-a2587d6653e4\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"27\\\"}\"},\"action\":{\"apartmentId\":\"27\",\"name\":\"schedule_tour\"},\"runId\":\"e03be6c9-a201-4d1f-a043-da2f0387e9a9\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"10\",\"before\":18,\"errors\":[],\"received\":[{\"message\":{\"id\":\"a7e3b609-7e20-46d2-8a3c-f0469b18cbd5\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"10\\\"}\"},\"action\":{\"apartmentId\":\"10\",\"name\":\"schedule_tour\"},\"runId\":\"c379f7a9-4c7e-4116-96aa-61d95b56156a\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"22\",\"before\":19,\"errors\":[],\"received\":[{\"message\":{\"id\":\"f6fd8b0a-c3a5-43a3-91b5-16f3d14371ee\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"22\\\"}\"},\"action\":{\"apartmentId\":\"22\",\"name\":\"schedule_tour\"},\"runId\":\"19001235-92db-4579-9128-1282a69062e0\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"1\",\"before\":20,\"errors\":[],\"received\":[{\"message\":{\"id\":\"6745a429-d7b9-4bdd-a96f-407ce9a0c406\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"1\\\"}\"},\"action\":{\"apartmentId\":\"1\",\"name\":\"schedule_tour\"},\"runId\":\"1be8de5f-bc45-4ac6-a6bc-a346ca64cf93\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"30\",\"before\":21,\"errors\":[],\"received\":[{\"message\":{\"id\":\"843596dc-2f6f-4343-b53a-a3801e2f6e78\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"30\\\"}\"},\"action\":{\"apartmentId\":\"30\",\"name\":\"schedule_tour\"},\"runId\":\"a65bc5d0-8872-4525-9a59-60b7c4e3673d\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"20\",\"before\":22,\"errors\":[],\"received\":[{\"message\":{\"id\":\"7f2a7b62-7946-45fd-aac6-a07e3122a550\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"20\\\"}\"},\"action\":{\"apartmentId\":\"20\",\"name\":\"schedule_tour\"},\"runId\":\"fb0df096-c411-4603-ab3d-edfa929639b8\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"6\",\"before\":23,\"errors\":[],\"received\":[{\"message\":{\"id\":\"541910e1-dd36-43c8-87b0-e3431e2e8251\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"6\\\"}\"},\"action\":{\"apartmentId\":\"6\",\"name\":\"schedule_tour\"},\"runId\":\"c57309fa-2f01-40a3-869f-f2bb9aa79dff\",\"threadId\":\"1b67f21f-a907-4e12-94ee-e5fe3bc0449c\"}]}],\"requestCount\":24},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.2999999523162842,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":61.799999952316284,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":70.20000004768372,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":86.40000009536743,\"ids\":[\"6\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":103.5,\"ids\":[\"6\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":145.40000009536743,\"ids\":[\"6\"],\"complete\":1,\"pending\":1,\"renderedFields\":7,\"enabledButtons\":0},{\"ms\":152.70000004768372,\"ids\":[\"6\"],\"complete\":1,\"pending\":1,\"renderedFields\":9,\"enabledButtons\":0},{\"ms\":161.40000009536743,\"ids\":[\"20\",\"6\"],\"complete\":1,\"pending\":0,\"renderedFields\":10,\"enabledButtons\":0},{\"ms\":178.70000004768372,\"ids\":[\"20\",\"6\"],\"complete\":2,\"pending\":0,\"renderedFields\":10,\"enabledButtons\":0},{\"ms\":220.29999995231628,\"ids\":[\"20\",\"6\"],\"complete\":2,\"pending\":0,\"renderedFields\":11,\"enabledButtons\":0},{\"ms\":228.59999990463257,\"ids\":[\"20\",\"6\"],\"complete\":2,\"pending\":0,\"renderedFields\":13,\"enabledButtons\":0},{\"ms\":237,\"ids\":[\"20\",\"6\"],\"complete\":2,\"pending\":0,\"renderedFields\":15,\"enabledButtons\":0},{\"ms\":245.29999995231628,\"ids\":[\"30\",\"20\",\"6\"],\"complete\":2,\"pending\":0,\"renderedFields\":15,\"enabledButtons\":0},{\"ms\":262.09999990463257,\"ids\":[\"30\",\"20\",\"6\"],\"complete\":3,\"pending\":0,\"renderedFields\":15,\"enabledButtons\":0},{\"ms\":295.5,\"ids\":[\"30\",\"20\",\"6\"],\"complete\":3,\"pending\":0,\"renderedFields\":16,\"enabledButtons\":0},{\"ms\":303,\"ids\":[\"30\",\"20\",\"6\"],\"complete\":3,\"pending\":1,\"renderedFields\":18,\"enabledButtons\":0},{\"ms\":312.2000000476837,\"ids\":[\"30\",\"20\",\"6\"],\"complete\":3,\"pending\":0,\"renderedFields\":20,\"enabledButtons\":0},{\"ms\":320.59999990463257,\"ids\":[\"1\",\"30\",\"20\",\"6\"],\"complete\":3,\"pending\":0,\"renderedFields\":20,\"enabledButtons\":0},{\"ms\":328.7000000476837,\"ids\":[\"1\",\"30\",\"20\",\"6\"],\"complete\":4,\"pending\":0,\"renderedFields\":20,\"enabledButtons\":0},{\"ms\":370.5,\"ids\":[\"1\",\"30\",\"20\",\"6\"],\"complete\":4,\"pending\":1,\"renderedFields\":21,\"enabledButtons\":0},{\"ms\":379.09999990463257,\"ids\":[\"1\",\"30\",\"20\",\"6\"],\"complete\":4,\"pending\":0,\"renderedFields\":24,\"enabledButtons\":0},{\"ms\":404.09999990463257,\"ids\":[\"1\",\"30\",\"20\",\"6\"],\"complete\":4,\"pending\":1,\"renderedFields\":25,\"enabledButtons\":0},{\"ms\":412.40000009536743,\"ids\":[\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":4,\"pending\":0,\"renderedFields\":26,\"enabledButtons\":0},{\"ms\":428.7999999523163,\"ids\":[\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":5,\"pending\":0,\"renderedFields\":26,\"enabledButtons\":0},{\"ms\":461.59999990463257,\"ids\":[\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":5,\"pending\":0,\"renderedFields\":27,\"enabledButtons\":0},{\"ms\":470.5,\"ids\":[\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":5,\"pending\":0,\"renderedFields\":29,\"enabledButtons\":0},{\"ms\":478.40000009536743,\"ids\":[\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":5,\"pending\":0,\"renderedFields\":31,\"enabledButtons\":0},{\"ms\":486.59999990463257,\"ids\":[\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":5,\"pending\":0,\"renderedFields\":31,\"enabledButtons\":0},{\"ms\":503.59999990463257,\"ids\":[\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":6,\"pending\":0,\"renderedFields\":31,\"enabledButtons\":0},{\"ms\":545.5,\"ids\":[\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":6,\"pending\":0,\"renderedFields\":33,\"enabledButtons\":0},{\"ms\":553.9000000953674,\"ids\":[\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":6,\"pending\":0,\"renderedFields\":35,\"enabledButtons\":0},{\"ms\":562.2000000476837,\"ids\":[\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":6,\"pending\":0,\"renderedFields\":36,\"enabledButtons\":0},{\"ms\":569.7999999523163,\"ids\":[\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":6,\"pending\":0,\"renderedFields\":36,\"enabledButtons\":0},{\"ms\":579,\"ids\":[\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":7,\"pending\":0,\"renderedFields\":36,\"enabledButtons\":0},{\"ms\":612.2999999523163,\"ids\":[\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":7,\"pending\":1,\"renderedFields\":36,\"enabledButtons\":0},{\"ms\":620.0999999046326,\"ids\":[\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":7,\"pending\":0,\"renderedFields\":39,\"enabledButtons\":0},{\"ms\":629,\"ids\":[\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":7,\"pending\":0,\"renderedFields\":41,\"enabledButtons\":0},{\"ms\":636.5999999046326,\"ids\":[\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":7,\"pending\":0,\"renderedFields\":41,\"enabledButtons\":0},{\"ms\":654.2000000476837,\"ids\":[\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":8,\"pending\":0,\"renderedFields\":41,\"enabledButtons\":0},{\"ms\":695.7000000476837,\"ids\":[\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":8,\"pending\":0,\"renderedFields\":43,\"enabledButtons\":0},{\"ms\":703.5999999046326,\"ids\":[\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":8,\"pending\":0,\"renderedFields\":45,\"enabledButtons\":0},{\"ms\":720.5999999046326,\"ids\":[\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":8,\"pending\":0,\"renderedFields\":47,\"enabledButtons\":0},{\"ms\":729.2000000476837,\"ids\":[\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":8,\"pending\":0,\"renderedFields\":47,\"enabledButtons\":0},{\"ms\":745.9000000953674,\"ids\":[\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":9,\"pending\":0,\"renderedFields\":47,\"enabledButtons\":0},{\"ms\":778.7000000476837,\"ids\":[\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":9,\"pending\":0,\"renderedFields\":49,\"enabledButtons\":0},{\"ms\":787.5999999046326,\"ids\":[\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":9,\"pending\":0,\"renderedFields\":51,\"enabledButtons\":0},{\"ms\":795.7000000476837,\"ids\":[\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":9,\"pending\":0,\"renderedFields\":52,\"enabledButtons\":0},{\"ms\":804.2000000476837,\"ids\":[\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":9,\"pending\":0,\"renderedFields\":52,\"enabledButtons\":0},{\"ms\":812.5,\"ids\":[\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":10,\"pending\":0,\"renderedFields\":52,\"enabledButtons\":0},{\"ms\":845.7000000476837,\"ids\":[\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":10,\"pending\":0,\"renderedFields\":53,\"enabledButtons\":0},{\"ms\":854,\"ids\":[\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":10,\"pending\":0,\"renderedFields\":55,\"enabledButtons\":0},{\"ms\":862.4000000953674,\"ids\":[\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":10,\"pending\":0,\"renderedFields\":57,\"enabledButtons\":0},{\"ms\":870.7999999523163,\"ids\":[\"15\",\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":10,\"pending\":0,\"renderedFields\":57,\"enabledButtons\":0},{\"ms\":887.5,\"ids\":[\"15\",\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":11,\"pending\":0,\"renderedFields\":57,\"enabledButtons\":0},{\"ms\":928.2999999523163,\"ids\":[\"15\",\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":11,\"pending\":0,\"renderedFields\":59,\"enabledButtons\":0},{\"ms\":937.4000000953674,\"ids\":[\"15\",\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":11,\"pending\":0,\"renderedFields\":61,\"enabledButtons\":0},{\"ms\":945.7000000476837,\"ids\":[\"3\",\"15\",\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":11,\"pending\":0,\"renderedFields\":62,\"enabledButtons\":0},{\"ms\":962.2999999523163,\"ids\":[\"3\",\"15\",\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":12,\"pending\":0,\"renderedFields\":62,\"enabledButtons\":0},{\"ms\":1220.7999999523163,\"ids\":[\"3\",\"15\",\"32\",\"12\",\"8\",\"27\",\"10\",\"22\",\"1\",\"30\",\"20\",\"6\"],\"complete\":12,\"pending\":0,\"renderedFields\":62,\"enabledButtons\":24}],\"firstMeaningfulMs\":86.40000009536743,\"firstCompleteCardMs\":103.5,\"allContentMs\":962.2999999523163,\"usableMs\":1220.7999999523163,\"runEndMs\":1214.0999999046326},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 2,
+          "caseId": "C03",
+          "control": "valid"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 2,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 2,
+        "caseId": "C03",
+        "control": "valid"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "3f049486-552d-4e10-a51c-ad1e23b220dc",
+      "latencyMs": 1090,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C04",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":true,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"back_to_results\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"f1037ecf-078d-4536-a239-e752cfe4b9ef\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"df763625-b4e1-41a5-a239-f4105951d3f6\",\"threadId\":\"a61dfc04-a02d-4a3d-9339-4a34f09be7e5\"}]},{\"name\":\"back_to_results\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"80a8cdb8-1cea-426b-a565-f484d69ce253\",\"role\":\"user\",\"content\":\"Return to my previous results, preserving my search filters\\n{\\\"action\\\":\\\"back_to_results\\\"}\"},\"action\":{\"name\":\"back_to_results\"},\"runId\":\"76d311dd-86fe-4a3f-a63d-b49fe1bae983\",\"threadId\":\"a61dfc04-a02d-4a3d-9339-4a34f09be7e5\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.40000009536743164,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":121.90000009536743,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":1,\"enabledButtons\":0},{\"ms\":205.40000009536743,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":212.79999995231628,\"ids\":[],\"complete\":0,\"pending\":1,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":222,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":6,\"enabledButtons\":0},{\"ms\":230.59999990463257,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":6,\"enabledButtons\":0},{\"ms\":272.5,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":6,\"enabledButtons\":0},{\"ms\":530.2000000476837,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":6,\"enabledButtons\":2}],\"firstMeaningfulMs\":230.59999990463257,\"firstCompleteCardMs\":272.5,\"allContentMs\":272.5,\"usableMs\":530.2000000476837,\"runEndMs\":528.7999999523163},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 3,
+          "caseId": "C04",
+          "control": "valid"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 3,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 3,
+        "caseId": "C04",
+        "control": "valid"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "1dda80b5-7582-431e-8b37-6968d7cbf41d",
+      "latencyMs": 909,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C05",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":true,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[],\"requestCount\":0},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.5999999046325684,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0}],\"firstMeaningfulMs\":28.399999856948853,\"firstCompleteCardMs\":null,\"allContentMs\":28.399999856948853,\"usableMs\":28.399999856948853,\"runEndMs\":282.89999985694885},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 4,
+          "caseId": "C05",
+          "control": "valid"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 4,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 4,
+        "caseId": "C05",
+        "control": "valid"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "d8f803ab-4e6e-4d1f-9b13-df63f5953658",
+      "latencyMs": 1856,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C06",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":true,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"scope\":\"7\"},{\"name\":\"back_to_results\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"back_to_results\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"b140da53-5bb5-460d-a7d5-51e6a540da20\",\"role\":\"user\",\"content\":\"Return to my previous results, preserving my search filters\\n{\\\"action\\\":\\\"back_to_results\\\"}\"},\"action\":{\"name\":\"back_to_results\"},\"runId\":\"27afbf51-b2fb-49f8-a31e-af9192a781a1\",\"threadId\":\"1577bfd4-fcd5-4d33-bf11-a82771980c92\"}]},{\"name\":\"invalid_submit\",\"field\":\"name\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"email\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"date\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"phone\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"tourType\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"email\",\"value\":\"not-an-email\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"date\",\"value\":\"2026-11-01\",\"requests\":0},{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"b9593657-645b-43a5-bb03-743c5129a88e\",\"role\":\"user\",\"content\":\"Confirm my demo request. No booking is made or message sent\\n{\\\"action\\\":\\\"submit_tour\\\",\\\"apartmentId\\\":\\\"7\\\",\\\"details\\\":{\\\"name\\\":\\\"Benchmark Reader\\\",\\\"email\\\":\\\"reader@example.com\\\",\\\"date\\\":\\\"2026-11-14\\\",\\\"phone\\\":\\\"555-0107\\\",\\\"tourType\\\":\\\"video\\\",\\\"message\\\":\\\"A demonstration request.\\\"}}\"},\"action\":{\"apartmentId\":\"7\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"},\"name\":\"submit_tour\"},\"runId\":\"15c93690-4940-45bb-8532-d737a2746470\",\"threadId\":\"1577bfd4-fcd5-4d33-bf11-a82771980c92\"}]},{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"before\":2,\"errors\":[],\"received\":[{\"message\":{\"id\":\"1745800e-3592-49db-9f35-83985ee05aa3\",\"role\":\"user\",\"content\":\"Confirm my demo request. No booking is made or message sent\\n{\\\"action\\\":\\\"submit_tour\\\",\\\"apartmentId\\\":\\\"7\\\",\\\"details\\\":{\\\"name\\\":\\\"Benchmark Reader\\\",\\\"email\\\":\\\"reader@example.com\\\",\\\"date\\\":\\\"2026-11-14\\\",\\\"phone\\\":\\\"555-0107\\\",\\\"tourType\\\":\\\"video\\\",\\\"message\\\":\\\"A demonstration request.\\\",\\\"bringPet\\\":\\\"on\\\"}}\"},\"action\":{\"apartmentId\":\"7\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"},\"name\":\"submit_tour\"},\"runId\":\"ed17d7fb-201e-46be-93fe-d42d32c4634e\",\"threadId\":\"1577bfd4-fcd5-4d33-bf11-a82771980c92\"}]}],\"requestCount\":3},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.5,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":87.5,\"ids\":[\"7\"],\"complete\":1,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":337.5,\"ids\":[\"7\"],\"complete\":1,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":2}],\"firstMeaningfulMs\":87.5,\"firstCompleteCardMs\":87.5,\"allContentMs\":87.5,\"usableMs\":337.5,\"runEndMs\":333.7999999523163},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 5,
+          "caseId": "C06",
+          "control": "valid"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 5,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 5,
+        "caseId": "C06",
+        "control": "valid"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "2ebf149a-92d9-47a9-aaa9-0e6f56df5a9a",
+      "latencyMs": 1060,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C01",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":false,\"errors\":[\"2: incorrect or missing rent\"]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"cfd3be94-31d5-4b8d-b866-c454524cdc97\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"view_apartment\"},\"runId\":\"f26b3b60-f668-4a55-af8c-afc871d24414\",\"threadId\":\"15313bcc-b2dc-4e8a-b9a1-09b90e1f9762\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"82a748d7-e48e-40de-ae3f-2e4c1ce66dfc\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"c7b3e574-3853-4836-b488-4e910e84c8ab\",\"threadId\":\"15313bcc-b2dc-4e8a-b9a1-09b90e1f9762\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.20000004768371582,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":56.30000019073486,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":64.60000014305115,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":73.10000014305115,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":81.30000019073486,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":347.90000009536743,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":2}],\"firstMeaningfulMs\":81.30000019073486,\"firstCompleteCardMs\":null,\"allContentMs\":null,\"usableMs\":null,\"runEndMs\":346.30000019073486},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 6,
+          "caseId": "C01",
+          "control": "wrong-price"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 6,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 6,
+        "caseId": "C01",
+        "control": "wrong-price"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "9fb7477e-c343-462c-b274-9ec630e7463d",
+      "latencyMs": 1008,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C01",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":false,\"errors\":[\"Action view_apartment:999 on card 2\",\"Action schedule_tour:999 on card 2\",\"Missing/duplicate view_apartment:2\",\"Missing/duplicate schedule_tour:2\"],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"999\",\"scope\":\"2\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"999\",\"scope\":\"2\"}]},\"interaction\":{\"pass\":false,\"errors\":[\"view_apartment:2: Wrong action or record reached the server\",\"schedule_tour:2: Wrong action or record reached the server\"],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[\"Wrong action or record reached the server\"],\"received\":[{\"message\":{\"id\":\"abe12d2b-80dd-47cf-9f41-7463b7283a3a\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"999\\\"}\"},\"action\":{\"apartmentId\":\"999\",\"name\":\"view_apartment\"},\"runId\":\"d2e2b5fc-20ea-4a4e-a43c-15551b25028d\",\"threadId\":\"050a3801-b4b3-4529-8ead-6728aa9ee896\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":1,\"errors\":[\"Wrong action or record reached the server\"],\"received\":[{\"message\":{\"id\":\"5520f5d9-edae-4c83-9b06-7489b983c139\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"999\\\"}\"},\"action\":{\"apartmentId\":\"999\",\"name\":\"schedule_tour\"},\"runId\":\"36964372-367b-4ea1-9920-d01946159fed\",\"threadId\":\"050a3801-b4b3-4529-8ead-6728aa9ee896\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.2999999523162842,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":52.09999990463257,\"ids\":[],\"complete\":0,\"pending\":1,\"renderedFields\":1,\"enabledButtons\":0},{\"ms\":60.59999990463257,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":69.39999985694885,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":77.89999985694885,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":86.29999995231628,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":353.5,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":2}],\"firstMeaningfulMs\":77.89999985694885,\"firstCompleteCardMs\":86.29999995231628,\"allContentMs\":86.29999995231628,\"usableMs\":null,\"runEndMs\":344.39999985694885},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 7,
+          "caseId": "C01",
+          "control": "wrong-action"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 7,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 7,
+        "caseId": "C01",
+        "control": "wrong-action"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "9313090a-aa50-4589-b226-a3788748ec68",
+      "latencyMs": 994,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C01",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":false,\"errors\":[\"2: incorrect or missing bathrooms\"]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"a8f1e97d-5f44-47c9-a62a-ce9c3b72583f\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"view_apartment\"},\"runId\":\"96ac0a1b-938a-44ae-b636-1502bd2c1fae\",\"threadId\":\"224c7c39-c1e5-49d8-b75b-42cd9584a91b\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"6b4ca3df-f7dd-4456-bc8f-0f48004550f9\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"6579c8ec-0774-46c1-85eb-4ed398979817\",\"threadId\":\"224c7c39-c1e5-49d8-b75b-42cd9584a91b\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.39999985694885254,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":53.299999952316284,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":61.89999985694885,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":69.39999985694885,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":336.39999985694885,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":2}],\"firstMeaningfulMs\":69.39999985694885,\"firstCompleteCardMs\":null,\"allContentMs\":null,\"usableMs\":null,\"runEndMs\":334.89999985694885},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 8,
+          "caseId": "C01",
+          "control": "missing-field"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 8,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 8,
+        "caseId": "C01",
+        "control": "missing-field"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "ecdcb4d3-a707-45f8-8790-59dcdf4009ad",
+      "latencyMs": 1012,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C01",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":false,\"errors\":[\"{\\\"code\\\":\\\"unknown-component\\\",\\\"component\\\":\\\"InventedComponent\\\",\\\"path\\\":\\\"\\\",\\\"message\\\":\\\"Unknown component \\\\\\\"InventedComponent\\\\\\\" — not found in catalog or builtins. Available components: Stack, Row, Grid, Card, Divider, Heading, Text, Image, Badge, Metric, List, ListItem, Button, Form, Input, Select, Checkbox, Textarea\\\",\\\"statementId\\\":\\\"n1\\\"}\"]},\"contract\":{\"pass\":false,\"errors\":[\"{\\\"code\\\":\\\"unknown-component\\\",\\\"component\\\":\\\"InventedComponent\\\",\\\"path\\\":\\\"\\\",\\\"message\\\":\\\"Unknown component \\\\\\\"InventedComponent\\\\\\\" — not found in catalog or builtins. Available components: Stack, Row, Grid, Card, Divider, Heading, Text, Image, Badge, Metric, List, ListItem, Button, Form, Input, Select, Checkbox, Textarea\\\",\\\"statementId\\\":\\\"n1\\\"}\"]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"276c6565-e412-4c45-bd2c-d899517a840a\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"view_apartment\"},\"runId\":\"693cd0ff-7e74-45c3-99ab-c6934c64932e\",\"threadId\":\"f59ca9ca-686c-400a-be21-6269c5604a93\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"cfc4cc09-5c3d-4f2c-8a69-d57b48391db0\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"97abfa83-1ee6-47bf-acb1-6cdcc33c3ac9\",\"threadId\":\"f59ca9ca-686c-400a-be21-6269c5604a93\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":false,\"errors\":[\"We couldn’t finish that view.Some parts of this view could not be generated. You can try the request again.Try again ↗\"]}},\"timing\":{\"timeline\":[{\"ms\":0,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":54,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":63.5,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":71.70000004768372,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":80,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":88.40000009536743,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":347.5,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":2}],\"firstMeaningfulMs\":80,\"firstCompleteCardMs\":88.40000009536743,\"allContentMs\":88.40000009536743,\"usableMs\":null,\"runEndMs\":345.10000014305115},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 9,
+          "caseId": "C01",
+          "control": "invalid-component"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 9,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 9,
+        "caseId": "C01",
+        "control": "invalid-component"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "9adbbb13-d036-46c1-a433-93f7bc8eca55",
+      "latencyMs": 969,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C01",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":false,\"errors\":[\"Unresolved: n1\",\"Unresolved: n5\",\"Unresolved: n7\",\"Unresolved: n8\",\"Unresolved: n9\",\"Unresolved: n10\"]},\"contract\":{\"pass\":false,\"errors\":[\"Unresolved: n1\",\"Unresolved: n5\",\"Unresolved: n7\",\"Unresolved: n8\",\"Unresolved: n9\",\"Unresolved: n10\"]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":false,\"errors\":[\"2: missing record scope/title\",\"wrong listing order\"]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"37ed562e-ebed-4c76-9bc1-9cd1f32e95fd\",\"role\":\"user\",\"content\":\"Show apartment details\\n{\\\"action\\\":\\\"view_apartment\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"view_apartment\"},\"runId\":\"2ea21497-f780-4b76-b9cb-a1b92050403d\",\"threadId\":\"8c88585a-de0b-4eca-8861-f900f9a166a7\"}]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"eb9adfa2-ff47-4d67-8ef8-66147e3a35fe\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"2cb6d5fe-1fd0-4e46-98c7-e087944314ee\",\"threadId\":\"8c88585a-de0b-4eca-8861-f900f9a166a7\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.09999990463256836,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":56.299999952316284,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":64.5,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":3,\"enabledButtons\":0},{\"ms\":314.90000009536743,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":3,\"enabledButtons\":2}],\"firstMeaningfulMs\":null,\"firstCompleteCardMs\":null,\"allContentMs\":null,\"usableMs\":null,\"runEndMs\":308.2999999523163},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 10,
+          "caseId": "C01",
+          "control": "truncated"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 10,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 10,
+        "caseId": "C01",
+        "control": "truncated"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "645161b9-1c86-41be-8e16-a2444e273a6f",
+      "latencyMs": 2193,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C01",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":false,\"errors\":[\"Missing/duplicate view_apartment:2\"],\"actual\":[{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"}]},\"interaction\":{\"pass\":false,\"errors\":[\"view_apartment:2: Expected one request, received 0\",\"view_apartment:2: Wrong action or record reached the server\"],\"checks\":[{\"name\":\"view_apartment\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[\"Expected one request, received 0\",\"Wrong action or record reached the server\"],\"received\":[]},{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"6cc5cff1-37cc-4845-83ee-50833fc16390\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"232ca798-cafc-4114-a3f9-61effabf3306\",\"threadId\":\"1c80a00b-567a-4449-bd2f-3f0213d339a9\"}]}],\"requestCount\":1},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.09999990463256836,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":53.89999985694885,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":63.700000047683716,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":71.89999985694885,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":80,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":88.39999985694885,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":0},{\"ms\":354.59999990463257,\"ids\":[\"2\"],\"complete\":1,\"pending\":0,\"renderedFields\":5,\"enabledButtons\":2}],\"firstMeaningfulMs\":80,\"firstCompleteCardMs\":88.39999985694885,\"allContentMs\":88.39999985694885,\"usableMs\":null,\"runEndMs\":346.5},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 11,
+          "caseId": "C01",
+          "control": "dead-action"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 11,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 11,
+        "caseId": "C01",
+        "control": "dead-action"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "53314f12-25cf-4a20-9e6e-30dfd53ad979",
+      "latencyMs": 1571,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C04",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":false,\"errors\":[\"2: missing fee Building services or its amount\"]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"scope\":\"2\"},{\"name\":\"back_to_results\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[{\"name\":\"schedule_tour\",\"apartmentId\":\"2\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"a4030011-5913-41ec-b01a-e5ec91801685\",\"role\":\"user\",\"content\":\"Open a demo tour request\\n{\\\"action\\\":\\\"schedule_tour\\\",\\\"apartmentId\\\":\\\"2\\\"}\"},\"action\":{\"apartmentId\":\"2\",\"name\":\"schedule_tour\"},\"runId\":\"00dd320d-2f05-4298-b6d4-8c87a0ca73ac\",\"threadId\":\"458c3b7b-9cbc-467e-817f-e4e496257f69\"}]},{\"name\":\"back_to_results\",\"before\":1,\"errors\":[],\"received\":[{\"message\":{\"id\":\"ba564274-559e-4b60-b8b0-52c488a75eb2\",\"role\":\"user\",\"content\":\"Return to my previous results, preserving my search filters\\n{\\\"action\\\":\\\"back_to_results\\\"}\"},\"action\":{\"name\":\"back_to_results\"},\"runId\":\"2536cef1-ba1d-4b25-9959-504c86ecded4\",\"threadId\":\"458c3b7b-9cbc-467e-817f-e4e496257f69\"}]}],\"requestCount\":2},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.40000009536743164,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":120.79999995231628,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":1,\"enabledButtons\":0},{\"ms\":213.40000009536743,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":2,\"enabledButtons\":0},{\"ms\":221.20000004768372,\"ids\":[],\"complete\":0,\"pending\":1,\"renderedFields\":4,\"enabledButtons\":0},{\"ms\":230.20000004768372,\"ids\":[],\"complete\":0,\"pending\":1,\"renderedFields\":6,\"enabledButtons\":0},{\"ms\":238.60000014305115,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":6,\"enabledButtons\":0},{\"ms\":538.2999999523163,\"ids\":[\"2\"],\"complete\":0,\"pending\":0,\"renderedFields\":6,\"enabledButtons\":2}],\"firstMeaningfulMs\":238.60000014305115,\"firstCompleteCardMs\":null,\"allContentMs\":null,\"usableMs\":null,\"runEndMs\":531},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 12,
+          "caseId": "C04",
+          "control": "wrong-fee"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 12,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 12,
+        "caseId": "C04",
+        "control": "wrong-fee"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "961eb932-bf5a-4971-8727-031156c18329",
+      "latencyMs": 920,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C05",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":false,\"errors\":[\"extra listing 1\"]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[],\"requestCount\":0},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0}],\"firstMeaningfulMs\":null,\"firstCompleteCardMs\":null,\"allContentMs\":null,\"usableMs\":null,\"runEndMs\":290.40000009536743},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 13,
+          "caseId": "C05",
+          "control": "hallucinated-record"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 13,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 13,
+        "caseId": "C05",
+        "control": "hallucinated-record"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "9db1828a-cc35-4e95-924e-01bbe9a09307",
+      "latencyMs": 487,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C05",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":false,\"errors\":[\"Unexpected action in empty view\"]},\"actionBindings\":{\"pass\":false,\"errors\":[\"Action schedule_tour:999 on card undefined\",\"Unexpected action: schedule_tour\"],\"actual\":[{\"name\":\"schedule_tour\",\"apartmentId\":\"999\"}]},\"interaction\":{\"pass\":true,\"errors\":[],\"checks\":[],\"requestCount\":0},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.5,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":287.5,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":1}],\"firstMeaningfulMs\":null,\"firstCompleteCardMs\":null,\"allContentMs\":null,\"usableMs\":null,\"runEndMs\":282.2000000476837},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 14,
+          "caseId": "C05",
+          "control": "unexpected-action"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 14,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 14,
+        "caseId": "C05",
+        "control": "unexpected-action"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "af0986d2-ac06-470e-b97a-0b979afd70e4",
+      "latencyMs": 1373,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C06",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":false,\"errors\":[\"Incorrect required state for email\"]},\"actionBindings\":{\"pass\":true,\"errors\":[],\"actual\":[{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"scope\":\"7\"},{\"name\":\"back_to_results\"}]},\"interaction\":{\"pass\":false,\"errors\":[\"Invalid email submission reached the server\"],\"checks\":[{\"name\":\"back_to_results\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"2de28aff-2eed-4898-8220-6998c5614d98\",\"role\":\"user\",\"content\":\"Return to my previous results, preserving my search filters\\n{\\\"action\\\":\\\"back_to_results\\\"}\"},\"action\":{\"name\":\"back_to_results\"},\"runId\":\"81884913-2698-435e-a74d-c34132e9d930\",\"threadId\":\"351221ec-b21f-4c8e-a40d-7527f720da0a\"}]},{\"name\":\"invalid_submit\",\"field\":\"name\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"email\",\"value\":\"\",\"requests\":1},{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"before\":2,\"errors\":[],\"received\":[{\"message\":{\"id\":\"75fd2c0a-5860-4d80-aef0-fd93fd6facdd\",\"role\":\"user\",\"content\":\"Confirm my demo request. No booking is made or message sent\\n{\\\"action\\\":\\\"submit_tour\\\",\\\"apartmentId\\\":\\\"7\\\",\\\"details\\\":{\\\"name\\\":\\\"Benchmark Reader\\\",\\\"email\\\":\\\"reader@example.com\\\",\\\"date\\\":\\\"2026-11-14\\\",\\\"phone\\\":\\\"555-0107\\\",\\\"tourType\\\":\\\"video\\\",\\\"message\\\":\\\"A demonstration request.\\\"}}\"},\"action\":{\"apartmentId\":\"7\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"},\"name\":\"submit_tour\"},\"runId\":\"ed502c38-5804-47fa-a28c-c7fc6fb40da2\",\"threadId\":\"351221ec-b21f-4c8e-a40d-7527f720da0a\"}]},{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"before\":3,\"errors\":[],\"received\":[{\"message\":{\"id\":\"e28665f8-f94c-45be-ad3b-4a6fd63acc8e\",\"role\":\"user\",\"content\":\"Confirm my demo request. No booking is made or message sent\\n{\\\"action\\\":\\\"submit_tour\\\",\\\"apartmentId\\\":\\\"7\\\",\\\"details\\\":{\\\"name\\\":\\\"Benchmark Reader\\\",\\\"email\\\":\\\"reader@example.com\\\",\\\"date\\\":\\\"2026-11-14\\\",\\\"phone\\\":\\\"555-0107\\\",\\\"tourType\\\":\\\"video\\\",\\\"message\\\":\\\"A demonstration request.\\\",\\\"bringPet\\\":\\\"on\\\"}}\"},\"action\":{\"apartmentId\":\"7\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"},\"name\":\"submit_tour\"},\"runId\":\"2687fb11-f232-4905-a16e-dfad8bdb90ac\",\"threadId\":\"351221ec-b21f-4c8e-a40d-7527f720da0a\"}]}],\"requestCount\":4},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.20000004768371582,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":89,\"ids\":[\"7\"],\"complete\":1,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":339.59999990463257,\"ids\":[\"7\"],\"complete\":1,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":2}],\"firstMeaningfulMs\":89,\"firstCompleteCardMs\":89,\"allContentMs\":null,\"usableMs\":null,\"runEndMs\":334},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 15,
+          "caseId": "C06",
+          "control": "missing-required"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 15,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 15,
+        "caseId": "C06",
+        "control": "missing-required"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    },
+    {
+      "cost": 0,
+      "gradingResult": {
+        "pass": true,
+        "score": 1,
+        "reason": "All assertions passed",
+        "namedScores": {},
+        "tokensUsed": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0
+        },
+        "componentResults": [
+          {
+            "pass": true,
+            "score": 1,
+            "reason": "Assertion passed",
+            "assertion": {
+              "type": "javascript",
+              "value": "output=>JSON.parse(output).pass"
+            }
+          }
+        ]
+      },
+      "id": "b995e369-9358-4136-ab02-7c403155f49b",
+      "latencyMs": 2006,
+      "namedScores": {},
+      "prompt": {
+        "raw": "C06",
+        "label": "{{caseId}}",
+        "config": {}
+      },
+      "promptId": "f0da76d10ed092c8a8e21f26129c0fb440f6c949a994307347b9ec50cdc85d6a",
+      "promptIdx": 0,
+      "provider": {
+        "id": "text-native",
+        "label": "text-native"
+      },
+      "response": {
+        "output": "{\"pass\":true,\"automaticPass\":false,\"verdicts\":{\"rawFormat\":{\"pass\":true,\"errors\":[]},\"contract\":{\"pass\":true,\"errors\":[]},\"strategy\":{\"pass\":true,\"errors\":[]},\"content\":{\"pass\":true,\"errors\":[]},\"actionBindings\":{\"pass\":false,\"errors\":[\"Missing/duplicate submit_tour:7\"],\"actual\":[{\"name\":\"submit_tour\",\"apartmentId\":\"999\",\"scope\":\"7\"},{\"name\":\"back_to_results\"}]},\"interaction\":{\"pass\":false,\"errors\":[\"submit_tour:7: Wrong action or record reached the server\",\"submit_tour:7: Wrong action or record reached the server\"],\"checks\":[{\"name\":\"back_to_results\",\"before\":0,\"errors\":[],\"received\":[{\"message\":{\"id\":\"1ab4c891-06ee-496e-b93c-fc6ac72ce566\",\"role\":\"user\",\"content\":\"Return to my previous results, preserving my search filters\\n{\\\"action\\\":\\\"back_to_results\\\"}\"},\"action\":{\"name\":\"back_to_results\"},\"runId\":\"313bd9af-84fb-4847-8223-83ad26610d7b\",\"threadId\":\"0d1ab2c7-7926-49d9-aace-283fc57b2166\"}]},{\"name\":\"invalid_submit\",\"field\":\"name\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"email\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"date\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"phone\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"tourType\",\"value\":\"\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"email\",\"value\":\"not-an-email\",\"requests\":0},{\"name\":\"invalid_submit\",\"field\":\"date\",\"value\":\"2026-11-01\",\"requests\":0},{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"before\":1,\"errors\":[\"Wrong action or record reached the server\"],\"received\":[{\"message\":{\"id\":\"6e0b8a86-ca3d-41a1-9655-a1253e05e5a3\",\"role\":\"user\",\"content\":\"Confirm my demo request. No booking is made or message sent\\n{\\\"action\\\":\\\"submit_tour\\\",\\\"apartmentId\\\":\\\"999\\\",\\\"details\\\":{\\\"name\\\":\\\"Benchmark Reader\\\",\\\"email\\\":\\\"reader@example.com\\\",\\\"date\\\":\\\"2026-11-14\\\",\\\"phone\\\":\\\"555-0107\\\",\\\"tourType\\\":\\\"video\\\",\\\"message\\\":\\\"A demonstration request.\\\"}}\"},\"action\":{\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"},\"name\":\"submit_tour\"},\"runId\":\"bb63c50d-8791-4f91-b0c5-8287daa5e9db\",\"threadId\":\"0d1ab2c7-7926-49d9-aace-283fc57b2166\"}]},{\"name\":\"submit_tour\",\"apartmentId\":\"7\",\"before\":2,\"errors\":[\"Wrong action or record reached the server\"],\"received\":[{\"message\":{\"id\":\"e171a306-f1dd-4acc-8c09-87ab11c75ba1\",\"role\":\"user\",\"content\":\"Confirm my demo request. No booking is made or message sent\\n{\\\"action\\\":\\\"submit_tour\\\",\\\"apartmentId\\\":\\\"999\\\",\\\"details\\\":{\\\"name\\\":\\\"Benchmark Reader\\\",\\\"email\\\":\\\"reader@example.com\\\",\\\"date\\\":\\\"2026-11-14\\\",\\\"phone\\\":\\\"555-0107\\\",\\\"tourType\\\":\\\"video\\\",\\\"message\\\":\\\"A demonstration request.\\\",\\\"bringPet\\\":\\\"on\\\"}}\"},\"action\":{\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"},\"name\":\"submit_tour\"},\"runId\":\"5e1c579d-3bb1-4a05-b0f0-76c23e6393e9\",\"threadId\":\"0d1ab2c7-7926-49d9-aace-283fc57b2166\"}]}],\"requestCount\":3},\"runtime\":{\"pass\":true,\"errors\":[]}},\"timing\":{\"timeline\":[{\"ms\":0.5,\"ids\":[],\"complete\":0,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":88.19999980926514,\"ids\":[\"7\"],\"complete\":1,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":0},{\"ms\":339.09999990463257,\"ids\":[\"7\"],\"complete\":1,\"pending\":0,\"renderedFields\":0,\"enabledButtons\":2}],\"firstMeaningfulMs\":88.19999980926514,\"firstCompleteCardMs\":88.19999980926514,\"allContentMs\":88.19999980926514,\"usableMs\":null,\"runEndMs\":335},\"costUsd\":0}",
+        "cost": 0,
+        "tokenUsage": {
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "total": 0,
+          "numRequests": 1,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          },
+          "assertions": {
+            "total": 0,
+            "prompt": 0,
+            "completion": 0,
+            "cached": 0,
+            "numRequests": 0,
+            "completionDetails": {
+              "reasoning": 0,
+              "acceptedPrediction": 0,
+              "rejectedPrediction": 0,
+              "cacheReadInputTokens": 0,
+              "cacheCreationInputTokens": 0
+            }
+          }
+        }
+      },
+      "score": 1,
+      "success": true,
+      "testCase": {
+        "vars": {
+          "slot": 16,
+          "caseId": "C06",
+          "control": "wrong-form-target"
+        },
+        "providers": [
+          "text-native"
+        ],
+        "assert": [
+          {
+            "type": "javascript"
+          }
+        ],
+        "options": {},
+        "metadata": {}
+      },
+      "testIdx": 16,
+      "tokenUsage": {
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "total": 0,
+        "numRequests": 1,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        },
+        "assertions": {
+          "total": 0,
+          "prompt": 0,
+          "completion": 0,
+          "cached": 0,
+          "numRequests": 0,
+          "completionDetails": {
+            "reasoning": 0,
+            "acceptedPrediction": 0,
+            "rejectedPrediction": 0,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 0
+          }
+        }
+      },
+      "vars": {
+        "slot": 16,
+        "caseId": "C06",
+        "control": "wrong-form-target"
+      },
+      "metadata": {
+        "_promptfooFileMetadata": {}
+      },
+      "failureReason": 0
+    }
+  ],
+  "stats": {
+    "successes": 17,
+    "failures": 0,
+    "errors": 0,
+    "tokenUsage": {
+      "prompt": 0,
+      "completion": 0,
+      "cached": 0,
+      "total": 0,
+      "numRequests": 17,
+      "completionDetails": {
+        "reasoning": 0,
+        "acceptedPrediction": 0,
+        "rejectedPrediction": 0,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0
+      },
+      "assertions": {
+        "total": 0,
+        "prompt": 0,
+        "completion": 0,
+        "cached": 0,
+        "numRequests": 0,
+        "completionDetails": {
+          "reasoning": 0,
+          "acceptedPrediction": 0,
+          "rejectedPrediction": 0,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 0
+        }
+      }
+    },
+    "durationMs": 26574,
+    "evaluationDurationMs": 26574
+  }
+}

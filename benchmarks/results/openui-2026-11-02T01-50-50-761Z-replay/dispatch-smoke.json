@@ -1,0 +1,57 @@
+[
+  {
+    "message": {
+      "id": "1ab4c891-06ee-496e-b93c-fc6ac72ce566",
+      "role": "user",
+      "content": "Return to my previous results, preserving my search filters\n{\"action\":\"back_to_results\"}"
+    },
+    "action": {
+      "name": "back_to_results"
+    },
+    "runId": "313bd9af-84fb-4847-8223-83ad26610d7b",
+    "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+  },
+  {
+    "message": {
+      "id": "6e0b8a86-ca3d-41a1-9655-a1253e05e5a3",
+      "role": "user",
+      "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}}"
+    },
+    "action": {
+      "apartmentId": "999",
+      "details": {
+        "name": "Benchmark Reader",
+        "email": "reader@example.com",
+        "date": "2026-11-14",
+        "phone": "555-0107",
+        "tourType": "video",
+        "message": "A demonstration request."
+      },
+      "name": "submit_tour"
+    },
+    "runId": "bb63c50d-8791-4f91-b0c5-8287daa5e9db",
+    "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+  },
+  {
+    "message": {
+      "id": "e171a306-f1dd-4acc-8c09-87ab11c75ba1",
+      "role": "user",
+      "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}}"
+    },
+    "action": {
+      "apartmentId": "999",
+      "details": {
+        "name": "Benchmark Reader",
+        "email": "reader@example.com",
+        "date": "2026-11-14",
+        "phone": "555-0107",
+        "tourType": "video",
+        "message": "A demonstration request.",
+        "bringPet": "on"
+      },
+      "name": "submit_tour"
+    },
+    "runId": "5e1c579d-3bb1-4a05-b0f0-76c23e6393e9",
+    "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+  }
+]

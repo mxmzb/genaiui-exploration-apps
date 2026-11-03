@@ -1,0 +1,834 @@
+{
+  "id": "openui-2026-11-02T01-50-50-761Z-replay-16-text-native-C06",
+  "variant": {
+    "transport": "text",
+    "generation": "native"
+  },
+  "caseId": "C06",
+  "control": "wrong-form-target",
+  "expectedFailure": "interaction",
+  "pass": true,
+  "automaticPass": false,
+  "verdicts": {
+    "rawFormat": {
+      "pass": true,
+      "errors": []
+    },
+    "contract": {
+      "pass": true,
+      "errors": []
+    },
+    "strategy": {
+      "pass": true,
+      "errors": []
+    },
+    "content": {
+      "pass": true,
+      "errors": []
+    },
+    "actionBindings": {
+      "pass": false,
+      "errors": [
+        "Missing/duplicate submit_tour:7"
+      ],
+      "actual": [
+        {
+          "name": "submit_tour",
+          "apartmentId": "999",
+          "scope": "7"
+        },
+        {
+          "name": "back_to_results"
+        }
+      ]
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "submit_tour:7: Wrong action or record reached the server",
+        "submit_tour:7: Wrong action or record reached the server"
+      ],
+      "checks": [
+        {
+          "name": "back_to_results",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "1ab4c891-06ee-496e-b93c-fc6ac72ce566",
+                "role": "user",
+                "content": "Return to my previous results, preserving my search filters\n{\"action\":\"back_to_results\"}"
+              },
+              "action": {
+                "name": "back_to_results"
+              },
+              "runId": "313bd9af-84fb-4847-8223-83ad26610d7b",
+              "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+            }
+          ]
+        },
+        {
+          "name": "invalid_submit",
+          "field": "name",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "phone",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "tourType",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "not-an-email",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "2026-11-01",
+          "requests": 0
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 1,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "6e0b8a86-ca3d-41a1-9655-a1253e05e5a3",
+                "role": "user",
+                "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}}"
+              },
+              "action": {
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request."
+                },
+                "name": "submit_tour"
+              },
+              "runId": "bb63c50d-8791-4f91-b0c5-8287daa5e9db",
+              "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+            }
+          ]
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 2,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "e171a306-f1dd-4acc-8c09-87ab11c75ba1",
+                "role": "user",
+                "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}}"
+              },
+              "action": {
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request.",
+                  "bringPet": "on"
+                },
+                "name": "submit_tour"
+              },
+              "runId": "5e1c579d-3bb1-4a05-b0f0-76c23e6393e9",
+              "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+            }
+          ]
+        }
+      ],
+      "requestCount": 3
+    },
+    "runtime": {
+      "pass": true,
+      "errors": []
+    }
+  },
+  "recovery": {
+    "incomplete": false,
+    "unresolved": [],
+    "orphaned": [],
+    "statementCount": 14,
+    "errors": []
+  },
+  "browser": {
+    "metrics": {
+      "timeline": [
+        {
+          "ms": 0.5,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 88.19999980926514,
+          "ids": [
+            "7"
+          ],
+          "complete": 1,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 339.09999990463257,
+          "ids": [
+            "7"
+          ],
+          "complete": 1,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 2
+        }
+      ],
+      "firstMeaningfulMs": 88.19999980926514,
+      "firstCompleteCardMs": 88.19999980926514,
+      "allContentMs": 88.19999980926514,
+      "usableMs": null,
+      "runEndMs": 335
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "submit_tour:7: Wrong action or record reached the server",
+        "submit_tour:7: Wrong action or record reached the server"
+      ],
+      "checks": [
+        {
+          "name": "back_to_results",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "1ab4c891-06ee-496e-b93c-fc6ac72ce566",
+                "role": "user",
+                "content": "Return to my previous results, preserving my search filters\n{\"action\":\"back_to_results\"}"
+              },
+              "action": {
+                "name": "back_to_results"
+              },
+              "runId": "313bd9af-84fb-4847-8223-83ad26610d7b",
+              "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+            }
+          ]
+        },
+        {
+          "name": "invalid_submit",
+          "field": "name",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "phone",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "tourType",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "not-an-email",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "2026-11-01",
+          "requests": 0
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 1,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "6e0b8a86-ca3d-41a1-9655-a1253e05e5a3",
+                "role": "user",
+                "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}}"
+              },
+              "action": {
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request."
+                },
+                "name": "submit_tour"
+              },
+              "runId": "bb63c50d-8791-4f91-b0c5-8287daa5e9db",
+              "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+            }
+          ]
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 2,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "e171a306-f1dd-4acc-8c09-87ab11c75ba1",
+                "role": "user",
+                "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}}"
+              },
+              "action": {
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request.",
+                  "bringPet": "on"
+                },
+                "name": "submit_tour"
+              },
+              "runId": "5e1c579d-3bb1-4a05-b0f0-76c23e6393e9",
+              "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+            }
+          ]
+        }
+      ],
+      "requestCount": 3
+    },
+    "dom": {
+      "form": {
+        "errors": [],
+        "fields": [
+          {
+            "name": "name",
+            "type": "text",
+            "tag": "input",
+            "required": true,
+            "label": "Name (required)",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": ""
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "tag": "input",
+            "required": true,
+            "label": "Email (required)",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": ""
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "tag": "input",
+            "required": true,
+            "label": "Preferred date (required)",
+            "visible": true,
+            "options": [],
+            "min": "2026-11-02",
+            "value": ""
+          },
+          {
+            "name": "phone",
+            "type": "tel",
+            "tag": "input",
+            "required": true,
+            "label": "Phone (required)",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": ""
+          },
+          {
+            "name": "tourType",
+            "type": "select-one",
+            "tag": "select",
+            "required": true,
+            "label": "Tour format (required)Choose an optionIn personVideo",
+            "visible": true,
+            "options": [
+              "in-person",
+              "video"
+            ],
+            "value": ""
+          },
+          {
+            "name": "message",
+            "type": "textarea",
+            "tag": "textarea",
+            "required": false,
+            "label": "Message",
+            "visible": true,
+            "options": [],
+            "value": ""
+          },
+          {
+            "name": "bringPet",
+            "type": "checkbox",
+            "tag": "input",
+            "required": false,
+            "label": "Discuss a pet",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": "on"
+          }
+        ]
+      },
+      "meaningful": true,
+      "ready": true,
+      "recordIds": [
+        "7"
+      ],
+      "enabledButtons": 2,
+      "errors": [],
+      "records": [
+        {
+          "id": "7",
+          "found": true,
+          "text": "Renovated 2BR Corner Unit\nName (required)\nEmail (required)\nPreferred date (required)\nPhone (required)\nTour format (required)\nChoose an option\nIn person\nVideo\nMessage\nDiscuss a pet\nSubmit Demo Request\n↗\nDemo only. No booking is made and no message is sent.\nBack to Results\n↗",
+          "metrics": [],
+          "images": [],
+          "feeRows": []
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Submit Demo Request\n↗",
+          "enabled": true,
+          "scopeId": "7"
+        },
+        {
+          "label": "Back to Results\n↗",
+          "enabled": true,
+          "scopeId": "7"
+        }
+      ]
+    },
+    "alerts": [],
+    "html": "<fieldset class=\"surface-controls generated-ui\" aria-label=\"Apartment results\" aria-busy=\"false\"><div aria-busy=\"false\" style=\"position: relative;\"><div style=\"opacity: 1; transition: opacity 0.2s;\"><div class=\"ui-stack gap-md pad-none\"><section data-record-id=\"7\" class=\"ui-card outlined pad-md\"><h3 class=\"ui-heading\">Renovated 2BR Corner Unit</h3><form class=\"ui-form\" aria-label=\"Demo tour request\" data-apartment-id=\"999\"><label class=\"ui-field\"><span>Name<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"\" max=\"\" type=\"text\" value=\"\" name=\"name\"></label><label class=\"ui-field\"><span>Email<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"\" max=\"\" type=\"email\" value=\"\" name=\"email\"></label><label class=\"ui-field\"><span>Preferred date<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"2026-11-02\" max=\"\" type=\"date\" value=\"\" name=\"date\"></label><label class=\"ui-field\"><span>Phone<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"\" max=\"\" type=\"tel\" value=\"\" name=\"phone\"></label><label class=\"ui-field\"><span>Tour format<small> (required)</small></span><select name=\"tourType\" required=\"\"><option value=\"\" selected=\"\">Choose an option</option><option value=\"in-person\">In person</option><option value=\"video\">Video</option></select></label><label class=\"ui-field\"><span>Message</span><textarea name=\"message\" placeholder=\"\" rows=\"3\"></textarea></label><label class=\"ui-checkbox\"><input type=\"checkbox\" name=\"bringPet\"><span>Discuss a pet</span></label><button type=\"submit\" class=\"ui-button primary\">Submit Demo Request<span aria-hidden=\"true\">↗</span></button><small class=\"ui-demo-note\">Demo only. No booking is made and no message is sent.</small></form></section><button type=\"button\" class=\"ui-button ghost\">Back to Results<span aria-hidden=\"true\">↗</span></button></div></div></div></fieldset>",
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        900
+      ],
+      "devicePixelRatio": 2,
+      "visibility": "visible",
+      "assets": "local-svg/system-fonts",
+      "failures": []
+    }
+  },
+  "request": {
+    "model": "replay",
+    "max_tokens": 16000,
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today: 2026-11-02.\nYou compose a polished apartment-finding interface from a small component catalog.\nThese application-specific rules take precedence over generic examples above.\nThe records are synthetic. Photos are illustrative, not evidence of a property's features.\n\nCOMPOSITION\n- Build every view from the listed primitives. There are no ApartmentCard, DetailView or TourForm components.\n- Use a root Stack with padding=\"none\" to align results with the search bar. Nest Grid, Card, Stack and Row where useful; compose every visible field explicitly.\n- Search results: use a one-column Grid and compose each listing from the same arrangement of primitives. Inside the Card use a two-column Grid with gap=\"sm\": an Image and a Stack with padding=\"md\", gap=\"md\". Its content order is neighborhood Badge, h3 title, monthly-total Metric, a known-subtotal Metric and fee note visible only when the total is null, base-rent Metric, a Row of bedrooms/bathrooms/area Metrics, short description, and a Row of action Buttons. Keep all repeated cards consistent. Use h2 only for the view heading. Comparison and detail requests use their own compositions below.\n- Comparisons: use a three-column Grid of clearly identified Cards. EACH column must contain its supplied Image, title, neighborhood, base rent, mandatory fees, monthly total, beds, baths, area, pet rules, transit, and its own View Details and Schedule Tour Buttons. Keep the SAME sequence of criteria across columns. End the complete view with Back to Results. Unknown fees mean the total is unknown.\n- Details: compose a two-column gallery/summary area, then separate cost, lease, amenities, transit and review sections. Use multiple Images from photos. Include availability, floor/elevator and known restrictions. Reviews are synthetic.\n- Form: create a Form with its apartmentId and accessible label. Compose Heading, Input, Select, Checkbox or Textarea children according to the request. Name, email and preferred date are required by default; phone and message are optional unless the user asks otherwise. Each field needs a unique name. A Button with type=\"submit\" submits this Form; do not bind submit_tour to a button event. Do not nest Forms.\n- Confirmation: compose a Card with Heading, Text and navigation. Explicitly identify the request as a demo; no booking, contact or promised follow-up.\n- No exact matches: explain the unmet filters. Only show supplied alternatives if requested, and label the constraint each relaxes.\n\nFACTS AND ACTIONS\n- Use only supplied data. A missing value is unknown, never false or zero. Do not infer availability from a past date.\n- Display costs.monthlyTotal when known; otherwise show costs.knownMonthlySubtotal as an incomplete subtotal. Separate optional monthly fees and one-time charges. Costs exclude usage-dependent utilities.\n- Do not reinterpret \"Pets negotiable\" as confirmed permission. Show weight limits when relevant.\n- Use Button actions for view_apartment / schedule_tour with { apartmentId }, compare_apartments with { apartmentIds }, and back_to_results with {}.\n- Every listing Card and every comparison column MUST include View Details and Schedule Tour Buttons bound to that record ID. Details/comparisons/forms MUST include a Back to Results Button. These controls are required even when the user only asks about facts. Define every referenced child, including the buttons, before finishing.\n- Respect all search filters together and preserve them when returning. Show at most 12 listings; default to 3-6 unless the user asks for more. Explain any display limit.\n- Rent is USD/month; show bedrooms, bathrooms and square footage with labels.\n- Money and area use Metric with a numeric value or null plus format=\"usd/month\", \"usd\" or \"sqft\". React supplies currency symbols, commas and units. Never emit interpolation strings as display values.\n- Use plain literal sentences for dates, availability, lease terms, floor/elevator summaries and other one-off descriptions.  Do not invent string interpolation syntax.\n- A null monthly total displays Unknown. Also show the known subtotal with a clearly visible note that mandatory fees are not yet known.\n- Form inputs use native local state; the Form's onSubmit collects only its own values. Do not generate onClick for a submit Button.\n\nOPENUI LANG\n- Return only OpenUI Lang. No Markdown fences or explanation outside the UI.\n- Declare root first: root = Stack(\"md\", \"none\", true, [heading, results]); then define referenced nodes in parent-first order so they can appear progressively. Keep each complete statement on its own line.\n- Use positional arguments in the exact schema order. Use string record IDs on Card. Do not put a whole Card into a text prop.\n- Use Button(label, variant, type, @view_apartment(\"7\")), @schedule_tour(\"7\"), @back_to_results(), or @compare_apartments([\"2\",\"7\"]). A submit Button has no action: its enclosing Form collects actual input values.\n- Form fields are native inputs. There are no Query or Mutation calls in this controlled-data example: all listing facts are supplied below.\n- Complete every referenced node before finishing. Preserve the previous search when returning from details or a demo tour.\n\n\n## Syntax Rules\n\n1. Each statement is on its own line: `identifier = Expression`\n2. `root` is the entry point — every program must define `root = Stack(...)`\n3. Expressions are: strings (\"...\"), numbers, booleans (true/false), null, arrays ([...]), objects ({...}), or component calls TypeName(arg1, arg2, ...)\n4. Use references for readability: define `name = ...` on one line, then use `name` later\n5. EVERY variable (except root) MUST be referenced by at least one other variable. Unreferenced variables are silently dropped and will NOT render. Always include defined variables in their parent's children/items array.\n6. Arguments are POSITIONAL (order matters, not names). Write `SomeComp([children], \"row\", \"l\")` NOT `SomeComp([children], direction: \"row\", gap: \"l\")` — colon syntax is NOT supported and silently breaks\n7. Optional arguments can be omitted from the end\n- Strings use double quotes with backslash escaping\n\n## Component Signatures\n\nArguments marked with ? are optional. Sub-components can be inline or referenced; prefer references for better streaming.\nProps typed `ActionExpression` accept one @step, or Action([@steps...]) for several. See the Action section for available steps (@ToAssistant, @OpenUrl, @view_apartment, @schedule_tour, @back_to_results, @compare_apartments, @submit_tour).\n\nStack(gap?: \"sm\" | \"md\" | \"lg\", padding?: \"none\" | \"sm\" | \"md\" | \"lg\", visible?: boolean, children: any[]) — Vertical layout. Nest content and other layouts; padding can create a card body.\nRow(gap?: \"sm\" | \"md\" | \"lg\", align?: \"start\" | \"center\" | \"between\", children: any[]) — Wrapping horizontal layout for badges, metrics or actions.\nGrid(columns?: \"1\" | \"2\" | \"3\", gap?: \"sm\" | \"md\" | \"lg\", children: any[]) — Responsive equal-width columns. Collapses on narrow screens; may be nested.\nCard(variant?: \"plain\" | \"outlined\" | \"accent\", padding?: \"none\" | \"sm\" | \"md\" | \"lg\", recordId?: string, children: any[]) — An empty visual container, not a listing template. Compose all content as children.\nDivider() — A quiet horizontal rule.\nHeading(text?: string, level?: \"h2\" | \"h3\" | \"h4\") — A section or card heading.\nText(content?: string, tone?: \"default\" | \"muted\" | \"eyebrow\") — Plain text, with a bounded emphasis. Never HTML.\nImage(src?: string, alt: string, aspect?: \"landscape\" | \"square\" | \"wide\") — One supplied illustrative photo. Compose galleries with Grid and multiple Images.\nBadge(text?: string, tone?: \"neutral\" | \"accent\" | \"warning\") — A short category, constraint or status label.\nMetric(label: string, value?: number | string | any, format?: \"text\" | \"usd\" | \"usd/month\" | \"sqft\", emphasis?: boolean) — One labeled value. Use numeric values with a format for money/area; null means unknown. Formatting is handled by React, never by templates.\nList(children: any[]) — A semantic list of ListItem children, e.g. amenities or nearby transit.\nListItem(children: any[]) — One list item. Put Text, Metric or other content in its children.\nButton(label: string, variant?: \"primary\" | \"secondary\" | \"ghost\", type?: \"button\" | \"submit\", action?: ActionExpression) — A button. Regular buttons bind onClick; a submit button submits its enclosing Form.\nForm(apartmentId: string, label: string, children: any[]) — Empty demo-request form. Generate every field and a submit Button as children. Never nest Forms. Submission collects only this form's values.\nInput(name: string, label: string, required?: boolean, type?: \"text\" | \"email\" | \"tel\" | \"date\" | \"number\", placeholder?: string, defaultValue?: string, min?: string, max?: string) — A labeled native input inside a Form. Dates may specify an ISO min value.\nSelect(name: string, label: string, required?: boolean, options: {value: string, label: string}[], defaultValue?: string) — A labeled native select inside a Form.\nCheckbox(name: string, label: string, required?: boolean, defaultChecked?: boolean) — A labeled checkbox inside a Form. An unchecked box is omitted from the submitted values.\nTextarea(name: string, label: string, required?: boolean, placeholder?: string, defaultValue?: string) — A labeled multiline input inside a Form.\n\n## Action — Button Behavior\n\nAn action wires a button click to operations. Pass one @-prefixed step bare, e.g. Button(\"Ask\", @ToAssistant(\"Tell me more\")). Put several steps in Action([...]), e.g. Button(\"Read\", Action([@OpenUrl(\"https://example.com\"), @ToAssistant(\"Summarize this page\")])). Steps execute in order.\nButtons without an action automatically send their label to the assistant (equivalent to @ToAssistant(label)).\n\nAvailable steps:\n- @ToAssistant(message: string, context?: any) — Send a message to the assistant (for conversational buttons like \"Tell me more\", \"Explain this\"). The optional context is any value (object, array, string, number) passed to the assistant as hidden data, e.g. @ToAssistant(\"Show details\", {orderId: 42})\n- @OpenUrl(url: string) — Navigate to a URL\n- @view_apartment(apartmentId: string) — Open the supplied apartment\n- @schedule_tour(apartmentId: string) — Open a demo tour form\n- @back_to_results() — Return to the previous search, preserving filters\n- @compare_apartments(apartmentIds: string[]) — Compare these records\n- @submit_tour(apartmentId: string, details: Record<string, string>) — Used by Form to submit its actual local values; never generate contact values\n\nExample — simple nav:\n```\nviewBtn = Button(\"View\", @OpenUrl(\"https://example.com\"))\n```\n\n- An action can be assigned to a variable or inlined: Button(\"Go\", onSubmit) and Button(\"Go\", Action([...])) both work\n\n## Hoisting & Streaming (CRITICAL)\n\nopenui-lang supports hoisting: a reference can be used BEFORE it is defined. The parser resolves all references after the full input is parsed.\n\nDuring streaming, the output is re-parsed on every chunk. Undefined references are temporarily unresolved and appear once their definitions stream in. This creates a progressive top-down reveal — structure first, then data fills in.\n\n**Recommended statement order for optimal streaming:**\n1. `root = Stack(...)` — UI shell appears immediately\n2. Component definitions — fill in as they stream\n3. Data values — leaf content last\n\nAlways write the root = Stack(...) statement first so the UI shell appears immediately, even before child data has streamed in.\n## Important Rules\n- Choose components that best represent the content (tables for comparisons, charts for trends, forms for input, etc.)\n\n## Final Verification\nBefore finishing, walk your output and verify:\n1. root = Stack(...) is the FIRST line (for optimal streaming).\n2. Every referenced name is defined. Every defined name (other than root) is reachable from root.\nDATA (the only source of facts; preserve the order requested):\n[{\"id\":\"7\",\"title\":\"Renovated 2BR Corner Unit\",\"neighborhood\":\"Arts District\",\"rent\":2850,\"bedrooms\":2,\"bathrooms\":1,\"sqft\":950,\"address\":\"208 Gallery Row, Unit 6A\",\"description\":\"Corner two-bedroom with windows on three sides and views of the mural district. Gut-renovated in 2025 with new plumbing, wiring, and mini-split AC. Open kitchen with island seating. Pet-friendly building with a courtyard.\",\"imageUrl\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"availableFrom\":\"2027-01-01\",\"petPolicy\":\"Dogs and cats (under 40 lbs)\",\"amenities\":[\"Bike room\",\"Courtyard\",\"Kitchen island\",\"Mini-split AC\",\"Package room\"],\"nearbyTransit\":[\"Blue Line - 4 min walk\",\"Bus 16 - 2 min walk\"],\"reviews\":[{\"author\":\"Tasha M.\",\"rating\":5,\"text\":\"Love the natural light from the corner windows. Renovation is quality — not the cheap-flip kind.\"},{\"author\":\"Ian C.\",\"rating\":4,\"text\":\"Great layout for roommates. Each bedroom is a real room. Courtyard is a nice bonus.\"}],\"floor\":6,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":true,\"maxWeightLbs\":40},\"fees\":[{\"label\":\"Building services\",\"amount\":350,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":2850,\"frequency\":\"once\",\"required\":true},{\"label\":\"Pet rent if bringing a pet\",\"amount\":35,\"frequency\":\"monthly\",\"required\":false}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Blue Line\",\"walkMinutes\":4},{\"name\":\"Bus 16\",\"walkMinutes\":2}],\"costs\":{\"monthlyTotal\":3200,\"knownMonthlySubtotal\":3200,\"moveInTotal\":6050,\"knownMoveInSubtotal\":6050,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}}]"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Compose a demo tour form for the supplied apartment. Required: name, email, preferred date, phone and tour format (in person or video). Optional: message and a checkbox for discussing a pet. Include a native Submit Demo Request button and Back to Results. Generate the individual fields; do not use a prebuilt form. Identify the apartment by its supplied title. Use these field names: name, email, date, phone, tourType, message, bringPet; tourType option values must be in-person and video. Preferred dates must be on or after 2026-11-02."
+      }
+    ],
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "zdr": true,
+      "allow_fallbacks": false,
+      "only": [
+        "azure/eu"
+      ]
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateSnapshot",
+          "description": "Replace the entire application state with a new snapshot",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "snapshot": {
+                "description": "The complete new state object"
+              }
+            },
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateDelta",
+          "description": "Apply incremental updates to application state using JSON Patch operations",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "add",
+                        "replace",
+                        "remove"
+                      ],
+                      "description": "The operation to perform"
+                    },
+                    "path": {
+                      "type": "string",
+                      "description": "JSON Pointer path (e.g., '/foo/bar')"
+                    },
+                    "value": {
+                      "description": "The value to set. Required for 'add' and 'replace' operations, ignored for 'remove'."
+                    }
+                  },
+                  "required": [
+                    "op",
+                    "path"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Array of JSON Patch operations"
+              }
+            },
+            "required": [
+              "delta"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "stream": true
+  },
+  "actionRequests": [
+    {
+      "message": {
+        "id": "1ab4c891-06ee-496e-b93c-fc6ac72ce566",
+        "role": "user",
+        "content": "Return to my previous results, preserving my search filters\n{\"action\":\"back_to_results\"}"
+      },
+      "action": {
+        "name": "back_to_results"
+      },
+      "runId": "313bd9af-84fb-4847-8223-83ad26610d7b",
+      "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+    },
+    {
+      "message": {
+        "id": "6e0b8a86-ca3d-41a1-9655-a1253e05e5a3",
+        "role": "user",
+        "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}}"
+      },
+      "action": {
+        "apartmentId": "999",
+        "details": {
+          "name": "Benchmark Reader",
+          "email": "reader@example.com",
+          "date": "2026-11-14",
+          "phone": "555-0107",
+          "tourType": "video",
+          "message": "A demonstration request."
+        },
+        "name": "submit_tour"
+      },
+      "runId": "bb63c50d-8791-4f91-b0c5-8287daa5e9db",
+      "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+    },
+    {
+      "message": {
+        "id": "e171a306-f1dd-4acc-8c09-87ab11c75ba1",
+        "role": "user",
+        "content": "Confirm my demo request. No booking is made or message sent\n{\"action\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}}"
+      },
+      "action": {
+        "apartmentId": "999",
+        "details": {
+          "name": "Benchmark Reader",
+          "email": "reader@example.com",
+          "date": "2026-11-14",
+          "phone": "555-0107",
+          "tourType": "video",
+          "message": "A demonstration request.",
+          "bringPet": "on"
+        },
+        "name": "submit_tour"
+      },
+      "runId": "5e1c579d-3bb1-4a05-b0f0-76c23e6393e9",
+      "threadId": "0d1ab2c7-7926-49d9-aace-283fc57b2166"
+    }
+  ],
+  "events": [
+    {
+      "ms": 9.324958000004699,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "root = n0;\nn0 = Stack(\"md\",\"none\",true,[n1,n12]);\nn12 = Button(\"Back to Results\",\"ghost\",\"button"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 18.84595800000534,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\",@back_to_results());\nn1 = Card(\"outlined\",\"md\",\"7\",[n2,n3]);\nn3 = Form(\"999\",\"Demo tour reques"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 26.338000000003376,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "t\",[n4,n5,n6,n7,n8,n9,n10,n11]);\nn11 = Button(\"Submit Demo Request\",\"primary\",\"submit\",null);\nn1"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 34.883083000000624,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "0 = Checkbox(\"bringPet\",\"Discuss a pet\",false,false);\nn9 = Textarea(\"message\",\"Message\",false,\"\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 43.417333000004874,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": ",\"\");\nn8 = Select(\"tourType\",\"Tour format\",true,[{\"value\":\"in-person\",\"label\":\"In person\"},{\"val"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 52.277750000001106,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "ue\":\"video\",\"label\":\"Video\"}],\"\");\nn7 = Input(\"phone\",\"Phone\",true,\"tel\",\"\",\"\",\"\",\"\");\nn6 = Inpu"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 61.217083000003186,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "t(\"date\",\"Preferred date\",true,\"date\",\"\",\"\",\"2026-11-02\",\"\");\nn5 = Input(\"email\",\"Email\",true,\"e"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 70.73475000000326,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "mail\",\"\",\"\",\"\",\"\");\nn4 = Input(\"name\",\"Name\",true,\"text\",\"\",\"\",\"\",\"\");\nn2 = Heading(\"Renovated 2"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 79.13887500000419,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "BR Corner Unit\",\"h3\");"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 330.7126250000001,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {},
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "cost": 0
+        }
+      }
+    }
+  ],
+  "raw": "root = n0;\nn0 = Stack(\"md\",\"none\",true,[n1,n12]);\nn12 = Button(\"Back to Results\",\"ghost\",\"button\",@back_to_results());\nn1 = Card(\"outlined\",\"md\",\"7\",[n2,n3]);\nn3 = Form(\"999\",\"Demo tour request\",[n4,n5,n6,n7,n8,n9,n10,n11]);\nn11 = Button(\"Submit Demo Request\",\"primary\",\"submit\",null);\nn10 = Checkbox(\"bringPet\",\"Discuss a pet\",false,false);\nn9 = Textarea(\"message\",\"Message\",false,\"\",\"\");\nn8 = Select(\"tourType\",\"Tour format\",true,[{\"value\":\"in-person\",\"label\":\"In person\"},{\"value\":\"video\",\"label\":\"Video\"}],\"\");\nn7 = Input(\"phone\",\"Phone\",true,\"tel\",\"\",\"\",\"\",\"\");\nn6 = Input(\"date\",\"Preferred date\",true,\"date\",\"\",\"\",\"2026-11-02\",\"\");\nn5 = Input(\"email\",\"Email\",true,\"email\",\"\",\"\",\"\",\"\");\nn4 = Input(\"name\",\"Name\",true,\"text\",\"\",\"\",\"\",\"\");\nn2 = Heading(\"Renovated 2BR Corner Unit\",\"h3\");",
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost": 0
+  },
+  "costUsd": 0,
+  "providerFinishedMs": 330.90295800000604,
+  "firstTokenMs": 9.326750000000175,
+  "servingProvider": "replay",
+  "returnedModel": "replay",
+  "promptHash": "8ba597ec881799e9ea4f6012490cc36fce032ef24a04a3fb883a8ed3a1791b39"
+}

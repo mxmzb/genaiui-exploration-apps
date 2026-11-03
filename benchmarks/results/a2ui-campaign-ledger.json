@@ -1,0 +1,132 @@
+[
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-0-tool-batch-C02",
+    "reserved": 0.4464865625,
+    "actual": 0.0597795
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-1-tool-components-C02",
+    "reserved": 0.446496875,
+    "actual": 0.0909645
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-2-tool-records-C02",
+    "reserved": 0.44686468749999997,
+    "actual": 0.0391886
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-3-tool-fields-C02",
+    "reserved": 0.4479921875,
+    "actual": 0.05946985
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-4-markdown-batch-C02",
+    "reserved": 0.447514375,
+    "actual": 0.066319
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-5-markdown-components-C02",
+    "reserved": 0.4475246875,
+    "actual": 0.0836869
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-6-markdown-records-C02",
+    "reserved": 0.4478925,
+    "actual": 0.0520674
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-7-markdown-fields-C02",
+    "reserved": 0.44902,
+    "actual": 0.07067885
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-8-tool-components-C03",
+    "reserved": 0.5143565625000001,
+    "actual": 0.0843491
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-9-tool-records-C03",
+    "reserved": 0.514724375,
+    "actual": 0.0802648
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-10-tool-fields-C03",
+    "reserved": 0.5158518750000001,
+    "actual": 0.12998535
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-11-markdown-batch-C03",
+    "reserved": 0.5153740625000001,
+    "actual": 0.0725901
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-12-markdown-components-C03",
+    "reserved": 0.515384375,
+    "actual": 0.0849255
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-13-markdown-records-C03",
+    "reserved": 0.5157521875,
+    "actual": 0.0840125
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-14-markdown-fields-C03",
+    "reserved": 0.5168796875,
+    "actual": 0.13153855
+  },
+  {
+    "id": "a2ui-2026-11-01T23-35-04-903Z-live-15-tool-batch-C03",
+    "reserved": 0.51434625,
+    "actual": 0.0739145
+  },
+  {
+    "id": "openui-2026-11-02T00-43-24-926Z-live-0-text-native-C02",
+    "reserved": 0.40604093750000003,
+    "actual": 0.03457025
+  },
+  {
+    "id": "openui-2026-11-02T00-43-24-926Z-live-1-text-native-C03",
+    "reserved": 0.473900625,
+    "actual": 0.10473595
+  },
+  {
+    "id": "openui-standalone-smoke-1793580780733",
+    "reserved": 0.6535443750000001,
+    "actual": 0.085393
+  },
+  {
+    "id": "openui-standalone-smoke-1793580916626",
+    "reserved": 0.6536200000000001,
+    "actual": 0.01378905
+  },
+  {
+    "id": "openui-standalone-smoke-1793580961033",
+    "reserved": 0.6605809374999999,
+    "actual": 0.0129635
+  },
+  {
+    "id": "hashbrown-2026-11-02T01-14-17-075Z-live-0-text-native-C02",
+    "reserved": 0.42934375,
+    "actual": 0.03733125
+  },
+  {
+    "id": "hashbrown-2026-11-02T01-14-17-075Z-live-1-text-native-C03",
+    "reserved": 0.4972034375,
+    "actual": 0.11582945
+  },
+  {
+    "id": "hashbrown-standalone-smoke-1793582257532",
+    "reserved": 0.6767234375,
+    "actual": 0.0731115
+  },
+  {
+    "id": "hashbrown-standalone-smoke-1793582282255",
+    "reserved": 0.6969771874999999,
+    "actual": 0.0141988
+  },
+  {
+    "id": "hashbrown-copilotkit-smoke-1793582293079",
+    "reserved": 0.6805665625,
+    "actual": 0.08020595
+  }
+]

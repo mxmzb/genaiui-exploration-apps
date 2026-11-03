@@ -9,19 +9,19 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as CanvasRouteImport } from './routes/canvas'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CanvasRouteImport } from './routes/canvas'
 import { Route as ApiApartmentsRouteImport } from './routes/api/apartments'
 import { Route as ApiCopilotkitSplatRouteImport } from './routes/api/copilotkit/$'
 
-const CanvasRoute = CanvasRouteImport.update({
-  id: '/canvas',
-  path: '/canvas',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CanvasRoute = CanvasRouteImport.update({
+  id: '/canvas',
+  path: '/canvas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiApartmentsRoute = ApiApartmentsRouteImport.update({
@@ -71,18 +71,18 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
-    '/canvas': {
-      id: '/canvas'
-      path: '/canvas'
-      fullPath: '/canvas'
-      preLoaderRoute: typeof CanvasRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/canvas': {
+      id: '/canvas'
+      path: '/canvas'
+      fullPath: '/canvas'
+      preLoaderRoute: typeof CanvasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/apartments': {

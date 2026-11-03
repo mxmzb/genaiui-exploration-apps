@@ -9,18 +9,24 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
-import { Route as CanvasRouteImport } from './routes/canvas'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as CanvasRouteImport } from './routes/canvas'
+import { Route as ApiApartmentsRouteImport } from './routes/api/apartments'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 
+const IndexRoute = IndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CanvasRoute = CanvasRouteImport.update({
   id: '/canvas',
   path: '/canvas',
   getParentRoute: () => rootRouteImport,
 } as any)
-const IndexRoute = IndexRouteImport.update({
-  id: '/',
-  path: '/',
+const ApiApartmentsRoute = ApiApartmentsRouteImport.update({
+  id: '/api/apartments',
+  path: '/api/apartments',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ApiChatRoute = ApiChatRouteImport.update({
@@ -32,35 +38,46 @@ const ApiChatRoute = ApiChatRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/canvas': typeof CanvasRoute
+  '/api/apartments': typeof ApiApartmentsRoute
   '/api/chat': typeof ApiChatRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/canvas': typeof CanvasRoute
+  '/api/apartments': typeof ApiApartmentsRoute
   '/api/chat': typeof ApiChatRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/canvas': typeof CanvasRoute
+  '/api/apartments': typeof ApiApartmentsRoute
   '/api/chat': typeof ApiChatRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/canvas' | '/api/chat'
+  fullPaths: '/' | '/canvas' | '/api/apartments' | '/api/chat'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/canvas' | '/api/chat'
-  id: '__root__' | '/' | '/canvas' | '/api/chat'
+  to: '/' | '/canvas' | '/api/apartments' | '/api/chat'
+  id: '__root__' | '/' | '/canvas' | '/api/apartments' | '/api/chat'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   CanvasRoute: typeof CanvasRoute
+  ApiApartmentsRoute: typeof ApiApartmentsRoute
   ApiChatRoute: typeof ApiChatRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/': {
+      id: '/'
+      path: '/'
+      fullPath: '/'
+      preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/canvas': {
       id: '/canvas'
       path: '/canvas'
@@ -68,11 +85,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CanvasRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/': {
-      id: '/'
-      path: '/'
-      fullPath: '/'
-      preLoaderRoute: typeof IndexRouteImport
+    '/api/apartments': {
+      id: '/api/apartments'
+      path: '/api/apartments'
+      fullPath: '/api/apartments'
+      preLoaderRoute: typeof ApiApartmentsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/api/chat': {
@@ -88,6 +105,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   CanvasRoute: CanvasRoute,
+  ApiApartmentsRoute: ApiApartmentsRoute,
   ApiChatRoute: ApiChatRoute,
 }
 export const routeTree = rootRouteImport

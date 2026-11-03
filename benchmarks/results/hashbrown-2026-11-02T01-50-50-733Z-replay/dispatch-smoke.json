@@ -1,0 +1,57 @@
+[
+  {
+    "message": {
+      "id": "c612045e-0a83-48cb-bcfa-21145cf809f5",
+      "role": "user",
+      "content": "Return to my previous results, preserving my search filters\n{\"name\":\"back_to_results\"}"
+    },
+    "action": {
+      "name": "back_to_results"
+    },
+    "runId": "adf4740f-1656-4725-952c-9adbdf70ac28",
+    "threadId": "e3bd7e43-13e3-4769-9ffd-549e682f04c3"
+  },
+  {
+    "message": {
+      "id": "439f8511-41cf-4522-95df-3661a2d5e3f7",
+      "role": "user",
+      "content": "Confirm my demo request. No booking is made or message sent\n{\"name\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}}"
+    },
+    "action": {
+      "name": "submit_tour",
+      "apartmentId": "999",
+      "details": {
+        "name": "Benchmark Reader",
+        "email": "reader@example.com",
+        "date": "2026-11-14",
+        "phone": "555-0107",
+        "tourType": "video",
+        "message": "A demonstration request."
+      }
+    },
+    "runId": "5a86cfcf-020c-441f-a5aa-ebbfb2fe7a35",
+    "threadId": "e3bd7e43-13e3-4769-9ffd-549e682f04c3"
+  },
+  {
+    "message": {
+      "id": "36fb15bb-349a-4f64-bac8-553bbf1b779f",
+      "role": "user",
+      "content": "Confirm my demo request. No booking is made or message sent\n{\"name\":\"submit_tour\",\"apartmentId\":\"999\",\"details\":{\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}}"
+    },
+    "action": {
+      "name": "submit_tour",
+      "apartmentId": "999",
+      "details": {
+        "name": "Benchmark Reader",
+        "email": "reader@example.com",
+        "date": "2026-11-14",
+        "phone": "555-0107",
+        "tourType": "video",
+        "message": "A demonstration request.",
+        "bringPet": "on"
+      }
+    },
+    "runId": "61dd8738-7981-4785-8390-168557e88c2a",
+    "threadId": "e3bd7e43-13e3-4769-9ffd-549e682f04c3"
+  }
+]

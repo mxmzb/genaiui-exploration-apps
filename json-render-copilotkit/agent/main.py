@@ -1,53 +1,27 @@
-# #region genui - LangGraph agent orchestrating data fetching + json-render UI generation
+# #region genui - The agent fetches facts; the UI tool composes a granular catalog.
+import os
 from copilotkit import CopilotKitMiddleware
 from langchain.agents import create_agent
 from src.get_apartments import get_apartments
 from src.generate_ui import generate_ui
 
 agent = create_agent(
-    model="openai:gpt-4.1",
+    model="openai:" + os.getenv("MODEL", "gpt-4.1"),
     tools=[get_apartments, generate_ui],
     middleware=[CopilotKitMiddleware()],
-    system_prompt="""You are an apartment finder assistant. Help users discover apartments, view details, and schedule tours.
-
-## Tools
-
-- **get_apartments**: Fetch apartment data from the database with optional filters. Always call this before showing apartment data — never make up details.
-- **generate_ui**: Generate interactive UI using json-render JSONL format. Two usage patterns:
-  1. **With data**: Pass data you fetched from get_apartments + a layout instruction. The UI displays it with literal values.
-  2. **Without data**: Pass data={} + an instruction. Use this for simple messages or confirmations.
-
-## Workflow
-
-1. User asks about apartments → call get_apartments with relevant filters
-2. Pass the results to generate_ui with a clear instruction about the layout
-3. After generate_ui returns, respond with 1-2 sentences only. Do NOT echo the generated UI.
-
-## Action Events
-
-Users interact via buttons in the rendered UI. When you see these in the conversation:
-- "Show me details for apartment {id}" → call get_apartments for that ID, then generate_ui with a detail view instruction
-- "I'd like to schedule a tour for apartment {id}" → generate_ui with a tour form instruction (you already know the apartment title from context)
-- "Confirm my tour request for apartment {id}..." → generate_ui with a confirmation view
-- "Show me the previous search results again" → call get_apartments (no filters), then generate_ui with a listing view
-
-## UI Layout Instructions
-
-When calling generate_ui, be specific about what to render:
-
-### Listing view
-"Show an ApartmentList with ApartmentCard elements for each apartment. Each card should have imageUrl, title, neighborhood, rent (formatted as $X,XXX/mo), bedrooms label, sqft (formatted as X,XXX sqft), and two Button children: 'View Details' (on press -> view_apartment with apartmentId) and 'Schedule Tour' (on press -> schedule_tour with apartmentId)."
-
-### Detail view
-"Show a DetailView for apartment {id} with title and neighborhood subtitle. Children: Image (apartment photo), InfoBar (rent, beds, baths, sqft, rating chips), Text (description), TagGroup for Amenities, TagGroup for Nearby Transit, then two Buttons: 'Schedule Tour' (-> schedule_tour) and 'Back to Results' (-> back_to_results)."
-
-### Tour form
-"Show a TourForm for apartment {id} with apartmentTitle. Include a submit Button (on press -> submit_tour with apartmentId) and a cancel Button (on press -> back_to_results) as children."
-
-### Confirmation
-"Show a Confirmation with a success title and message. Include a 'Back to Search' Button (on press -> back_to_results) as a child."
-""",
+    system_prompt="""Help users search, compare and inspect synthetic apartments and try demo tour requests.
+Always fetch records with get_apartments before presenting facts. Use apartment_ids for details or comparisons.
+Respect all filters together; use exact min_bedrooms=max_bedrooms for an exact bedroom count.
+Show at most twelve records, normally three to six. Preserve the search filters when returning to results.
+Use generate_ui with the fetched records and a concise description of the requested view.
+The UI tool has granular layout, content and field components; do not request prebuilt ApartmentCard, DetailView or TourForm components.
+Search: compose listing content and separate View Details / Schedule Tour actions per record.
+Comparison: present the same criteria for each apartment, including base rent, mandatory monthly total, pets, space and transit.
+Details: include a gallery, summary, cost breakdown, lease/availability, amenities, transit and reviews.
+Forms: request individual fields. Name, email and date are required by default; phone and message are optional unless the user specifies otherwise. Include a native submit button and Back to Results.
+After 'Confirm my demo tour request for apartment ...', compose an honest demo confirmation using the supplied values.
+Never claim a real booking, contact with a landlord or promised follow-up. Unknown values remain unknown.
+After generate_ui, give one brief sentence; do not echo the generated spec.""",
 )
-
 graph = agent
 # #endregion genui

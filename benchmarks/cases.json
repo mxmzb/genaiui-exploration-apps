@@ -1,0 +1,332 @@
+{
+  "version": 1,
+  "status": "design_only",
+  "dataset": "dataset.json",
+  "dataset_sha256": "acc84204bf0f34ecd0c7e09385d6e0c73972e2f0dd4d21911849ffe608690f86",
+  "clock": "2026-11-02T12:00:00Z",
+  "generation": [
+    {
+      "id": "G01",
+      "prompt": "Render the supplied apartment as a listing card with its photo, title, neighborhood, monthly rent, bedroom count and area. Include View Details and Schedule Tour actions for its ID.",
+      "input_ids": [
+        "2"
+      ],
+      "expected": {
+        "view": "list",
+        "listing_ids": [
+          "2"
+        ],
+        "ordered": true,
+        "fields": [
+          "id",
+          "title",
+          "neighborhood",
+          "rent",
+          "bedrooms",
+          "sqft",
+          "imageUrl"
+        ],
+        "actions": [
+          "view_apartment",
+          "schedule_tour"
+        ],
+        "no_extra_listings": true
+      }
+    },
+    {
+      "id": "G02",
+      "prompt": "Render all three supplied apartments in their supplied order, one card per apartment. Show photo, title, neighborhood, monthly rent, bedroom count and area. Each card needs View Details and Schedule Tour actions for its own ID.",
+      "input_ids": [
+        "7",
+        "2",
+        "5"
+      ],
+      "expected": {
+        "view": "list",
+        "listing_ids": [
+          "7",
+          "2",
+          "5"
+        ],
+        "ordered": true,
+        "fields": [
+          "id",
+          "title",
+          "neighborhood",
+          "rent",
+          "bedrooms",
+          "sqft",
+          "imageUrl"
+        ],
+        "actions": [
+          "view_apartment",
+          "schedule_tour"
+        ],
+        "no_extra_listings": true
+      },
+      "selection": {
+        "bedrooms_eq": 2,
+        "sort": "rent_asc"
+      }
+    },
+    {
+      "id": "G03",
+      "prompt": "Render all six supplied apartments in their supplied order, one card per apartment. Show photo, title, neighborhood, monthly rent, bedroom count and area. Each card needs View Details and Schedule Tour actions for its own ID.",
+      "input_ids": [
+        "3",
+        "8",
+        "1",
+        "6",
+        "7",
+        "2"
+      ],
+      "expected": {
+        "view": "list",
+        "listing_ids": [
+          "3",
+          "8",
+          "1",
+          "6",
+          "7",
+          "2"
+        ],
+        "ordered": true,
+        "fields": [
+          "id",
+          "title",
+          "neighborhood",
+          "rent",
+          "bedrooms",
+          "sqft",
+          "imageUrl"
+        ],
+        "actions": [
+          "view_apartment",
+          "schedule_tour"
+        ],
+        "no_extra_listings": true
+      },
+      "selection": {
+        "rent_lt": 3200,
+        "sort": "rent_asc"
+      }
+    },
+    {
+      "id": "G04",
+      "prompt": "Render a detail view for the supplied apartment. Include its title, neighborhood, photo, rent, bedrooms, bathrooms, area, description, amenities and nearby transit. Include Schedule Tour for this ID and Back to Results.",
+      "input_ids": [
+        "2"
+      ],
+      "expected": {
+        "view": "detail",
+        "listing_ids": [
+          "2"
+        ],
+        "ordered": false,
+        "fields": [
+          "title",
+          "neighborhood",
+          "imageUrl",
+          "rent",
+          "bedrooms",
+          "bathrooms",
+          "sqft",
+          "description",
+          "amenities",
+          "nearbyTransit"
+        ],
+        "actions": [
+          "schedule_tour",
+          "back_to_results"
+        ],
+        "no_extra_listings": true
+      }
+    },
+    {
+      "id": "G05",
+      "prompt": "The supplied search results are empty. Explain that no apartment matches and suggest relaxing a filter. Do not display or invent a listing. Do not offer a tour for a nonexistent apartment.",
+      "input_ids": [],
+      "expected": {
+        "view": "empty",
+        "listing_ids": [],
+        "ordered": false,
+        "fields": [],
+        "actions": [],
+        "no_extra_listings": true
+      },
+      "selection": {
+        "bedrooms_eq": 2,
+        "neighborhood_eq": "Midtown",
+        "rent_lt": 3000,
+        "sort": "rent_asc"
+      }
+    },
+    {
+      "id": "G06",
+      "prompt": "Render a demo tour-request form for the supplied apartment, with its ID and title. Required fields: name, email, preferred date. Optional: phone and message. Include Submit Demo Request and Back to Results. Do not say that a booking has been made.",
+      "input_ids": [
+        "2"
+      ],
+      "expected": {
+        "view": "form",
+        "listing_ids": [
+          "2"
+        ],
+        "ordered": false,
+        "fields": [
+          "id",
+          "title"
+        ],
+        "actions": [
+          "submit_tour",
+          "back_to_results"
+        ],
+        "no_extra_listings": true,
+        "form": {
+          "required": [
+            "name",
+            "email",
+            "date"
+          ],
+          "optional": [
+            "phone",
+            "message"
+          ],
+          "email_type": "email",
+          "date_type": "date",
+          "scope": "current_form"
+        }
+      }
+    }
+  ],
+  "journeys": [
+    {
+      "id": "J01",
+      "name": "Exact filters, refinement, detail and return",
+      "steps": [
+        {
+          "kind": "send",
+          "text": "Show all apartments with exactly two bedrooms, sorted by monthly rent from lowest to highest.",
+          "selection": {
+            "bedrooms_eq": 2,
+            "sort": "rent_asc"
+          },
+          "expected_ids": [
+            "7",
+            "2",
+            "5"
+          ]
+        },
+        {
+          "kind": "send",
+          "text": "Keep only apartments with monthly rent strictly below $3,000. Keep the other requirements.",
+          "selection": {
+            "bedrooms_eq": 2,
+            "rent_lt": 3000,
+            "sort": "rent_asc"
+          },
+          "expected_ids": [
+            "7"
+          ]
+        },
+        {
+          "kind": "click_action",
+          "action": "view_apartment",
+          "apartment_id": "7",
+          "expected_view": "detail",
+          "expected_ids": [
+            "7"
+          ]
+        },
+        {
+          "kind": "click_action",
+          "action": "back_to_results",
+          "selection": {
+            "bedrooms_eq": 2,
+            "rent_lt": 3000,
+            "sort": "rent_asc"
+          },
+          "expected_view": "list",
+          "expected_ids": [
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "J02",
+      "name": "Tour form validation and honest demo confirmation",
+      "steps": [
+        {
+          "kind": "send",
+          "text": "Show apartments in Midtown with exactly two bedrooms and monthly rent strictly below $4,000.",
+          "selection": {
+            "bedrooms_eq": 2,
+            "neighborhood_eq": "Midtown",
+            "rent_lt": 4000,
+            "sort": "rent_asc"
+          },
+          "expected_ids": [
+            "2"
+          ]
+        },
+        {
+          "kind": "click_action",
+          "action": "view_apartment",
+          "apartment_id": "2",
+          "expected_view": "detail",
+          "expected_ids": [
+            "2"
+          ]
+        },
+        {
+          "kind": "click_action",
+          "action": "schedule_tour",
+          "apartment_id": "2",
+          "expected_view": "form",
+          "expected_ids": [
+            "2"
+          ]
+        },
+        {
+          "kind": "submit_invalid",
+          "action": "submit_tour",
+          "fields": {},
+          "expected_view": "form",
+          "expected_new_model_calls": 0,
+          "expected_validity": false
+        },
+        {
+          "kind": "submit_invalid",
+          "action": "submit_tour",
+          "fields": {
+            "name": "Benchmark Reader",
+            "email": "not-an-email",
+            "date": "2026-11-14"
+          },
+          "expected_view": "form",
+          "expected_new_model_calls": 0,
+          "expected_validity": false
+        },
+        {
+          "kind": "submit_valid",
+          "action": "submit_tour",
+          "fields": {
+            "name": "Benchmark Reader",
+            "email": "reader@example.com",
+            "phone": "",
+            "date": "2026-11-14",
+            "message": "Synthetic benchmark request."
+          },
+          "expected_view": "confirmation",
+          "expected_apartment_id": "2",
+          "rubric": [
+            "Explicitly identifies the request as a demo.",
+            "Does not claim a real booking, landlord contact or promised follow-up.",
+            "Does not contradict the submitted apartment, name or date."
+          ]
+        }
+      ]
+    }
+  ]
+}

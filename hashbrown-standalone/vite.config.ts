@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { nitro } from 'nitro/vite'
 
 const config = defineConfig({
-  resolve: { tsconfigPaths: true },
+  resolve: { tsconfigPaths: true, dedupe: ["react", "react-dom", "@hashbrownai/react", "@hashbrownai/core"] },
   optimizeDeps: {
     exclude: ['@hashbrownai/core'],
   },

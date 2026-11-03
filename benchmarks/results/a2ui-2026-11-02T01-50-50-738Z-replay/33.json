@@ -1,0 +1,1171 @@
+{
+  "id": "a2ui-2026-11-02T01-50-50-738Z-replay-33-markdown-batch-C06",
+  "variant": {
+    "transport": "markdown",
+    "generation": "batch"
+  },
+  "caseId": "C06",
+  "control": "wrong-form-target",
+  "expectedFailure": "interaction",
+  "pass": true,
+  "automaticPass": false,
+  "verdicts": {
+    "rawFormat": {
+      "pass": true,
+      "errors": []
+    },
+    "contract": {
+      "pass": true,
+      "errors": []
+    },
+    "strategy": {
+      "pass": true,
+      "errors": []
+    },
+    "content": {
+      "pass": true,
+      "errors": []
+    },
+    "actionBindings": {
+      "pass": false,
+      "errors": [
+        "Missing/duplicate action submit_tour:7",
+        "Unexpected action submit_tour:999"
+      ],
+      "actual": [
+        {
+          "name": "submit_tour",
+          "apartmentId": "999",
+          "scopeId": "7"
+        },
+        {
+          "name": "back_to_results"
+        }
+      ]
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "submit_tour:7: Wrong action or record reached the server",
+        "submit_tour:7: Wrong action or record reached the server"
+      ],
+      "checks": [
+        {
+          "name": "back_to_results",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "db5c2c23-e815-4007-a775-524689c10bc9",
+                "role": "user",
+                "content": "Back to Results"
+              },
+              "envelope": {
+                "name": "back_to_results",
+                "surfaceId": "results",
+                "sourceComponentId": "n11",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {}
+              },
+              "action": {
+                "name": "back_to_results"
+              },
+              "runId": "355efbaf-4794-4adc-b38f-0954872c69b0",
+              "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+            }
+          ]
+        },
+        {
+          "name": "invalid_submit",
+          "field": "name",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "phone",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "tourType",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "not-an-email",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "2026-11-01",
+          "requests": 0
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 1,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "2a057a50-aa12-4012-89c8-9cc598d6723c",
+                "role": "user",
+                "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}"
+              },
+              "envelope": {
+                "name": "submit_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "n2",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "999",
+                  "details": {
+                    "name": "Benchmark Reader",
+                    "email": "reader@example.com",
+                    "date": "2026-11-14",
+                    "phone": "555-0107",
+                    "tourType": "video",
+                    "message": "A demonstration request."
+                  }
+                }
+              },
+              "action": {
+                "name": "submit_tour",
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request."
+                }
+              },
+              "runId": "09a3b55a-e424-4f79-b780-c399a2b4249c",
+              "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+            }
+          ]
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 2,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "a8870698-4152-49b4-879f-635fc6282e92",
+                "role": "user",
+                "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}"
+              },
+              "envelope": {
+                "name": "submit_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "n2",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "999",
+                  "details": {
+                    "name": "Benchmark Reader",
+                    "email": "reader@example.com",
+                    "date": "2026-11-14",
+                    "phone": "555-0107",
+                    "tourType": "video",
+                    "message": "A demonstration request.",
+                    "bringPet": "on"
+                  }
+                }
+              },
+              "action": {
+                "name": "submit_tour",
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request.",
+                  "bringPet": "on"
+                }
+              },
+              "runId": "dfa1d8a1-eece-4cee-a165-7adef62e9ca2",
+              "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+            }
+          ]
+        }
+      ],
+      "requestCount": 3
+    },
+    "runtime": {
+      "pass": true,
+      "errors": []
+    }
+  },
+  "recovery": {
+    "invalidLines": [],
+    "recovered": [],
+    "partialObject": null
+  },
+  "browser": {
+    "metrics": {
+      "timeline": [
+        {
+          "ms": 0.5999999046325684,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 3
+        },
+        {
+          "ms": 9.099999904632568,
+          "ids": [],
+          "complete": 0,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 49.69999980926514,
+          "ids": [
+            "7"
+          ],
+          "complete": 1,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 0
+        },
+        {
+          "ms": 451.2999999523163,
+          "ids": [
+            "7"
+          ],
+          "complete": 1,
+          "pending": 0,
+          "renderedFields": 0,
+          "enabledButtons": 2
+        }
+      ],
+      "firstMeaningfulMs": 92.5,
+      "firstCompleteCardMs": 49.69999980926514,
+      "allContentMs": 175.39999985694885,
+      "usableMs": null,
+      "runEndMs": 443
+    },
+    "interaction": {
+      "pass": false,
+      "errors": [
+        "submit_tour:7: Wrong action or record reached the server",
+        "submit_tour:7: Wrong action or record reached the server"
+      ],
+      "checks": [
+        {
+          "name": "back_to_results",
+          "before": 0,
+          "errors": [],
+          "received": [
+            {
+              "message": {
+                "id": "db5c2c23-e815-4007-a775-524689c10bc9",
+                "role": "user",
+                "content": "Back to Results"
+              },
+              "envelope": {
+                "name": "back_to_results",
+                "surfaceId": "results",
+                "sourceComponentId": "n11",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {}
+              },
+              "action": {
+                "name": "back_to_results"
+              },
+              "runId": "355efbaf-4794-4adc-b38f-0954872c69b0",
+              "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+            }
+          ]
+        },
+        {
+          "name": "invalid_submit",
+          "field": "name",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "phone",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "tourType",
+          "value": "",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "email",
+          "value": "not-an-email",
+          "requests": 0
+        },
+        {
+          "name": "invalid_submit",
+          "field": "date",
+          "value": "2026-11-01",
+          "requests": 0
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 1,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "2a057a50-aa12-4012-89c8-9cc598d6723c",
+                "role": "user",
+                "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}"
+              },
+              "envelope": {
+                "name": "submit_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "n2",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "999",
+                  "details": {
+                    "name": "Benchmark Reader",
+                    "email": "reader@example.com",
+                    "date": "2026-11-14",
+                    "phone": "555-0107",
+                    "tourType": "video",
+                    "message": "A demonstration request."
+                  }
+                }
+              },
+              "action": {
+                "name": "submit_tour",
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request."
+                }
+              },
+              "runId": "09a3b55a-e424-4f79-b780-c399a2b4249c",
+              "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+            }
+          ]
+        },
+        {
+          "name": "submit_tour",
+          "apartmentId": "7",
+          "before": 2,
+          "errors": [
+            "Wrong action or record reached the server"
+          ],
+          "received": [
+            {
+              "message": {
+                "id": "a8870698-4152-49b4-879f-635fc6282e92",
+                "role": "user",
+                "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}"
+              },
+              "envelope": {
+                "name": "submit_tour",
+                "surfaceId": "results",
+                "sourceComponentId": "n2",
+                "timestamp": "2026-11-02T12:00:00.000Z",
+                "context": {
+                  "apartmentId": "999",
+                  "details": {
+                    "name": "Benchmark Reader",
+                    "email": "reader@example.com",
+                    "date": "2026-11-14",
+                    "phone": "555-0107",
+                    "tourType": "video",
+                    "message": "A demonstration request.",
+                    "bringPet": "on"
+                  }
+                }
+              },
+              "action": {
+                "name": "submit_tour",
+                "apartmentId": "999",
+                "details": {
+                  "name": "Benchmark Reader",
+                  "email": "reader@example.com",
+                  "date": "2026-11-14",
+                  "phone": "555-0107",
+                  "tourType": "video",
+                  "message": "A demonstration request.",
+                  "bringPet": "on"
+                }
+              },
+              "runId": "dfa1d8a1-eece-4cee-a165-7adef62e9ca2",
+              "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+            }
+          ]
+        }
+      ],
+      "requestCount": 3
+    },
+    "dom": {
+      "form": {
+        "errors": [],
+        "fields": [
+          {
+            "name": "name",
+            "type": "text",
+            "tag": "input",
+            "required": true,
+            "label": "Name (required)",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": ""
+          },
+          {
+            "name": "email",
+            "type": "email",
+            "tag": "input",
+            "required": true,
+            "label": "Email (required)",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": ""
+          },
+          {
+            "name": "date",
+            "type": "date",
+            "tag": "input",
+            "required": true,
+            "label": "Preferred date (required)",
+            "visible": true,
+            "options": [],
+            "min": "2026-11-02",
+            "value": ""
+          },
+          {
+            "name": "phone",
+            "type": "tel",
+            "tag": "input",
+            "required": true,
+            "label": "Phone (required)",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": ""
+          },
+          {
+            "name": "tourType",
+            "type": "select-one",
+            "tag": "select",
+            "required": true,
+            "label": "Tour format (required)Choose an optionIn personVideo",
+            "visible": true,
+            "options": [
+              "in-person",
+              "video"
+            ],
+            "value": ""
+          },
+          {
+            "name": "message",
+            "type": "textarea",
+            "tag": "textarea",
+            "required": false,
+            "label": "Message",
+            "visible": true,
+            "options": [],
+            "value": ""
+          },
+          {
+            "name": "bringPet",
+            "type": "checkbox",
+            "tag": "input",
+            "required": false,
+            "label": "Discuss a pet",
+            "visible": true,
+            "options": [],
+            "min": "",
+            "value": "on"
+          }
+        ]
+      },
+      "meaningful": true,
+      "ready": true,
+      "recordIds": [
+        "7"
+      ],
+      "enabledButtons": 2,
+      "errors": [],
+      "records": [
+        {
+          "id": "7",
+          "found": true,
+          "text": "Renovated 2BR Corner Unit\nName (required)\nEmail (required)\nPreferred date (required)\nPhone (required)\nTour format (required)\nChoose an option\nIn person\nVideo\nMessage\nDiscuss a pet\nSubmit Demo Request\n↗\nDemo only. No booking is made and no message is sent.\nBack to Results\n↗",
+          "metrics": [],
+          "images": [],
+          "feeRows": []
+        }
+      ],
+      "buttons": [
+        {
+          "label": "Submit Demo Request\n↗",
+          "enabled": true,
+          "scopeId": "7"
+        },
+        {
+          "label": "Back to Results\n↗",
+          "enabled": true,
+          "scopeId": "7"
+        }
+      ]
+    },
+    "alerts": [],
+    "html": "<fieldset class=\"surface-controls generated-ui\" aria-label=\"Apartment results\" aria-busy=\"false\"><div data-generative-ui-surface=\"apartments\"><div class=\"a2ui-surface\" data-generative-ui-root=\"results\" style=\"display: contents;\"><div class=\"ui-stack gap-md pad-none\"><section data-record-id=\"7\" class=\"ui-card outlined pad-md\"><h3 class=\"ui-heading\">Renovated 2BR Corner Unit</h3><form class=\"ui-form\" aria-label=\"Demo tour request\" data-apartment-id=\"999\"><label class=\"ui-field\"><span>Name<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"\" max=\"\" type=\"text\" value=\"\" name=\"name\"></label><label class=\"ui-field\"><span>Email<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"\" max=\"\" type=\"email\" value=\"\" name=\"email\"></label><label class=\"ui-field\"><span>Preferred date<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"2026-11-02\" max=\"\" type=\"date\" value=\"\" name=\"date\"></label><label class=\"ui-field\"><span>Phone<small> (required)</small></span><input required=\"\" placeholder=\"\" min=\"\" max=\"\" type=\"tel\" value=\"\" name=\"phone\"></label><label class=\"ui-field\"><span>Tour format<small> (required)</small></span><select name=\"tourType\" required=\"\"><option value=\"\" selected=\"\">Choose an option</option><option value=\"in-person\">In person</option><option value=\"video\">Video</option></select></label><label class=\"ui-field\"><span>Message</span><textarea name=\"message\" placeholder=\"\" rows=\"3\"></textarea></label><label class=\"ui-checkbox\"><input type=\"checkbox\" name=\"bringPet\"><span>Discuss a pet</span></label><button type=\"submit\" class=\"ui-button primary\">Submit Demo Request<span aria-hidden=\"true\">↗</span></button><small class=\"ui-demo-note\">Demo only. No booking is made and no message is sent.</small></form></section><button type=\"button\" class=\"ui-button ghost\">Back to Results<span aria-hidden=\"true\">↗</span></button></div></div></div></fieldset>",
+    "environment": {
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36",
+      "viewport": [
+        1280,
+        900
+      ],
+      "devicePixelRatio": 2,
+      "visibility": "visible",
+      "assets": "local-svg/system-fonts",
+      "failures": []
+    }
+  },
+  "request": {
+    "model": "replay",
+    "max_tokens": 16000,
+    "messages": [
+      {
+        "role": "system",
+        "content": [
+          {
+            "type": "text",
+            "text": "Today: 2026-11-02.\nYou compose a polished apartment-finding interface from a small component catalog.\nThese application-specific rules take precedence over generic examples above.\nThe records are synthetic. Photos are illustrative, not evidence of a property's features.\n\nCOMPOSITION\n- Build every view from the listed primitives. There are no ApartmentCard, DetailView or TourForm components.\n- Use a root Stack with padding=\"none\" to align results with the search bar. Nest Grid, Card, Stack and Row where useful; compose every visible field explicitly.\n- Search results: use a one-column Grid with a children template over the selected records, and compose ONE shared Card subtree. Inside the Card use a two-column Grid with gap=\"sm\": an Image and a Stack with padding=\"md\", gap=\"md\". Its content order is neighborhood Badge, h3 title, monthly-total Metric, a known-subtotal Metric and fee note visible only when the total is null, base-rent Metric, a Row of bedrooms/bathrooms/area Metrics, short description, and a Row of action Buttons. Keep all repeated cards consistent. Use h2 only for the view heading. Comparison and detail requests use their own compositions below.\n- Comparisons: use a three-column Grid of clearly identified Cards. EACH column must contain its supplied Image, title, neighborhood, base rent, mandatory fees, monthly total, beds, baths, area, pet rules, transit, and its own View Details and Schedule Tour Buttons. Keep the SAME sequence of criteria across columns. End the complete view with Back to Results. Unknown fees mean the total is unknown.\n- Details: compose a two-column gallery/summary area, then separate cost, lease, amenities, transit and review sections. Use multiple Images from photos. Include availability, floor/elevator and known restrictions. Reviews are synthetic.\n- Form: create a Form with its apartmentId and accessible label. Compose Heading, Input, Select, Checkbox or Textarea children according to the request. Name, email and preferred date are required by default; phone and message are optional unless the user asks otherwise. Each field needs a unique name. A Button with type=\"submit\" submits this Form; do not bind submit_tour to a button event. Do not nest Forms.\n- Confirmation: compose a Card with Heading, Text and navigation. Explicitly identify the request as a demo; no booking, contact or promised follow-up.\n- No exact matches: explain the unmet filters. Only show supplied alternatives if requested, and label the constraint each relaxes.\n\nFACTS AND ACTIONS\n- Use only supplied data. A missing value is unknown, never false or zero. Do not infer availability from a past date.\n- Display costs.monthlyTotal when known; otherwise show costs.knownMonthlySubtotal as an incomplete subtotal. Separate optional monthly fees and one-time charges. Costs exclude usage-dependent utilities.\n- Do not reinterpret \"Pets negotiable\" as confirmed permission. Show weight limits when relevant.\n- Use Button onClick events for view_apartment / schedule_tour with { apartmentId }, compare_apartments with { apartmentIds }, and back_to_results with {}.\n- Every listing Card and every comparison column MUST include View Details and Schedule Tour Buttons bound to that record ID. Details/comparisons/forms MUST include a Back to Results Button. These controls are required even when the user only asks about facts. Define every referenced child, including the buttons, before finishing.\n- Respect all search filters together and preserve them when returning. Show at most 12 listings; default to 3-6 unless the user asks for more. Explain any display limit.\n- Rent is USD/month; show bedrooms, bathrooms and square footage with labels.\n- Money and area use Metric with a numeric value or null plus format=\"usd/month\", \"usd\" or \"sqft\". React supplies currency symbols, commas and units. Never emit interpolation strings as display values.\n- Use plain literal sentences for dates, availability, lease terms, floor/elevator summaries and other one-off descriptions. A direct @path may read a supplied string. Do not use formatString, formatDate, nested function expressions or interpolation to build display text. The only function composition needed in this app is not(required(value)) for conditional visibility below.\n- A null monthly total displays Unknown. Also show the known subtotal with a clearly visible note that mandatory fees are not yet known.\n- Form inputs use native local state; the Form's onSubmit collects only its own values. Do not generate onClick for a submit Button.\n\nA2UI 1.0\n- Render into target=\"apartments\", never chat. Follow the selected transport and update strategy below. Finish the entire requested view in one model response.\n- Use a new unique surfaceId for a different view. The page target replaces its previous surface. Use updateComponents/updateDataModel for changes within the current view.\n- Use the native children template {\"componentId\":\"listing\",\"path\":\"/apartments\"} for repeating results. Generate one Card subtree. Bind its values with {\"@path\":\"title\"}, {\"@path\":\"rent\"}, {\"@path\":\"costs/monthlyTotal\"}, and recordId with {\"@path\":\"id\"}. Relative paths read the current item; leading slashes read root data. No legacy {\"path\":...}, $item or $template.\n- Put the selected supplied records in dataModel.apartments, sorted by the requested numeric field. Include ONLY fields actually read by this view, not unused photos, reviews or lease details. Keep string IDs. The root and all parent slots must reference their children early. The selected strategy determines how to group components and data updates.\n- Bindings are JSON OBJECTS, never strings. Correct complete component: {\"id\":\"rent\",\"component\":\"Metric\",\"label\":\"Base rent\",\"value\":{\"@path\":\"rent\"},\"format\":\"usd/month\"}. Correct heading: {\"id\":\"title\",\"component\":\"Heading\",\"text\":{\"@path\":\"title\"},\"level\":\"h3\"}. The string \"{@path:title}\" is literal text and WILL NOT resolve. Do not stringify bindings, omit the quotes on their keys, or invent shorthand.\n- Put the known-subtotal Metric and unknown-fee note in a Stack with visible={\"@call\":\"not\",\"args\":{\"value\":{\"@call\":\"required\",\"args\":{\"value\":{\"@path\":\"costs/monthlyTotal\"}}}}}. These basic functions test presence: zero is known, null is unknown. Do not compare a number to null with calc. This section must be hidden for listings with a known monthly total. Do not put a warning on every listing.\n- Button onClick uses {\"event\":{\"name\":\"view_apartment\",\"userMessage\":\"Show details for this apartment\",\"context\":{\"apartmentId\":{\"@path\":\"id\"}}}} in a template. Use the analogous schedule_tour, compare_apartments or back_to_results event. Outside a template use literal IDs. No default/prewired apartment buttons exist.\n- Form onSubmit uses {\"event\":{\"name\":\"submit_tour\",\"userMessage\":\"Confirm my demo tour request\"}}. The renderer adds apartmentId and details from the form; read these from the user action. Never put invented contact details in the event.\n- Preserve the original search filters in conversation context; Back to Results returns to that search, not an unfiltered catalog.\n- Every referenced component must be defined. Do not leave placeholder bindings or blank layout slots when finished.\n\nTRANSPORT AND UPDATE STRATEGY (follow these instead of any generic streaming examples):\nWrite the COMPLETE view as newline-separated A2UI v1.0 JSON operations inside ONE markdown fence starting with ```a2ui target=apartments and ending with ```. Do not call render_ui. No prose outside the fence.\nUse exactly two operations for a new view: (1) createSurface with the selected dataModel and only the root component, referencing its children; (2) ONE updateComponents containing every remaining component. Do not split the data or components into further updates.\nFor every strategy, every referenced child and required fact must be present by the end. The strategy changes delivery, not the required result.\nDATA (the only source of listing facts; preserve any order explicitly requested by the task):\n[{\"id\":\"7\",\"title\":\"Renovated 2BR Corner Unit\",\"neighborhood\":\"Arts District\",\"rent\":2850,\"bedrooms\":2,\"bathrooms\":1,\"sqft\":950,\"address\":\"208 Gallery Row, Unit 6A\",\"description\":\"Corner two-bedroom with windows on three sides and views of the mural district. Gut-renovated in 2025 with new plumbing, wiring, and mini-split AC. Open kitchen with island seating. Pet-friendly building with a courtyard.\",\"imageUrl\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"availableFrom\":\"2027-01-01\",\"petPolicy\":\"Dogs and cats (under 40 lbs)\",\"amenities\":[\"Bike room\",\"Courtyard\",\"Kitchen island\",\"Mini-split AC\",\"Package room\"],\"nearbyTransit\":[\"Blue Line - 4 min walk\",\"Bus 16 - 2 min walk\"],\"reviews\":[{\"author\":\"Tasha M.\",\"rating\":5,\"text\":\"Love the natural light from the corner windows. Renovation is quality — not the cheap-flip kind.\"},{\"author\":\"Ian C.\",\"rating\":4,\"text\":\"Great layout for roommates. Each bedroom is a real room. Courtyard is a nice bonus.\"}],\"floor\":6,\"elevator\":true,\"leaseMonths\":[12],\"utilitiesIncluded\":[\"Water\"],\"petRules\":{\"cats\":true,\"dogs\":true,\"maxWeightLbs\":40},\"fees\":[{\"label\":\"Building services\",\"amount\":350,\"frequency\":\"monthly\",\"required\":true},{\"label\":\"Refundable security deposit\",\"amount\":2850,\"frequency\":\"once\",\"required\":true},{\"label\":\"Pet rent if bringing a pet\",\"amount\":35,\"frequency\":\"monthly\",\"required\":false}],\"photos\":[{\"url\":\"https://images.unsplash.com/photo-1554995207-c18c203602cb?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative apartment interior\",\"caption\":\"Illustrative photo; not a verified image of this synthetic listing.\"},{\"url\":\"https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"},{\"url\":\"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1000&h=750&fit=crop\",\"alt\":\"Illustrative interior view\",\"caption\":\"Illustrative photo.\"}],\"transit\":[{\"name\":\"Blue Line\",\"walkMinutes\":4},{\"name\":\"Bus 16\",\"walkMinutes\":2}],\"costs\":{\"monthlyTotal\":3200,\"knownMonthlySubtotal\":3200,\"moveInTotal\":6050,\"knownMoveInSubtotal\":6050,\"excludes\":\"Optional fees and usage-dependent utilities. Move-in includes the first month and required one-time charges, including refundable deposits.\"}}]\n## Context from the application\nGenerative UI markdown guide: how to write UI surfaces inside ```a2ui code fences in a normal markdown reply.:\nYou can show interactive UI in your reply. Write A2UI operations inside a fenced code block tagged a2ui.\n\nShow UI when it conveys the answer better than prose: to illustrate a concept (a diagram, a chart of how something changes), to compare options side by side, to let the user explore or adjust values, or to collect input. A small, focused surface next to your explanation often lands better than a long description. Reply in prose alone for a quick fact, a short answer, or conversation, and never add UI only as decoration.\n\nRULES\n- Write explanations as normal markdown prose outside the fences.\n- Open a fence with ```a2ui to show the surface in the chat, at the place of the fence.\n- Open a fence with ```a2ui target=<id> to show the surface in a named target. Use only target ids from the schema. When a target has \"components\", its surfaces can use only those components.\n- Inside a fence, write one JSON object per line and nothing else. No comments, no trailing commas, no pretty-printing.\n- Keep each operation whole on its line.\n- Give every operation \"version\":\"v1.0\".\n- Start a surface with one createSurface. Put all the initial data in \"dataModel\" and the \"root\" component in \"components\". Then write the children in updateComponents lines, so that they show while you write:\n  ```a2ui\n  {\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"plan-picker\",\"dataModel\":{ ...initial data... },\"components\":[{\"id\":\"root\",\"component\":\"<Name>\",\"children\":[\"seats\",\"pick\"]}]}}\n  {\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"plan-picker\",\"components\":[ ...the children... ]}}\n  ```\n- Keep \"dataModel\" flat: top-level keys such as \"seats\" or \"form\", never one wrapper object around everything. Check that every { and [ you open in a line is closed.\n- Every surface renders from the component with id \"root\". Make every other component reachable from \"root\" through slots.\n- Use unique ids. Do not make cycles. A component cannot be its own child.\n- Write a component as one flat object: {\"id\":\"title\",\"component\":\"<Name>\",\"text\":\"Hello\"}.\n- Put the component name in \"component\" (never \"type\"). Put props next to it, never inside a \"props\" object.\n- A component may take \"accessibility\":{\"label\":\"<1 to 3 words>\",\"description\":\"<what it does>\"} for screen readers: on the component it describes, when nothing visible names it. Not on every component, and \"live\":\"polite\" only on text that changes by itself.\n- Use only the components, props, events, and slots in the schema. A component with \"includesCommonProps\" also takes every prop in \"commonProps\".\n- Give a prop a literal value, or bind it to the data model with {\"@path\":\"/x\"}. Never write {\"path\":\"/x\"} as a binding.\n- A prop can also be a function value that updates with the data: {\"@call\":\"formatCurrency\",\"args\":{\"value\":{\"@path\":\"/total\"},\"currency\":\"EUR\"}}. Use only the functions under \"functions\" in the schema. Write a literal when the value never changes.\n- formatString interpolates ${...}: {\"@call\":\"formatString\",\"args\":{\"value\":\"${/qty} × ${formatCurrency(value: /price, currency: 'EUR')}\"}}. Inside ${...}, a path has no quotes, a string has single quotes, and a function takes named args.\n- ${...} is evaluated only in the value of formatString and in the item of series; in other strings it stays literal text. Inside formatString, ${...} does not support operators. For arithmetic use calc, with the values as named args: {\"@call\":\"calc\",\"args\":{\"expression\":\"seats * 29 * (annual ? 0.8 : 1)\",\"seats\":{\"@path\":\"/seats\"},\"annual\":{\"@path\":\"/annual\"}}}. Inside formatString: ${formatCurrency(value: calc(expression: 'seats * 29', seats: /seats), currency: 'USD')}. The UI then follows the user's input with no round trip.\n- For a computed list (chart data, template items) use series. Its description under \"functions\" in the schema gives the rules and an example. Bind the \"data\" of a Chart or the \"items\" of a List to it; a template path stays a literal path.\n- Bind a writable prop to let the user edit it: \"value\":{\"@path\":\"/form/email\"}. The user's input goes to that path.\n- To change data, write updateDataModel with a \"path\" and a \"value\": {\"version\":\"v1.0\",\"updateDataModel\":{\"surfaceId\":\"plan-picker\",\"path\":\"/seats\",\"value\":12}}. Always give \"value\".\n- Set \"value\":null to delete the key at \"path\".\n- Give an event prop an object: {\"event\":{\"name\":\"<name>\",\"userMessage\":\"<text>\",\"context\":{...}}} or {\"functionCall\":{\"@call\":\"<function>\",\"args\":{...}}}. Never a flat {\"event\":\"<name>\"}.\n- Use {\"functionCall\": ...} to open a URL when the user clicks: {\"functionCall\":{\"@call\":\"openUrl\",\"args\":{\"url\":\"https://example.com\"}}}. You are not told about the call.\n- Use {\"event\": ...} to send the interaction back to you as a user message. Put the text of that message in \"userMessage\": {\"event\":{\"name\":\"choose\",\"userMessage\":\"Show me the Team plan\"}}. \"userMessage\" is plain text: ${...} is not interpolated in it; put values in \"context\".\n- To send input values with an event, bind them in the context: \"context\":{\"email\":{\"@path\":\"/form/email\"}}.\n- A button or other event prop without an event or functionCall does nothing.\n- A prop typed componentId takes the id of another component, and a childList takes ids [\"a\",\"b\"]: \"child\":\"card\", \"children\":[\"a\",\"b\"], \"tabs\":[{\"title\":\"Specs\",\"child\":\"specs\"}].\n- To repeat a component for each item of a list, give a childList a template: \"children\":{\"componentId\":\"row\",\"path\":\"/items\"}.\n- Inside a template, paths are relative to the item (\"name\", not \"/name\").\n- Inside a template, {\"@call\":\"@index\"} gives the position of the item, from 0. To count from 1, write {\"@call\":\"@index\",\"args\":{\"offset\":1}}.\n- Updating a component replaces all of its props. Send every prop again.\n- To change a surface in this reply, write another fence with the same surfaceId. Do not send createSurface again. The surface changes where it already is. A surface in a target can also be changed from a later reply; a chat surface cannot, because the chat is a transcript: a later reply with the same surfaceId makes a new surface.\n- Use a new surfaceId for a different view. Never use a surfaceId again, also after the surface is deleted.\n- The schema lists the surfaces that already exist under \"surfaces\". \"dataModel\" holds the values that the user entered: read them, and do not write those paths. \"rejected\" lists operations that the client dropped: send corrected operations in a new fence for that surfaceId. \"status\":\"deleted\" means the surface is gone: never use its id again. \"status\":\"failed\" means its createSurface was rejected: send a corrected createSurface with that id.\n- Never make a surface that is only prose. Write headings, paragraphs, lists of text, intros, and summaries as markdown outside the fences, also between two fences.\n- Put in a fence only what markdown cannot show: charts, tables, maps, images, badges, inputs, buttons, cards with controls.\n- Use Card only for an interactive panel (controls, a form, a configurator). Put everything else in a plain layout component.\n- Never wrap the whole reply in a fence.\n\nGenerative UI component schema: the components, props, events, slots, functions, and targets that ```a2ui code fences can use, and the surfaces that already exist.:\n{\"catalogId\":\"apartment-finder@1\",\"targets\":[{\"id\":\"chat\",\"kind\":\"chat\"},{\"id\":\"apartments\",\"kind\":\"inline\",\"description\":\"The main apartment workspace. Render all search results, comparisons, details, demo tour forms and confirmations here. Replace this workspace for each request; do not create chat surfaces.\"}],\"functions\":{\"required\":{\"description\":\"Valid when the value is not empty\",\"parameters\":\"{ value: unknown }\"},\"regex\":{\"description\":\"Valid when the value matches the pattern\",\"parameters\":\"{ value: string; pattern: string }\"},\"length\":{\"description\":\"Valid when the length of the value is within min and max\",\"parameters\":\"{ value: string; min?: number; max?: number }\"},\"numeric\":{\"description\":\"Valid when the value is a number within min and max\",\"parameters\":\"{ value: number; min?: number; max?: number }\"},\"email\":{\"description\":\"Valid when the value is an email address\",\"parameters\":\"{ value: string }\"},\"formatString\":{\"description\":\"Interpolates ${/path}, ${relative/path} and ${fn(arg: value)} in the value; \\\\${ is a literal\",\"parameters\":\"{ value: string }\"},\"formatNumber\":{\"description\":\"The number in the locale of the user\",\"parameters\":\"{ value: number; decimals?: number; grouping?: boolean }\"},\"formatCurrency\":{\"description\":\"The amount as money, with an ISO 4217 currency code\",\"parameters\":\"{ value: number; currency: string; decimals?: number; grouping?: boolean }\"},\"formatDate\":{\"description\":\"A date or ISO string in a TR35 pattern, for example \\\"MMM d, yyyy\\\" or \\\"HH:mm\\\"\",\"parameters\":\"{ value: string | number; format: string }\"},\"pluralize\":{\"description\":\"The string of the plural category of the value\",\"parameters\":\"{ value: number; zero?: string; one?: string; two?: string; few?: string; many?: string; other: string }\"},\"openUrl\":{\"description\":\"Opens an http(s) URL in a new tab. Only from an event\",\"parameters\":\"{ url: string }\"},\"and\":{\"description\":\"True when every value is true\",\"parameters\":\"{ values: boolean[] }\"},\"or\":{\"description\":\"True when any value is true\",\"parameters\":\"{ values: boolean[] }\"},\"not\":{\"description\":\"The negated value\",\"parameters\":\"{ value: boolean }\"},\"calc\":{\"description\":\"The value of an arithmetic expression over the other args, by name: + - * / % ( ), comparisons, && || !, cond ? a : b, min max round floor ceil abs, 'text' + name\",\"parameters\":\"{ expression: string; [name: string]: number | string | boolean }\"},\"series\":{\"description\":\"A list of count copies of item, for chart data and template lists. Put arithmetic in ${expression} strings in item, using the loop variable (default i, counting from start, default 1) and other named args. A whole-expression string retains the result type, so \\\"${i * monthlyCost}\\\" yields a number. Arguments, including nested calc or formatString calls in item, resolve before the series loop; those calls cannot use the loop variable. Example: {\\\"@call\\\":\\\"series\\\",\\\"args\\\":{\\\"count\\\":6,\\\"item\\\":{\\\"month\\\":\\\"${i}\\\",\\\"cost\\\":\\\"${i * monthlyCost}\\\"},\\\"monthlyCost\\\":{\\\"@path\\\":\\\"/monthlyCost\\\"}}}. Omit variable to use i.\",\"parameters\":\"{ count: number; item: unknown; variable?: string; start?: number; [name: string]: unknown }\"}},\"components\":{\"Stack\":{\"description\":\"Vertical layout. Nest content and other layouts; padding can create a card body.\",\"props\":{\"gap?\":\"\\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"padding?\":\"\\\"none\\\" | \\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"visible?\":\"boolean // Conditional content. Bind a boolean or a basic function result.\"},\"slots\":{\"children\":\"multiple\"}},\"Row\":{\"description\":\"Wrapping horizontal layout for badges, metrics or actions.\",\"props\":{\"gap?\":\"\\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"align?\":\"\\\"start\\\" | \\\"center\\\" | \\\"between\\\"\"},\"slots\":{\"children\":\"multiple\"}},\"Grid\":{\"description\":\"Responsive equal-width columns. Collapses on narrow screens; may be nested.\",\"props\":{\"columns?\":\"\\\"1\\\" | \\\"2\\\" | \\\"3\\\"\",\"gap?\":\"\\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\"},\"slots\":{\"children\":\"multiple\"}},\"Card\":{\"description\":\"An empty visual container, not a listing template. Compose all content as children.\",\"props\":{\"variant?\":\"\\\"plain\\\" | \\\"outlined\\\" | \\\"accent\\\"\",\"padding?\":\"\\\"none\\\" | \\\"sm\\\" | \\\"md\\\" | \\\"lg\\\"\",\"recordId?\":\"string // ID of the record this container represents, if any\"},\"slots\":{\"children\":\"multiple\"}},\"Divider\":{\"description\":\"A quiet horizontal rule.\",\"props\":{}},\"Heading\":{\"description\":\"A section or card heading.\",\"props\":{\"text?\":\"string // May be pending during streaming; required in the finished view\",\"level?\":\"\\\"h2\\\" | \\\"h3\\\" | \\\"h4\\\"\"}},\"Text\":{\"description\":\"Plain text, with a bounded emphasis. Never HTML.\",\"props\":{\"content?\":\"string // May be pending during streaming; required in the finished view\",\"tone?\":\"\\\"default\\\" | \\\"muted\\\" | \\\"eyebrow\\\"\"}},\"Image\":{\"description\":\"One supplied illustrative photo. Compose galleries with Grid and multiple Images.\",\"props\":{\"src?\":\"string // May be pending during streaming; use a supplied photo URL\",\"alt\":\"string\",\"aspect?\":\"\\\"landscape\\\" | \\\"square\\\" | \\\"wide\\\"\"}},\"Badge\":{\"description\":\"A short category, constraint or status label.\",\"props\":{\"text?\":\"string\",\"tone?\":\"\\\"neutral\\\" | \\\"accent\\\" | \\\"warning\\\"\"}},\"Metric\":{\"description\":\"One labeled value. Use numeric values with a format for money/area; null means unknown. Formatting is handled by React, never by templates.\",\"props\":{\"label\":\"string\",\"value?\":\"number | string | null // Undefined is still arriving; null is a genuinely unknown fact. Supply by the end.\",\"format?\":\"\\\"text\\\" | \\\"usd\\\" | \\\"usd/month\\\" | \\\"sqft\\\"\",\"emphasis?\":\"boolean\"}},\"List\":{\"description\":\"A semantic list of ListItem children, e.g. amenities or nearby transit.\",\"props\":{},\"slots\":{\"children\":\"multiple\"}},\"ListItem\":{\"description\":\"One list item. Put Text, Metric or other content in its children.\",\"props\":{},\"slots\":{\"children\":\"multiple\"}},\"Button\":{\"description\":\"A button. Regular buttons bind onClick; a submit button submits its enclosing Form.\",\"props\":{\"label\":\"string\",\"variant?\":\"\\\"primary\\\" | \\\"secondary\\\" | \\\"ghost\\\"\",\"type?\":\"\\\"button\\\" | \\\"submit\\\"\"},\"events\":{\"onClick\":\"Navigate to details, a tour form, a comparison or the previous search.\"}},\"Form\":{\"description\":\"Empty demo-request form. Generate every field and a submit Button as children. Never nest Forms. Submission collects only this form's values.\",\"props\":{\"apartmentId\":\"string\",\"label\":\"string // Accessible form name\"},\"events\":{\"onSubmit\":\"Collect this demo request. No booking or message is sent.\"},\"slots\":{\"children\":\"multiple\"}},\"Input\":{\"description\":\"A labeled native input inside a Form. Dates may specify an ISO min value.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"type?\":\"\\\"text\\\" | \\\"email\\\" | \\\"tel\\\" | \\\"date\\\" | \\\"number\\\"\",\"placeholder?\":\"string\",\"defaultValue?\":\"string\",\"min?\":\"string\",\"max?\":\"string\"}},\"Select\":{\"description\":\"A labeled native select inside a Form.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"options\":\"{ value: string; label: string }[]\",\"defaultValue?\":\"string\"}},\"Checkbox\":{\"description\":\"A labeled checkbox inside a Form. An unchecked box is omitted from the submitted values.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"defaultChecked?\":\"boolean\"}},\"Textarea\":{\"description\":\"A labeled multiline input inside a Form.\",\"props\":{\"name\":\"string // Unique field name within its Form\",\"label\":\"string\",\"required?\":\"boolean\",\"placeholder?\":\"string\",\"defaultValue?\":\"string\"}}},\"surfaces\":{}}\n"
+          }
+        ]
+      },
+      {
+        "role": "user",
+        "content": "Compose a demo tour form for the supplied apartment. Required: name, email, preferred date, phone and tour format (in person or video). Optional: message and a checkbox for discussing a pet. Include a native Submit Demo Request button and Back to Results. Generate the individual fields; do not use a prebuilt form. Identify the apartment by its supplied title. Use these field names: name, email, date, phone, tourType, message, bringPet; tourType option values must be in-person and video. Preferred dates must be on or after 2026-11-02."
+      }
+    ],
+    "reasoning": {
+      "effort": "low"
+    },
+    "provider": {
+      "zdr": true,
+      "allow_fallbacks": false,
+      "only": [
+        "azure/eu"
+      ]
+    },
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateSnapshot",
+          "description": "Replace the entire application state with a new snapshot",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "snapshot": {
+                "description": "The complete new state object"
+              }
+            },
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      },
+      {
+        "type": "function",
+        "function": {
+          "name": "AGUISendStateDelta",
+          "description": "Apply incremental updates to application state using JSON Patch operations",
+          "parameters": {
+            "type": "object",
+            "properties": {
+              "delta": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "op": {
+                      "type": "string",
+                      "enum": [
+                        "add",
+                        "replace",
+                        "remove"
+                      ],
+                      "description": "The operation to perform"
+                    },
+                    "path": {
+                      "type": "string",
+                      "description": "JSON Pointer path (e.g., '/foo/bar')"
+                    },
+                    "value": {
+                      "description": "The value to set. Required for 'add' and 'replace' operations, ignored for 'remove'."
+                    }
+                  },
+                  "required": [
+                    "op",
+                    "path"
+                  ],
+                  "additionalProperties": false
+                },
+                "description": "Array of JSON Patch operations"
+              }
+            },
+            "required": [
+              "delta"
+            ],
+            "additionalProperties": false,
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          }
+        }
+      }
+    ],
+    "tool_choice": "auto",
+    "stream": true
+  },
+  "actionRequests": [
+    {
+      "message": {
+        "id": "db5c2c23-e815-4007-a775-524689c10bc9",
+        "role": "user",
+        "content": "Back to Results"
+      },
+      "envelope": {
+        "name": "back_to_results",
+        "surfaceId": "results",
+        "sourceComponentId": "n11",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {}
+      },
+      "action": {
+        "name": "back_to_results"
+      },
+      "runId": "355efbaf-4794-4adc-b38f-0954872c69b0",
+      "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+    },
+    {
+      "message": {
+        "id": "2a057a50-aa12-4012-89c8-9cc598d6723c",
+        "role": "user",
+        "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\"}"
+      },
+      "envelope": {
+        "name": "submit_tour",
+        "surfaceId": "results",
+        "sourceComponentId": "n2",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "999",
+          "details": {
+            "name": "Benchmark Reader",
+            "email": "reader@example.com",
+            "date": "2026-11-14",
+            "phone": "555-0107",
+            "tourType": "video",
+            "message": "A demonstration request."
+          }
+        }
+      },
+      "action": {
+        "name": "submit_tour",
+        "apartmentId": "999",
+        "details": {
+          "name": "Benchmark Reader",
+          "email": "reader@example.com",
+          "date": "2026-11-14",
+          "phone": "555-0107",
+          "tourType": "video",
+          "message": "A demonstration request."
+        }
+      },
+      "runId": "09a3b55a-e424-4f79-b780-c399a2b4249c",
+      "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+    },
+    {
+      "message": {
+        "id": "a8870698-4152-49b4-879f-635fc6282e92",
+        "role": "user",
+        "content": "Demo tour request\n\napartmentId: 999\ndetails: {\"name\":\"Benchmark Reader\",\"email\":\"reader@example.com\",\"date\":\"2026-11-14\",\"phone\":\"555-0107\",\"tourType\":\"video\",\"message\":\"A demonstration request.\",\"bringPet\":\"on\"}"
+      },
+      "envelope": {
+        "name": "submit_tour",
+        "surfaceId": "results",
+        "sourceComponentId": "n2",
+        "timestamp": "2026-11-02T12:00:00.000Z",
+        "context": {
+          "apartmentId": "999",
+          "details": {
+            "name": "Benchmark Reader",
+            "email": "reader@example.com",
+            "date": "2026-11-14",
+            "phone": "555-0107",
+            "tourType": "video",
+            "message": "A demonstration request.",
+            "bringPet": "on"
+          }
+        }
+      },
+      "action": {
+        "name": "submit_tour",
+        "apartmentId": "999",
+        "details": {
+          "name": "Benchmark Reader",
+          "email": "reader@example.com",
+          "date": "2026-11-14",
+          "phone": "555-0107",
+          "tourType": "video",
+          "message": "A demonstration request.",
+          "bringPet": "on"
+        }
+      },
+      "runId": "dfa1d8a1-eece-4cee-a165-7adef62e9ca2",
+      "threadId": "904124f0-3ad4-46a1-8054-969316fada59"
+    }
+  ],
+  "events": [
+    {
+      "ms": 9.335542000015266,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "```a2ui target=apartments\n{\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"results\",\"catalogId\":\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 17.392333999974653,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "apartment-finder@1\",\"components\":[{\"id\":\"root\",\"component\":\"Stack\",\"padding\":\"none\",\"children\":["
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 25.638833999983035,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\"n0\",\"n11\"]}],\"dataModel\":{}}}\n{\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"results\",\"comp"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 34.948916999972425,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "onents\":[{\"id\":\"n0\",\"component\":\"Card\",\"recordId\":\"7\",\"padding\":\"md\",\"children\":[\"n1\",\"n2\"]},{\"i"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 44.24904199998127,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "d\":\"n1\",\"component\":\"Heading\",\"text\":\"Renovated 2BR Corner Unit\",\"level\":\"h3\"},{\"id\":\"n2\",\"compo"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 52.490541999985,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "nent\":\"Form\",\"apartmentId\":\"999\",\"label\":\"Demo tour request\",\"onSubmit\":{\"event\":{\"name\":\"submit"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 60.895750000025146,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "_tour\"}},\"children\":[\"n3\",\"n4\",\"n5\",\"n6\",\"n7\",\"n8\",\"n9\",\"n10\"]},{\"id\":\"n3\",\"component\":\"Input\",\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 69.99995899997884,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "name\":\"name\",\"label\":\"Name\",\"type\":\"text\",\"required\":true,\"placeholder\":\"\",\"defaultValue\":\"\",\"mi"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 79.35920900001656,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "n\":\"\",\"max\":\"\"},{\"id\":\"n4\",\"component\":\"Input\",\"name\":\"email\",\"label\":\"Email\",\"type\":\"email\",\"re"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 87.86991700000362,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "quired\":true,\"placeholder\":\"\",\"defaultValue\":\"\",\"min\":\"\",\"max\":\"\"},{\"id\":\"n5\",\"component\":\"Input"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 96.58216699998593,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\",\"name\":\"date\",\"label\":\"Preferred date\",\"type\":\"date\",\"required\":true,\"placeholder\":\"\",\"default"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 105.98258399998304,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "Value\":\"\",\"min\":\"2026-11-02\",\"max\":\"\"},{\"id\":\"n6\",\"component\":\"Input\",\"name\":\"phone\",\"label\":\"Ph"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 114.52333400002681,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "one\",\"type\":\"tel\",\"required\":true,\"placeholder\":\"\",\"defaultValue\":\"\",\"min\":\"\",\"max\":\"\"},{\"id\":\"n"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 124.07770899997558,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "7\",\"component\":\"Select\",\"name\":\"tourType\",\"label\":\"Tour format\",\"required\":true,\"defaultValue\":\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 131.90000000002328,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\",\"options\":[{\"value\":\"in-person\",\"label\":\"In person\"},{\"value\":\"video\",\"label\":\"Video\"}]},{\"id\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 141.48341699998127,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": ":\"n8\",\"component\":\"Textarea\",\"name\":\"message\",\"label\":\"Message\",\"required\":false,\"placeholder\":\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 149.95795900002122,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\",\"defaultValue\":\"\"},{\"id\":\"n9\",\"component\":\"Checkbox\",\"name\":\"bringPet\",\"label\":\"Discuss a pet\""
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 159.3672089999891,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": ",\"required\":false,\"defaultChecked\":false},{\"id\":\"n10\",\"component\":\"Button\",\"label\":\"Submit Demo "
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 167.87987499998417,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "Request\",\"variant\":\"primary\",\"type\":\"submit\"},{\"id\":\"n11\",\"component\":\"Button\",\"label\":\"Back to "
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 177.4950420000241,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "Results\",\"variant\":\"ghost\",\"type\":\"button\",\"onClick\":{\"event\":{\"name\":\"back_to_results\",\"context"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 185.4077919999836,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {
+              "content": "\":{}}}}]}}\n```"
+            },
+            "finish_reason": null
+          }
+        ]
+      }
+    },
+    {
+      "ms": 435.94945900002494,
+      "event": {
+        "id": "replay",
+        "model": "replay",
+        "provider": "replay",
+        "choices": [
+          {
+            "index": 0,
+            "delta": {},
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "cost": 0
+        }
+      }
+    }
+  ],
+  "raw": "```a2ui target=apartments\n{\"version\":\"v1.0\",\"createSurface\":{\"surfaceId\":\"results\",\"catalogId\":\"apartment-finder@1\",\"components\":[{\"id\":\"root\",\"component\":\"Stack\",\"padding\":\"none\",\"children\":[\"n0\",\"n11\"]}],\"dataModel\":{}}}\n{\"version\":\"v1.0\",\"updateComponents\":{\"surfaceId\":\"results\",\"components\":[{\"id\":\"n0\",\"component\":\"Card\",\"recordId\":\"7\",\"padding\":\"md\",\"children\":[\"n1\",\"n2\"]},{\"id\":\"n1\",\"component\":\"Heading\",\"text\":\"Renovated 2BR Corner Unit\",\"level\":\"h3\"},{\"id\":\"n2\",\"component\":\"Form\",\"apartmentId\":\"999\",\"label\":\"Demo tour request\",\"onSubmit\":{\"event\":{\"name\":\"submit_tour\"}},\"children\":[\"n3\",\"n4\",\"n5\",\"n6\",\"n7\",\"n8\",\"n9\",\"n10\"]},{\"id\":\"n3\",\"component\":\"Input\",\"name\":\"name\",\"label\":\"Name\",\"type\":\"text\",\"required\":true,\"placeholder\":\"\",\"defaultValue\":\"\",\"min\":\"\",\"max\":\"\"},{\"id\":\"n4\",\"component\":\"Input\",\"name\":\"email\",\"label\":\"Email\",\"type\":\"email\",\"required\":true,\"placeholder\":\"\",\"defaultValue\":\"\",\"min\":\"\",\"max\":\"\"},{\"id\":\"n5\",\"component\":\"Input\",\"name\":\"date\",\"label\":\"Preferred date\",\"type\":\"date\",\"required\":true,\"placeholder\":\"\",\"defaultValue\":\"\",\"min\":\"2026-11-02\",\"max\":\"\"},{\"id\":\"n6\",\"component\":\"Input\",\"name\":\"phone\",\"label\":\"Phone\",\"type\":\"tel\",\"required\":true,\"placeholder\":\"\",\"defaultValue\":\"\",\"min\":\"\",\"max\":\"\"},{\"id\":\"n7\",\"component\":\"Select\",\"name\":\"tourType\",\"label\":\"Tour format\",\"required\":true,\"defaultValue\":\"\",\"options\":[{\"value\":\"in-person\",\"label\":\"In person\"},{\"value\":\"video\",\"label\":\"Video\"}]},{\"id\":\"n8\",\"component\":\"Textarea\",\"name\":\"message\",\"label\":\"Message\",\"required\":false,\"placeholder\":\"\",\"defaultValue\":\"\"},{\"id\":\"n9\",\"component\":\"Checkbox\",\"name\":\"bringPet\",\"label\":\"Discuss a pet\",\"required\":false,\"defaultChecked\":false},{\"id\":\"n10\",\"component\":\"Button\",\"label\":\"Submit Demo Request\",\"variant\":\"primary\",\"type\":\"submit\"},{\"id\":\"n11\",\"component\":\"Button\",\"label\":\"Back to Results\",\"variant\":\"ghost\",\"type\":\"button\",\"onClick\":{\"event\":{\"name\":\"back_to_results\",\"context\":{}}}}]}}\n```",
+  "usage": {
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "total_tokens": 0,
+    "cost": 0
+  },
+  "costUsd": 0,
+  "providerFinishedMs": 436.0849589999998,
+  "firstTokenMs": 9.336167000001296,
+  "servingProvider": "replay",
+  "returnedModel": "replay",
+  "promptHash": "f4fe2de0858fec7c2a0576bb7af8429821979ffe35a796088175696674245afc"
+}

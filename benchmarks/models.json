@@ -1,0 +1,570 @@
+{
+  "version": 2,
+  "checked_at": "2026-11-03",
+  "status": "shortlist_selected_routes_pending",
+  "source": "https://openrouter.ai/api/v1/models",
+  "routing_reference": "https://openrouter.ai/docs/guides/routing/provider-selection",
+  "models": [
+    {
+      "id": "openai/gpt-6.1-sol",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1050000,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000025",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000004",
+            "completion": "0.000015",
+            "input_cache_read": "0.0000002",
+            "input_cache_write": "0.000005"
+          }
+        ]
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "openai/gpt-6.1-terra",
+      "name": "OpenAI: GPT-6.1 Terra",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1050000,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.000001",
+        "completion": "0.000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000005",
+        "input_cache_write": "0.00000125",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.000002",
+            "completion": "0.0000075",
+            "input_cache_read": "0.0000001",
+            "input_cache_write": "0.0000025"
+          }
+        ]
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "openai/gpt-6-luna",
+      "name": "OpenAI: GPT-6 Luna",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1050000,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "overrides": [
+          {
+            "min_prompt_tokens": 272000,
+            "prompt": "0.0000002",
+            "completion": "0.00000075",
+            "input_cache_read": "0.00000002",
+            "input_cache_write": "0.00000025"
+          }
+        ]
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "anthropic/claude-opus-5.5",
+      "name": "Anthropic: Claude Opus 5.5",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1000000,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.000004",
+        "completion": "0.00002",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000002",
+        "input_cache_write": "0.000005",
+        "input_cache_write_1h": "0.000008"
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "anthropic/claude-sonnet-5.5",
+      "name": "Anthropic: Claude Sonnet 5.5",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1000000,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "web_search": "0.01",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000025",
+        "input_cache_write_1h": "0.000004"
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "anthropic/claude-haiku-5.5",
+      "name": "Anthropic: Claude Haiku 5.5",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1000000,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_completion_tokens",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "stop",
+        "structured_outputs",
+        "tool_choice",
+        "tools",
+        "verbosity"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.0000001",
+        "completion": "0.0000005",
+        "web_search": "0.01",
+        "input_cache_read": "0.00000001",
+        "input_cache_write": "0.000000125",
+        "input_cache_write_1h": "0.0000002",
+        "overrides": [
+          {
+            "min_prompt_tokens": 100000,
+            "prompt": "0.0000005",
+            "completion": "0.0000025",
+            "input_cache_read": "0.00000005",
+            "input_cache_write": "0.000000625",
+            "input_cache_write_1h": "0.000001"
+          }
+        ]
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "google/gemini-4-argon",
+      "name": "Google: Gemini 4 Argon",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1048576,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.000002",
+        "completion": "0.00001",
+        "image": "0.000002",
+        "audio": "0.000002",
+        "input_audio_cache": "0.0000001",
+        "web_search": "0.014",
+        "internal_reasoning": "0.00001",
+        "input_cache_read": "0.0000001",
+        "input_cache_write": "0.0000001875"
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "google/gemini-3.8-flash",
+      "name": "Google: Gemini 3.8 Flash",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1048576,
+      "supported_parameters_advertised": [
+        "include_reasoning",
+        "max_tokens",
+        "reasoning",
+        "reasoning_effort",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_p"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.000000825",
+        "completion": "0.000004125",
+        "image": "0.000000825",
+        "audio": "0.000000825",
+        "input_audio_cache": "0.0000000825",
+        "web_search": "0.014",
+        "internal_reasoning": "0.000004125",
+        "input_cache_read": "0.0000000825",
+        "input_cache_write": "0.0000000416666666666667"
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "deepseek/deepseek-v4.1-flash-1017",
+      "name": "DeepSeek: DeepSeek V4.1 Flash 1017",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1048576,
+      "supported_parameters_advertised": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_completion_tokens",
+        "max_tokens",
+        "min_p",
+        "parallel_tool_calls",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.00000015",
+        "completion": "0.0000006",
+        "input_cache_read": "0.000000003",
+        "overrides": [
+          {
+            "utc_days": [
+              "saturday",
+              "sunday"
+            ],
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 0,
+            "utc_end": 100,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 100,
+            "utc_end": 400,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 400,
+            "utc_end": 600,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 600,
+            "utc_end": 1000,
+            "prompt": "0.0000003",
+            "completion": "0.0000012",
+            "input_cache_read": "0.000000006"
+          },
+          {
+            "utc_days": [
+              "monday",
+              "tuesday",
+              "wednesday",
+              "thursday",
+              "friday"
+            ],
+            "utc_start": 1000,
+            "utc_end": 0,
+            "prompt": "0.00000015",
+            "completion": "0.0000006",
+            "input_cache_read": "0.000000003"
+          }
+        ]
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "qwen/qwen3.8-27b",
+      "name": "Qwen: Qwen3.8 27B",
+      "route": "openrouter",
+      "status": "selected_not_run",
+      "context_length": 1024000,
+      "supported_parameters_advertised": [
+        "frequency_penalty",
+        "include_reasoning",
+        "logit_bias",
+        "logprobs",
+        "max_tokens",
+        "min_p",
+        "presence_penalty",
+        "reasoning",
+        "reasoning_effort",
+        "repetition_penalty",
+        "response_format",
+        "seed",
+        "stop",
+        "structured_outputs",
+        "temperature",
+        "tool_choice",
+        "tools",
+        "top_a",
+        "top_k",
+        "top_logprobs",
+        "top_p"
+      ],
+      "catalog_pricing_per_token_usd": {
+        "prompt": "0.00000015",
+        "completion": "0.000001875",
+        "input_cache_read": "0.0000000375"
+      },
+      "provider_endpoint": null,
+      "resolved_model": null,
+      "reasoning_settings": null,
+      "required_before_run": [
+        "Verify account access and streaming.",
+        "Pin serving provider and disable fallbacks.",
+        "Verify required tools/structured outputs reach provider.",
+        "Record resolved version and reasoning settings.",
+        "Set spend ceiling."
+      ]
+    },
+    {
+      "id": "qwen3.8-flash-next:125b-mlx",
+      "route": "local",
+      "status": "previously_installed_alternative_not_selected",
+      "digest": "c7b96ffe21afe8c3dbb87d814b86bb5e89e622122f8613fb7acf4268a5bb85fa",
+      "size_bytes": 104852026135,
+      "reported_details": {
+        "parent_model": "",
+        "format": "safetensors",
+        "family": "",
+        "families": null,
+        "parameter_size": "",
+        "quantization_level": "nvfp4",
+        "runner": "mlx"
+      },
+      "host": {
+        "chip": "Apple M5 Max",
+        "memory_bytes": 137438953472
+      },
+      "required_before_run": [
+        "Verify streaming, usage and required tools/structured outputs.",
+        "Record engine version, context, sampling and thinking settings.",
+        "Measure model-resident and cold-start runs separately.",
+        "Record power/memory pressure; no parallel workloads."
+      ]
+    }
+  ],
+  "selection": {
+    "selected_at": "2026-11-03",
+    "hosted_model_ids": [
+      "openai/gpt-6.1-sol",
+      "openai/gpt-6.1-terra",
+      "openai/gpt-6-luna",
+      "anthropic/claude-opus-5.5",
+      "anthropic/claude-sonnet-5.5",
+      "anthropic/claude-haiku-5.5",
+      "google/gemini-4-argon",
+      "google/gemini-3.8-flash",
+      "deepseek/deepseek-v4.1-flash-1017",
+      "qwen/qwen3.8-27b"
+    ],
+    "local_candidate": "Qwen3.8 27B; exact runtime, artifact and quantization pending",
+    "note": "GPT-6.1 Terra is the Terra model discussed in the approved shortlist. This file is planning metadata; it does not configure the legacy live runners."
+  }
+}
